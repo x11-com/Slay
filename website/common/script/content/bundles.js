@@ -1,5 +1,9 @@
 import moment from 'moment';
+import find from 'lodash/find';
 import t from './translation';
+import { EVENTS } from './constants';
+
+const CURRENT_EVENT = find(EVENTS, event => moment().isBetween(event.start, event.end));
 
 /*
  ---------------------------------------------------------------
@@ -81,7 +85,7 @@ const bundles = {
       'penguin',
     ],
     canBuy () {
-      return moment().isBetween('2019-12-19', '2020-02-02');
+      return CURRENT_EVENT && CURRENT_EVENT.season === 'winter';
     },
     type: 'quests',
     value: 7,
@@ -186,7 +190,7 @@ const bundles = {
       'gryphon',
     ],
     canBuy () {
-      return moment().isBetween('2019-02-19', '2019-03-02');
+      return moment().isBefore('2021-02-28T08:00-05:00');
     },
     type: 'quests',
     value: 7,

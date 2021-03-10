@@ -13,9 +13,31 @@ const gemsPromo = {
 // event gear up until at least the actual end of the event.
 // Unless we want a precise ending, for example during a Gems sale / promotion.
 export const EVENTS = {
-  noCurrentEvent: {
-    start: '2020-10-31T20:00-04:00',
-    end: '2020-12-17T08:00-04:00',
+  noCurrentEvent2021: {
+    start: '2021-02-16T08:00-05:00',
+    end: '2021-03-07T08:00-05:00',
+    season: 'normal',
+  },
+  valentines2021: {
+    start: '2021-02-07T08:00-05:00',
+    end: '2021-02-16T08:00-05:00',
+    season: 'valentines',
+  },
+  winter2021: {
+    start: '2020-12-17T08:00-05:00',
+    end: '2021-01-31T20:00-05:00',
+    season: 'winter',
+  },
+  winter2021Promo: { // used in tests, not an actual past event
+    start: '2020-12-01T08:00-05:00',
+    end: '2020-12-17T20:00-05:00',
+    season: 'winter',
+    promo: 'g1g1',
+  },
+  noCurrentEvent2020: {
+    start: '2020-10-31T20:00-05:00',
+    end: '2020-12-17T08:00-05:00',
+    season: 'normal',
   },
   fall2020:   {
     start: '2020-09-22T08:00-04:00',

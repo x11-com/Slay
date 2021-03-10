@@ -251,6 +251,11 @@ function _sendDataToGoogle (eventType, data) {
 function _sendPurchaseDataToAmplitude (data) {
   const amplitudeData = _formatDataForAmplitude(data);
 
+  // Stripe transactions come via webhook. We can log these as Web events
+  if (data.paymentMethod === 'Stripe' && amplitudeData.platform === 'Unknown') {
+    amplitudeData.platform = 'Web';
+  }
+
   amplitudeData.event_type = 'purchase';
   amplitudeData.revenue = data.purchaseValue;
 
@@ -338,15 +343,26 @@ async function trackPurchase (data) {
 }
 
 // Stub for non-prod environments
-// @TODO instead of exporting a different interface why not have track
-// and trackPurchase be no ops when not in production?
 const mockAnalyticsService = {
   track: () => { },
   trackPurchase: () => { },
 };
 
+// Return the production or mock service based on the current environment
+function getServiceByEnvironment () {
+  if (nconf.get('IS_PROD')) {
+    return {
+      track,
+      trackPurchase,
+    };
+  }
+
+  return mockAnalyticsService;
+}
+
 export {
   track,
   trackPurchase,
   mockAnalyticsService,
+  getServiceByEnvironment as getAnalyticsServiceByEnvironment,
 };

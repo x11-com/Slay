@@ -19,6 +19,7 @@ import {
   SUPPORTED_SOCIAL_NETWORKS,
   TAVERN_ID,
   MAX_MESSAGE_LENGTH,
+  MAX_GIFT_MESSAGE_LENGTH,
 } from './constants';
 import content from './content/index';
 import * as count from './count';
@@ -88,6 +89,7 @@ import updateTask from './ops/updateTask';
 // TODO under api.libs.statHelpers?
 import * as statHelpers from './statHelpers';
 import { unEquipByType } from './ops/unequip';
+import getOfficialPinnedItems from './libs/getOfficialPinnedItems';
 
 const api = {};
 api.content = content;
@@ -111,6 +113,7 @@ api.constants = {
   CHAT_FLAG_FROM_SHADOW_MUTE,
   MINIMUM_PASSWORD_LENGTH,
   MAX_MESSAGE_LENGTH,
+  MAX_GIFT_MESSAGE_LENGTH,
 };
 // TODO Move these under api.constants
 api.maxLevel = MAX_LEVEL;
@@ -143,6 +146,7 @@ api.hasClass = hasClass;
 api.onboarding = onboarding;
 api.setDebuffPotionItems = setDebuffPotionItems;
 api.getDebuffPotionItems = getDebuffPotionItems;
+api.getOfficialPinnedItems = getOfficialPinnedItems;
 
 api.fns = {
   autoAllocate,

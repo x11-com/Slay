@@ -1,7 +1,7 @@
 {
     "achievement": "実績",
     "onwards": "やった！",
-    "levelup": "実生活での目標達成でレベルアップしました！体力も最大まで回復しました！",
+    "levelup": "現実での目標達成でレベルアップしました！体力も最大まで回復しました！",
     "reachedLevel": "レベル<%= level %>になりました",
     "achievementLostMasterclasser": "クエスト完了者：クラス・マスターシリーズ",
     "achievementLostMasterclasserText": "クラス・マスタークエストシリーズで16のクエストをすべて完了し、失われたクラス・マスターの謎を解き明かしました！",
@@ -18,7 +18,7 @@
     "achievementJustAddWater": "水を注ぐだけ",
     "achievementJustAddWaterText": "タコ、タツノオトシゴ、コウイカ、クジラ、カメ、ウミウシ、シーサーペント、イルカのペットクエストを完了しました。",
     "achievementJustAddWaterModalText": "タコ、タツノオトシゴ、コウイカ、クジラ、カメ、ウミウシ、シーサーペント、イルカのペットクエストを完了しました！",
-    "achievementPartyOn": "４人のメンバーがいるパーティーに発展しました！",
+    "achievementPartyOn": "4人以上のパーティーに参加しました！",
     "achievementPartyUp": "仲間たちとパーティーを組みました！",
     "achievementMonsterMagusModalText": "ゾンビのペットをすべて集めました！",
     "achievementMonsterMagusText": "ゾンビのペットをすべて集めました。",
@@ -46,7 +46,7 @@
     "achievementPearlyProText": "白い乗騎をすべて手なずけました。",
     "achievementPrimedForPaintingModalText": "白いペットをすべて集めました！",
     "achievementPrimedForPaintingText": "白いペットをすべて集めました。",
-    "achievementPurchasedEquipmentModalText": "装備はアバターをカスタマイズして、能力値を上げるための手段です",
+    "achievementPurchasedEquipmentModalText": "「装備」はアバターをカスタマイズしたりステータスを強化したりできる要素です",
     "achievementPurchasedEquipmentText": "最初の装備の１つを買いました。",
     "achievementPurchasedEquipment": "装備の１つを買う",
     "achievementFedPetModalText": "たくさんの異なる種類のえさがあり、ペットには好き嫌いがあります",
@@ -96,5 +96,14 @@
     "achievementBoneCollector": "ボーン・コレクター",
     "achievementSkeletonCrewModalText": "骨の乗騎をすべて手なづけました！",
     "achievementSkeletonCrewText": "骨の乗騎をすべて手なづけました。",
-    "achievementSkeletonCrew": "ドクロ団"
+    "achievementSkeletonCrew": "ドクロ団",
+    "achievementSeeingRed": "顔が真っ赤",
+    "achievementRedLetterDayModalText": "赤い乗騎をすべて手なづけました！",
+    "achievementRedLetterDayText": "赤い乗騎をすべて手なづけました。",
+    "achievementSeeingRedModalText": "赤いペットをすべて集めました！",
+    "achievementSeeingRedText": "赤いペットをすべて集めました。",
+    "achievementRedLetterDay": "赤マル記念日",
+    "achievementLegendaryBestiaryModalText": "伝説のペットをすべて集めました！",
+    "achievementLegendaryBestiaryText": "伝説のペットを全てたまごからかえしました：ドラゴン、空飛ぶ豚、グリフォン、シーサーペント、そしてユニコーン！",
+    "achievementLegendaryBestiary": "伝説の生物の図鑑"
 }

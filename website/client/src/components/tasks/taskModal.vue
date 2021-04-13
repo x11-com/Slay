@@ -454,13 +454,11 @@
               class="col-12 mb-1"
             >{{ $t('assignedTo') }}</label>
             <div class="col-12">
-              <select-multi
-                ref="assignMembers"
+              <select-single
                 :all-items="membersNameAndId"
                 :empty-message="$t('unassigned')"
-                :pill-invert="true"
                 :search-placeholder="$t('chooseTeamMember')"
-                :selected-items="assignedMembers"
+                :selected-item="assignedMember"
                 @toggle="toggleAssignment($event)"
               />
             </div>
@@ -1044,9 +1042,11 @@ import goldIcon from '@/assets/svg/gold.svg';
 import chevronIcon from '@/assets/svg/chevron.svg';
 import calendarIcon from '@/assets/svg/calendar.svg';
 import gripIcon from '@/assets/svg/grip.svg';
+import SelectSingle from './modal-controls/selectSingle';
 
 export default {
   components: {
+    SelectSingle,
     SelectMulti,
     Datepicker,
     checklist,
@@ -1079,7 +1079,7 @@ export default {
       members: [],
       membersNameAndId: [],
       memberNamesById: {},
-      assignedMembers: [],
+      assignedMember: null,
       managers: [],
       showAdvancedOptions: false,
       attributesStrings: {
@@ -1270,9 +1270,10 @@ export default {
           });
           this.memberNamesById[member._id] = member.profile.name;
         });
-        this.assignedMembers = [];
-        if (this.task.group && this.task.group.assignedUsers) {
-          this.assignedMembers = this.task.group.assignedUsers;
+        this.assignedMember = null;
+        if (this.task.group?.assignedUsers?.length > 0) {
+          // eslint-disable-next-line prefer-destructuring
+          this.assignedMember = this.task.group.assignedUsers[0];
         }
       }
 
@@ -1457,12 +1458,11 @@ export default {
             tasks: [this.task],
           });
           Object.assign(this.task, response);
-          const promises = this.assignedMembers.map(memberId => this.$store.dispatch('tasks:assignTask', {
+          await this.$store.dispatch('tasks:assignTask', {
             taskId: this.task._id,
-            userId: memberId,
-          }));
-          Promise.all(promises);
-          this.task.group.assignedUsers = this.assignedMembers;
+            userId: this.assignedMember,
+          });
+          this.task.group.assignedUsers = [this.assignedMember];
           this.$emit('taskCreated', this.task);
         } else {
           this.createTask(this.task);
@@ -1489,23 +1489,26 @@ export default {
       this.$emit('cancel');
     },
     async toggleAssignment (memberId) {
-      if (this.purpose === 'create') {
-        return;
+      if (this.purpose !== 'create') {
+        if (this.assignedMember === null) {
+          await this.$store.dispatch('tasks:unassignTask', {
+            taskId: this.task._id,
+            userId: memberId,
+          });
+        } else {
+          await this.$store.dispatch('tasks:unassignTask', {
+            taskId: this.task._id,
+            userId: this.assignedMember,
+          });
+
+          await this.$store.dispatch('tasks:assignTask', {
+            taskId: this.task._id,
+            userId: memberId,
+          });
+        }
       }
 
-      const assignedIndex = this.assignedMembers.indexOf(memberId);
-
-      if (assignedIndex === -1) {
-        await this.$store.dispatch('tasks:unassignTask', {
-          taskId: this.task._id,
-          userId: memberId,
-        });
-      } else {
-        await this.$store.dispatch('tasks:assignTask', {
-          taskId: this.task._id,
-          userId: memberId,
-        });
-      }
+      this.assignedMember = memberId;
     },
     focusInput () {
       this.$refs.inputToFocus.focus();

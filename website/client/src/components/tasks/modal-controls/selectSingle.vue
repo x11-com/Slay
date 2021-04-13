@@ -17,24 +17,18 @@
             @keyup.enter="handleSubmit"
           />
         </div>
-
-        <multi-list
-          v-if="selectedItems.length > 0"
-          :add-new="addNew"
-          :pill-invert="pillInvert"
-          :items="selectedItemsAsObjects"
-          :max-items="0"
-          @remove-item="removeItem($event)"
-        />
       </b-dropdown-header>
       <template v-slot:button-content>
-        <multi-list
-          :items="selectedItemsAsObjects"
-          :add-new="addNew"
-          :pill-invert="pillInvert"
-          :empty-message="emptyMessage"
-          @remove-item="removeItem($event)"
-        />
+        <div
+          v-if="selectedItem !== null"
+          v-markdown="allItemsMap[selectedItem].name"
+          class="label"
+        ></div>
+        <div
+          v-else
+        >
+          {{ emptyMessage }}
+        </div>
       </template>
       <div
         v-if="addNew || availableToSelect.length > 0"
@@ -175,7 +169,6 @@
 
 <script>
 import Vue from 'vue';
-import MultiList from '@/components/tasks/modal-controls/multiList';
 import markdownDirective from '@/directives/markdown';
 
 export default {
@@ -183,7 +176,6 @@ export default {
     markdown: markdownDirective,
   },
   components: {
-    MultiList,
   },
   props: {
     addNew: {
@@ -203,24 +195,19 @@ export default {
     searchPlaceholder: {
       type: String,
     },
-    selectedItems: {
-      type: Array,
+    selectedItem: {
+      type: String,
     },
   },
   data () {
     return {
       preventHide: true,
       isOpened: false,
-      selected: this.selectedItems,
+      selected: this.selectedItem,
       search: '',
     };
   },
   computed: {
-    selectedItemsIdList () {
-      return this.selectedItems
-        ? this.selectedItems.map(t => t)
-        : [];
-    },
     allItemsMap () {
       const obj = {};
       this.allItems.forEach(t => {
@@ -228,22 +215,20 @@ export default {
       });
       return obj;
     },
-    selectedItemsAsObjects () {
-      return this.selectedItems.map(t => this.allItemsMap[t]);
+    selectedItemAsObject () {
+      return this.selectedItem ? this.allItemsMap[this.selectedItem] : null;
     },
     availableToSelect () {
-      const availableItems = this.allItems.filter(t => !this.selectedItemsIdList.includes(t.id));
-
       const searchString = this.search.toLowerCase();
 
-      const filteredItems = availableItems.filter(i => i.name.toLowerCase().includes(searchString));
+      const filteredItems = this.allItems.filter(i => i.name.toLowerCase().includes(searchString));
 
       return filteredItems;
     },
   },
   watch: {
     selected () {
-      this.$emit('changed', this.selected);
+      this.$emit('changed', this.selectedItem);
     },
   },
   created () {
@@ -271,19 +256,13 @@ export default {
         $event.preventDefault();
       }
     },
-    closeIfOpen () {
-      this.closeSelectPopup();
-    },
     selectItem (item) {
-      this.selectedItems.push(item.id);
-      this.$emit('toggle', item.id);
-    },
-    removeItem ($event) {
-      const foundIndex = this.selectedItems.findIndex(t => t === $event);
-
-      this.selectedItems.splice(foundIndex, 1);
-
-      this.$emit('toggle', $event);
+      if (item.id === this.selectedItem) {
+        this.$emit('toggle', null);
+      } else {
+        this.$emit('toggle', item.id);
+      }
+      this.closeSelectPopup();
     },
     hideCallback ($event) {
       if (this.preventHide) {

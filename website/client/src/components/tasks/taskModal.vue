@@ -1458,11 +1458,13 @@ export default {
             tasks: [this.task],
           });
           Object.assign(this.task, response);
-          await this.$store.dispatch('tasks:assignTask', {
-            taskId: this.task._id,
-            userId: this.assignedMember,
-          });
-          this.task.group.assignedUsers = [this.assignedMember];
+          if (this.assignedMember) {
+            await this.$store.dispatch('tasks:assignTask', {
+              taskId: this.task._id,
+              userId: this.assignedMember,
+            });
+            this.task.group.assignedUsers = [this.assignedMember];
+          }
           this.$emit('taskCreated', this.task);
         } else {
           this.createTask(this.task);
@@ -1489,25 +1491,20 @@ export default {
       this.$emit('cancel');
     },
     async toggleAssignment (memberId) {
-      if (this.purpose !== 'create') {
-        if (this.assignedMember === null) {
-          await this.$store.dispatch('tasks:unassignTask', {
-            taskId: this.task._id,
-            userId: memberId,
-          });
-        } else {
+      if (this.purpose === 'edit') {
+        if (this.assignedMember && this.assignedMember !== memberId) {
           await this.$store.dispatch('tasks:unassignTask', {
             taskId: this.task._id,
             userId: this.assignedMember,
           });
-
+        }
+        if (memberId) {
           await this.$store.dispatch('tasks:assignTask', {
             taskId: this.task._id,
             userId: memberId,
           });
         }
       }
-
       this.assignedMember = memberId;
     },
     focusInput () {

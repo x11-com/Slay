@@ -15,18 +15,18 @@ export const EVENTS = {
     season: 'normal',
     npcImageSuffix: '',
   },
+  spring2021: {
+    start: '2021-03-23T08:00-05:00',
+    end: '2021-05-31T20:00-05:00',
+    npcImageSuffix: 'spring',
+    season: 'spring',
+    gear: true,
+  },
   potions202105: {
     start: '2021-05-11T08:00-05:00',
     end: '2021-05-31T20:00-05:00',
     season: 'normal',
     npcImageSuffix: '',
-  },
-  spring2021: {
-    start: '2021-03-23T08:00-05:00',
-    end: '2021-04-30T20:00-05:00',
-    npcImageSuffix: 'spring',
-    season: 'spring',
-    gear: true,
   },
   aprilFools2021: {
     start: '2021-04-01T08:00-05:00',

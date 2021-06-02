@@ -338,19 +338,22 @@ async function scoreTask (user, task, direction, req, res) {
 
   let localTask;
   let rollbackUser;
+  let group;
 
+  if (task.group.id) {
+    group = await Group.getGroup({
+      user,
+      groupId: task.group.id,
+      fields: 'leader managers',
+    });
+  }
   if (
-    task.group.id && !task.userId
+    group && task.group.id && !task.userId
     && direction === 'down'
     && ['todo', 'daily'].includes(task.type)
     && task.completed
     && task.group.completedBy !== user._id
   ) {
-    const group = await Group.getGroup({
-      user,
-      groupId: task.group.id,
-      fields: 'leader managers',
-    });
     if (group.leader !== user._id && !group.managers[user._id]) {
       throw new BadRequest('Cannot uncheck task you did not complete if not a manager.');
     }
@@ -420,7 +423,7 @@ async function scoreTask (user, task, direction, req, res) {
   });
 
   // Track when new users (first 7 days) score tasks
-  if (moment().diff(user.auth.timestamps.created, 'days') < 3) {
+  if (moment().diff(user.auth.timestamps.created, 'days') < 3 && !group) {
     res.analytics.track('task score', {
       uuid: user._id,
       hitType: 'event',
@@ -428,6 +431,27 @@ async function scoreTask (user, task, direction, req, res) {
       taskType: task.type,
       direction,
       headers: req.headers,
+    });
+  }
+
+  if (group) {
+    let role;
+    if (group.leader === user._id) {
+      role = 'leader';
+    } else if (group.managers.indexOf(user._id) !== -1) {
+      role = 'manager';
+    } else {
+      role = 'member';
+    }
+    res.analytics.track('task score', {
+      uuid: user._id,
+      hitType: 'event',
+      category: 'behavior',
+      taskType: task.type,
+      direction,
+      headers: req.headers,
+      groupID: group._id,
+      role,
     });
   }
 

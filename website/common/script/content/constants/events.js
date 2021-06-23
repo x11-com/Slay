@@ -16,7 +16,7 @@ export const EVENTS = {
     npcImageSuffix: '',
   },
   summer2021: {
-    start: '2021-06-23T08:00-04:00',
+    start: '2021-06-22T08:00-04:00',
     end: '2021-07-31T20:00-04:00',
     season: 'summer',
     npcImageSuffix: 'summer',

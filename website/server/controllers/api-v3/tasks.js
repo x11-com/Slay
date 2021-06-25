@@ -652,7 +652,7 @@ api.updateTask = {
     // the other of the keys when using .toObject()
     // see https://github.com/Automattic/mongoose/issues/2749
 
-    if (sanitizedObj.managerNotes) {
+    if (Object.prototype.hasOwnProperty.call(sanitizedObj, 'managerNotes')) {
       task.group.managerNotes = sanitizedObj.managerNotes;
     }
 
@@ -704,6 +704,16 @@ api.updateTask = {
       taskActivityWebhook.send(user, {
         type: 'updated',
         task: savedTask,
+      });
+    }
+
+    if (group) {
+      res.analytics.track('task edit', {
+        uuid: user._id,
+        hitType: 'event',
+        category: 'behavior',
+        taskType: task.type,
+        groupID: group._id,
       });
     }
   },

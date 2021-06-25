@@ -1049,10 +1049,6 @@ export default {
         }
         if (this.isOpenTask) return false;
         if (this.task.group.assignedUsers.indexOf(this.user._id) !== -1) return false;
-        if (
-          this.task.group.assignedUsers.length > 0
-          && this.task.group.assignedUsers.indexOf(this.user._id) === -1
-        ) return true;
       }
       return true;
     },

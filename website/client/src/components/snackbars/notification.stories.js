@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { storiesOf } from '@storybook/vue';
-import { boolean, number, withKnobs } from '@storybook/addon-knobs';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import Notification from './notification';
 import Notifications from './notifications';
@@ -117,9 +117,29 @@ stories
     template: `
       <div style="position: absolute; margin: 20px">
         <button @click="addNotification()">Add Notifications</button>
+        
+         <button @click="crit(1337)">Crit</button>
+        
+         <button @click="drop('Drop', {type:'weapon', key: 'wizard_2'})">Drop</button>
+        
+         <button @click="quest('quest', 'val')">Quest</button> 
+        <button @click="damage(-13)">Damage</button>
+        <button @click="exp(42)">Exp</button> 
+        <button @click="error('some error')">Error</button>
+      
+        <br/>
+        
+        <button @click="gp(23, 0)">Gold</button>
+        
+        
+        <button @click="hp(23)">HP</button>
+        <button @click="mp(23)">MP</button>
+        
+        <button @click="lvl()">LVL</button>
+        
+        <button @click="streak('Streak')">Streak</button>
       
         <Notifications :prevent-queue="preventQueue"
-                       :delay-delete-and-new="delayBetweenDeleteAndNew"
                        :debug-mode="debugMode"
                        :style="{outline: showBounds ? '1px solid green': ''}">
         </Notifications>
@@ -131,9 +151,6 @@ stories
       },
       preventQueue: {
         default: boolean('prevent removing', false),
-      },
-      delayBetweenDeleteAndNew: {
-        default: number('delay between delete and new', 60),
       },
       debugMode: {
         default: boolean('debug mode', true),

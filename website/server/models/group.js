@@ -648,7 +648,7 @@ schema.methods.sendChat = function sendChat (options = {}) {
           identifier: 'chatMention',
           title: `${user.profile.name} mentioned you in ${this.name}`,
           message: newChatMessage.unformattedText,
-          payload: { type: this.type },
+          payload: { type: this.type, groupID: this._id },
         });
       }
     });

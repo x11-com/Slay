@@ -2,8 +2,6 @@
 import { configure } from '@storybook/vue';
 import './margin.css';
 import '../../src/assets/scss/index.scss';
-import '../../src/assets/css/sprites.css';
-
 import './sprites.scss';
 
 import Vue from 'vue';

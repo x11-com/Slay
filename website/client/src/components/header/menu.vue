@@ -732,7 +732,6 @@ body.modal-open #habitica-menu {
 
 <script>
 import { mapState, mapGetters } from '@/libs/store';
-import * as Analytics from '@/libs/analytics';
 import { goToModForm } from '@/libs/modform';
 
 import gemIcon from '@/assets/svg/gem.svg';
@@ -811,13 +810,6 @@ export default {
       this.$root.$emit('bv::show::modal', 'create-party-modal');
     },
     showBuyGemsModal () {
-      Analytics.track({
-        hitType: 'event',
-        eventCategory: 'button',
-        eventAction: 'click',
-        eventLabel: 'Gems > Toolbar',
-      });
-
       this.$root.$emit('bv::show::modal', 'buy-gems', { alreadyTracked: true });
     },
     dropdownDesktop (hover) {

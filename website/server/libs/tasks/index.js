@@ -446,7 +446,7 @@ async function scoreTask (user, task, direction, req, res) {
     } else {
       role = 'member';
     }
-    res.analytics.track('task score', {
+    res.analytics.track('team task score', {
       uuid: user._id,
       hitType: 'event',
       category: 'behavior',
@@ -455,15 +455,6 @@ async function scoreTask (user, task, direction, req, res) {
       headers: req.headers,
       groupID: group._id,
       role,
-    });
-  } else {
-    res.analytics.track('task score', {
-      uuid: user._id,
-      hitType: 'event',
-      category: 'behavior',
-      taskType: task.type,
-      direction,
-      headers: req.headers,
     });
   }
 

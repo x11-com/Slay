@@ -10,7 +10,7 @@
     "gearNotOwned": "Kamu tidak memiliki item ini.",
     "noGearItemsOfType": "Kamu tidak memiliki item ini.",
     "noGearItemsOfClass": "Kamu sudah mempunyai semua perlengkapan pekerjaanmu! Lebih banyak lagi akan dirilis selama Grand Gala, dekat titik balik matahari dan ekuinoks.",
-    "classLockedItem": "Item ini hanya tersedia untuk pekerjaan tertentu. Ganti pekerjaanmu di bawah ikon Pengguna > Pengaturan > Membangun Karakter!",
+    "classLockedItem": "Item ini hanya tersedia untuk kelas tertentu. Pada level 10 keatas, kamu dapat mengubah kelasmu di bawah ikon Pengguna > Pengaturan > Membangun Karakter!",
     "tierLockedItem": "Item ini hanya tersedia setelah kamu sudah membeli item sebelumnya dalam seri ini. Terus bekerja keras untuk mendapatkan item teratas!",
     "sortByType": "Jenis",
     "sortByPrice": "Harga",
@@ -27,7 +27,7 @@
     "weaponWarrior1Text": "Pedang",
     "weaponWarrior1Notes": "Pedang prajurit biasa. Meningkatkan Kekuatan sebesar <%= str %>.",
     "weaponWarrior2Text": "Kapak",
-    "weaponWarrior2Notes": "Senjata pemotong bermata dua. Meningkatkan Kekuatan sebesar <%= str %>",
+    "weaponWarrior2Notes": "Senjata pemotong bermata dua. Meningkatkan Kekuatan sebesar <%= str %>.",
     "weaponWarrior3Text": "Bintang Kejora",
     "weaponWarrior3Notes": "Pemukul yang berat dengan duri yang mengerikan. Meningkatkan Kekuatan sebesar <%= str %>.",
     "weaponWarrior4Text": "Pedang Safir",
@@ -133,7 +133,7 @@
     "weaponSpecialSummerRogueText": "Pedang Bajak Laut",
     "weaponSpecialSummerRogueNotes": "Awas! Kau akan membuat Keseharianmu berjalan di atas palang kayu! Meningkatkan Kekuatan sebesar <%= str %>. Perlengkapan Musim Panas 2014 Edisi Terbatas.",
     "weaponSpecialSummerWarriorText": "Pembelah Lautan",
-    "weaponSpecialSummerWarriorNotes": "Tidak ada tugas manapun yang sanggup menghadapi belati ini! Meningkatkan Kekuatan sebesar <%= str %>. Perlengkapan Musim Panas 2014 Edisi Terbatas.",
+    "weaponSpecialSummerWarriorNotes": "Tidak ada tugas di daftar To Do manapun yang sanggup menghadapi belati ini! Meningkatkan Kekuatan sebesar <%= str %>. Perlengkapan Musim Panas 2014 Edisi Terbatas.",
     "weaponSpecialSummerMageText": "Penangkap Rumput Laut",
     "weaponSpecialSummerMageNotes": "Trisula ini digunakan untuk mendapatkan rumput laut secara efektif, menambah penghasilan panen petani rumput laut! Meningkatkan Kecerdasan sebesar <%= int %> dan Persepsi sebesar <%= per %>. Perlengkapan Musim Panas 2014 Edisi Terbatas.",
     "weaponSpecialSummerHealerText": "Tongkat Karang Laut",
@@ -1747,5 +1747,7 @@
     "eyewearArmoirePlagueDoctorMaskNotes": "An authentic mask worn by the doctors who battle the Plague of Procrastination. Increases Constitution and Intelligence by <%= attrs %> each. Enchanted Armoire: Plague Doctor Set (Item 2 of 3).",
     "eyewearArmoireGoofyGlassesText": "Goofy Glasses",
     "eyewearArmoireGoofyGlassesNotes": "Perfect for going incognito or just making your partymates giggle. Increases Perception by <%= per %>. Enchanted Armoire: Independent Item.",
-    "twoHandedItem": "Item dua tangan."
+    "twoHandedItem": "Item dua tangan.",
+    "weaponSpecialKS2019Text": "Pedang Mythic Gryphon",
+    "weaponSpecialKS2019Notes": "Melengkung bagaikan paruh dan cakar gryphon, tombak indah ini mengingatkanmu untuk terus berjuang ketika tugas-tugas mulai menjenuhkan. Menambahkan Kekuatan sebanyak <%=str%>."
 }

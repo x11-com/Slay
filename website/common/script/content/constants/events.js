@@ -15,11 +15,20 @@ export const EVENTS = {
     season: 'normal',
     npcImageSuffix: '',
   },
-  fall_extra_gems: { // eslint-disable-line camelcase
-    start: '2021-09-23T14:00-04:00',
-    end: '2021-10-31T20:00-04:00',
+  spooky_extra_gems: { // eslint-disable-line camelcase
+    start: '2021-09-27T12:30-04:00',
+    end: '2021-10-31T20:30-04:00',
     npcImageSuffix: '_fall',
     season: 'fall',
+    promo: 'spooky_extra_gems',
+    gemsPromo,
+  },
+  fall_extra_gems: { // eslint-disable-line camelcase
+    start: '2021-09-23T14:00-04:00',
+    end: '2021-09-27T12:30-04:00',
+    npcImageSuffix: '_fall',
+    season: 'fall',
+    promo: 'fall_extra_gems',
     gemsPromo,
   },
   fall2021: {

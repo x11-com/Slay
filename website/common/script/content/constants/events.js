@@ -17,7 +17,7 @@ export const EVENTS = {
   },
   spooky_extra_gems: { // eslint-disable-line camelcase
     start: '2021-09-27T12:30-04:00',
-    end: '2021-10-31T20:30-04:00',
+    end: '2021-10-01T16:30-04:00',
     npcImageSuffix: '_fall',
     season: 'fall',
     promo: 'spooky_extra_gems',

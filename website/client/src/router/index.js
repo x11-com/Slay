@@ -4,6 +4,7 @@ import getStore from '@/store';
 import handleRedirect from './handleRedirect';
 
 import ParentPage from '@/components/parentPage';
+import { PAGES } from '@/libs/consts';
 
 // NOTE: when adding a page make sure to implement the `common:setTitle` action
 
@@ -84,6 +85,8 @@ const GroupPlanTaskInformation = () => import(/* webpackChunkName: "group-plans"
 const GroupPlanBilling = () => import(/* webpackChunkName: "group-plans" */ '@/components/group-plans/billing');
 
 const MessagesIndex = () => import(/* webpackChunkName: "private-messages" */ '@/pages/private-messages');
+
+const BugReport = () => import(/* webpackChunkName: "private-messages" */ '@/pages/bug-report');
 
 // Challenges
 const ChallengeIndex = () => import(/* webpackChunkName: "challenges" */ '@/components/challenges/index');
@@ -205,7 +208,8 @@ const router = new VueRouter({
         },
       ],
     },
-    { path: '/private-messages', name: 'privateMessages', component: MessagesIndex },
+    { path: PAGES.PRIVATE_MESSAGES, name: 'privateMessages', component: MessagesIndex },
+    { path: PAGES.BUG_REPORT, name: 'bugReport', component: BugReport },
     {
       name: 'challenges',
       path: '/challenges',

@@ -25,7 +25,6 @@ async function checkForActiveCron (user, now) {
   }, {
     $set: {
       _cronSignature,
-      'auth.timestamps.loggedin': now,
     },
   }).exec();
 
@@ -140,6 +139,7 @@ async function cronAsync (req, res) {
     }, {
       $set: {
         _cronSignature: 'NOT_RUNNING',
+        'auth.timestamps.loggedin': now,
       },
     }).exec();
 

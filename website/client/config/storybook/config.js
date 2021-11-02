@@ -39,6 +39,11 @@ store.state.user.data = {
   preferences: {
 
   },
+  auth: {
+    local: {
+      email: 'example@example.com',
+    },
+  },
 };
 
 Vue.prototype.$store = store;

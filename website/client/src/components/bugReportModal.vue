@@ -12,7 +12,7 @@
         {{ $t('reportBug') }}
       </h2>
 
-      <div v-once>
+      <div v-once class="report-bug-header-describe">
         {{ $t('reportBugHeaderDescribe') }}
       </div>
 
@@ -34,7 +34,7 @@
           >
             {{ $t('email') }}
           </label>
-          <div class="mb-2" v-once>
+          <div class="mb-2 description-label" v-once>
             {{ $t('reportEmailText') }}
           </div>
           <input
@@ -55,7 +55,7 @@
         <label v-once>
           {{ $t('reportDescription') }}
         </label>
-        <div class="mb-2" v-once>
+        <div class="mb-2 description-label" v-once>
           {{ $t('reportDescriptionText') }}
         </div>
         <textarea
@@ -131,12 +131,21 @@ h2 {
   background-image: linear-gradient(288deg, #{$purple-200}, #{$purple-300});
 }
 
+.report-bug-header-describe {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $purple-600;
+}
+
 label {
   font-weight: bold;
+  line-height: 1.71;
+  color: $gray-50;
 }
 
 .cancel-link {
   color: $blue-10;
+  line-height: 1.71;
 }
 
 .submit-button {
@@ -148,12 +157,19 @@ label {
   line-height: 1.33;
   color: $maroon-10;
 }
+
+.description-label {
+  font-size: 12px;
+  line-height: 1.33;
+  color: $gray-100;
+}
 </style>
 
 <script>
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import closeIcon from '@/components/shared/closeIcon';
+import { mapState } from '@/libs/store';
 
 export default {
   components: {
@@ -186,6 +202,7 @@ export default {
     },
   },
   computed: {
+    ...mapState({ user: 'user.data' }),
     emailValid () {
       if (this.email.length <= 3) return false;
       return isEmail(this.email);
@@ -194,6 +211,9 @@ export default {
       if (this.email.length <= 3) return false;
       return !this.emailValid;
     },
+  },
+  mounted () {
+    this.email = this.user.auth?.local?.email;
   },
 };
 </script>

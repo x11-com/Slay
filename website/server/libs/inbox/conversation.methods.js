@@ -1,16 +1,16 @@
-import { inboxModel as Inbox, setUserStyles } from '../../models/message';
-import { model as User } from '../../models/user';
+import {inboxModel as Inbox, setUserStyles} from '../../models/message';
+import {model as User} from '../../models/user';
 
 /**
  * Get the current user (avatar/setting etc) for conversations
  * @param users
  * @returns {Promise<void>}
  */
-async function usersMapByConversations (users) {
+async function usersMapByConversations(users) {
   const usersMap = {};
 
   const usersQuery = {
-    _id: { $in: users },
+    _id: {$in: users},
   };
 
   const loadedUsers = await User.find(usersQuery, {

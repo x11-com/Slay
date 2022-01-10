@@ -2,11 +2,11 @@ import moment from 'moment';
 import _ from 'lodash';
 import cloneDeep from 'lodash/cloneDeep';
 import nconf from 'nconf';
-import { model as User } from '../models/user';
+import {model as User} from '../models/user';
 import common from '../../common';
-import { preenUserHistory } from './preening';
+import {preenUserHistory} from './preening';
 import sleep from './sleep';
-import { revealMysteryItems } from './payments/subscriptions';
+import {revealMysteryItems} from './payments/subscriptions';
 
 const CRON_SAFE_MODE = nconf.get('CRON_SAFE_MODE') === 'true';
 const CRON_SEMI_SAFE_MODE = nconf.get('CRON_SEMI_SAFE_MODE') === 'true';

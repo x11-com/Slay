@@ -1,22 +1,14 @@
 import _ from 'lodash';
 
-import { encrypt } from '../encryption';
-import { sendNotification as sendPushNotification } from '../pushNotifications';
-import {
-  NotFound,
-  BadRequest,
-  NotAuthorized,
-} from '../errors';
-import { sendTxn as sendTxnEmail } from '../email';
-import { model as EmailUnsubscription } from '../../models/emailUnsubscription';
-import {
-  model as User,
-} from '../../models/user';
-import {
-  model as Group,
-} from '../../models/group';
+import {encrypt} from '../encryption';
+import {sendNotification as sendPushNotification} from '../pushNotifications';
+import {BadRequest, NotAuthorized, NotFound,} from '../errors';
+import {sendTxn as sendTxnEmail} from '../email';
+import {model as EmailUnsubscription} from '../../models/emailUnsubscription';
+import {model as User,} from '../../models/user';
+import {model as Group,} from '../../models/group';
 
-function sendInvitePushNotification (userToInvite, groupLabel, group, publicGuild, res) {
+function sendInvitePushNotification(userToInvite, groupLabel, group, publicGuild, res) {
   if (userToInvite.preferences.pushNotifications[`invited${groupLabel}`] === false) return;
 
   const identifier = group.type === 'guild' ? 'invitedGuild' : 'invitedParty';

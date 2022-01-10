@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {boolean, withKnobs} from '@storybook/addon-knobs';
 
 import PinBadge from './pinBadge.vue';
 
@@ -10,7 +10,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('states', () => ({
-    components: { PinBadge },
+    components: {PinBadge},
     template: `
       <div style="position: absolute; margin: 20px">
         <pin-badge :pinned="pinned"></pin-badge>

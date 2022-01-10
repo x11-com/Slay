@@ -1,18 +1,22 @@
-import { find } from 'lodash';
-import {
-  createAndPopulateGroup,
-} from '../../../../../helpers/api-integration/v3';
+import {find} from 'lodash';
+import {createAndPopulateGroup,} from '../../../../../helpers/api-integration/v3';
 
 describe('GET /approvals/group/:groupId', () => {
-  let user; let guild; let member; let addlMember; let task; let syncedTask; let
+  let user;
+  let guild;
+  let member;
+  let addlMember;
+  let task;
+  let syncedTask;
+  let
     addlSyncedTask;
 
-  function findAssignedTask (memberTask) {
+  function findAssignedTask(memberTask) {
     return memberTask.group.id === guild._id;
   }
 
   beforeEach(async () => {
-    const { group, members, groupLeader } = await createAndPopulateGroup({
+    const {group, members, groupLeader} = await createAndPopulateGroup({
       groupDetails: {
         name: 'Test Guild',
         type: 'guild',

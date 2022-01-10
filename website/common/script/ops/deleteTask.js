@@ -1,7 +1,7 @@
 import get from 'lodash/get';
 import findIndex from 'lodash/findIndex';
 import i18n from '../i18n';
-import { NotFound } from '../libs/errors';
+import {NotFound} from '../libs/errors';
 
 // TODO used only in client, move there?
 

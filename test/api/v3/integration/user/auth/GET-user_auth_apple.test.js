@@ -1,8 +1,4 @@
-import {
-  generateUser,
-  requester,
-  getProperty,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser, getProperty, requester,} from '../../../../../helpers/api-integration/v3';
 import * as appleAuth from '../../../../../../website/server/libs/auth/apple';
 
 describe('GET /user/auth/apple', () => {

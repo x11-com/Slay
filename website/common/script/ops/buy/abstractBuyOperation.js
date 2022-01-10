@@ -2,11 +2,7 @@
 import _merge from 'lodash/merge';
 import _get from 'lodash/get';
 import i18n from '../../i18n';
-import {
-  NotAuthorized,
-  NotImplementedError,
-  BadRequest,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized, NotImplementedError,} from '../../libs/errors';
 
 export class AbstractBuyOperation {
   /**

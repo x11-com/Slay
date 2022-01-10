@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import {createLocalVue, shallowMount} from '@vue/test-utils';
 
 import ChatCard from '@/components/chat/chatCard.vue';
 import Store from '@/libs/store';

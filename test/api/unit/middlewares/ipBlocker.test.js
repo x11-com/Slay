@@ -1,11 +1,7 @@
 import nconf from 'nconf';
 import requireAgain from 'require-again';
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
-import { Forbidden } from '../../../../website/server/libs/errors';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
+import {Forbidden} from '../../../../website/server/libs/errors';
 import apiError from '../../../../website/server/libs/apiError';
 
 function checkErrorThrown (next) {

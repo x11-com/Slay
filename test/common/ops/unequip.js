@@ -1,8 +1,6 @@
 /* eslint-disable camelcase */
 
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 import {
   UNEQUIP_ALL,
   UNEQUIP_BACKGROUND,

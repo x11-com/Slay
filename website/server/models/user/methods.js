@@ -1,28 +1,19 @@
 import moment from 'moment';
-import {
-  defaults, map, flatten, flow, compact, uniq, partialRight,
-} from 'lodash';
+import {compact, defaults, flatten, flow, map, partialRight, uniq,} from 'lodash';
 import common from '../../../common';
 
-import { // eslint-disable-line import/no-cycle
-  TAVERN_ID,
-  model as Group,
-} from '../group';
+import {model as Group, TAVERN_ID,} from '../group';
 
-import {
-  messageDefaults,
-  setUserStyles,
-  inboxModel as Inbox,
-} from '../message';
+import {inboxModel as Inbox, messageDefaults, setUserStyles,} from '../message';
 
-import { model as UserNotification } from '../userNotification';
+import {model as UserNotification} from '../userNotification';
 import schema from './schema'; // eslint-disable-line import/no-cycle
 import payments from '../../libs/payments/payments'; // eslint-disable-line import/no-cycle
 import * as inboxLib from '../../libs/inbox'; // eslint-disable-line import/no-cycle
 import amazonPayments from '../../libs/payments/amazon'; // eslint-disable-line import/no-cycle
 import stripePayments from '../../libs/payments/stripe'; // eslint-disable-line import/no-cycle
 import paypalPayments from '../../libs/payments/paypal'; // eslint-disable-line import/no-cycle
-import { model as NewsPost } from '../newsPost';
+import {model as NewsPost} from '../newsPost';
 
 const { daysSince } = common;
 
@@ -375,7 +366,7 @@ schema.methods.daysUserHasMissed = function daysUserHasMissed (now, req = {}) {
   // NB: All timezone offsets can be 0, so can't use `... || ...` to apply non-zero defaults
 
   if (timezoneUtcOffsetFromBrowser !== timezoneUtcOffsetFromUserPrefs) {
-    // The user's browser has just told Habitica that the user's timezone has
+    // The user's browser has just told slay that the user's timezone has
     // changed so store and use the new zone.
     this.preferences.timezoneOffset = -timezoneUtcOffsetFromBrowser;
     timezoneUtcOffsetFromUserPrefs = timezoneUtcOffsetFromBrowser;

@@ -1,10 +1,10 @@
 import {
-  generateUser,
-  generateChallenge,
   createAndPopulateGroup,
+  generateChallenge,
+  generateUser,
   translate as t,
 } from '../../../../helpers/api-integration/v3';
-import { TAVERN_ID } from '../../../../../website/common/script/constants';
+import {TAVERN_ID} from '../../../../../website/common/script/constants';
 
 describe('GET challenges/groups/:groupId', () => {
   context('Public Guild', () => {

@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
+import {storiesOf} from '@storybook/vue';
 
 import MemberDetails from './memberDetails.vue';
 import MemberDetailsNew from './memberDetailsNew.vue';
-import { userStyles } from '../../config/storybook/mock.data';
+import {userStyles} from '../../config/storybook/mock.data';
 
 storiesOf('Member Details', module)
   .add('party header (old)', () => ({

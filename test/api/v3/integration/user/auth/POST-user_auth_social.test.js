@@ -1,10 +1,5 @@
 import passport from 'passport';
-import {
-  generateUser,
-  requester,
-  translate as t,
-  getProperty,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser, getProperty, requester, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST /user/auth/social', () => {
   let api;

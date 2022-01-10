@@ -1,4 +1,4 @@
-import { model as PushDevice } from '../../../../website/server/models/pushDevice';
+import {model as PushDevice} from '../../../../website/server/models/pushDevice';
 
 describe('PushDevice Model', () => {
   context('cleanupCorruptData', () => {

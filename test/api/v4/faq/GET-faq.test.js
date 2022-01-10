@@ -1,7 +1,4 @@
-import {
-  requester,
-  translate,
-} from '../../../helpers/api-integration/v4';
+import {requester, translate,} from '../../../helpers/api-integration/v4';
 import i18n from '../../../../website/common/script/i18n';
 
 describe('GET /faq', () => {

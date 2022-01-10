@@ -3,11 +3,7 @@ import pick from 'lodash/pick';
 import content from '../content/index';
 import i18n from '../i18n';
 import splitWhitespace from '../libs/splitWhitespace';
-import {
-  NotFound,
-  NotAuthorized,
-  BadRequest,
-} from '../libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../libs/errors';
 
 // @TODO: 'special' type throws NotAuthorized error
 const ACCEPTEDTYPES = ['eggs', 'hatchingPotions', 'food'];

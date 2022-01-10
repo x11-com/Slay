@@ -2,7 +2,6 @@ import mongoose from 'mongoose';
 
 import logger from '../../libs/logger';
 import schema from './schema'; // eslint-disable-line import/no-cycle
-
 import './hooks'; // eslint-disable-line import/no-cycle
 import './methods'; // eslint-disable-line import/no-cycle
 

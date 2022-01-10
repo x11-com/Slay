@@ -1,10 +1,10 @@
 // TODO move to shared tests
 import {
-  CustomError,
-  NotAuthorized,
   BadRequest,
+  CustomError,
   Forbidden,
   InternalServerError,
+  NotAuthorized,
   NotFound,
   NotificationNotFound,
 } from '../../../../website/server/libs/errors';

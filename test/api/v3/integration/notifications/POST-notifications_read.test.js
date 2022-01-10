@@ -1,8 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /notifications/read', () => {
   let user;

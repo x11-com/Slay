@@ -1,8 +1,4 @@
-import {
-  generateUser,
-  generateChallenge,
-  createAndPopulateGroup,
-} from '../../../../helpers/api-integration/v3';
+import {createAndPopulateGroup, generateChallenge, generateUser,} from '../../../../helpers/api-integration/v3';
 
 describe('GET challenges/user', () => {
   context('no official challenges', () => {

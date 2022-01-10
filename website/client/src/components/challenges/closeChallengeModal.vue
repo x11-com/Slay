@@ -86,7 +86,7 @@
       padding-top: 2em;
     }
 
-    .support-habitica {
+    .support-slay {
       background-image: url('~@/assets/svg/for-css/support-habitica-gems.svg');
       width: 325px;
       height: 89px;

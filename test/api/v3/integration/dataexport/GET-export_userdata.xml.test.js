@@ -1,8 +1,6 @@
 import xml2js from 'xml2js';
 import util from 'util';
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 
 const parseStringAsync = util.promisify(xml2js.parseString).bind(xml2js);
 

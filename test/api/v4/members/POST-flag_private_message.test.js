@@ -1,7 +1,4 @@
-import {
-  generateUser,
-  translate as t,
-} from '../../../helpers/api-integration/v4';
+import {generateUser, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('POST /members/flag-private-message/:messageId', () => {
   let userToSendMessage;

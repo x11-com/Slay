@@ -1,9 +1,6 @@
 import filter from 'lodash/filter';
 import moment from 'moment';
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  TAVERN_ID as tavernId,
-} from '../models/group';
+import {model as Group, TAVERN_ID as tavernId,} from '../models/group';
 import common from '../../common';
 
 export async function getWorldBoss () {

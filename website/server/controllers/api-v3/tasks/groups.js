@@ -1,21 +1,11 @@
-import { authWithHeaders } from '../../../middlewares/auth';
+import {authWithHeaders} from '../../../middlewares/auth';
 import * as Tasks from '../../../models/task';
-import { model as Group } from '../../../models/group';
-import { model as User } from '../../../models/user';
-import {
-  BadRequest,
-  NotFound,
-  NotAuthorized,
-} from '../../../libs/errors';
-import {
-  canNotEditTasks,
-  createTasks,
-  getTasks,
-} from '../../../libs/tasks';
-import {
-  moveTask,
-} from '../../../libs/tasks/utils';
-import { handleSharedCompletion } from '../../../libs/groupTasks';
+import {model as Group} from '../../../models/group';
+import {model as User} from '../../../models/user';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../libs/errors';
+import {canNotEditTasks, createTasks, getTasks,} from '../../../libs/tasks';
+import {moveTask,} from '../../../libs/tasks/utils';
+import {handleSharedCompletion} from '../../../libs/groupTasks';
 import apiError from '../../../libs/apiError';
 import logger from '../../../libs/logger';
 

@@ -1,11 +1,6 @@
 import moment from 'moment';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../../helpers/api-integration/v3';
-import {
-  decrypt,
-} from '../../../../../../website/server/libs/encryption';
+import {generateUser, translate as t,} from '../../../../../helpers/api-integration/v3';
+import {decrypt,} from '../../../../../../website/server/libs/encryption';
 
 describe('POST /user/reset-password', async () => {
   const endpoint = '/user/reset-password';

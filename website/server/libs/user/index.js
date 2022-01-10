@@ -1,13 +1,10 @@
 import _ from 'lodash';
 import common from '../../../common';
 import * as Tasks from '../../models/task';
-import {
-  BadRequest,
-  NotAuthorized,
-} from '../errors';
-import { model as User, schema as UserSchema } from '../../models/user';
-import { model as NewsPost } from '../../models/newsPost';
-import { stringContainsProfanity, nameContainsNewline } from './validation';
+import {BadRequest, NotAuthorized,} from '../errors';
+import {model as User, schema as UserSchema} from '../../models/user';
+import {model as NewsPost} from '../../models/newsPost';
+import {nameContainsNewline, stringContainsProfanity} from './validation';
 
 export async function get (req, res, { isV3 = false }) {
   const { user } = res.locals;

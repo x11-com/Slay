@@ -1,7 +1,5 @@
-import {
-  NotFound,
-} from '../libs/errors';
-import { serveClient } from '../libs/client';
+import {NotFound,} from '../libs/errors';
+import {serveClient} from '../libs/client';
 
 // Serve the client side unless the route starts with one of these strings
 // in which case, respond with a 404 error.

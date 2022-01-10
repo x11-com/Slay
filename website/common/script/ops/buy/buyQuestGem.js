@@ -1,13 +1,9 @@
 import get from 'lodash/get';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
 import content from '../../content/index';
 
 import errorMessage from '../../libs/errorMessage';
-import { AbstractGemItemOperation } from './abstractBuyOperation';
+import {AbstractGemItemOperation} from './abstractBuyOperation';
 
 export class BuyQuestWithGemOperation extends AbstractGemItemOperation { // eslint-disable-line import/prefer-default-export, max-len
   multiplePurchaseAllowed () { // eslint-disable-line class-methods-use-this

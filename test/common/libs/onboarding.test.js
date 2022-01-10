@@ -1,10 +1,10 @@
 import moment from 'moment';
 import {
+  checkOnboardingStatus,
   hasCompletedOnboarding,
   onOnboardingComplete,
-  checkOnboardingStatus,
 } from '../../../website/common/script/libs/onboarding';
-import { generateUser } from '../../helpers/common.helper';
+import {generateUser} from '../../helpers/common.helper';
 
 describe('onboarding', () => {
   let user;

@@ -1,8 +1,4 @@
-import {
-  generateUser,
-  requester,
-  resetHabiticaDB,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, requester, resetHabiticaDB,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /coupons/validate/:code', () => {
   const api = requester();

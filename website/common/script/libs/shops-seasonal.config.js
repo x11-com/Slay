@@ -1,10 +1,7 @@
 import find from 'lodash/find';
 import upperFirst from 'lodash/upperFirst';
 import moment from 'moment';
-import {
-  EVENTS,
-  SEASONAL_SETS,
-} from '../content/constants';
+import {EVENTS, SEASONAL_SETS,} from '../content/constants';
 
 const CURRENT_EVENT = find(
   EVENTS, event => moment().isBetween(event.start, event.end) && Boolean(event.season),

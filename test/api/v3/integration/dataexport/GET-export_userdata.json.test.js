@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /export/userdata.json', () => {
   it('should return a valid JSON file with user data', async () => {

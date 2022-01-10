@@ -1,6 +1,4 @@
 {
-   
-    "jsDisabledHeadingFull": "Harmin paikka! JavaScript ei ole käytössä selaimessasi ja ilman sitä Habitica ei toimi kunnolla",
-   
-    "jsDisabledLink": "Ole hyvä ja ota JavaScript käyttöön jatkaaksesi!"
+  "jsDisabledHeadingFull": "Harmin paikka! JavaScript ei ole käytössä selaimessasi ja ilman sitä slay ei toimi kunnolla",
+  "jsDisabledLink": "Ole hyvä ja ota JavaScript käyttöön jatkaaksesi!"
 }

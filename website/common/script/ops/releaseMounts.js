@@ -1,9 +1,7 @@
 import content from '../content/index';
-import { mountMasterProgress } from '../count';
+import {mountMasterProgress} from '../count';
 import i18n from '../i18n';
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {NotAuthorized,} from '../libs/errors';
 
 export default function releaseMounts (user, req = {}, analytics) {
   if (user.balance < 1) {

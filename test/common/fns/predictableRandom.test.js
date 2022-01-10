@@ -1,7 +1,5 @@
 import predictableRandom from '../../../website/common/script/fns/predictableRandom';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.fns.predictableRandom', () => {
   let user;

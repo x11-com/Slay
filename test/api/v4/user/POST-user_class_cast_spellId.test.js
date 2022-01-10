@@ -1,12 +1,12 @@
-import { v4 as generateUUID } from 'uuid';
-import { find } from 'lodash';
+import {v4 as generateUUID} from 'uuid';
+import {find} from 'lodash';
 import {
-  generateUser,
-  translate as t,
   createAndPopulateGroup,
-  generateGroup,
   generateChallenge,
+  generateGroup,
+  generateUser,
   sleep,
+  translate as t,
 } from '../../../helpers/api-integration/v4';
 import apiError from '../../../../website/server/libs/apiError';
 

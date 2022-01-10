@@ -1,32 +1,18 @@
 import _ from 'lodash';
 import nconf from 'nconf';
-import { authWithHeaders } from '../../middlewares/auth';
-import {
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../models/group';
-import {
-  model as User,
-  nameFields,
-} from '../../models/user';
-import {
-  NotFound,
-  BadRequest,
-  NotAuthorized,
-} from '../../libs/errors';
-import { removeFromArray } from '../../libs/collectionManipulators';
-import { sendTxn as sendTxnEmail } from '../../libs/email';
-import {
-  inviteByUUID,
-  inviteByEmail,
-  inviteByUserName,
-} from '../../libs/invites';
+import {authWithHeaders} from '../../middlewares/auth';
+import {basicFields as basicGroupFields, model as Group,} from '../../models/group';
+import {model as User, nameFields,} from '../../models/user';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
+import {removeFromArray} from '../../libs/collectionManipulators';
+import {sendTxn as sendTxnEmail} from '../../libs/email';
+import {inviteByEmail, inviteByUserName, inviteByUUID,} from '../../libs/invites';
 import common from '../../../common';
 import payments from '../../libs/payments/payments';
 import stripePayments from '../../libs/payments/stripe';
 import amzLib from '../../libs/payments/amazon';
 import apiError from '../../libs/apiError';
-import { model as UserNotification } from '../../models/userNotification';
+import {model as UserNotification} from '../../models/userNotification';
 
 const MAX_EMAIL_INVITES_BY_USER = 200;
 const TECH_ASSISTANCE_EMAIL = nconf.get('EMAILS_TECH_ASSISTANCE_EMAIL');

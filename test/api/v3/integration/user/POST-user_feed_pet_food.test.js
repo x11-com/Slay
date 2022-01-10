@@ -1,12 +1,7 @@
 /* eslint-disable camelcase */
 
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-  server,
-  sleep,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateUser, server, sleep, translate as t,} from '../../../../helpers/api-integration/v3';
 import content from '../../../../../website/common/script/content';
 
 describe('POST /user/feed/:pet/:food', () => {

@@ -2,20 +2,14 @@ import nconf from 'nconf';
 import moment from 'moment';
 
 import logger from '../../logger';
-import { model as User } from '../../../models/user'; // eslint-disable-line import/no-cycle
-import { getStripeApi } from './api';
-import {
-  BadRequest,
-  NotFound,
-} from '../../errors';
+import {model as User} from '../../../models/user'; // eslint-disable-line import/no-cycle
+import {getStripeApi} from './api';
+import {BadRequest, NotFound,} from '../../errors';
 import payments from '../payments'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../../models/group';
+import {basicFields as basicGroupFields, model as Group,} from '../../../models/group';
 import shared from '../../../../common';
-import { applyGemPayment } from './oneTimePayments'; // eslint-disable-line import/no-cycle
-import { applySubscription, handlePaymentMethodChange } from './subscriptions'; // eslint-disable-line import/no-cycle
+import {applyGemPayment} from './oneTimePayments'; // eslint-disable-line import/no-cycle
+import {applySubscription, handlePaymentMethodChange} from './subscriptions'; // eslint-disable-line import/no-cycle
 
 const endpointSecret = nconf.get('STRIPE_WEBHOOKS_ENDPOINT_SECRET');
 

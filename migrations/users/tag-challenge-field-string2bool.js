@@ -1,4 +1,4 @@
-import { model as User } from '../../website/server/models/user';
+import {model as User} from '../../website/server/models/user';
 
 const MIGRATION_NAME = 'tag-challenge-field-string2bool';
 

@@ -1,13 +1,10 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
-import { encrypt } from '../../../../../website/server/libs/encryption';
+import {v4 as generateUUID} from 'uuid';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
+import {encrypt} from '../../../../../website/server/libs/encryption';
 
 describe('GET /email/unsubscribe', () => {
   let user;
-  const testEmail = 'test@habitica.com';
+  const testEmail = 'test@s1ay.com';
 
   beforeEach(async () => {
     user = await generateUser();

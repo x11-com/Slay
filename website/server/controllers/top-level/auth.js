@@ -1,4 +1,4 @@
-import { validatePasswordResetCodeAndFindUser } from '../../libs/password';
+import {validatePasswordResetCodeAndFindUser} from '../../libs/password';
 
 const api = {};
 

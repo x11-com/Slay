@@ -1,4 +1,4 @@
-import { EVENTS } from '@/libs/events';
+import {EVENTS} from '@/libs/events';
 
 export default {
   methods: {

@@ -1,8 +1,5 @@
 import moment from 'moment';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 let user;
 const endpoint = '/user/custom-day-start';

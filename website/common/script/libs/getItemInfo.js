@@ -1,7 +1,7 @@
 import _mapValues from 'lodash/mapValues';
 import i18n from '../i18n';
 import content from '../content/index';
-import { BadRequest } from './errors';
+import {BadRequest} from './errors';
 import * as count from '../count';
 
 import isPinned from './isPinned';

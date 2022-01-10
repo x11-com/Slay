@@ -1,7 +1,4 @@
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /user/read-card/:cardType', () => {
   let user;

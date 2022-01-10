@@ -2,7 +2,7 @@ import moment from 'moment';
 
 import taskDefaults from '../../../website/common/script/libs/taskDefaults';
 import getUtcOffset from '../../../website/common/script/fns/getUtcOffset';
-import { generateUser } from '../../helpers/common.helper';
+import {generateUser} from '../../helpers/common.helper';
 
 describe('taskDefaults', () => {
   it('applies defaults to undefined type or habit', () => {

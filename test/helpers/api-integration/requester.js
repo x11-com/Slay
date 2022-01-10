@@ -2,7 +2,7 @@
 
 import superagent from 'superagent';
 import nconf from 'nconf';
-import { isEmpty, cloneDeep } from 'lodash';
+import {cloneDeep, isEmpty} from 'lodash';
 
 const API_TEST_SERVER_PORT = nconf.get('PORT');
 let apiVersion;

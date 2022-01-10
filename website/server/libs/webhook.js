@@ -1,11 +1,9 @@
 import got from 'got';
-import { isURL } from 'validator';
+import {isURL} from 'validator';
 import nconf from 'nconf';
 import moment from 'moment';
 import logger from './logger';
-import { // eslint-disable-line import/no-cycle
-  model as User,
-} from '../models/user';
+import {model as User,} from '../models/user';
 
 const IS_PRODUCTION = nconf.get('IS_PROD');
 

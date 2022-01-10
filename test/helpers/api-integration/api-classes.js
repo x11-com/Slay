@@ -1,17 +1,12 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable max-classes-per-file */
 import moment from 'moment';
-import {
-  assign,
-  each,
-  isEmpty,
-  set,
-} from 'lodash';
-import { requester } from './requester';
+import {assign, each, isEmpty, set,} from 'lodash';
+import {requester} from './requester';
 import {
   getDocument as getDocumentFromMongo,
-  updateDocument as updateDocumentInMongo,
   unsetDocument as unsetDocumentInMongo,
+  updateDocument as updateDocumentInMongo,
 } from '../mongo';
 
 class ApiObject {

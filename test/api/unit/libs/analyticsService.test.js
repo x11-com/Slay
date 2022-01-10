@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import nconf from 'nconf';
 import Amplitude from 'amplitude';
-import { Visitor } from 'universal-analytics';
+import {Visitor} from 'universal-analytics';
 import * as analyticsService from '../../../../website/server/libs/analyticsService';
 
 describe('analyticsService', () => {

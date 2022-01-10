@@ -2,14 +2,11 @@ import nconf from 'nconf';
 import moment from 'moment';
 
 import ChatReporter from './chatReporter';
-import {
-  BadRequest,
-  NotFound,
-} from '../errors';
-import { sendTxn } from '../email';
+import {BadRequest, NotFound,} from '../errors';
+import {sendTxn} from '../email';
 import * as slack from '../slack';
-import { model as Group } from '../../models/group';
-import { chatModel as Chat } from '../../models/message';
+import {model as Group} from '../../models/group';
+import {chatModel as Chat} from '../../models/message';
 import apiError from '../apiError';
 
 const COMMUNITY_MANAGER_EMAIL = nconf.get('EMAILS_COMMUNITY_MANAGER_EMAIL');

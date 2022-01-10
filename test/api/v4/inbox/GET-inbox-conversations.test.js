@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../helpers/api-integration/v4';
+import {generateUser,} from '../../../helpers/api-integration/v4';
 
 describe('GET /inbox/conversations', () => {
   let user;

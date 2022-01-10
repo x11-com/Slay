@@ -1,10 +1,8 @@
 /* eslint-disable camelcase */
 import paypalPayments from '../../../../../../website/server/libs/payments/paypal';
 import payments from '../../../../../../website/server/libs/payments/payments';
-import {
-  generateGroup,
-} from '../../../../../helpers/api-unit.helper';
-import { model as User } from '../../../../../../website/server/models/user';
+import {generateGroup,} from '../../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../../website/server/models/user';
 
 describe('paypal - ipn', () => {
   const subKey = 'basic_3mo';

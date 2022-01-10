@@ -1,7 +1,7 @@
 import {
-  generateUser,
-  generateChallenge,
   createAndPopulateGroup,
+  generateChallenge,
+  generateUser,
   translate as t,
 } from '../../../../helpers/api-integration/v3';
 

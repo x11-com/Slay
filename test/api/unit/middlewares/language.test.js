@@ -1,14 +1,7 @@
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
-import {
-  getUserLanguage,
-  attachTranslateFunction,
-} from '../../../../website/server/middlewares/language';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
+import {attachTranslateFunction, getUserLanguage,} from '../../../../website/server/middlewares/language';
 import common from '../../../../website/common';
-import { model as User } from '../../../../website/server/models/user';
+import {model as User} from '../../../../website/server/models/user';
 
 const { i18n } = common;
 

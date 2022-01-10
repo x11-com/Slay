@@ -3,7 +3,7 @@ import moment from 'moment';
 import payments from '../../../../../website/server/libs/payments/payments';
 import googlePayments from '../../../../../website/server/libs/payments/google';
 import iap from '../../../../../website/server/libs/inAppPurchases';
-import { model as User } from '../../../../../website/server/models/user';
+import {model as User} from '../../../../../website/server/models/user';
 import common from '../../../../../website/common';
 import * as gems from '../../../../../website/server/libs/payments/gems';
 

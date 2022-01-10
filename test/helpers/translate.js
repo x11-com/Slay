@@ -1,5 +1,5 @@
 import i18n from '../../website/common/script/i18n';
-import { translations } from '../../website/server/libs/i18n';
+import {translations} from '../../website/server/libs/i18n';
 
 i18n.translations = translations;
 

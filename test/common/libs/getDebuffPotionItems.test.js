@@ -1,9 +1,7 @@
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 import getDebuffPotionItems from '../../../website/common/script/libs/getDebuffPotionItems';
-import { TRANSFORMATION_DEBUFFS_LIST } from '../../../website/common/script/constants';
+import {TRANSFORMATION_DEBUFFS_LIST} from '../../../website/common/script/constants';
 
 describe('getDebuffPotionItems', () => {
   let user;

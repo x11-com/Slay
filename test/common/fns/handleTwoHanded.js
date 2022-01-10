@@ -1,9 +1,7 @@
 import handleTwoHanded from '../../../website/common/script/fns/handleTwoHanded';
 import content from '../../../website/common/script/content/index';
 import i18n from '../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.fns.handleTwoHanded', () => {
   let user;

@@ -1,20 +1,16 @@
 import moment from 'moment';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../errors';
 import * as passwordUtils from '../password';
-import { model as User } from '../../models/user';
-import { model as EmailUnsubscription } from '../../models/emailUnsubscription';
-import { sendTxn as sendTxnEmail } from '../email';
+import {model as User} from '../../models/user';
+import {model as EmailUnsubscription} from '../../models/emailUnsubscription';
+import {sendTxn as sendTxnEmail} from '../email';
 import common from '../../../common';
 import logger from '../logger';
-import { decrypt } from '../encryption';
-import { model as Group } from '../../models/group';
-import { loginSocial } from './social';
-import { loginRes } from './utils';
-import { verifyUsername } from '../user/validation';
+import {decrypt} from '../encryption';
+import {model as Group} from '../../models/group';
+import {loginSocial} from './social';
+import {loginRes} from './utils';
+import {verifyUsername} from '../user/validation';
 
 const USERNAME_LENGTH_MIN = 1;
 const USERNAME_LENGTH_MAX = 20;

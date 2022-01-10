@@ -1,10 +1,8 @@
-import { authWithHeaders } from '../../middlewares/auth';
+import {authWithHeaders} from '../../middlewares/auth';
 import apiError from '../../libs/apiError';
-import {
-  NotFound,
-} from '../../libs/errors';
-import { listConversations } from '../../libs/inbox/conversation.methods';
-import { clearPMs, deleteMessage, getUserInbox } from '../../libs/inbox';
+import {NotFound,} from '../../libs/errors';
+import {listConversations} from '../../libs/inbox/conversation.methods';
+import {clearPMs, deleteMessage, getUserInbox} from '../../libs/inbox';
 
 const api = {};
 

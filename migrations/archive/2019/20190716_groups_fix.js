@@ -3,9 +3,9 @@ const MIGRATION_NAME = '20190716_groups_fix';
 
 import monk from 'monk';
 import nconf from 'nconf';
-const CONNECTION_STRING = nconf.get('MIGRATION_CONNECT_STRING');
+import {model as User} from '../../../website/server/models/user';
 
-import { model as User } from '../../../website/server/models/user';
+const CONNECTION_STRING = nconf.get('MIGRATION_CONNECT_STRING');
 
 const progressCount = 1000;
 let count = 0;

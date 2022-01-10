@@ -1,19 +1,15 @@
 /* eslint-disable camelcase */
 
 import moment from 'moment';
+import {encrypt,} from '../../../../website/server/libs/encryption';
+import {generateUser,} from '../../../helpers/api-integration/v3';
 import {
-  encrypt,
-} from '../../../../website/server/libs/encryption';
-import {
-  generateUser,
-} from '../../../helpers/api-integration/v3';
-import {
-  sha1Encrypt as sha1EncryptPassword,
-  sha1MakeSalt,
-  bcryptHash,
   bcryptCompare,
+  bcryptHash,
   compare,
   convertToBcrypt,
+  sha1Encrypt as sha1EncryptPassword,
+  sha1MakeSalt,
   validatePasswordResetCodeAndFindUser,
 } from '../../../../website/server/libs/password';
 

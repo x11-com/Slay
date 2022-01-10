@@ -1,9 +1,6 @@
 /* eslint-disable camelcase */
 
-import {
-  generateUser,
-  translate as t,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser, translate as t,} from '../../../../../helpers/api-integration/v3';
 import shared from '../../../../../../website/common/script';
 import apiError from '../../../../../../website/server/libs/apiError';
 

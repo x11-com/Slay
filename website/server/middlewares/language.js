@@ -1,12 +1,7 @@
-import { model as User } from '../models/user';
+import {model as User} from '../models/user';
 import common from '../../common';
-import {
-  translations,
-} from '../libs/i18n';
-import {
-  getLanguageFromUser,
-  getLanguageFromBrowser,
-} from '../libs/language';
+import {translations,} from '../libs/i18n';
+import {getLanguageFromBrowser, getLanguageFromUser,} from '../libs/language';
 
 const { i18n } = common;
 

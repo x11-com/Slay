@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 
 import getOfficialPinnedItems from '../../../../../website/common/script/libs/getOfficialPinnedItems';
 import content from '../../../../../website/common/script/content';

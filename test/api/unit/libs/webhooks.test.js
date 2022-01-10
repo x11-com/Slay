@@ -1,21 +1,15 @@
 import got from 'got';
 import moment from 'moment';
 import {
-  WebhookSender,
-  taskScoredWebhook,
   groupChatReceivedWebhook,
-  taskActivityWebhook,
   questActivityWebhook,
+  taskActivityWebhook,
+  taskScoredWebhook,
   userActivityWebhook,
+  WebhookSender,
 } from '../../../../website/server/libs/webhook';
-import {
-  model as User,
-} from '../../../../website/server/models/user';
-import {
-  generateUser,
-  defer,
-  sleep,
-} from '../../../helpers/api-unit.helper';
+import {model as User,} from '../../../../website/server/models/user';
+import {defer, generateUser, sleep,} from '../../../helpers/api-unit.helper';
 import logger from '../../../../website/server/libs/logger';
 
 describe('webhooks', () => {

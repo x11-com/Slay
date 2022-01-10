@@ -1,5 +1,5 @@
 import range from 'lodash/range';
-import { MAX_INCENTIVES } from '../constants';
+import {MAX_INCENTIVES} from '../constants';
 
 // NOTE do not import this file alone but only access it through common.content
 // so that it's already compiled

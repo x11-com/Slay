@@ -1,8 +1,5 @@
-import {
-  generateUser,
-  requester,
-} from '../../../../helpers/api-integration/v3';
-import { mockAnalyticsService as analytics } from '../../../../../website/server/libs/analyticsService';
+import {generateUser, requester,} from '../../../../helpers/api-integration/v3';
+import {mockAnalyticsService as analytics} from '../../../../../website/server/libs/analyticsService';
 
 describe('POST /analytics/track/:eventName', () => {
   it('calls res.analytics', async () => {

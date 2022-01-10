@@ -1,8 +1,6 @@
 /* eslint-disable camelcase */
 
-import {
-  generateUser,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../../helpers/api-integration/v3';
 import apiError from '../../../../../../website/server/libs/apiError';
 
 describe('POST /user/buy-gear/:key', () => {

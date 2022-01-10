@@ -1,8 +1,8 @@
 /* eslint-disable global-require */
 import nconf from 'nconf';
-import { generateUser } from '../../../helpers/api-unit.helper';
+import {generateUser} from '../../../helpers/api-unit.helper';
 import * as emailLib from '../../../../website/server/libs/email';
-import { bugReportLogic } from '../../../../website/server/libs/bug-report';
+import {bugReportLogic} from '../../../../website/server/libs/bug-report';
 
 describe('bug-report', () => {
   beforeEach(() => {

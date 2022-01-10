@@ -2,9 +2,9 @@ import Vue from 'vue';
 
 import notifications from './notifications';
 import scoreTask from '@/../../common/script/ops/scoreTask';
-import { mapState } from '@/libs/store';
+import {mapState} from '@/libs/store';
 import * as Analytics from '@/libs/analytics';
-import { CONSTANTS, getLocalSetting, setLocalSetting } from '@/libs/userlocalManager';
+import {CONSTANTS, getLocalSetting, setLocalSetting} from '@/libs/userlocalManager';
 
 export default {
   mixins: [notifications],

@@ -1,8 +1,6 @@
 import each from 'lodash/each';
 import i18n from '../i18n';
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {NotAuthorized,} from '../libs/errors';
 
 export default function reroll (user, tasks = [], req = {}, analytics) {
   if (user.balance < 1) {

@@ -1,9 +1,5 @@
-import {
-  authWithHeaders,
-} from '../../../middlewares/auth';
-import {
-  BadRequest,
-} from '../../../libs/errors';
+import {authWithHeaders,} from '../../../middlewares/auth';
+import {BadRequest,} from '../../../libs/errors';
 import googlePayments from '../../../libs/payments/google';
 import applePayments from '../../../libs/payments/apple';
 

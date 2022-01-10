@@ -1,16 +1,11 @@
-import { // eslint-disable-line import/no-cycle
+import {
   addSubscriptionToGroupUsers,
   addSubToGroupUser,
-  cancelGroupUsersSubscription,
   cancelGroupSubscriptionForUser,
+  cancelGroupUsersSubscription,
 } from './groupPayments';
-import { // eslint-disable-line import/no-cycle
-  createSubscription,
-  cancelSubscription,
-} from './subscriptions';
-import { // eslint-disable-line import/no-cycle
-  buyGems,
-} from './gems';
+import {cancelSubscription, createSubscription,} from './subscriptions';
+import {buyGems,} from './gems';
 
 const api = {};
 

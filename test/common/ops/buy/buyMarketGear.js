@@ -1,15 +1,11 @@
 /* eslint-disable camelcase */
 
 import sinon from 'sinon'; // eslint-disable-line no-shadow
-import { defaultsDeep } from 'lodash';
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
-import { BuyMarketGearOperation } from '../../../../website/common/script/ops/buy/buyMarketGear';
+import {defaultsDeep} from 'lodash';
+import {generateUser,} from '../../../helpers/common.helper';
+import {BuyMarketGearOperation} from '../../../../website/common/script/ops/buy/buyMarketGear';
 import shared from '../../../../website/common/script';
-import {
-  BadRequest, NotAuthorized, NotFound,
-} from '../../../../website/common/script/libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
 

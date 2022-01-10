@@ -1,9 +1,7 @@
 import content from '../../content/index';
-import {
-  NotAuthorized,
-} from '../../libs/errors';
+import {NotAuthorized,} from '../../libs/errors';
 
-import { AbstractGoldItemOperation } from './abstractBuyOperation';
+import {AbstractGoldItemOperation} from './abstractBuyOperation';
 
 export class BuyHealthPotionOperation extends AbstractGoldItemOperation { // eslint-disable-line import/prefer-default-export, max-len
   multiplePurchaseAllowed () { // eslint-disable-line class-methods-use-this

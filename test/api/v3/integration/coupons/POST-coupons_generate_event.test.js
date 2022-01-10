@@ -1,9 +1,5 @@
 import couponCode from 'coupon-code';
-import {
-  generateUser,
-  translate as t,
-  resetHabiticaDB,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
 import apiError from '../../../../../website/server/libs/apiError';
 
 describe('POST /coupons/generate/:event', () => {

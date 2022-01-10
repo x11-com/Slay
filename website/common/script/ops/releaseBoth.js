@@ -1,10 +1,8 @@
 import pick from 'lodash/pick';
 import content from '../content/index';
-import { beastMasterProgress, mountMasterProgress } from '../count';
+import {beastMasterProgress, mountMasterProgress} from '../count';
 import i18n from '../i18n';
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {NotAuthorized,} from '../libs/errors';
 import splitWhitespace from '../libs/splitWhitespace';
 
 export default function releaseBoth (user, req = {}) {

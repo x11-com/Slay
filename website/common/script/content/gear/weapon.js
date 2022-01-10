@@ -1,15 +1,15 @@
 import t from '../translation';
 
-import { weapon as baseWeapon } from './sets/base';
+import {weapon as baseWeapon} from './sets/base';
 
-import { weapon as healerWeapon } from './sets/healer';
-import { weapon as rogueWeapon } from './sets/rogue';
-import { weapon as warriorWeapon } from './sets/warrior';
-import { weapon as wizardWeapon } from './sets/wizard';
+import {weapon as healerWeapon} from './sets/healer';
+import {weapon as rogueWeapon} from './sets/rogue';
+import {weapon as warriorWeapon} from './sets/warrior';
+import {weapon as wizardWeapon} from './sets/wizard';
 
-import { weapon as armoireWeapon } from './sets/armoire';
-import { weapon as mysteryWeapon } from './sets/mystery';
-import { weapon as specialWeapon } from './sets/special';
+import {weapon as armoireWeapon} from './sets/armoire';
+import {weapon as mysteryWeapon} from './sets/mystery';
+import {weapon as specialWeapon} from './sets/special';
 
 const weapon = {
   base: baseWeapon,

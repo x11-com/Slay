@@ -2,10 +2,10 @@ import apn from '@parse/node-apn/mock';
 import _ from 'lodash';
 import nconf from 'nconf';
 import gcmLib from 'node-gcm'; // works with FCM notifications too
-import { model as User } from '../../../../website/server/models/user';
+import {model as User} from '../../../../website/server/models/user';
 import {
-  sendNotification as sendPushNotification,
   MAX_MESSAGE_LENGTH,
+  sendNotification as sendPushNotification,
 } from '../../../../website/server/libs/pushNotifications';
 
 describe('pushNotifications', () => {

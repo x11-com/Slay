@@ -1,4 +1,4 @@
-import { generateUser } from '../../../../../helpers/api-integration/v3';
+import {generateUser} from '../../../../../helpers/api-integration/v3';
 import applePayments from '../../../../../../website/server/libs/payments/apple';
 
 describe('payments : apple #cancelSubscribe', () => {

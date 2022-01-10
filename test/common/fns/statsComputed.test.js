@@ -1,7 +1,5 @@
 import statsComputed from '../../../website/common/script/libs/statsComputed';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('common.fns.statsComputed', () => {
   let user;

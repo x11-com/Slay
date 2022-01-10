@@ -1,11 +1,11 @@
 import apiError from '../../../../../../website/server/libs/apiError';
 import common from '../../../../../../website/common';
 import {
-  getOneTimePaymentInfo,
   applyGemPayment,
+  getOneTimePaymentInfo,
 } from '../../../../../../website/server/libs/payments/stripe/oneTimePayments';
 import * as subscriptions from '../../../../../../website/server/libs/payments/stripe/subscriptions';
-import { model as User } from '../../../../../../website/server/models/user';
+import {model as User} from '../../../../../../website/server/models/user';
 import payments from '../../../../../../website/server/libs/payments/payments';
 
 const { i18n } = common;

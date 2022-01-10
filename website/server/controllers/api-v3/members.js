@@ -1,32 +1,18 @@
 import escapeRegExp from 'lodash/escapeRegExp';
-import { authWithHeaders } from '../../middlewares/auth';
-import {
-  model as User,
-  publicFields as memberFields,
-  nameFields,
-} from '../../models/user';
-import {
-  KNOWN_INTERACTIONS,
-} from '../../models/user/methods';
-import { model as Group } from '../../models/group';
-import { model as Challenge } from '../../models/challenge';
-import {
-  NotFound,
-  NotAuthorized,
-} from '../../libs/errors';
+import {authWithHeaders} from '../../middlewares/auth';
+import {model as User, nameFields, publicFields as memberFields,} from '../../models/user';
+import {KNOWN_INTERACTIONS,} from '../../models/user/methods';
+import {model as Group} from '../../models/group';
+import {model as Challenge} from '../../models/challenge';
+import {NotAuthorized, NotFound,} from '../../libs/errors';
 import * as Tasks from '../../models/task';
-import {
-  getUserInfo,
-  sendTxn as sendTxnEmail,
-} from '../../libs/email';
-import { sendNotification as sendPushNotification } from '../../libs/pushNotifications';
+import {getUserInfo, sendTxn as sendTxnEmail,} from '../../libs/email';
+import {sendNotification as sendPushNotification} from '../../libs/pushNotifications';
 import common from '../../../common';
-import { sentMessage } from '../../libs/inbox';
-import {
-  sanitizeText as sanitizeMessageText,
-} from '../../models/message';
+import {sentMessage} from '../../libs/inbox';
+import {sanitizeText as sanitizeMessageText,} from '../../models/message';
 import highlightMentions from '../../libs/highlightMentions';
-import { handleGetMembersForChallenge } from '../../libs/challenges/handleGetMembersForChallenge';
+import {handleGetMembersForChallenge} from '../../libs/challenges/handleGetMembersForChallenge';
 
 const { achievements } = common;
 
@@ -216,7 +202,7 @@ api.getMemberByUsername = {
  *     label: "Seasonal",
  *     achievements: {
  *       habiticaDays: {
- *         title: "Habitica Naming Day",
+ *         title: "slay Naming Day",
  *         text: "Celebrated 0 Naming Days! Thanks for being a fantastic user.",
  *         icon: "achievement-habiticaDay",
  *         earned: false,
@@ -230,8 +216,8 @@ api.getMemberByUsername = {
  *     label: "Special",
  *     achievements: {
  *       habitSurveys: {
- *         title: "Helped Habitica Grow",
- *         text: "Helped Habitica grow on 0 occasions, either by filling out
+ *         title: "Helped slay Grow",
+ *         text: "Helped slay grow on 0 occasions, either by filling out
  *               a survey or helping with a major testing effort. Thank you!",
  *         icon: "achievement-tree",
  *         earned: false,

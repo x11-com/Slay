@@ -1,7 +1,7 @@
 import escapeRegExp from 'lodash/escapeRegExp';
 import habiticaMarkdown from 'habitica-markdown';
 
-import { model as User } from '../models/user';
+import {model as User} from '../models/user';
 import logger from './logger';
 
 const mentionRegex = /\B@[-\w]+/g;
@@ -146,7 +146,7 @@ function findTextBlocks (text) {
 
 function determineBaseUrl () {
   // eslint-disable-next-line no-process-env
-  return process.env.NODE_ENV === 'production' ? 'https://habitica.com' : '';
+  return process.env.NODE_ENV === 'production' ? 'https://s1ay.com' : '';
 }
 
 /**

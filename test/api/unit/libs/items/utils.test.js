@@ -1,9 +1,5 @@
 /* eslint-disable camelcase */
-import {
-  validateItemPath,
-  getDefaultOwnedGear,
-  castItemVal,
-} from '../../../../../website/server/libs/items/utils';
+import {castItemVal, getDefaultOwnedGear, validateItemPath,} from '../../../../../website/server/libs/items/utils';
 
 describe('Items Utils', () => {
   describe('getDefaultOwnedGear', () => {

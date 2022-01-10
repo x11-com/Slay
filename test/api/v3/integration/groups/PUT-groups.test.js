@@ -1,8 +1,4 @@
-import {
-  createAndPopulateGroup,
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('PUT /group', () => {
   let leader; let nonLeader; let groupToUpdate; let

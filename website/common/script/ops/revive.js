@@ -3,13 +3,11 @@ import reduce from 'lodash/reduce';
 import each from 'lodash/each';
 import i18n from '../i18n';
 import content from '../content/index';
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {NotAuthorized,} from '../libs/errors';
 import randomVal from '../libs/randomVal';
 import predictableRandom from '../fns/predictableRandom';
 
-import { removePinnedGearByClass, addPinnedGearByClass, addPinnedGear } from './pinnedGearUtils';
+import {addPinnedGear, addPinnedGearByClass, removePinnedGearByClass} from './pinnedGearUtils';
 import getItemInfo from '../libs/getItemInfo';
 
 export default function revive (user, req = {}, analytics) {

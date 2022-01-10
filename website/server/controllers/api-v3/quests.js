@@ -1,24 +1,14 @@
 import _ from 'lodash';
-import { authWithHeaders } from '../../middlewares/auth';
-import { getAnalyticsServiceByEnvironment } from '../../libs/analyticsService';
-import {
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../models/group';
-import { model as User } from '../../models/user';
-import {
-  NotFound,
-  NotAuthorized,
-  BadRequest,
-} from '../../libs/errors';
-import {
-  getUserInfo,
-  sendTxn as sendTxnEmail,
-} from '../../libs/email';
+import {authWithHeaders} from '../../middlewares/auth';
+import {getAnalyticsServiceByEnvironment} from '../../libs/analyticsService';
+import {basicFields as basicGroupFields, model as Group,} from '../../models/group';
+import {model as User} from '../../models/user';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
+import {getUserInfo, sendTxn as sendTxnEmail,} from '../../libs/email';
 import common from '../../../common';
-import { sendNotification as sendPushNotification } from '../../libs/pushNotifications';
+import {sendNotification as sendPushNotification} from '../../libs/pushNotifications';
 import apiError from '../../libs/apiError';
-import { questActivityWebhook } from '../../libs/webhook';
+import {questActivityWebhook} from '../../libs/webhook';
 
 const analytics = getAnalyticsServiceByEnvironment();
 

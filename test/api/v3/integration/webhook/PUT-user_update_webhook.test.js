@@ -1,8 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 import apiError from '../../../../../website/server/libs/apiError';
 
 describe('PUT /user/webhook/:id', () => {

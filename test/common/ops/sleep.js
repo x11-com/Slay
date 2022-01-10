@@ -1,7 +1,5 @@
 import sleep from '../../../website/common/script/ops/sleep';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.ops.sleep', () => {
   it('toggles user.preferences.sleep', () => {

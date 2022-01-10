@@ -1,5 +1,5 @@
-import { authWithHeaders } from '../../middlewares/auth';
-import { bugReportLogic } from '../../libs/bug-report';
+import {authWithHeaders} from '../../middlewares/auth';
+import {bugReportLogic} from '../../libs/bug-report';
 
 const api = {};
 

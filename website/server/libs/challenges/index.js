@@ -1,16 +1,10 @@
 // Currently this holds helpers for challenge api,
 // but we should break this up into submodules as it expands
 import omit from 'lodash/omit';
-import { v4 as uuid } from 'uuid';
-import { model as Challenge } from '../../models/challenge';
-import {
-  model as Group,
-  TAVERN_ID,
-} from '../../models/group';
-import {
-  NotFound,
-  NotAuthorized,
-} from '../errors';
+import {v4 as uuid} from 'uuid';
+import {model as Challenge} from '../../models/challenge';
+import {model as Group, TAVERN_ID,} from '../../models/group';
+import {NotAuthorized, NotFound,} from '../errors';
 
 const TASK_KEYS_TO_REMOVE = [
   '_id', 'completed', 'dateCompleted', 'history',

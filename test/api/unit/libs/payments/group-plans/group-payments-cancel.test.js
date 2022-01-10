@@ -2,11 +2,9 @@ import moment from 'moment';
 
 import * as sender from '../../../../../../website/server/libs/email';
 import api from '../../../../../../website/server/libs/payments/payments';
-import { model as User } from '../../../../../../website/server/models/user';
-import { model as Group } from '../../../../../../website/server/models/group';
-import {
-  generateGroup,
-} from '../../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../../website/server/models/user';
+import {model as Group} from '../../../../../../website/server/models/group';
+import {generateGroup,} from '../../../../../helpers/api-unit.helper';
 import i18n from '../../../../../../website/common/script/i18n';
 
 describe('Canceling a subscription for group', () => {

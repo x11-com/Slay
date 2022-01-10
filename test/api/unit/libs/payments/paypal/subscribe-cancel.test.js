@@ -1,12 +1,10 @@
 /* eslint-disable camelcase */
 import paypalPayments from '../../../../../../website/server/libs/payments/paypal';
 import payments from '../../../../../../website/server/libs/payments/payments';
-import {
-  generateGroup,
-} from '../../../../../helpers/api-unit.helper';
-import { model as User } from '../../../../../../website/server/models/user';
+import {generateGroup,} from '../../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../../website/server/models/user';
 import common from '../../../../../../website/common';
-import { createNonLeaderGroupMember } from '../paymentHelpers';
+import {createNonLeaderGroupMember} from '../paymentHelpers';
 
 const { i18n } = common;
 

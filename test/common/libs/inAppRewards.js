@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 import getOfficialPinnedItems from '../../../website/common/script/libs/getOfficialPinnedItems';
 import inAppRewards from '../../../website/common/script/libs/inAppRewards';
 

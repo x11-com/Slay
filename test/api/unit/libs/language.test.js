@@ -1,10 +1,5 @@
-import {
-  getLanguageFromBrowser,
-  getLanguageFromUser,
-} from '../../../../website/server/libs/language';
-import {
-  generateReq,
-} from '../../../helpers/api-unit.helper';
+import {getLanguageFromBrowser, getLanguageFromUser,} from '../../../../website/server/libs/language';
+import {generateReq,} from '../../../helpers/api-unit.helper';
 
 describe('language lib', () => {
   let req;

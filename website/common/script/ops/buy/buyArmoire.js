@@ -4,12 +4,10 @@ import pick from 'lodash/pick';
 import content from '../../content/index';
 import * as count from '../../count';
 import splitWhitespace from '../../libs/splitWhitespace';
-import {
-  NotAuthorized,
-} from '../../libs/errors';
+import {NotAuthorized,} from '../../libs/errors';
 import randomVal, * as randomValFns from '../../libs/randomVal';
-import { removeItemByPath } from '../pinnedGearUtils';
-import { AbstractGoldItemOperation } from './abstractBuyOperation';
+import {removeItemByPath} from '../pinnedGearUtils';
+import {AbstractGoldItemOperation} from './abstractBuyOperation';
 import updateStats from '../../fns/updateStats';
 
 // TODO this is only used on the server

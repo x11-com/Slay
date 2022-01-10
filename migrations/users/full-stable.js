@@ -3,7 +3,7 @@ import each from 'lodash/each';
 import keys from 'lodash/keys';
 import content from '../../website/common/script/content/index';
 
-import { model as User } from '../../website/server/models/user';
+import {model as User} from '../../website/server/models/user';
 
 const MIGRATION_NAME = 'full-stable';
 

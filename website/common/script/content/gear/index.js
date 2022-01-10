@@ -2,11 +2,8 @@ import each from 'lodash/each';
 import defaults from 'lodash/defaults';
 import moment from 'moment';
 
-import {
-  CLASSES,
-  GEAR_TYPES,
-} from '../constants';
-import { ownsItem } from './gear-helper';
+import {CLASSES, GEAR_TYPES,} from '../constants';
+import {ownsItem} from './gear-helper';
 
 import weapon from './weapon';
 import armor from './armor';

@@ -1,6 +1,4 @@
-import {
-  MAX_LEVEL,
-} from './constants';
+import {MAX_LEVEL,} from './constants';
 
 /*
   ------------------------------------------------------

@@ -1,4 +1,4 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import {createLocalVue, shallowMount} from '@vue/test-utils';
 import ChallengeDetailComponent from '@/components/challenges/challengeDetail.vue';
 import Store from '@/libs/store';
 

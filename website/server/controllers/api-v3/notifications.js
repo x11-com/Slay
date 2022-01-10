@@ -1,10 +1,6 @@
-import { authWithHeaders } from '../../middlewares/auth';
-import {
-  NotificationNotFound,
-} from '../../libs/errors';
-import {
-  model as User,
-} from '../../models/user';
+import {authWithHeaders} from '../../middlewares/auth';
+import {NotificationNotFound,} from '../../libs/errors';
+import {model as User,} from '../../models/user';
 
 const api = {};
 

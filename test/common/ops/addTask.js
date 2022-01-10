@@ -1,7 +1,5 @@
 import addTask from '../../../website/common/script/ops/addTask';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.ops.addTask', () => {
   let user;

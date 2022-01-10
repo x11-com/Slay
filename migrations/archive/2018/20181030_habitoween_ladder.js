@@ -4,6 +4,7 @@
 
 import monk from 'monk';
 import nconf from 'nconf';
+
 const MIGRATION_NAME = '20181030_habitoween_ladder.js'; // Update when running in future years
 const CONNECTION_STRING = nconf.get('MIGRATION_CONNECT_STRING');
 const AUTHOR_NAME = 'Sabe'; // in case script author needs to know when their ...

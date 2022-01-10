@@ -1,5 +1,6 @@
 import moment from 'moment';
-import calculateSubscriptionTerminationDate from '../../../../../../website/server/libs/payments/calculateSubscriptionTerminationDate';
+import calculateSubscriptionTerminationDate
+  from '../../../../../../website/server/libs/payments/calculateSubscriptionTerminationDate';
 import api from '../../../../../../website/server/libs/payments/payments';
 
 const groupPlanId = api.constants.GROUP_PLAN_CUSTOMER_ID;

@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../helpers/api-integration/v4';
+import {generateUser,} from '../../../helpers/api-integration/v4';
 
 describe('DELETE /inbox/clear', () => {
   it('removes all inbox messages for the user', async () => {

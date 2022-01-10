@@ -2,10 +2,9 @@ import '../../website/server/libs/i18n';
 import mongoose from 'mongoose';
 import defaultsDeep from 'lodash/defaultsDeep';
 import moment from 'moment';
-import { model as User } from '../../website/server/models/user';
-import { model as Group } from '../../website/server/models/group';
-import { model as Challenge } from '../../website/server/models/challenge';
-import mongo from './mongo'; // eslint-disable-line
+import {model as User} from '../../website/server/models/user';
+import {model as Group} from '../../website/server/models/group';
+import {model as Challenge} from '../../website/server/models/challenge';
 import i18n from '../../website/common/script/i18n';
 import * as Tasks from '../../website/server/models/task';
 

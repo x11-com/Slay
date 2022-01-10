@@ -1,9 +1,6 @@
-import { each, get } from 'lodash';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
-import { model as NewsPost } from '../../../../../website/server/models/newsPost';
+import {each, get} from 'lodash';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
+import {model as NewsPost} from '../../../../../website/server/models/newsPost';
 
 describe('PUT /user', () => {
   let user;

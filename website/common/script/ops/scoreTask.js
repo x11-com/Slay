@@ -2,16 +2,14 @@ import timesLodash from 'lodash/times';
 import reduce from 'lodash/reduce';
 import moment from 'moment';
 import max from 'lodash/max';
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {NotAuthorized,} from '../libs/errors';
 import i18n from '../i18n';
 import updateStats from '../fns/updateStats';
 import crit from '../fns/crit';
 import getUtcOffset from '../fns/getUtcOffset';
 
 import statsComputed from '../libs/statsComputed';
-import { checkOnboardingStatus } from '../libs/onboarding';
+import {checkOnboardingStatus} from '../libs/onboarding';
 
 const MAX_TASK_VALUE = 21.27;
 const MIN_TASK_VALUE = -47.27;

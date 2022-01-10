@@ -1,12 +1,8 @@
 import nconf from 'nconf';
-import { RateLimiterMemory } from 'rate-limiter-flexible';
+import {RateLimiterMemory} from 'rate-limiter-flexible';
 import requireAgain from 'require-again';
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
-import { TooManyRequests } from '../../../../website/server/libs/errors';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
+import {TooManyRequests} from '../../../../website/server/libs/errors';
 import apiError from '../../../../website/server/libs/apiError';
 import logger from '../../../../website/server/libs/logger';
 

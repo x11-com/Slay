@@ -1,17 +1,10 @@
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 
 import errorHandler from '../../../../website/server/middlewares/errorHandler';
 import responseMiddleware from '../../../../website/server/middlewares/response';
-import {
-  getUserLanguage,
-  attachTranslateFunction,
-} from '../../../../website/server/middlewares/language';
+import {attachTranslateFunction, getUserLanguage,} from '../../../../website/server/middlewares/language';
 
-import { BadRequest } from '../../../../website/server/libs/errors';
+import {BadRequest} from '../../../../website/server/libs/errors';
 import logger from '../../../../website/server/libs/logger';
 
 describe('errorHandler', () => {

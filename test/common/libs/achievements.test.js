@@ -1,7 +1,5 @@
 import shared from '../../../website/common';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('achievements', () => {
   describe('general well-formedness', () => {

@@ -1,8 +1,6 @@
 import validator from 'validator';
 import i18n from '../i18n';
-import {
-  BadRequest,
-} from '../libs/errors';
+import {BadRequest,} from '../libs/errors';
 
 export default function blockUser (user, req = {}) {
   if (!validator.isUUID(req.params.uuid)) throw new BadRequest(i18n.t('invalidUUID', req.language));

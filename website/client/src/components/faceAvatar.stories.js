@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
+import {storiesOf} from '@storybook/vue';
 
 import FaceAvatar from './faceAvatar.vue';
 import Avatar from './avatar.vue';
-import { userStyles } from '../../config/storybook/mock.data';
+import {userStyles} from '../../config/storybook/mock.data';
 import content from '../../../common/script/content/index';
 import getters from '@/store/getters';
 

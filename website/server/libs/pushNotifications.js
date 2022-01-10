@@ -3,9 +3,7 @@ import nconf from 'nconf';
 import apn from '@parse/node-apn';
 import gcmLib from 'node-gcm'; // works with FCM notifications too
 import logger from './logger';
-import { // eslint-disable-line import/no-cycle
-  model as User,
-} from '../models/user';
+import {model as User,} from '../models/user';
 
 const FCM_API_KEY = nconf.get('PUSH_CONFIGS_FCM_SERVER_API_KEY');
 const fcmSender = FCM_API_KEY ? new gcmLib.Sender(FCM_API_KEY) : undefined;

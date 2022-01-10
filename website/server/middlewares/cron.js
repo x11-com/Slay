@@ -1,8 +1,8 @@
 import moment from 'moment';
 import * as Tasks from '../models/task';
-import { model as Group } from '../models/group';
-import { model as User } from '../models/user';
-import { recoverCron, cron } from '../libs/cron';
+import {model as Group} from '../models/group';
+import {model as User} from '../models/user';
+import {cron, recoverCron} from '../libs/cron';
 
 // Wait this length of time in ms before attempting another cron
 const CRON_TIMEOUT_WAIT = new Date(60 * 60 * 1000).getTime();

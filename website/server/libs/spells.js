@@ -1,14 +1,8 @@
-import { model as User } from '../models/user';
+import {model as User} from '../models/user';
 import * as Tasks from '../models/task';
-import {
-  NotFound,
-  BadRequest,
-  NotAuthorized,
-} from './errors';
+import {BadRequest, NotAuthorized, NotFound,} from './errors';
 import common from '../../common';
-import {
-  model as Group,
-} from '../models/group';
+import {model as Group,} from '../models/group';
 import apiError from './apiError';
 
 const partyMembersFields = 'profile.name stats achievements items.special notifications flags pinnedItems';

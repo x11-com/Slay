@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { withKnobs, number } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {number, withKnobs} from '@storybook/addon-knobs';
 
 import MultiList from './multiList';
 import SelectMulti from './selectMulti';

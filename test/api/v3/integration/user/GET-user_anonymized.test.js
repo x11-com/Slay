@@ -1,10 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  generateHabit,
-  generateDaily,
-  generateReward,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateDaily, generateHabit, generateReward, generateUser,} from '../../../../helpers/api-integration/v3';
 import common from '../../../../../website/common';
 
 describe('GET /user/anonymized', () => {

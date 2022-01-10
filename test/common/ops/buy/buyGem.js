@@ -1,14 +1,10 @@
 /* eslint-disable camelcase */
 
 import sinon from 'sinon'; // eslint-disable-line no-shadow
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
-import {
-  BadRequest, NotAuthorized,
-} from '../../../../website/common/script/libs/errors';
+import {generateUser,} from '../../../helpers/common.helper';
+import {BadRequest, NotAuthorized,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
-import { BuyGemOperation } from '../../../../website/common/script/ops/buy/buyGem';
+import {BuyGemOperation} from '../../../../website/common/script/ops/buy/buyGem';
 import planGemLimits from '../../../../website/common/script/libs/planGemLimits';
 
 function buyGem (user, req, analytics) {

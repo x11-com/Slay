@@ -1,12 +1,6 @@
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
-import { BuyQuestWithGoldOperation } from '../../../../website/common/script/ops/buy/buyQuestGold';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../../../website/common/script/libs/errors';
+import {generateUser,} from '../../../helpers/common.helper';
+import {BuyQuestWithGoldOperation} from '../../../../website/common/script/ops/buy/buyQuestGold';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
 

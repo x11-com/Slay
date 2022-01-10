@@ -1,4 +1,4 @@
-import { loadAsyncResource } from '@/libs/asyncResource';
+import {loadAsyncResource} from '@/libs/asyncResource';
 
 export function getMembers (store, forceLoad = false) {
   return loadAsyncResource({

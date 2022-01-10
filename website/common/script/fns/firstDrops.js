@@ -1,5 +1,5 @@
-import { drops as eggs } from '../content/eggs';
-import { drops as hatchingPotions } from '../content/hatching-potions';
+import {drops as eggs} from '../content/eggs';
+import {drops as hatchingPotions} from '../content/hatching-potions';
 import randomVal from '../libs/randomVal';
 
 export default function firstDrops (user) {

@@ -1,12 +1,8 @@
 import * as pinnedGearUtils from '../../../../website/common/script/ops/pinnedGearUtils';
-import {
-  NotAuthorized,
-} from '../../../../website/common/script/libs/errors';
+import {NotAuthorized,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
-import { BuyQuestWithGemOperation } from '../../../../website/common/script/ops/buy/buyQuestGem';
+import {generateUser,} from '../../../helpers/common.helper';
+import {BuyQuestWithGemOperation} from '../../../../website/common/script/ops/buy/buyQuestGem';
 
 describe('shared.ops.buyQuestGems', () => {
   let user;

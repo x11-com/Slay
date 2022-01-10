@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const MIGRATION_NAME = '20190618_summer_splash_orcas';
 
-import { model as User } from '../../../website/server/models/user';
+import {model as User} from '../../../website/server/models/user';
 
 const progressCount = 1000;
 let count = 0;

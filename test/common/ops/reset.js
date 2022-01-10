@@ -1,12 +1,6 @@
 import reset from '../../../website/common/script/ops/reset';
 import i18n from '../../../website/common/script/i18n';
-import {
-  generateUser,
-  generateDaily,
-  generateHabit,
-  generateReward,
-  generateTodo,
-} from '../../helpers/common.helper';
+import {generateDaily, generateHabit, generateReward, generateTodo, generateUser,} from '../../helpers/common.helper';
 
 describe('shared.ops.reset', () => {
   let user;

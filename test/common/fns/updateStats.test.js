@@ -1,7 +1,5 @@
 import updateStats from '../../../website/common/script/fns/updateStats';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('common.fns.updateStats', () => {
   let user;

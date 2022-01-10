@@ -1,11 +1,9 @@
 import _ from 'lodash';
 import find from 'lodash/find';
-import { authWithHeaders } from '../../middlewares/auth';
-import { model as Tag } from '../../models/tag';
+import {authWithHeaders} from '../../middlewares/auth';
+import {model as Tag} from '../../models/tag';
 import * as Tasks from '../../models/task';
-import {
-  NotFound,
-} from '../../libs/errors';
+import {NotFound,} from '../../libs/errors';
 
 /**
  * @apiDefine TagNotFound

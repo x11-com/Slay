@@ -1,6 +1,4 @@
-import {
-  createAndPopulateGroup,
-} from '../../../../helpers/api-integration/v3';
+import {createAndPopulateGroup,} from '../../../../helpers/api-integration/v3';
 
 describe('Prevent multiple notifications', () => {
   let partyLeader; let partyMembers; let

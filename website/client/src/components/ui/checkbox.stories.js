@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs} from '@storybook/addon-knobs';
 
 import Checkbox from './checkbox';
 import ToggleCheckbox from './toggleCheckbox';

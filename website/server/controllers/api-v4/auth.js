@@ -1,9 +1,7 @@
-import {
-  authWithHeaders,
-} from '../../middlewares/auth';
+import {authWithHeaders,} from '../../middlewares/auth';
 import * as authLib from '../../libs/auth';
-import { model as User } from '../../models/user';
-import { verifyUsername } from '../../libs/user/validation';
+import {model as User} from '../../models/user';
+import {verifyUsername} from '../../libs/user/validation';
 
 const api = {};
 

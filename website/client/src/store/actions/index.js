@@ -1,4 +1,4 @@
-import { flattenAndNamespace } from '@/libs/store/helpers/internals';
+import {flattenAndNamespace} from '@/libs/store/helpers/internals';
 
 import * as common from './common';
 import * as user from './user';

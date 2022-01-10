@@ -1,9 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  createAndPopulateGroup,
-  translate as t,
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /groups/:groupId/quests/leave', () => {
   let questingGroup;

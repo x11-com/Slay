@@ -1,9 +1,5 @@
-import {
-  each,
-} from 'lodash';
-import {
-  expectValidTranslationString,
-} from '../helpers/content.helper';
+import {each,} from 'lodash';
+import {expectValidTranslationString,} from '../helpers/content.helper';
 
 import * as hatchingPotions from '../../website/common/script/content/hatching-potions';
 

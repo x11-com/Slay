@@ -1,14 +1,10 @@
 import payments from '../payments'; // eslint-disable-line import/no-cycle
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../errors';
 import stripeConstants from './constants';
 import shared from '../../../../common';
-import { getGemsBlock } from '../gems'; // eslint-disable-line import/no-cycle
-import { checkSubData } from './subscriptions'; // eslint-disable-line import/no-cycle
-import { model as User } from '../../../models/user'; // eslint-disable-line import/no-cycle
+import {getGemsBlock} from '../gems'; // eslint-disable-line import/no-cycle
+import {checkSubData} from './subscriptions'; // eslint-disable-line import/no-cycle
+import {model as User} from '../../../models/user'; // eslint-disable-line import/no-cycle
 
 function getGiftAmount (gift) {
   if (gift.type === 'subscription') {

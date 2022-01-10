@@ -9,7 +9,7 @@ import releasePetsOp from '@/../../common/script/ops/releasePets';
 import releaseMountsOp from '@/../../common/script/ops/releaseMounts';
 import releaseBothOp from '@/../../common/script/ops/releaseBoth';
 
-import { getDropClass } from '@/libs/notifications';
+import {getDropClass} from '@/libs/notifications';
 
 // @TODO: Purchase means gems and buy means gold.
 // That wording is misused below, but we should also change

@@ -1,4 +1,4 @@
-import { serveClient } from '../../libs/client';
+import {serveClient} from '../../libs/client';
 
 const api = {};
 

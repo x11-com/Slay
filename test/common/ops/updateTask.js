@@ -1,7 +1,5 @@
 import updateTask from '../../../website/common/script/ops/updateTask';
-import {
-  generateHabit,
-} from '../../helpers/common.helper';
+import {generateHabit,} from '../../helpers/common.helper';
 
 describe('shared.ops.updateTask', () => {
   it('updates a task', () => {

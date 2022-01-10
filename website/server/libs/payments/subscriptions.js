@@ -1,24 +1,15 @@
 import _ from 'lodash';
 import moment from 'moment';
 
-import { getAnalyticsServiceByEnvironment } from '../analyticsService';
+import {getAnalyticsServiceByEnvironment} from '../analyticsService';
 import * as slack from '../slack'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  getUserInfo,
-  sendTxn as txnEmail,
-} from '../email';
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../models/group';
-import {
-  NotAuthorized,
-  NotFound,
-} from '../errors';
+import {getUserInfo, sendTxn as txnEmail,} from '../email';
+import {basicFields as basicGroupFields, model as Group,} from '../../models/group';
+import {NotAuthorized, NotFound,} from '../errors';
 import shared from '../../../common';
-import { sendNotification as sendPushNotification } from '../pushNotifications'; // eslint-disable-line import/no-cycle
+import {sendNotification as sendPushNotification} from '../pushNotifications'; // eslint-disable-line import/no-cycle
 import calculateSubscriptionTerminationDate from './calculateSubscriptionTerminationDate';
-import { getCurrentEventList } from '../worldState'; // eslint-disable-line import/no-cycle
+import {getCurrentEventList} from '../worldState'; // eslint-disable-line import/no-cycle
 
 // @TODO: Abstract to shared/constant
 const JOINED_GROUP_PLAN = 'joined group plan';

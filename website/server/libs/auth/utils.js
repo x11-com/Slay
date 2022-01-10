@@ -2,7 +2,7 @@ import nconf from 'nconf';
 import shortid from 'short-uuid';
 import url from 'url';
 
-import { NotAuthorized } from '../errors';
+import {NotAuthorized} from '../errors';
 
 const COMMUNITY_MANAGER_EMAIL = nconf.get('EMAILS_COMMUNITY_MANAGER_EMAIL');
 const translator = shortid('0123456789abcdefghijklmnopqrstuvwxyz');

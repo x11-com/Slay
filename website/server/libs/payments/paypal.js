@@ -8,18 +8,11 @@ import paypal from 'paypal-rest-sdk';
 import cc from 'coupon-code';
 import shared from '../../../common';
 import payments from './payments'; // eslint-disable-line import/no-cycle
-import { getGemsBlock, validateGiftMessage } from './gems'; // eslint-disable-line import/no-cycle
-import { model as Coupon } from '../../models/coupon';
-import { model as User } from '../../models/user'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../models/group';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../errors';
+import {getGemsBlock, validateGiftMessage} from './gems'; // eslint-disable-line import/no-cycle
+import {model as Coupon} from '../../models/coupon';
+import {model as User} from '../../models/user'; // eslint-disable-line import/no-cycle
+import {basicFields as basicGroupFields, model as Group,} from '../../models/group';
+import {BadRequest, NotAuthorized, NotFound,} from '../errors';
 
 const BASE_URL = nconf.get('BASE_URL');
 const PAYPAL_MODE = nconf.get('PAYPAL_MODE');
@@ -49,9 +42,9 @@ const api = {};
 
 api.constants = {
   // CURRENCY_CODE: 'USD',
-  // SELLER_NOTE: 'Habitica Payment',
-  // SELLER_NOTE_SUBSCRIPTION: 'Habitica Subscription',
-  // SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'Habitica Subscription Payment',
+  // SELLER_NOTE: 'slay Payment',
+  // SELLER_NOTE_SUBSCRIPTION: 'slay Subscription',
+  // SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'slay Subscription Payment',
   // STORE_NAME: 'Habitica',
   //
   // GIFT_TYPE_GEMS: 'gems',
@@ -81,7 +74,7 @@ api.checkout = async function checkout (options = {}) {
 
   let amount;
   let gemsBlock;
-  let description = 'Habitica Gems';
+  let description = 'slay Gems';
 
   if (gift) {
     const member = await User.findById(gift.uuid).exec();
@@ -97,7 +90,7 @@ api.checkout = async function checkout (options = {}) {
       description = `${description} (Gift)`;
     } else {
       amount = Number(shared.content.subscriptionBlocks[gift.subscription.key].price).toFixed(2);
-      description = 'mo. Habitica Subscription (Gift)';
+      description = 'mo. slay Subscription (Gift)';
     }
   } else {
     gemsBlock = getGemsBlock(gemsBlockKey);
@@ -181,11 +174,11 @@ api.subscribe = async function subscribe (options = {}) {
     if (!couponResult) throw new NotAuthorized(i18n.t('invalidCoupon'));
   }
 
-  const billingPlanTitle = `Habitica Subscription ($${sub.price} every ${sub.months} months, recurring)`;
+  const billingPlanTitle = `slay Subscription ($${sub.price} every ${sub.months} months, recurring)`;
   const billingAgreementAttributes = {
     name: billingPlanTitle,
     description: billingPlanTitle,
-    start_date: moment().add({ minutes: 5 }).format(),
+    start_date: moment().add({minutes: 5}).format(),
     plan: {
       id: sub.paypalKey,
     },

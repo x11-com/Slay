@@ -1,7 +1,7 @@
-import { each, find } from 'lodash';
-import { model as Challenge } from '../../../../website/server/models/challenge';
-import { model as Group } from '../../../../website/server/models/group';
-import { model as User } from '../../../../website/server/models/user';
+import {each, find} from 'lodash';
+import {model as Challenge} from '../../../../website/server/models/challenge';
+import {model as Group} from '../../../../website/server/models/group';
+import {model as User} from '../../../../website/server/models/user';
 import * as Tasks from '../../../../website/server/models/task';
 import common from '../../../../website/common';
 

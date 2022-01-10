@@ -1,8 +1,7 @@
-HabitRPG's translations are managed at http://translate.habitica.com/
+HabitRPG's translations are managed at http://translate.s1ay.com/
 
-The files in this folder are automatically pulled from there, with
-exception of the original American-English strings which are managed
-directly through GitHub in `locales/en`.
+The files in this folder are automatically pulled from there, with exception of the original American-English strings
+which are managed directly through GitHub in `locales/en`.
 
 When you need to change any text, edit only the files in `locales/en`.
 Do not edit files in any other locales directory. You do not need to

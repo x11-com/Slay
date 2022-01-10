@@ -4,7 +4,7 @@ import getStore from '@/store';
 import handleRedirect from './handleRedirect';
 
 import ParentPage from '@/components/parentPage';
-import { PAGES } from '@/libs/consts';
+import {PAGES} from '@/libs/consts';
 
 // NOTE: when adding a page make sure to implement setTitle
 

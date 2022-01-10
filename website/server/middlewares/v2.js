@@ -3,9 +3,7 @@
 
 import express from 'express';
 import nconf from 'nconf';
-import {
-  NotFound,
-} from '../libs/errors';
+import {NotFound,} from '../libs/errors';
 
 const router = express.Router(); // eslint-disable-line new-cap
 

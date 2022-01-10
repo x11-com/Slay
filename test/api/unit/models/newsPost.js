@@ -1,6 +1,6 @@
-import { v4 } from 'uuid';
-import { model as NewsPost, refreshNewsPost } from '../../../../website/server/models/newsPost';
-import { sleep } from '../../../helpers/api-unit.helper';
+import {v4} from 'uuid';
+import {model as NewsPost, refreshNewsPost} from '../../../../website/server/models/newsPost';
+import {sleep} from '../../../helpers/api-unit.helper';
 
 describe('NewsPost Model', () => {
   const publishDate = Number(new Date());

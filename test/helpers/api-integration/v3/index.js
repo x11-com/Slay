@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
 // Import requester function, set it up for v3, export it
-import { requester } from '../requester';
+import {requester} from '../requester';
 
 import server from '../external-server';
 

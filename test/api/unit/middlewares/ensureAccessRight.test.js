@@ -1,12 +1,8 @@
 /* eslint-disable global-require */
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 import i18n from '../../../../website/common/script/i18n';
-import { ensureAdmin, ensureSudo, ensureNewsPoster } from '../../../../website/server/middlewares/ensureAccessRight';
-import { NotAuthorized } from '../../../../website/server/libs/errors';
+import {ensureAdmin, ensureNewsPoster, ensureSudo} from '../../../../website/server/middlewares/ensureAccessRight';
+import {NotAuthorized} from '../../../../website/server/libs/errors';
 import apiError from '../../../../website/server/libs/apiError';
 
 describe('ensure access middlewares', () => {

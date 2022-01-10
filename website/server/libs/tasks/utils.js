@@ -1,8 +1,6 @@
 import moment from 'moment';
 import _ from 'lodash';
-import {
-  BadRequest,
-} from '../errors';
+import {BadRequest,} from '../errors';
 import shared from '../../../common';
 
 export const requiredGroupFields = '_id leader tasksOrder name';

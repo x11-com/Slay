@@ -4,7 +4,7 @@ import lodashFind from 'lodash/find';
 import reduce from 'lodash/reduce';
 import content from '../content/index';
 import getItemInfo from '../libs/getItemInfo';
-import { BadRequest } from '../libs/errors';
+import {BadRequest} from '../libs/errors';
 import i18n from '../i18n';
 import getItemByPathAndType from '../libs/getItemByPathAndType';
 import getOfficialPinnedItems from '../libs/getOfficialPinnedItems';

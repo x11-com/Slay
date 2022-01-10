@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
+import {storiesOf} from '@storybook/vue';
 
 const stories = storiesOf('Margins', module);
 
@@ -23,12 +23,12 @@ stories
                 The margin between gray and teal is the margin content.
                     </span>
             </span>
-        </span>  
-          
+        </span>
+
           <br />
           <br />
-          
-        <span v-for="m in margins" 
+
+        <span v-for="m in margins"
               class="background mx-1 my-1 inline-block">
             <span class="content  inline-block" :class="m">
                 <span class="mx-1 my-1 inline-block">{{m}}</span>

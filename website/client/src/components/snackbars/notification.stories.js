@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {boolean, withKnobs} from '@storybook/addon-knobs';
 
 import Notification from './notification';
 import Notifications from './notifications';
@@ -22,7 +22,7 @@ stories
                         :notification="notification"
                         :style="{outline: showBounds ? '1px solid green': ''}"
                         style="margin-right: 1rem">
-            
+
           </Notification> <br/>
         </div>
       </div>
@@ -149,32 +149,32 @@ stories
     template: `
       <div style="position: absolute; margin: 20px">
         <button @click="addNotification()">Add Notifications</button>
-        
+
          <button @click="crit(1337)">Crit</button>
-        
+
          <button @click="drop('Drop', {type:'weapon', key: 'wizard_2'})">Drop</button>
-        
-         <button @click="quest('quest', 'val')">Quest</button> 
+
+         <button @click="quest('quest', 'val')">Quest</button>
         <button @click="damage(-13)">Damage</button>
-        <button @click="exp(42)">Exp</button> 
+        <button @click="exp(42)">Exp</button>
         <button @click="error('some error')">Error</button>
-      
+
         <br/>
-        
+
         <button @click="gp(23, 0)">Gold</button>
-        
-        
+
+
         <button @click="hp(23)">HP</button>
         <button @click="mp(23)">MP</button>
-        
+
         <button @click="lvl()">LVL</button>
-        
+
         <button @click="streak('Streak')">Streak</button>
-      
+
         <br/>
         <button @click="markdown('You cast a skill')">Markdown</button>
-        
-        
+
+
         <Notifications :prevent-queue="preventQueue"
                        :debug-mode="debugMode"
                        :style="{outline: showBounds ? '1px solid green': ''}">

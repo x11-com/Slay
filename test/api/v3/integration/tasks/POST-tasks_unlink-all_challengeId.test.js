@@ -1,9 +1,4 @@
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {generateChallenge, generateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/unlink-all/:challengeId', () => {
   let user;

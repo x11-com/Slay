@@ -1,11 +1,5 @@
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
-import {
-  disableCache,
-} from '../../../../website/server/middlewares/cache';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
+import {disableCache,} from '../../../../website/server/middlewares/cache';
 
 describe('cache middlewares', () => {
   let res; let req; let

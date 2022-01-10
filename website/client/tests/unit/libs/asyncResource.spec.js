@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { asyncResourceFactory, loadAsyncResource } from '@/libs/asyncResource';
+import {asyncResourceFactory, loadAsyncResource} from '@/libs/asyncResource';
 import generateStore from '@/store';
-import { sleep } from '@/../../../test/helpers/sleep';
+import {sleep} from '@/../../../test/helpers/sleep';
 
 describe('async resource', () => {
   it('asyncResourceFactory', () => {

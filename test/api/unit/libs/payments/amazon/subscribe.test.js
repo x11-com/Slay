@@ -1,10 +1,8 @@
 import cc from 'coupon-code';
 
-import {
-  generateGroup,
-} from '../../../../../helpers/api-unit.helper';
-import { model as User } from '../../../../../../website/server/models/user';
-import { model as Coupon } from '../../../../../../website/server/models/coupon';
+import {generateGroup,} from '../../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../../website/server/models/user';
+import {model as Coupon} from '../../../../../../website/server/models/coupon';
 import amzLib from '../../../../../../website/server/libs/payments/amazon';
 import payments from '../../../../../../website/server/libs/payments/payments';
 import common from '../../../../../../website/common';

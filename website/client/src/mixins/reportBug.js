@@ -1,4 +1,4 @@
-import { MODALS } from '@/libs/consts';
+import {MODALS} from '@/libs/consts';
 
 export default {
   methods: {

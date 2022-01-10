@@ -5,10 +5,7 @@ import _ from 'lodash';
 import couponCode from 'coupon-code';
 import shared from '../../common';
 import baseModel from '../libs/baseModel';
-import {
-  BadRequest,
-  NotAuthorized,
-} from '../libs/errors';
+import {BadRequest, NotAuthorized,} from '../libs/errors';
 
 export const schema = new mongoose.Schema({
   _id: { $type: String, default: couponCode.generate, required: true },

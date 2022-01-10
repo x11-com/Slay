@@ -1,10 +1,6 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  createAndPopulateGroup,
-  translate as t,
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
-import { model as Group } from '../../../../../website/server/models/group';
+import {v4 as generateUUID} from 'uuid';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
+import {model as Group} from '../../../../../website/server/models/group';
 
 describe('POST /groups/:groupId/quests/abort', () => {
   let questingGroup;

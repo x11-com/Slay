@@ -1,16 +1,8 @@
 import scoreTask from '../../../website/common/script/ops/scoreTask';
 
-import {
-  generateUser,
-  generateDaily,
-  generateHabit,
-  generateTodo,
-  generateReward,
-} from '../../helpers/common.helper';
+import {generateDaily, generateHabit, generateReward, generateTodo, generateUser,} from '../../helpers/common.helper';
 import i18n from '../../../website/common/script/i18n';
-import {
-  NotAuthorized,
-} from '../../../website/common/script/libs/errors';
+import {NotAuthorized,} from '../../../website/common/script/libs/errors';
 import crit from '../../../website/common/script/fns/crit';
 import shared from '../../../website/common/script';
 

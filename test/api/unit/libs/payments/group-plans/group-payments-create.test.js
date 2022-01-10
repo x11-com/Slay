@@ -7,11 +7,9 @@ import api from '../../../../../../website/server/libs/payments/payments';
 import amzLib from '../../../../../../website/server/libs/payments/amazon';
 import paypalPayments from '../../../../../../website/server/libs/payments/paypal';
 import stripePayments from '../../../../../../website/server/libs/payments/stripe';
-import { model as User } from '../../../../../../website/server/models/user';
-import { model as Group } from '../../../../../../website/server/models/group';
-import {
-  generateGroup,
-} from '../../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../../website/server/models/user';
+import {model as Group} from '../../../../../../website/server/models/group';
+import {generateGroup,} from '../../../../../helpers/api-unit.helper';
 import i18n from '../../../../../../website/common/script/i18n';
 
 describe('Purchasing a group plan for group', () => {

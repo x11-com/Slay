@@ -5,11 +5,9 @@ import common from '../../../../../website/common';
 import api from '../../../../../website/server/libs/payments/payments';
 import * as analytics from '../../../../../website/server/libs/analyticsService';
 import * as notifications from '../../../../../website/server/libs/pushNotifications';
-import { model as User } from '../../../../../website/server/models/user';
-import { translate as t } from '../../../../helpers/api-integration/v3';
-import {
-  generateGroup,
-} from '../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../website/server/models/user';
+import {translate as t} from '../../../../helpers/api-integration/v3';
+import {generateGroup,} from '../../../../helpers/api-unit.helper';
 import * as worldState from '../../../../../website/server/libs/worldState';
 
 describe('payments/index', () => {

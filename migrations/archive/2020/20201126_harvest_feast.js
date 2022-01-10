@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const MIGRATION_NAME = '20201126_harvest_feast';
-import { v4 as uuid } from 'uuid';
-import { model as User } from '../../../website/server/models/user';
+import {v4 as uuid} from 'uuid';
+import {model as User} from '../../../website/server/models/user';
 
 const progressCount = 1000;
 let count = 0;

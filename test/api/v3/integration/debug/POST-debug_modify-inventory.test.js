@@ -1,9 +1,7 @@
 /* eslint-disable camelcase */
 
 import nconf from 'nconf';
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /debug/modify-inventory', () => {
   let user; let

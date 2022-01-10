@@ -1,10 +1,10 @@
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 import {
-  generateUser,
   createAndPopulateGroup,
   generateChallenge,
-  translate as t,
+  generateUser,
   sleep,
+  translate as t,
 } from '../../../../helpers/api-integration/v3';
 
 describe('GET /challenges/:challengeId/export/csv', () => {

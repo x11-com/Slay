@@ -1,10 +1,6 @@
 import openMysteryItem from '../../../website/common/script/ops/openMysteryItem';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
-import {
-  BadRequest,
-} from '../../../website/common/script/libs/errors';
+import {generateUser,} from '../../helpers/common.helper';
+import {BadRequest,} from '../../../website/common/script/libs/errors';
 import content from '../../../website/common/script/content/index';
 import i18n from '../../../website/common/script/i18n';
 

@@ -1,7 +1,4 @@
-import {
-  generateUser,
-  generateGroup,
-} from '../../../../../helpers/api-integration/v3';
+import {generateGroup, generateUser,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST group-tasks/:taskId/move/to/:position', () => {
   let user; let

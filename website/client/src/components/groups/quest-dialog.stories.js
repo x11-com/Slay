@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs} from '@storybook/addon-knobs';
 
-import { quests } from '@/../../common/script/content/quests';
+import {quests} from '@/../../common/script/content/quests';
 import content from '@/../../common/script/content';
 import questDetailModal from './questDetailModal';
 import questCompleted from '../achievements/questCompleted';
@@ -20,8 +20,8 @@ stories
         questWithDrop: quests.moon1,
       };
     },
-    template: `  
-      <div> 
+    template: `
+      <div>
         <quest-detail-modal :group="{}"></quest-detail-modal>
       </div>
     `,
@@ -37,7 +37,7 @@ stories
         questWithDrop: quests.moon1,
       };
     },
-    template: `  
+    template: `
       <div>
         <quest-detail-modal :group="{}"></quest-detail-modal>
       </div>

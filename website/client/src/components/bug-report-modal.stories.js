@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs} from '@storybook/addon-knobs';
 
 
 import bugReportModal from '@/components/bugReportModal';
@@ -17,8 +17,8 @@ stories
       return {
       };
     },
-    template: `  
-      <div> 
+    template: `
+      <div>
         <bug-report-modal></bug-report-modal>
       </div>
     `,
@@ -32,8 +32,8 @@ stories
       return {
       };
     },
-    template: `  
-      <div> 
+    template: `
+      <div>
         <bug-report-success-modal></bug-report-success-modal>
       </div>
     `,

@@ -3,10 +3,7 @@ import nconf from 'nconf';
 import repl from 'repl';
 import gulp from 'gulp';
 import logger from '../website/server/libs/logger';
-import {
-  getDevelopmentConnectionUrl,
-  getDefaultConnectionOptions,
-} from '../website/server/libs/mongodb';
+import {getDefaultConnectionOptions, getDevelopmentConnectionUrl,} from '../website/server/libs/mongodb';
 
 // Add additional properties to the repl's context
 const improveRepl = context => {
@@ -48,7 +45,7 @@ const improveRepl = context => {
 
 gulp.task('console', done => {
   improveRepl(repl.start({
-    prompt: 'Habitica > ',
+    prompt: 'slay > ',
   }).context);
   done();
 });

@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 const MIGRATION_NAME = '20210129_habit_birthday';
-import { v4 as uuid } from 'uuid';
+import {v4 as uuid} from 'uuid';
 
-import { model as User } from '../../../website/server/models/user';
+import {model as User} from '../../../website/server/models/user';
 
 const progressCount = 1000;
 let count = 0;

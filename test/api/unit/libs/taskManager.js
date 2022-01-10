@@ -1,18 +1,8 @@
-import {
-  createTasks,
-  getTasks,
-} from '../../../../website/server/libs/tasks';
-import {
-  syncableAttrs,
-  moveTask,
-} from '../../../../website/server/libs/tasks/utils';
+import {createTasks, getTasks,} from '../../../../website/server/libs/tasks';
+import {moveTask, syncableAttrs,} from '../../../../website/server/libs/tasks/utils';
 import i18n from '../../../../website/common/script/i18n';
 import shared from '../../../../website/common/script';
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-} from '../../../helpers/api-unit.helper';
+import {generateChallenge, generateGroup, generateUser,} from '../../../helpers/api-unit.helper';
 
 describe('taskManager', () => {
   let user; let group; let

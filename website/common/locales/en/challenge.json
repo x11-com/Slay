@@ -26,7 +26,7 @@
   "challengeTag": "Tag Name",
   "prize": "Prize",
   "publicChallengesTitle": "Public Challenges",
-  "officialChallenge": "Official Habitica Challenge",
+  "officialChallenge": "Official slay Challenge",
   "by": "by",
   "participants": "<%= membercount %> Participants",
   "join": "Join",

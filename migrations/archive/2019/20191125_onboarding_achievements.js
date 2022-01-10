@@ -3,7 +3,7 @@
  */
 /* eslint-disable no-console */
 
-import { model as User } from '../../website/server/models/user';
+import {model as User} from '../../website/server/models/user';
 
 const MIGRATION_NAME = '20191218_onboarding_achievements';
 

@@ -1,4 +1,4 @@
-import { model as Tag } from '../../../../website/server/models/tag';
+import {model as Tag} from '../../../../website/server/models/tag';
 
 describe('Tag Model', () => {
   context('cleanupCorruptData', () => {

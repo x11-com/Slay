@@ -3,7 +3,7 @@ import moment from 'moment';
 import cc from 'coupon-code';
 
 import paypalPayments from '../../../../../../website/server/libs/payments/paypal';
-import { model as Coupon } from '../../../../../../website/server/models/coupon';
+import {model as Coupon} from '../../../../../../website/server/models/coupon';
 import common from '../../../../../../website/common';
 
 const { i18n } = common;
@@ -74,7 +74,7 @@ describe('paypal - subscribe', () => {
 
     expect(link).to.eql(approvalHerf);
     expect(paypalBillingAgreementCreateStub).to.be.calledOnce;
-    const billingPlanTitle = `Habitica Subscription ($${sub.price} every ${sub.months} months, recurring)`;
+    const billingPlanTitle = `slay Subscription ($${sub.price} every ${sub.months} months, recurring)`;
     expect(paypalBillingAgreementCreateStub).to.be.calledWith({
       name: billingPlanTitle,
       description: billingPlanTitle,
@@ -97,7 +97,7 @@ describe('paypal - subscribe', () => {
 
     expect(link).to.eql(approvalHerf);
     expect(paypalBillingAgreementCreateStub).to.be.calledOnce;
-    const billingPlanTitle = `Habitica Subscription ($${sub.price} every ${sub.months} months, recurring)`;
+    const billingPlanTitle = `slay Subscription ($${sub.price} every ${sub.months} months, recurring)`;
     expect(paypalBillingAgreementCreateStub).to.be.calledWith({
       name: billingPlanTitle,
       description: billingPlanTitle,

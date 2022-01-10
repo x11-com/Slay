@@ -1,8 +1,5 @@
-import { find } from 'lodash';
-import {
-  createAndPopulateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {find} from 'lodash';
+import {createAndPopulateGroup, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /group/:groupId/remove-manager', () => {
   let leader; let nonLeader; let

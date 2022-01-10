@@ -1,7 +1,5 @@
 import moment from 'moment';
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /tasks/user', () => {
   let user;

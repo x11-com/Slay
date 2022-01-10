@@ -1,7 +1,7 @@
 import fs from 'fs';
 import _ from 'lodash';
 import gulp from 'gulp';
-import { postToSlack, conf } from './taskHelper';
+import {conf, postToSlack} from './taskHelper';
 
 const SLACK_CONFIG = {
   channel: conf.get('TRANSIFEX_SLACK_CHANNEL'),

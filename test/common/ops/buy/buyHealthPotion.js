@@ -1,11 +1,7 @@
 /* eslint-disable camelcase */
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
-import { BuyHealthPotionOperation } from '../../../../website/common/script/ops/buy/buyHealthPotion';
-import {
-  NotAuthorized,
-} from '../../../../website/common/script/libs/errors';
+import {generateUser,} from '../../../helpers/common.helper';
+import {BuyHealthPotionOperation} from '../../../../website/common/script/ops/buy/buyHealthPotion';
+import {NotAuthorized,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 
 describe('shared.ops.buyHealthPotion', () => {

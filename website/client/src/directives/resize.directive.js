@@ -2,7 +2,7 @@ import Vue from 'vue';
 
 import _throttle from 'lodash/throttle';
 
-import { emit } from './directive.common';
+import {emit} from './directive.common';
 
 /**
  * v-resize="throttleTimeout", @resized="callback()"

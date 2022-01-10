@@ -1,9 +1,9 @@
-import { each } from 'lodash';
-import { model as Challenge } from '../../../../website/server/models/challenge';
-import { model as Group } from '../../../../website/server/models/group';
-import { model as User } from '../../../../website/server/models/user';
+import {each} from 'lodash';
+import {model as Challenge} from '../../../../website/server/models/challenge';
+import {model as Group} from '../../../../website/server/models/group';
+import {model as User} from '../../../../website/server/models/user';
 import * as Tasks from '../../../../website/server/models/task';
-import { generateHistory } from '../../../helpers/api-unit.helper';
+import {generateHistory} from '../../../helpers/api-unit.helper';
 
 describe('Task Model', () => {
   let guild; let leader; let challenge; let

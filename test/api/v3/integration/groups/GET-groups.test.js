@@ -1,12 +1,5 @@
-import {
-  generateUser,
-  resetHabiticaDB,
-  generateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
-import {
-  TAVERN_ID,
-} from '../../../../../website/server/models/group';
+import {generateGroup, generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
+import {TAVERN_ID,} from '../../../../../website/server/models/group';
 import apiError from '../../../../../website/server/libs/apiError';
 
 describe('GET /groups', () => {

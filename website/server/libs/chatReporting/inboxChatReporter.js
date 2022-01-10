@@ -1,16 +1,14 @@
 import nconf from 'nconf';
-import { model as User } from '../../models/user';
+import {model as User} from '../../models/user';
 
 import ChatReporter from './chatReporter';
-import {
-  BadRequest,
-} from '../errors';
-import { getUserInfo, sendTxn } from '../email';
+import {BadRequest,} from '../errors';
+import {getUserInfo, sendTxn} from '../email';
 import * as slack from '../slack';
 import apiError from '../apiError';
 
 import * as inboxLib from '../inbox';
-import { getAuthorEmailFromMessage } from '../chat';
+import {getAuthorEmailFromMessage} from '../chat';
 
 const FLAG_REPORT_EMAILS = nconf.get('FLAG_REPORT_EMAIL')
   .split(',')

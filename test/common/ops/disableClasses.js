@@ -1,7 +1,5 @@
 import disableClasses from '../../../website/common/script/ops/disableClasses';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.ops.disableClasses', () => {
   let user;

@@ -1,11 +1,6 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  createAndPopulateGroup,
-  translate as t,
-  generateUser,
-  sleep,
-} from '../../../../helpers/api-integration/v3';
-import { chatModel as Chat } from '../../../../../website/server/models/message';
+import {v4 as generateUUID} from 'uuid';
+import {createAndPopulateGroup, generateUser, sleep, translate as t,} from '../../../../helpers/api-integration/v3';
+import {chatModel as Chat} from '../../../../../website/server/models/message';
 
 describe('POST /groups/:groupId/quests/reject', () => {
   let questingGroup;

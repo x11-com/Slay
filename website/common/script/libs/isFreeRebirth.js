@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { MAX_LEVEL } from '../constants';
+import {MAX_LEVEL} from '../constants';
 
 export default function isFreeRebirth (user) {
   let daysFromLastFreeRebirth = user.flags.lastFreeRebirth;

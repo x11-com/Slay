@@ -1,8 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-} from '../../../helpers/api-integration/v4';
+import {v4 as generateUUID} from 'uuid';
+import {generateUser, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('DELETE /inbox/messages/:messageId', () => {
   let user;

@@ -1,11 +1,11 @@
-import { exec } from 'child_process';
+import {exec} from 'child_process';
 import psTree from 'ps-tree';
 import nconf from 'nconf';
 import net from 'net';
-import { post } from 'superagent';
-import { sync as glob } from 'glob';
+import {post} from 'superagent';
+import {sync as glob} from 'glob';
 import Mocha from 'mocha'; // eslint-disable-line import/no-extraneous-dependencies
-import { resolve } from 'path';
+import {resolve} from 'path';
 
 /*
  * Get access to configruable values

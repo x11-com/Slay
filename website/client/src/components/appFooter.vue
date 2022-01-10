@@ -92,7 +92,7 @@
             </li>
             <li v-else>
               <a
-                href="mailto:admin@habitica.com?subject=Habitica Web Bug Report"
+                href="mailto:admin@s1ay.com?subject=slay Web Bug Report"
                 target="_blank"
               >
                 {{ $t('reportBug') }}

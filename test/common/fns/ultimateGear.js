@@ -1,7 +1,5 @@
 import ultimateGear from '../../../website/common/script/fns/ultimateGear';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.fns.ultimateGear', () => {
   let user;

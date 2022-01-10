@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 import validator from 'validator';
-import { v4 as uuid } from 'uuid';
+import {v4 as uuid} from 'uuid';
 import _ from 'lodash';
 import nconf from 'nconf';
 import baseModel from '../libs/baseModel';
 import shared from '../../common';
-import { BadRequest } from '../libs/errors';
+import {BadRequest} from '../libs/errors';
 import apiError from '../libs/apiError';
 
 const IS_PRODUCTION = nconf.get('IS_PROD');

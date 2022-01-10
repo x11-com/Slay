@@ -1,5 +1,5 @@
 import groupBy from 'lodash/groupBy';
-import { mapState } from '../../../libs/store';
+import {mapState} from '../../../libs/store';
 
 export const QuestHelperMixin = {
   computed: {

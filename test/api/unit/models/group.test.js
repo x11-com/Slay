@@ -1,22 +1,19 @@
 import moment from 'moment';
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 import validator from 'validator';
-import { sleep, translationCheck } from '../../../helpers/api-unit.helper';
+import {sleep, translationCheck} from '../../../helpers/api-unit.helper';
 import {
+  INVITES_LIMIT,
+  model as Group,
   SPAM_MESSAGE_LIMIT,
   SPAM_MIN_EXEMPT_CONTRIB_LEVEL,
   SPAM_WINDOW_LENGTH,
-  INVITES_LIMIT,
-  model as Group,
 } from '../../../../website/server/models/group';
-import { model as User } from '../../../../website/server/models/user';
-import { quests as questScrolls } from '../../../../website/common/script/content/quests';
-import {
-  groupChatReceivedWebhook,
-  questActivityWebhook,
-} from '../../../../website/server/libs/webhook';
+import {model as User} from '../../../../website/server/models/user';
+import {quests as questScrolls} from '../../../../website/common/script/content/quests';
+import {groupChatReceivedWebhook, questActivityWebhook,} from '../../../../website/server/libs/webhook';
 import * as email from '../../../../website/server/libs/email';
-import { TAVERN_ID } from '../../../../website/common/script/constants';
+import {TAVERN_ID} from '../../../../website/common/script/constants';
 import shared from '../../../../website/common';
 
 describe('Group Model', () => {

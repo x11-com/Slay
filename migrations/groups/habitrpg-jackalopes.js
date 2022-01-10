@@ -5,8 +5,8 @@
  * for Jackalope mounts, and award them
  */
 
-import { model as Group } from '../../website/server/models/group';
-import { model as User } from '../../website/server/models/user';
+import {model as Group} from '../../website/server/models/group';
+import {model as User} from '../../website/server/models/user';
 
 async function handOutJackalopes () {
   const promises = [];

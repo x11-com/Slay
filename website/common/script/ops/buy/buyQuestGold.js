@@ -1,12 +1,8 @@
 import get from 'lodash/get';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
 import content from '../../content/index';
 
-import { AbstractGoldItemOperation } from './abstractBuyOperation';
+import {AbstractGoldItemOperation} from './abstractBuyOperation';
 import errorMessage from '../../libs/errorMessage';
 
 export class BuyQuestWithGoldOperation extends AbstractGoldItemOperation { // eslint-disable-line import/prefer-default-export, max-len

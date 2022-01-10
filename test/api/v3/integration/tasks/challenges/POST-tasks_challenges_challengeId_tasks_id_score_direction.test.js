@@ -1,10 +1,5 @@
-import { find } from 'lodash';
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-  sleep,
-} from '../../../../../helpers/api-integration/v3';
+import {find} from 'lodash';
+import {generateChallenge, generateGroup, generateUser, sleep,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/:id/score/:direction', () => {
   let user;

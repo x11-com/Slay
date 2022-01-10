@@ -1,5 +1,5 @@
 import get from 'lodash/get';
-import { BadRequest } from '../libs/errors';
+import {BadRequest} from '../libs/errors';
 
 // TODO used only in client, move there?
 

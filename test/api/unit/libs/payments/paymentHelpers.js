@@ -1,4 +1,4 @@
-import { model as User } from '../../../../../website/server/models/user';
+import {model as User} from '../../../../../website/server/models/user';
 
 export async function createNonLeaderGroupMember (group) { // eslint-disable-line import/prefer-default-export, max-len
   const nonLeader = new User();

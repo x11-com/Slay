@@ -1,4 +1,4 @@
-# Habitica Client
+# slay Client
 
 ## Project setup
 ```

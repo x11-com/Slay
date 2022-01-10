@@ -1,12 +1,10 @@
 import each from 'lodash/each';
 import i18n from '../i18n';
-import { capByLevel } from '../statHelpers';
-import { MAX_LEVEL } from '../constants';
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {capByLevel} from '../statHelpers';
+import {MAX_LEVEL} from '../constants';
+import {NotAuthorized,} from '../libs/errors';
 import equip from './equip';
-import { removePinnedGearByClass } from './pinnedGearUtils';
+import {removePinnedGearByClass} from './pinnedGearUtils';
 import isFreeRebirth from '../libs/isFreeRebirth';
 import setDebuffPotionItems from '../libs/setDebuffPotionItems';
 

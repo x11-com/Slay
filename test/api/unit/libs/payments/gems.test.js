@@ -1,9 +1,6 @@
 import common from '../../../../../website/common';
-import {
-  getGemsBlock,
-  validateGiftMessage,
-} from '../../../../../website/server/libs/payments/gems';
-import { model as User } from '../../../../../website/server/models/user';
+import {getGemsBlock, validateGiftMessage,} from '../../../../../website/server/libs/payments/gems';
+import {model as User} from '../../../../../website/server/models/user';
 
 const { i18n } = common;
 

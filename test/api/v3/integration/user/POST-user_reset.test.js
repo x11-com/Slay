@@ -1,10 +1,5 @@
-import { find } from 'lodash';
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {find} from 'lodash';
+import {generateChallenge, generateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /user/reset', () => {
   let user;

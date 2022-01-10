@@ -1,4 +1,4 @@
-import { selectGearToPin } from '../website/common/script/ops/pinnedGearUtils';
+import {selectGearToPin} from '../website/common/script/ops/pinnedGearUtils';
 
 let getItemInfo = require('../website/common/script/libs/getItemInfo');
 

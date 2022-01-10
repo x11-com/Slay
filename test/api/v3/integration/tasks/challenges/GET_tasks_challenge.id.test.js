@@ -1,9 +1,9 @@
-import { v4 as generateUUID } from 'uuid';
-import { each } from 'lodash';
+import {v4 as generateUUID} from 'uuid';
+import {each} from 'lodash';
 import {
-  generateUser,
-  generateGroup,
   generateChallenge,
+  generateGroup,
+  generateUser,
   translate as t,
 } from '../../../../../helpers/api-integration/v3';
 

@@ -1,8 +1,4 @@
-import {
-  translations,
-  langCodes,
-  approvedLanguages,
-} from '../../../../website/server/libs/i18n';
+import {approvedLanguages, langCodes, translations,} from '../../../../website/server/libs/i18n';
 
 describe('i18n', () => {
   const listOfLocales = approvedLanguages.sort();

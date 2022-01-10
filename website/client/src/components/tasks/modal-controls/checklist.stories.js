@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/vue';
-import { withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs} from '@storybook/addon-knobs';
 
 import CheckList from './checklist.vue';
 
@@ -13,9 +13,9 @@ stories
     template: `
       <div style="position: absolute; margin: 20px; background: white">
         <check-list :items.sync="checklist">
-          
+
         </check-list>
-        
+
         <br/>
         <br/>
         Data: <br/>

@@ -1,13 +1,7 @@
 import sell from '../../../website/common/script/ops/sell';
 import i18n from '../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
-import {
-  NotAuthorized,
-  BadRequest,
-  NotFound,
-} from '../../../website/common/script/libs/errors';
+import {generateUser,} from '../../helpers/common.helper';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../website/common/script/libs/errors';
 import content from '../../../website/common/script/content/index';
 
 describe('shared.ops.sell', () => {

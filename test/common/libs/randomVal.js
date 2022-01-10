@@ -1,4 +1,4 @@
-import { times } from 'lodash';
+import {times} from 'lodash';
 import randomVal from '../../../website/common/script/libs/randomVal';
 
 describe('randomVal', () => {

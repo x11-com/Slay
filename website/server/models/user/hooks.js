@@ -3,21 +3,11 @@ import moment from 'moment';
 import common from '../../../common';
 import baseModel from '../../libs/baseModel';
 import * as Tasks from '../task';
-import {
-  model as UserNotification,
-} from '../userNotification';
-import {
-  model as PushDevice,
-} from '../pushDevice';
-import {
-  model as Tag,
-} from '../tag';
-import {
-  model as NewsPost,
-} from '../newsPost';
-import { // eslint-disable-line import/no-cycle
-  userActivityWebhook,
-} from '../../libs/webhook';
+import {model as UserNotification,} from '../userNotification';
+import {model as PushDevice,} from '../pushDevice';
+import {model as Tag,} from '../tag';
+import {model as NewsPost,} from '../newsPost';
+import {userActivityWebhook,} from '../../libs/webhook';
 import schema from './schema'; // eslint-disable-line import/no-cycle
 
 schema.plugin(baseModel, {

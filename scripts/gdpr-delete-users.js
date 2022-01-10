@@ -1,7 +1,7 @@
 /* eslint-disable no-console, import/no-commonjs */
 import axios from 'axios'; // eslint-disable-line import/no-extraneous-dependencies
 import nconf from 'nconf';
-import { model as User } from '../website/server/models/user';
+import {model as User} from '../website/server/models/user';
 
 const AMPLITUDE_KEY = nconf.get('AMPLITUDE_KEY');
 const AMPLITUDE_SECRET = nconf.get('AMPLITUDE_SECRET');
@@ -64,7 +64,7 @@ async function deleteHabiticaData (user, email) {
     if (response.status === 200) {
       console.log(`${user._id} (${email}) removed from Habitica. Last login: ${user.auth.timestamps.loggedin}`);
     } else {
-      console.log(`${user._id} (${email}) Habitica response: ${response.status} ${response.statusText}`);
+      console.log(`${user._id} (${email}) slay response: ${response.status} ${response.statusText}`);
     }
   }
 }

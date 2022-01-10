@@ -1,7 +1,7 @@
 import nconf from 'nconf';
 import got from 'got';
-import { TAVERN_ID } from '../models/group'; // eslint-disable-line import/no-cycle
-import { encrypt } from './encryption';
+import {TAVERN_ID} from '../models/group'; // eslint-disable-line import/no-cycle
+import {encrypt} from './encryption';
 import logger from './logger';
 import common from '../../common';
 

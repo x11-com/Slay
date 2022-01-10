@@ -1,9 +1,7 @@
 import cloneDeep from 'lodash/cloneDeep';
 import content from '../content/index';
 import i18n from '../i18n';
-import {
-  BadRequest,
-} from '../libs/errors';
+import {BadRequest,} from '../libs/errors';
 
 function markNotificationAsRead (user) {
   const index = user.notifications.findIndex(notification => notification && notification.type === 'NEW_MYSTERY_ITEMS');

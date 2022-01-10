@@ -1,10 +1,6 @@
 import accepts from 'accepts';
 import _ from 'lodash';
-import {
-  translations,
-  defaultLangCodes,
-  multipleVersionsLanguages,
-} from './i18n';
+import {defaultLangCodes, multipleVersionsLanguages, translations,} from './i18n';
 
 function getUniqueListOfLanguages (languages) {
   const acceptableLanguages = _(languages).map(lang => lang.slice(0, 2)).uniq().value();

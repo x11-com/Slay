@@ -1,10 +1,7 @@
 import nconf from 'nconf';
 import mongoose from 'mongoose';
 import logger from './logger';
-import {
-  getDevelopmentConnectionUrl,
-  getDefaultConnectionOptions,
-} from './mongodb';
+import {getDefaultConnectionOptions, getDevelopmentConnectionUrl,} from './mongodb';
 
 const IS_PROD = nconf.get('IS_PROD');
 const MAINTENANCE_MODE = nconf.get('MAINTENANCE_MODE');

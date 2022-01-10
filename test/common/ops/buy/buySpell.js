@@ -1,13 +1,7 @@
-import { BuySpellOperation } from '../../../../website/common/script/ops/buy/buySpell';
-import {
-  BadRequest,
-  NotFound,
-  NotAuthorized,
-} from '../../../../website/common/script/libs/errors';
+import {BuySpellOperation} from '../../../../website/common/script/ops/buy/buySpell';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
+import {generateUser,} from '../../../helpers/common.helper';
 import content from '../../../../website/common/script/content/index';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
 

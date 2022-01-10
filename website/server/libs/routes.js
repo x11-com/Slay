@@ -1,11 +1,7 @@
 import fs from 'fs';
 import _ from 'lodash';
-import {
-  getUserLanguage,
-} from '../middlewares/language';
-import {
-  disableCache,
-} from '../middlewares/cache';
+import {getUserLanguage,} from '../middlewares/language';
+import {disableCache,} from '../middlewares/cache';
 
 // Wrapper function to handler `async` route handlers that return promises
 // It takes the async function, execute it and pass any error to next (args[2])

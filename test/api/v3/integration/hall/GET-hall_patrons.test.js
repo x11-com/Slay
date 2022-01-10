@@ -1,9 +1,5 @@
-import { times } from 'lodash';
-import {
-  generateUser,
-  translate as t,
-  resetHabiticaDB,
-} from '../../../../helpers/api-integration/v3';
+import {times} from 'lodash';
+import {generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /hall/patrons', () => {
   let user;

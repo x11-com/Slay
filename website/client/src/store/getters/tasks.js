@@ -1,8 +1,8 @@
-import { shouldDo } from '@/../../common/script/cron';
+import {shouldDo} from '@/../../common/script/cron';
 
 // Library / Utility function
-import { orderSingleTypeTasks } from '@/libs/store/helpers/orderTasks';
-import { getActiveFilter, sortAndFilterTasks } from '@/libs/store/helpers/filterTasks';
+import {orderSingleTypeTasks} from '@/libs/store/helpers/orderTasks';
+import {getActiveFilter, sortAndFilterTasks} from '@/libs/store/helpers/filterTasks';
 
 // Return all the tags belonging to an user task
 export function getTagsFor (store) {

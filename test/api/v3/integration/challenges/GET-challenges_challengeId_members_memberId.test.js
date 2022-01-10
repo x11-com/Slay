@@ -1,10 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  generateChallenge,
-  generateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateChallenge, generateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /challenges/:challengeId/members/:memberId', () => {
   let user;

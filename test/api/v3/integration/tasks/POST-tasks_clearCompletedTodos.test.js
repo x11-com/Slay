@@ -1,8 +1,4 @@
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-} from '../../../../helpers/api-integration/v3';
+import {generateChallenge, generateGroup, generateUser,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/clearCompletedTodos', () => {
   it('deletes all completed todos except the ones from a challenge and group', async () => {

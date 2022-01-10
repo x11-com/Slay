@@ -2,12 +2,9 @@ import get from 'lodash/get';
 import includes from 'lodash/includes';
 import keys from 'lodash/keys';
 import content from '../../content/index';
-import {
-  BadRequest,
-  NotAuthorized,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized,} from '../../libs/errors';
 
-import { AbstractHourglassItemOperation } from './abstractBuyOperation';
+import {AbstractHourglassItemOperation} from './abstractBuyOperation';
 
 export class BuyHourglassMountOperation extends AbstractHourglassItemOperation { // eslint-disable-line import/prefer-default-export, max-len
   multiplePurchaseAllowed () { // eslint-disable-line class-methods-use-this

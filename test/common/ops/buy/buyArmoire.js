@@ -1,15 +1,11 @@
 /* eslint-disable camelcase */
 
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
+import {generateUser,} from '../../../helpers/common.helper';
 import * as count from '../../../../website/common/script/count';
-import { BuyArmoireOperation } from '../../../../website/common/script/ops/buy/buyArmoire';
+import {BuyArmoireOperation} from '../../../../website/common/script/ops/buy/buyArmoire';
 import * as randomValFns from '../../../../website/common/script/libs/randomVal';
 import content from '../../../../website/common/script/content/index';
-import {
-  NotAuthorized,
-} from '../../../../website/common/script/libs/errors';
+import {NotAuthorized,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 
 function getFullArmoire () {

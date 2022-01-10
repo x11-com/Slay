@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs} from '@storybook/addon-knobs';
 
 import positiveIcon from '@/assets/svg/positive.svg';
 
@@ -16,7 +16,7 @@ stories
         icon: positiveIcon,
       };
     },
-    template: `      
+    template: `
       <div style="position: absolute; margin: 20px; display: flex; flex-direction: row;">
         <div class="mr-3">
           <h3>Button</h3>
@@ -35,7 +35,7 @@ stories
              <span class="svg-icon color inline icon-12 mr-2"
                    v-html="icon"
              >
-               
+
              </span>
             <span class="button-label">
               Button Primary
@@ -46,7 +46,7 @@ stories
             <span class="svg-icon color inline icon-12 mr-2"
                   v-html="icon"
             >
-               
+
              </span>
             <span class="button-label">
               Button Primary Disabled
@@ -58,7 +58,7 @@ stories
             <span class="svg-icon color inline icon-12 mr-2"
                   v-html="icon"
             >
-               
+
              </span>
             <span class="button-label">
               Button Secondary
@@ -69,7 +69,7 @@ stories
             <span class="svg-icon color inline icon-12 mr-2"
                   v-html="icon"
             >
-               
+
             </span>
             <span class="button-label">
               Button Secondary Disabled
@@ -86,7 +86,7 @@ stories
         items: ['one', 'two', 'three'],
       };
     },
-    template: `      
+    template: `
       <div style="position: absolute; margin: 20px; display: flex; flex-direction: row;">
         <div class="mr-3">
           <h3>Dropdowns</h3>

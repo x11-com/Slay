@@ -1,19 +1,19 @@
-import { IncomingWebhook } from '@slack/webhook';
+import {IncomingWebhook} from '@slack/webhook';
 import nconf from 'nconf';
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 import {
   createAndPopulateGroup,
   generateUser,
-  translate as t,
-  sleep,
   server,
+  sleep,
+  translate as t,
 } from '../../../../helpers/api-integration/v3';
 import {
   SPAM_MESSAGE_LIMIT,
   SPAM_MIN_EXEMPT_CONTRIB_LEVEL,
   TAVERN_ID,
 } from '../../../../../website/server/models/group';
-import { CHAT_FLAG_FROM_SHADOW_MUTE, MAX_MESSAGE_LENGTH } from '../../../../../website/common/script/constants';
+import {CHAT_FLAG_FROM_SHADOW_MUTE, MAX_MESSAGE_LENGTH} from '../../../../../website/common/script/constants';
 import * as email from '../../../../../website/server/libs/email';
 
 const BASE_URL = nconf.get('BASE_URL');

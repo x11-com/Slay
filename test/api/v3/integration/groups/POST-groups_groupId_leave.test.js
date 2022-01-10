@@ -1,17 +1,18 @@
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 import each from 'lodash/each';
 import moment from 'moment';
 import {
-  generateChallenge,
   checkExistence,
   createAndPopulateGroup,
-  sleep,
+  generateChallenge,
   generateUser,
+  sleep,
   translate as t,
 } from '../../../../helpers/api-integration/v3';
-import { model as User } from '../../../../../website/server/models/user';
+import {model as User} from '../../../../../website/server/models/user';
 import payments from '../../../../../website/server/libs/payments/payments';
-import calculateSubscriptionTerminationDate from '../../../../../website/server/libs/payments/calculateSubscriptionTerminationDate';
+import calculateSubscriptionTerminationDate
+  from '../../../../../website/server/libs/payments/calculateSubscriptionTerminationDate';
 
 describe('POST /groups/:groupId/leave', () => {
   const typesOfGroups = {

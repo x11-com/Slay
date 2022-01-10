@@ -1,7 +1,5 @@
-import {
-  generateUser,
-} from '../../../helpers/api-integration/v4';
-import { UNEQUIP_EQUIPPED } from '../../../../website/common/script/ops/unequip';
+import {generateUser,} from '../../../helpers/api-integration/v4';
+import {UNEQUIP_EQUIPPED} from '../../../../website/common/script/ops/unequip';
 
 describe('POST /user/unequip', () => {
   let user;

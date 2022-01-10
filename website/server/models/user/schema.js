@@ -1,16 +1,14 @@
-import { Schema } from 'mongoose';
+import {Schema} from 'mongoose';
 import validator from 'validator';
 import shared from '../../../common';
-import { // eslint-disable-line import/no-cycle
-  getDefaultOwnedGear,
-} from '../../libs/items/utils';
-import { schema as PushDeviceSchema } from '../pushDevice';
-import { schema as SubscriptionPlanSchema } from '../subscriptionPlan';
-import { schema as TagSchema } from '../tag';
-import { schema as UserNotificationSchema } from '../userNotification';
-import { schema as WebhookSchema } from '../webhook';
+import {getDefaultOwnedGear,} from '../../libs/items/utils';
+import {schema as PushDeviceSchema} from '../pushDevice';
+import {schema as SubscriptionPlanSchema} from '../subscriptionPlan';
+import {schema as TagSchema} from '../tag';
+import {schema as UserNotificationSchema} from '../userNotification';
+import {schema as WebhookSchema} from '../webhook';
 
-const RESTRICTED_EMAIL_DOMAINS = Object.freeze(['habitica.com', 'habitrpg.com']);
+const RESTRICTED_EMAIL_DOMAINS = Object.freeze(['s1ay.com', 'habitrpg.com']);
 
 // User schema definition
 export default new Schema({

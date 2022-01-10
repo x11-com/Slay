@@ -1,14 +1,10 @@
 import nconf from 'nconf';
 import url from 'url';
-import {
-  NotAuthorized,
-} from '../libs/errors';
-import {
-  model as User,
-} from '../models/user';
+import {NotAuthorized,} from '../libs/errors';
+import {model as User,} from '../models/user';
 import gcpStackdriverTracer from '../libs/gcpTraceAgent';
 import common from '../../common';
-import { getLanguageFromUser } from '../libs/language';
+import {getLanguageFromUser} from '../libs/language';
 
 const COMMUNITY_MANAGER_EMAIL = nconf.get('EMAILS_COMMUNITY_MANAGER_EMAIL');
 const USER_FIELDS_ALWAYS_LOADED = ['_id', 'notifications', 'preferences', 'auth', 'flags'];

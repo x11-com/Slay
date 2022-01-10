@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { startOfDay, daysSince } from '../../../website/common/script/cron';
+import {daysSince, startOfDay} from '../../../website/common/script/cron';
 
 function localMoment (timeString, utcOffset) {
   return moment(timeString).utcOffset(utcOffset, true);

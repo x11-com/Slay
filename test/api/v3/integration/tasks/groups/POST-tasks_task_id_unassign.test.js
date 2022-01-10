@@ -1,10 +1,6 @@
-import { v4 as generateUUID } from 'uuid';
-import { find } from 'lodash';
-import {
-  generateUser,
-  createAndPopulateGroup,
-  translate as t,
-} from '../../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {find} from 'lodash';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/:taskId/unassign/:memberId', () => {
   let user; let guild; let member; let member2; let

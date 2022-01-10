@@ -1,18 +1,16 @@
 import mongoose from 'mongoose';
 import validator from 'validator';
 import _ from 'lodash';
-import { TaskQueue } from 'cwait';
+import {TaskQueue} from 'cwait';
 import baseModel from '../libs/baseModel';
 import * as Tasks from './task';
-import { model as User } from './user'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-} from './group';
-import { removeFromArray } from '../libs/collectionManipulators';
+import {model as User} from './user'; // eslint-disable-line import/no-cycle
+import {model as Group,} from './group';
+import {removeFromArray} from '../libs/collectionManipulators';
 import shared from '../../common';
-import { sendTxn as txnEmail } from '../libs/email'; // eslint-disable-line import/no-cycle
-import { sendNotification as sendPushNotification } from '../libs/pushNotifications'; // eslint-disable-line import/no-cycle
-import { syncableAttrs, setNextDue } from '../libs/tasks/utils';
+import {sendTxn as txnEmail} from '../libs/email'; // eslint-disable-line import/no-cycle
+import {sendNotification as sendPushNotification} from '../libs/pushNotifications'; // eslint-disable-line import/no-cycle
+import {setNextDue, syncableAttrs} from '../libs/tasks/utils';
 
 const { Schema } = mongoose;
 

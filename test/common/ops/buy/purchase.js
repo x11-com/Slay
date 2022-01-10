@@ -2,15 +2,9 @@ import forEach from 'lodash/forEach';
 import moment from 'moment';
 import purchase from '../../../../website/common/script/ops/buy/purchase';
 import * as pinnedGearUtils from '../../../../website/common/script/ops/pinnedGearUtils';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../../../website/common/script/libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
+import {generateUser,} from '../../../helpers/common.helper';
 
 describe('shared.ops.purchase', () => {
   const SEASONAL_FOOD = moment().isBefore('2021-11-02T20:00-04:00') ? 'Candy_Base' : 'Meat';

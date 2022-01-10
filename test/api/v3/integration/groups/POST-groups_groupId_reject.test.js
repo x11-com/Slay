@@ -1,8 +1,4 @@
-import {
-  generateUser,
-  createAndPopulateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /group/:groupId/reject-invite', () => {
   context('Rejecting a public guild invite', () => {

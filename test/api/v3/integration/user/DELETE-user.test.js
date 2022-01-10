@@ -1,20 +1,13 @@
-import {
-  find,
-  each,
-  map,
-} from 'lodash';
+import {each, find, map,} from 'lodash';
 import {
   checkExistence,
   createAndPopulateGroup,
+  generateChallenge,
   generateGroup,
   generateUser,
-  generateChallenge,
   translate as t,
 } from '../../../../helpers/api-integration/v3';
-import {
-  sha1MakeSalt,
-  sha1Encrypt as sha1EncryptPassword,
-} from '../../../../../website/server/libs/password';
+import {sha1Encrypt as sha1EncryptPassword, sha1MakeSalt,} from '../../../../../website/server/libs/password';
 import * as email from '../../../../../website/server/libs/email';
 
 const DELETE_CONFIRMATION = 'DELETE';
@@ -68,7 +61,7 @@ describe('DELETE /user', () => {
       })).to.eventually.be.rejected.and.eql({
         code: 400,
         error: 'BadRequest',
-        message: 'Account deletion feedback is limited to 10,000 characters. For lengthy feedback, email admin@habitica.com.',
+        message: 'Account deletion feedback is limited to 10,000 characters. For lengthy feedback, email admin@s1ay.com.',
       });
     });
 

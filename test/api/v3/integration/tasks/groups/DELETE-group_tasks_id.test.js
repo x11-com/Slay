@@ -1,8 +1,5 @@
-import { find } from 'lodash';
-import {
-  translate as t,
-  createAndPopulateGroup,
-} from '../../../../../helpers/api-integration/v3';
+import {find} from 'lodash';
+import {createAndPopulateGroup, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('Groups DELETE /tasks/:id', () => {
   let user; let guild; let member; let member2; let

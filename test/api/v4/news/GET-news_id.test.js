@@ -1,8 +1,5 @@
-import { v4 } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-} from '../../../helpers/api-integration/v4';
+import {v4} from 'uuid';
+import {generateUser, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('GET /news/:newsID', () => {
   let user;

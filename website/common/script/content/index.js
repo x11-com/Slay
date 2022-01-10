@@ -2,16 +2,16 @@ import defaults from 'lodash/defaults';
 import each from 'lodash/each';
 import moment from 'moment';
 import t from './translation';
-import { tasksByCategory } from './tasks';
+import {tasksByCategory} from './tasks';
 
 import {
-  EVENTS,
+  ANIMAL_COLOR_ACHIEVEMENTS,
+  ANIMAL_SET_ACHIEVEMENTS,
   CLASSES,
+  EVENTS,
   GEAR_TYPES,
   ITEM_LIST,
   QUEST_SERIES_ACHIEVEMENTS,
-  ANIMAL_COLOR_ACHIEVEMENTS,
-  ANIMAL_SET_ACHIEVEMENTS,
 } from './constants';
 
 import achievements from './achievements';
@@ -20,14 +20,10 @@ import * as eggs from './eggs';
 import * as hatchingPotions from './hatching-potions';
 import * as stable from './stable';
 import gear from './gear';
-import {
-  quests,
-  questsByLevel,
-  userCanOwnQuestCategories,
-} from './quests';
+import {quests, questsByLevel, userCanOwnQuestCategories,} from './quests';
 
 import appearances from './appearance';
-import { backgroundsTree, backgroundsFlat } from './appearance/backgrounds';
+import {backgroundsFlat, backgroundsTree} from './appearance/backgrounds';
 import bundles from './bundles';
 import spells from './spells'; // eslint-disable-line import/no-cycle
 import subscriptionBlocks from './subscriptionBlocks';

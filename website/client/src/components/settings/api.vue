@@ -144,7 +144,7 @@
 import { mapState } from '@/libs/store';
 import uuid from '@/../../common/script/libs/uuid';
 // @TODO: env.EMAILS.TECH_ASSISTANCE_EMAIL
-const TECH_ASSISTANCE_EMAIL = 'admin@habitica.com';
+const TECH_ASSISTANCE_EMAIL = 'admin@s1ay.com';
 
 export default {
   data () {

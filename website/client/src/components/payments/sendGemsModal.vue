@@ -176,7 +176,7 @@ import paymentsButtons from '@/components/payments/buttons/list';
 import { MAX_GIFT_MESSAGE_LENGTH } from '@/../../common/script/constants';
 
 // @TODO: EMAILS.TECH_ASSISTANCE_EMAIL, load from config
-const TECH_ASSISTANCE_EMAIL = 'admin@habitica.com';
+const TECH_ASSISTANCE_EMAIL = 'admin@s1ay.com';
 
 export default {
   components: {

@@ -1,13 +1,7 @@
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 
-import {
-  each,
-} from 'lodash';
-import {
-  generateUser,
-  createAndPopulateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {each,} from 'lodash';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /groups/:id', () => {
   const typesOfGroups = {};

@@ -1,8 +1,6 @@
 /* eslint-disable camelcase */
 
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /user/equip/:type/:key', () => {
   let user;

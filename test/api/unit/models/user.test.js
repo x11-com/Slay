@@ -1,7 +1,7 @@
 import moment from 'moment';
-import { model as User } from '../../../../website/server/models/user';
-import { model as NewsPost } from '../../../../website/server/models/newsPost';
-import { model as Group } from '../../../../website/server/models/group';
+import {model as User} from '../../../../website/server/models/user';
+import {model as NewsPost} from '../../../../website/server/models/newsPost';
+import {model as Group} from '../../../../website/server/models/group';
 import common from '../../../../website/common';
 
 describe('User Model', () => {

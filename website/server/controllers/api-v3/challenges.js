@@ -1,32 +1,20 @@
 import _ from 'lodash';
 import cloneDeep from 'lodash/cloneDeep';
-import { authWithHeaders, authWithSession } from '../../middlewares/auth';
-import { model as Challenge } from '../../models/challenge';
-import {
-  model as Group,
-  basicFields as basicGroupFields,
-  TAVERN_ID,
-} from '../../models/group';
-import {
-  model as User,
-  nameFields,
-} from '../../models/user';
-import {
-  NotFound,
-  NotAuthorized,
-} from '../../libs/errors';
+import {authWithHeaders, authWithSession} from '../../middlewares/auth';
+import {model as Challenge} from '../../models/challenge';
+import {basicFields as basicGroupFields, model as Group, TAVERN_ID,} from '../../models/group';
+import {model as User, nameFields,} from '../../models/user';
+import {NotAuthorized, NotFound,} from '../../libs/errors';
 import * as Tasks from '../../models/task';
 import csvStringify from '../../libs/csvStringify';
-import {
-  createTasks,
-} from '../../libs/tasks';
+import {createTasks,} from '../../libs/tasks';
 
 import {
   addUserJoinChallengeNotification,
-  getChallengeGroupResponse,
-  createChallenge,
   cleanUpTask,
+  createChallenge,
   createChallengeQuery,
+  getChallengeGroupResponse,
 } from '../../libs/challenges';
 import apiError from '../../libs/apiError';
 
@@ -66,7 +54,7 @@ const api = {};
  * @apiSuccess {Array} challenge.tasksOrder.dailys Array of `daily` task IDs.
  * @apiSuccess {Array} challenge.tasksOrder.habits Array of `habit` task IDs.
  * @apiSuccess {Boolean} challenge.official Boolean indicating if
- *                                          this is an official Habitica challenge.
+ *                                          this is an official slay challenge.
  *
  */
 
@@ -175,7 +163,7 @@ const api = {};
  *                                               if not supplied, challenge.name will be used.
  * @apiParam (Body) {String} [challenge.description] A detailed description of the challenge
  * @apiParam (Body) {Boolean} [official=false] Whether or not a challenge is an official
- *                                             Habitica challenge (requires admin).
+ *                                             Slay challenge (requires admin).
  * @apiParam (Body) {Number} [challenge.prize=0] Number of gems offered as
  *                                               a prize to challenge winner.
  *
@@ -185,7 +173,7 @@ const api = {};
  * @apiUse ChallengeSuccessExample
  *
  * @apiError (401) {NotAuthorized} CantAffordPrize User does not have enough
-                                                   gems to offer this prize.
+ gems to offer this prize.
  * @apiError (400) {BadRequest} ChallengeValidationFailed Invalid or missing parameter
                                                           in challenge body.
  *

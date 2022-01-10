@@ -1,20 +1,20 @@
 import _ from 'lodash';
-import { authWithHeaders } from '../../middlewares/auth';
+import {authWithHeaders} from '../../middlewares/auth';
 import ensureDevelpmentMode from '../../middlewares/ensureDevelpmentMode';
-import { BadRequest } from '../../libs/errors';
+import {BadRequest} from '../../libs/errors';
 import common from '../../../common';
 
 const { content } = common;
 
 /**
  * @apiDefine Development Development
- * These routes only exist while Habitica is in development mode.
+ * These routes only exist while slay is in development mode.
  * (Such as running a local instance on your computer).
  */
 
 /**
  * @apiDefine Developers Local Development
- * This route only exists when developing Habitica in non-production environment.
+ * This route only exists when developing slay in non-production environment.
  */
 
 const api = {};

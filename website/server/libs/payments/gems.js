@@ -1,14 +1,9 @@
-import { getAnalyticsServiceByEnvironment } from '../analyticsService';
-import { getCurrentEvent } from '../worldState'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  getUserInfo,
-  sendTxn as txnEmail,
-} from '../email';
-import { sendNotification as sendPushNotification } from '../pushNotifications'; // eslint-disable-line import/no-cycle
+import {getAnalyticsServiceByEnvironment} from '../analyticsService';
+import {getCurrentEvent} from '../worldState'; // eslint-disable-line import/no-cycle
+import {getUserInfo, sendTxn as txnEmail,} from '../email';
+import {sendNotification as sendPushNotification} from '../pushNotifications'; // eslint-disable-line import/no-cycle
 import shared from '../../../common';
-import {
-  BadRequest,
-} from '../errors';
+import {BadRequest,} from '../errors';
 import apiError from '../apiError';
 
 const analytics = getAnalyticsServiceByEnvironment();

@@ -1,5 +1,5 @@
 import nconf from 'nconf';
-import { convertVariableObjectToArray, sendTxn } from './email';
+import {convertVariableObjectToArray, sendTxn} from './email';
 
 export async function bugReportLogic (
   user, userEmail, message, BROWSER_UA,

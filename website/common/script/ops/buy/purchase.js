@@ -4,13 +4,9 @@ import forEach from 'lodash/forEach';
 import i18n from '../../i18n';
 import content from '../../content/index';
 import splitWhitespace from '../../libs/splitWhitespace';
-import {
-  NotFound,
-  NotAuthorized,
-  BadRequest,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
 
-import { removeItemByPath } from '../pinnedGearUtils';
+import {removeItemByPath} from '../pinnedGearUtils';
 import getItemInfo from '../../libs/getItemInfo';
 
 function getItemAndPrice (user, type, key, req) {

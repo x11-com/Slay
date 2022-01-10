@@ -1,11 +1,5 @@
 import randomDrop from '../../../website/common/script/fns/randomDrop';
-import {
-  generateUser,
-  generateTodo,
-  generateHabit,
-  generateDaily,
-  generateReward,
-} from '../../helpers/common.helper';
+import {generateDaily, generateHabit, generateReward, generateTodo, generateUser,} from '../../helpers/common.helper';
 
 describe('common.fns.randomDrop', () => {
   let user;

@@ -1,6 +1,6 @@
 import faq from '../../../../website/common/script/content/faq';
 import common from '../../../../website/common';
-import { localizeContentData } from '../../../../website/server/libs/content';
+import {localizeContentData} from '../../../../website/server/libs/content';
 
 const { i18n } = common;
 

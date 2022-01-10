@@ -2,8 +2,8 @@
 import got from 'got';
 import nconf from 'nconf';
 import requireAgain from 'require-again';
-import { TAVERN_ID } from '../../../../website/server/models/group';
-import { defer } from '../../../helpers/api-unit.helper';
+import {TAVERN_ID} from '../../../../website/server/models/group';
+import {defer} from '../../../helpers/api-unit.helper';
 
 function getUser () {
   return {

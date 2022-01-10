@@ -1,11 +1,7 @@
 /* eslint-disable global-require */
 import nconf from 'nconf';
 import requireAgain from 'require-again';
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 import * as analyticsService from '../../../../website/server/libs/analyticsService';
 
 describe('analytics middleware', () => {

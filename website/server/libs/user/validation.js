@@ -1,10 +1,6 @@
 import bannedSlurs from '../bannedSlurs';
 import bannedWords from '../bannedWords';
-import {
-  getMatchesByWordArray,
-  normalizeUnicodeString,
-  removePunctuationFromString,
-} from '../stringUtils';
+import {getMatchesByWordArray, normalizeUnicodeString, removePunctuationFromString,} from '../stringUtils';
 import forbiddenUsernames from '../forbiddenUsernames';
 
 const bannedSlurRegexes = bannedSlurs.map(word => new RegExp(`\\b([^a-z]+)?${word}([^a-z]+)?\\b`, 'i'));

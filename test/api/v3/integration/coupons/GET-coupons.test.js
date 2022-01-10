@@ -1,7 +1,4 @@
-import {
-  generateUser,
-  resetHabiticaDB,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetHabiticaDB,} from '../../../../helpers/api-integration/v3';
 import apiError from '../../../../../website/server/libs/apiError';
 
 describe('GET /coupons/', () => {

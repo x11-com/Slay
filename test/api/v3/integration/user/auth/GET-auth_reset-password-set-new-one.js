@@ -1,12 +1,8 @@
 import moment from 'moment';
 import superagent from 'superagent';
 import nconf from 'nconf';
-import {
-  generateUser,
-} from '../../../../../helpers/api-integration/v3';
-import {
-  encrypt,
-} from '../../../../../../website/server/libs/encryption';
+import {generateUser,} from '../../../../../helpers/api-integration/v3';
+import {encrypt,} from '../../../../../../website/server/libs/encryption';
 
 const API_TEST_SERVER_PORT = nconf.get('PORT');
 

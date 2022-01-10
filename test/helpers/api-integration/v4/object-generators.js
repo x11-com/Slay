@@ -1,9 +1,7 @@
-import {
-  times,
-} from 'lodash';
-import { v4 as generateUUID } from 'uuid';
-import { ApiUser, ApiGroup, ApiChallenge } from '../api-classes';
-import { requester } from '../requester';
+import {times,} from 'lodash';
+import {v4 as generateUUID} from 'uuid';
+import {ApiChallenge, ApiGroup, ApiUser} from '../api-classes';
+import {requester} from '../requester';
 import * as Tasks from '../../../../website/server/models/task';
 
 // Creates a new user and returns it

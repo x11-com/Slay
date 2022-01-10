@@ -1,8 +1,8 @@
 export default {
   // CURRENCY_CODE: 'USD',
-  // SELLER_NOTE: 'Habitica Payment',
-  // SELLER_NOTE_SUBSCRIPTION: 'Habitica Subscription',
-  // SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'Habitica Subscription Payment',
+  // SELLER_NOTE: 'slay Payment',
+  // SELLER_NOTE_SUBSCRIPTION: 'slay Subscription',
+  // SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'slay Subscription Payment',
   // STORE_NAME: 'Habitica',
   //
   // GIFT_TYPE_GEMS: 'gems',

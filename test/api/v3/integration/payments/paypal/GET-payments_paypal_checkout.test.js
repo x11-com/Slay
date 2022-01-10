@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../../helpers/api-integration/v3';
 import paypalPayments from '../../../../../../website/server/libs/payments/paypal';
 
 describe('payments : paypal #checkout', () => {

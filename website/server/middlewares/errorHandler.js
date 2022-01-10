@@ -1,15 +1,8 @@
 // The error handler middleware that handles all errors
 // and respond to the client
-import {
-  map,
-  omit,
-} from 'lodash';
+import {map, omit,} from 'lodash';
 import logger from '../libs/logger';
-import {
-  CustomError,
-  BadRequest,
-  InternalServerError,
-} from '../libs/errors';
+import {BadRequest, CustomError, InternalServerError,} from '../libs/errors';
 
 export default function errorHandler (err, req, res, next) { // eslint-disable-line no-unused-vars
   // In case of a CustomError class, use it's data

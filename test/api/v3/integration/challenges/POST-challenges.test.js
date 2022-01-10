@@ -1,9 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  createAndPopulateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /challenges', () => {
   it('returns error when group is empty', async () => {

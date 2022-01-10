@@ -1,4 +1,4 @@
-import { mapState } from '@/libs/store';
+import {mapState} from '@/libs/store';
 
 export const userStateMixin = { // eslint-disable-line import/prefer-default-export
   computed: {

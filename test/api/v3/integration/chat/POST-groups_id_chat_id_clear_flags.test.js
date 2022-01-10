@@ -1,10 +1,6 @@
 import moment from 'moment';
-import { v4 as generateUUID } from 'uuid';
-import {
-  createAndPopulateGroup,
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 import config from '../../../../../config.json';
 
 describe('POST /groups/:id/chat/:id/clearflags', () => {

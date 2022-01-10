@@ -1,14 +1,8 @@
 import stripeConstants from './constants';
-import { handleWebhooks } from './webhooks'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  createCheckoutSession,
-  createEditCardCheckoutSession,
-} from './checkout';
-import { // eslint-disable-line import/no-cycle
-  chargeForAdditionalGroupMember,
-  cancelSubscription,
-} from './subscriptions';
-import { setStripeApi } from './api';
+import {handleWebhooks} from './webhooks'; // eslint-disable-line import/no-cycle
+import {createCheckoutSession, createEditCardCheckoutSession,} from './checkout';
+import {cancelSubscription, chargeForAdditionalGroupMember,} from './subscriptions';
+import {setStripeApi} from './api';
 
 const api = {};
 

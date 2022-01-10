@@ -1,6 +1,6 @@
 import md from 'habitica-markdown';
-import { authWithHeaders } from '../../middlewares/auth';
-import { model as NewsPost } from '../../models/newsPost';
+import {authWithHeaders} from '../../middlewares/auth';
+import {model as NewsPost} from '../../models/newsPost';
 
 const api = {};
 

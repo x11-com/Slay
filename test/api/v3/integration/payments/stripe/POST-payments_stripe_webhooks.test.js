@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../../helpers/api-integration/v3';
 import stripePayments from '../../../../../../website/server/libs/payments/stripe';
 
 describe('payments - stripe - #handleWebhooks', () => {

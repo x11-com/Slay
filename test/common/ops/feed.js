@@ -1,14 +1,8 @@
 import feed from '../../../website/common/script/ops/feed';
 import content from '../../../website/common/script/content';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../../website/common/script/libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../website/common/script/libs/errors';
 import i18n from '../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 import errorMessage from '../../../website/common/script/libs/errorMessage';
 import shared from '../../../website/common/script';
 

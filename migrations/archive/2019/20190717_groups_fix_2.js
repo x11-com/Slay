@@ -3,11 +3,11 @@ const MIGRATION_NAME = '20190717_groups_fix_2';
 
 import monk from 'monk';
 import nconf from 'nconf';
-const CONNECTION_STRING = nconf.get('MIGRATION_CONNECT_STRING');
-
-import { model as User } from '../../../website/server/models/user';
-import { sendTxn as sendTxnEmail } from '../../../website/server/libs/email';
+import {model as User} from '../../../website/server/models/user';
+import {sendTxn as sendTxnEmail} from '../../../website/server/libs/email';
 import shared from '../../../website/common';
+
+const CONNECTION_STRING = nconf.get('MIGRATION_CONNECT_STRING');
 
 const questScrolls = shared.content.quests;
 
@@ -22,12 +22,12 @@ async function updateGroup (group) {
     const leader = await User.findOne({_id: group.quest.leader}).exec();
 
     if (leader && quest) {
-      await User.update({ 
+      await User.update({
         _id: leader._id,
         migration: {$ne: MIGRATION_NAME},
       }, {
         $set: {migration: MIGRATION_NAME},
-        $inc: { 
+        $inc: {
           balance: 1,
           [`items.quests.${group.quest.key}`]: 1,
         },
@@ -61,7 +61,7 @@ module.exports = async function processUsers () {
     const groupsPromise = new Promise((resolve, reject) => {
       backupGroups
       .find(query, {
-        limit: 250, 
+        limit: 250,
         sort: {_id: 1}
       })
       .then(foundGroupInBackup => {

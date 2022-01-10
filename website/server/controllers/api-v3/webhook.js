@@ -1,7 +1,7 @@
-import { authWithHeaders } from '../../middlewares/auth';
-import { model as Webhook } from '../../models/webhook';
-import { removeFromArray } from '../../libs/collectionManipulators';
-import { NotFound, BadRequest } from '../../libs/errors';
+import {authWithHeaders} from '../../middlewares/auth';
+import {model as Webhook} from '../../models/webhook';
+import {removeFromArray} from '../../libs/collectionManipulators';
+import {BadRequest, NotFound} from '../../libs/errors';
 
 const api = {};
 

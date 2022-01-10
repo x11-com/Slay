@@ -1,12 +1,6 @@
 import moment from 'moment';
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  generateGroup,
-  sleep,
-  generateChallenge,
-  server,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateChallenge, generateGroup, generateUser, server, sleep,} from '../../../../helpers/api-integration/v3';
 
 describe('PUT /tasks/:id', () => {
   let user;

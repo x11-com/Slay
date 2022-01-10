@@ -1,31 +1,21 @@
 import _ from 'lodash';
 import moment from 'moment';
-import { authWithHeaders } from '../../middlewares/auth';
-import {
-  taskActivityWebhook,
-} from '../../libs/webhook';
-import { removeFromArray } from '../../libs/collectionManipulators';
+import {authWithHeaders} from '../../middlewares/auth';
+import {taskActivityWebhook,} from '../../libs/webhook';
+import {removeFromArray} from '../../libs/collectionManipulators';
 import * as Tasks from '../../models/task';
-import { model as Challenge } from '../../models/challenge';
-import { model as Group } from '../../models/group';
-import {
-  NotFound,
-  NotAuthorized,
-  BadRequest,
-} from '../../libs/errors';
+import {model as Challenge} from '../../models/challenge';
+import {model as Group} from '../../models/group';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
 import {
   createTasks,
-  getTasks,
-  getGroupFromTaskAndUser,
   getChallengeFromTask,
+  getGroupFromTaskAndUser,
+  getTasks,
   scoreTasks,
   verifyTaskModification,
 } from '../../libs/tasks';
-import {
-  moveTask,
-  setNextDue,
-  requiredGroupFields,
-} from '../../libs/tasks/utils';
+import {moveTask, requiredGroupFields, setNextDue,} from '../../libs/tasks/utils';
 import common from '../../../common';
 import apiError from '../../libs/apiError';
 
@@ -108,7 +98,7 @@ const api = {};
  *
  * @apiParamExample {json} Request-Example:
  *     {
- *       "text":"Update Habitica API Documentation - Tasks",
+ *       "text":"Update slay API Documentation - Tasks",
  *       "type":"todo",
  *       "alias":"hab-api-tasks",
  *       "notes":"Update the tasks api on GitHub",
@@ -125,7 +115,7 @@ const api = {};
  *       "data": {
  *         "userId": "b0413351-405f-416f-8787-947ec1c85199",
  *         "alias": "hab-api-tasks",
- *         "text": "Update Habitica API Documentation - Tasks",
+ *         "text": "Update slay API Documentation - Tasks",
  *         "type": "todo",
  *         "notes": "Update the tasks api on GitHub",
  *         "tags": [
@@ -413,7 +403,7 @@ api.getUserTasks = {
  *                                                                       just a type of tasks.
  *
  * @apiExample {curl} Example use:
- * curl -i https://habitica.com/api/v3/tasks/challenge/f23c12f2-5830-4f15-9c36-e17fd729a812
+ * curl -i https://s1ay.com/api/v3/tasks/challenge/f23c12f2-5830-4f15-9c36-e17fd729a812
  *
  * @apiSuccess {Array} data An array of tasks
  *
@@ -479,7 +469,7 @@ api.getChallengeTasks = {
  * @apiParam (Path) {String} taskId The task _id or alias
  *
  * @apiExample {curl} Example use:
- * curl -i https://habitica.com/api/v3/tasks/54a81d23-529c-4daa-a6f7-c5c6e7e84936
+ * curl -i https://s1ay.com/api/v3/tasks/54a81d23-529c-4daa-a6f7-c5c6e7e84936
  *
  * @apiSuccess {Object} data The task object
  *
@@ -729,7 +719,7 @@ api.updateTask = {
  * @apiParam (Path) {String="up","down"} direction The direction for scoring the task
  *
  * @apiExample {json} Example call:
- * curl -X "POST" https://habitica.com/api/v3/tasks/test-api-params/score/up
+ * curl -X "POST" https://s1ay.com/api/v3/tasks/test-api-params/score/up
  *
  * @apiSuccess {Object} data The user stats
  * @apiSuccess {Object} data._tmp If an item was dropped it'll be returned in te _tmp object
@@ -1172,7 +1162,7 @@ api.addTagToTask = {
  * @apiParam (Path) {UUID} tagId The tag id
  *
  * @apiExample {curl} Example use:
- * curl -X "DELETE" https://habitica.com/api/v3/tasks/test-api-params/tags/3d5d324d-a042-4d5f-872e-0553e228553e
+ * curl -X "DELETE" https://s1ay.com/api/v3/tasks/test-api-params/tags/3d5d324d-a042-4d5f-872e-0553e228553e
  *
  * @apiSuccess {Object} data The updated task
  *
@@ -1227,7 +1217,7 @@ api.removeTagFromTask = {
  *                                                         removed(remove-all) after the unlink.
  *
  * @apiExample {curl} Example call:
- * curl -X "POST" https://habitica.com/api/v3/tasks/unlink-all/f23c12f2-5830-4f15-9c36-e17fd729a812?keep=remove-all
+ * curl -X "POST" https://s1ay.com/api/v3/tasks/unlink-all/f23c12f2-5830-4f15-9c36-e17fd729a812?keep=remove-all
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1296,7 +1286,7 @@ api.unlinkAllTasks = {
  *                                                  be kept(keep) or removed(remove).
  *
  * @apiExample {curl} Example call:
- * curl -X "POST" https://habitica.com/api/v3/tasks/unlink-one/ee882e1d-ebd1-4716-88f2-4f9e47d947a8?keep=keep
+ * curl -X "POST" https://s1ay.com/api/v3/tasks/unlink-one/ee882e1d-ebd1-4716-88f2-4f9e47d947a8?keep=keep
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1348,7 +1338,7 @@ api.unlinkOneTask = {
  * @apiGroup Task
  *
  * @apiExample {curl} Example call:
- * curl -X "POST" https://habitica.com/api/v3/tasks/ClearCompletedTodos
+ * curl -X "POST" https://s1ay.com/api/v3/tasks/ClearCompletedTodos
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1396,7 +1386,7 @@ api.clearCompletedTodos = {
  * @apiParam (Path) {String} taskId The task _id or alias
  *
  * @apiExample {json} Example call:
- * curl -X "DELETE" https://habitica.com/api/v3/tasks/3d5d324d-a042-4d5f-872e-0553e228553e
+ * curl -X "DELETE" https://s1ay.com/api/v3/tasks/3d5d324d-a042-4d5f-872e-0553e228553e
  *
  * @apiSuccess {Object} data An empty object
  *

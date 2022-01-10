@@ -1,4 +1,4 @@
-import { v4 as uuid } from 'uuid';
+import {v4 as uuid} from 'uuid';
 import defaults from 'lodash/defaults';
 import moment from 'moment';
 import getUtcOffset from '../fns/getUtcOffset';

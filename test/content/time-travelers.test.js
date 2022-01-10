@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../helpers/common.helper';
+import {generateUser,} from '../helpers/common.helper';
 
 import timeTravelers from '../../website/common/script/content/time-travelers';
 

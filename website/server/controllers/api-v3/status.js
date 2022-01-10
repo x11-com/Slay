@@ -1,6 +1,4 @@
-import {
-  disableCache,
-} from '../../middlewares/cache';
+import {disableCache,} from '../../middlewares/cache';
 
 const api = {};
 

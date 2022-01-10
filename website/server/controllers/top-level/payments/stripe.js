@@ -1,7 +1,5 @@
 import shared from '../../../../common';
-import {
-  authWithHeaders,
-} from '../../../middlewares/auth';
+import {authWithHeaders,} from '../../../middlewares/auth';
 import stripePayments from '../../../libs/payments/stripe';
 
 const api = {};

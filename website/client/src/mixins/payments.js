@@ -2,10 +2,10 @@ import axios from 'axios'; // eslint-disable-line no-process-env
 import pick from 'lodash/pick';
 import moment from 'moment';
 import subscriptionBlocks from '@/../../common/script/content/subscriptionBlocks';
-import { mapState } from '@/libs/store';
+import {mapState} from '@/libs/store';
 import encodeParams from '@/libs/encodeParams';
 import notificationsMixin from '@/mixins/notifications';
-import { CONSTANTS, setLocalSetting } from '@/libs/userlocalManager';
+import {CONSTANTS, setLocalSetting} from '@/libs/userlocalManager';
 
 const { STRIPE_PUB_KEY } = process.env;
 

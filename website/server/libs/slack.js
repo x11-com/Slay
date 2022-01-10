@@ -1,10 +1,10 @@
 /* eslint-disable camelcase */
-import { IncomingWebhook } from '@slack/webhook';
+import {IncomingWebhook} from '@slack/webhook';
 import nconf from 'nconf';
 import moment from 'moment';
 import logger from './logger';
-import { getCurrentEvent } from './worldState'; // eslint-disable-line import/no-cycle
-import { TAVERN_ID } from '../models/group'; // eslint-disable-line import/no-cycle
+import {getCurrentEvent} from './worldState'; // eslint-disable-line import/no-cycle
+import {TAVERN_ID} from '../models/group'; // eslint-disable-line import/no-cycle
 
 const SLACK_FLAGGING_URL = nconf.get('SLACK_FLAGGING_URL');
 const SLACK_FLAGGING_FOOTER_LINK = nconf.get('SLACK_FLAGGING_FOOTER_LINK');

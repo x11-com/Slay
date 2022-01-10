@@ -2,10 +2,7 @@ import get from 'lodash/get';
 import findIndex from 'lodash/findIndex';
 import i18n from '../i18n';
 import preenTodos from '../libs/preenTodos';
-import {
-  NotFound,
-  BadRequest,
-} from '../libs/errors';
+import {BadRequest, NotFound,} from '../libs/errors';
 
 // TODO used only in client, move there?
 

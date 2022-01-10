@@ -1,14 +1,14 @@
-import { v4 as uuid } from 'uuid';
-import { each } from 'lodash';
+import {v4 as uuid} from 'uuid';
+import {each} from 'lodash';
 import {
+  createAndPopulateGroup,
   generateUser,
+  getProperty,
   requester,
   translate as t,
-  createAndPopulateGroup,
-  getProperty,
 } from '../../../../helpers/api-integration/v4';
-import { ApiUser } from '../../../../helpers/api-integration/api-classes';
-import { encrypt } from '../../../../../website/server/libs/encryption';
+import {ApiUser} from '../../../../helpers/api-integration/api-classes';
+import {encrypt} from '../../../../../website/server/libs/encryption';
 
 function generateRandomUserName () {
   return (Date.now() + uuid()).substring(0, 20);
@@ -372,9 +372,9 @@ describe('POST /user/auth/local/register', () => {
       expect(user.auth.local.email).to.equal(email.toLowerCase());
     });
 
-    it('fails on a habitica.com email', async () => {
+    it('fails on a s1ay.com email', async () => {
       const username = generateRandomUserName();
-      const email = `${username}@habitica.com`;
+      const email = `${username}@s1ay.com`;
       const password = 'password';
 
       await expect(api.post('/user/auth/local/register', {

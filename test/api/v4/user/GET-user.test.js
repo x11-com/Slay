@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../../helpers/api-integration/v4';
+import {generateUser,} from '../../../helpers/api-integration/v4';
 import common from '../../../../website/common';
 
 describe('GET /user', () => {

@@ -1,10 +1,6 @@
-import { v4 } from 'uuid';
-import {
-  generateUser,
-  translate as t,
-  sleep,
-} from '../../../helpers/api-integration/v4';
-import { model as NewsPost } from '../../../../website/server/models/newsPost';
+import {v4} from 'uuid';
+import {generateUser, sleep, translate as t,} from '../../../helpers/api-integration/v4';
+import {model as NewsPost} from '../../../../website/server/models/newsPost';
 
 describe('PUT /news/:newsID', () => {
   let user;

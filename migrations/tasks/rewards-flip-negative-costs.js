@@ -7,7 +7,7 @@
  * by assigning it an absolute value of itself
  */
 
-import { Task } from '../../website/server/models/task';
+import {Task} from '../../website/server/models/task';
 
 async function flipNegativeCostsValues () {
   const query = {

@@ -1,10 +1,6 @@
 import nconf from 'nconf';
 import requireAgain from 'require-again';
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 
 describe('maintenance mode middleware', () => {
   let res; let req; let

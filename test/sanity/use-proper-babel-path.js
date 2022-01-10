@@ -1,5 +1,5 @@
-import { sync as glob } from 'glob';
-import { readFileSync as readFile } from 'fs';
+import {sync as glob} from 'glob';
+import {readFileSync as readFile} from 'fs';
 
 const IMPORT_REGEX = /(import|require).*common\/script/;
 

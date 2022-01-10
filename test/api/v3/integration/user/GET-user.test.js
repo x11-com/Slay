@@ -1,7 +1,5 @@
 import range from 'lodash/range';
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
 import common from '../../../../../website/common';
 
 describe('GET /user', () => {

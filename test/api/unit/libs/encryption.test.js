@@ -1,7 +1,4 @@
-import {
-  encrypt,
-  decrypt,
-} from '../../../../website/server/libs/encryption';
+import {decrypt, encrypt,} from '../../../../website/server/libs/encryption';
 
 describe('encryption', () => {
   it('can encrypt and decrypt', () => {

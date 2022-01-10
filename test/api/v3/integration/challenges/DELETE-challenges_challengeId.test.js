@@ -1,10 +1,10 @@
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 import {
-  generateUser,
-  generateChallenge,
-  createAndPopulateGroup,
-  sleep,
   checkExistence,
+  createAndPopulateGroup,
+  generateChallenge,
+  generateUser,
+  sleep,
   translate as t,
 } from '../../../../helpers/api-integration/v3';
 

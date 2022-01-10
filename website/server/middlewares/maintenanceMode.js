@@ -1,5 +1,5 @@
 import nconf from 'nconf';
-import { getUserLanguage } from './language';
+import {getUserLanguage} from './language';
 
 const MAINTENANCE_MODE = nconf.get('MAINTENANCE_MODE');
 

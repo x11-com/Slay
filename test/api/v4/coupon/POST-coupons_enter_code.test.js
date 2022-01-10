@@ -1,8 +1,4 @@
-import {
-  generateUser,
-  translate as t,
-  resetHabiticaDB,
-} from '../../../helpers/api-integration/v4';
+import {generateUser, resetHabiticaDB, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('POST /coupons/enter/:code', () => {
   let user;

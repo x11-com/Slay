@@ -795,7 +795,6 @@
   "armorSpecialFall2015MageNotes": "Every stitch in this armor shimmers with enchantment. Increases Intelligence by <%= int %>. Limited Edition 2015 Autumn Gear.",
   "armorSpecialFall2015HealerText": "Potioner Robes",
   "armorSpecialFall2015HealerNotes": "What? Of course that was a potion of constitution. No, you are definitely not turning into a frog! Don't be ribbiticulous. Increases Constitution by <%= con %>. Limited Edition 2015 Autumn Gear.",
-
   "armorSpecialWinter2016RogueText": "Cocoa Armor",
   "armorSpecialWinter2016RogueNotes": "This leather armor keeps you nice and toasty. Is it actually made from cocoa? You'll never tell. Increases Perception by <%= per %>. Limited Edition 2015-2016 Winter Gear.",
   "armorSpecialWinter2016WarriorText": "Snowman Suit",
@@ -803,8 +802,7 @@
   "armorSpecialWinter2016MageText": "Snowboarder Parka",
   "armorSpecialWinter2016MageNotes": "The wisest wizard keeps well-bundled in the winter wind. Increases Intelligence by <%= int %>. Limited Edition 2015-2016 Winter Gear.",
   "armorSpecialWinter2016HealerText": "Festive Fairy Cloak",
-  "armorSpecialWinter2016HealerNotes": "Festive Fairies wrap their body wings around themselves for protection as they use their head wings to catch headwinds and fly around Habitica at speeds of up to 100 mph, delivering gifts and spraying everyone with confetti. How droll. Increases Constitution by <%= con %>. Limited Edition 2015-2016 Winter Gear.",
-
+  "armorSpecialWinter2016HealerNotes": "Festive Fairies wrap their body wings around themselves for protection as they use their head wings to catch headwinds and fly around slay at speeds of up to 100 mph, delivering gifts and spraying everyone with confetti. How droll. Increases Constitution by <%= con %>. Limited Edition 2015-2016 Winter Gear.",
   "armorSpecialSpring2016RogueText": "Canine Camo Suit",
   "armorSpecialSpring2016RogueNotes": "A clever pup knows to choose a brighter guise for concealment when everything is green and vibrant. Increases Perception by <%= per %>. Limited Edition 2016 Spring Gear.",
   "armorSpecialSpring2016WarriorText": "Mighty Mail",
@@ -813,7 +811,6 @@
   "armorSpecialSpring2016MageNotes": "Brightly colored, so you won't be mistaken for a necromouser. Increases Intelligence by <%= int %>. Limited Edition 2016 Spring Gear.",
   "armorSpecialSpring2016HealerText": "Fluffy Bunny Breeches",
   "armorSpecialSpring2016HealerNotes": "Hippity hop! Bound from hill to hill, healing those in need. Increases Constitution by <%= con %>. Limited Edition 2016 Spring Gear.",
-
   "armorSpecialSummer2016RogueText": "Eel Tail",
   "armorSpecialSummer2016RogueNotes": "This electrifying garment transforms its wearer into a real Eel Rogue! Increases Perception by <%= per %>. Limited Edition 2016 Summer Gear.",
   "armorSpecialSummer2016WarriorText": "Shark Tail",
@@ -1759,7 +1756,7 @@
   "headMystery201703Text": "Shimmer Helm",
   "headMystery201703Notes": "The soft light reflected from this horned helm will soothe even the most enraged foe. Confers no benefit. March 2017 Subscriber Item.",
   "headMystery201705Text": "Feathered Fighter Helm",
-  "headMystery201705Notes": "Habitica is known for its fierce and productive Gryphon Warriors! Join their prestigious ranks when you don this feathery helm. Confers no benefit. May 2017 Subscriber Item.",
+  "headMystery201705Notes": "slay is known for its fierce and productive Gryphon Warriors! Join their prestigious ranks when you don this feathery helm. Confers no benefit. May 2017 Subscriber Item.",
   "headMystery201707Text": "Jellymancer Helm",
   "headMystery201707Notes": "Need some extra hands for your tasks? This translucent jelly helm has quite a few tentacles to lend you help! Confers no benefit. July 2017 Subscriber Item.",
   "headMystery201710Text": "Imperious Imp Helm",

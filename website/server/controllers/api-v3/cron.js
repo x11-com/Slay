@@ -1,4 +1,4 @@
-import { authWithHeaders } from '../../middlewares/auth';
+import {authWithHeaders} from '../../middlewares/auth';
 import cron from '../../middlewares/cron';
 
 const api = {};

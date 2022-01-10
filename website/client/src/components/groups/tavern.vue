@@ -312,7 +312,7 @@
         <sidebar-section :title="$t('helpfulLinks')">
           <ul>
             <li>
-              <a href="mailto:admin@habitica.com">
+              <a href="mailto:admin@s1ay.com">
                 {{ $t('reportCommunityIssues') }}
               </a>
             </li>

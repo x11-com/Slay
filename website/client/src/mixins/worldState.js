@@ -1,4 +1,4 @@
-import { EVENTS } from '@/libs/events';
+import {EVENTS} from '@/libs/events';
 
 export const worldStateMixin = { // eslint-disable-line import/prefer-default-export
   methods: {

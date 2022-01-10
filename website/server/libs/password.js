@@ -2,8 +2,8 @@
 import crypto from 'crypto';
 import bcrypt from 'bcrypt';
 import moment from 'moment';
-import { decrypt } from './encryption';
-import { model as User } from '../models/user';
+import {decrypt} from './encryption';
+import {model as User} from '../models/user';
 
 const BCRYPT_SALT_ROUNDS = 10;
 

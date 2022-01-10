@@ -1,15 +1,12 @@
 import passport from 'passport';
 import common from '../../../common';
-import { BadRequest } from '../errors';
+import {BadRequest} from '../errors';
 import logger from '../logger';
-import {
-  generateUsername,
-  loginRes,
-} from './utils';
-import { appleProfile } from './apple';
-import { model as User } from '../../models/user';
-import { model as EmailUnsubscription } from '../../models/emailUnsubscription';
-import { sendTxn as sendTxnEmail } from '../email';
+import {generateUsername, loginRes,} from './utils';
+import {appleProfile} from './apple';
+import {model as User} from '../../models/user';
+import {model as EmailUnsubscription} from '../../models/emailUnsubscription';
+import {sendTxn as sendTxnEmail} from '../email';
 
 function _passportProfile (network, accessToken) {
   return new Promise((resolve, reject) => {

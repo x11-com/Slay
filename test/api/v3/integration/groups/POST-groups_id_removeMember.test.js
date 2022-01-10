@@ -1,9 +1,4 @@
-import {
-  generateUser,
-  createAndPopulateGroup,
-  translate as t,
-  sleep,
-} from '../../../../helpers/api-integration/v3';
+import {createAndPopulateGroup, generateUser, sleep, translate as t,} from '../../../../helpers/api-integration/v3';
 import * as email from '../../../../../website/server/libs/email';
 
 describe('POST /groups/:groupId/removeMember/:memberId', () => {

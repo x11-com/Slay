@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import StoreModule, { mapState, mapGetters, mapActions } from '@/libs/store';
-import { flattenAndNamespace } from '@/libs/store/helpers/internals';
+import StoreModule, {mapActions, mapGetters, mapState} from '@/libs/store';
+import {flattenAndNamespace} from '@/libs/store/helpers/internals';
 
 describe('Store', () => {
   let store;

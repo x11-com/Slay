@@ -1,13 +1,9 @@
 import _ from 'lodash';
-import {
-  model as User,
-  publicFields as memberFields,
-  nameFields,
-} from '../../models/user';
-import { model as Challenge } from '../../models/challenge';
-import { model as Group } from '../../models/group';
+import {model as User, nameFields, publicFields as memberFields,} from '../../models/user';
+import {model as Challenge} from '../../models/challenge';
+import {model as Group} from '../../models/group';
 import * as Tasks from '../../models/task';
-import { NotFound } from '../errors';
+import {NotFound} from '../errors';
 
 async function getMembersTasksForChallenge (members, challenge) {
   const challengeTasks = await Tasks.Task.find({

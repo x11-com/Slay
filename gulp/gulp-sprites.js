@@ -4,8 +4,8 @@ import spritesmith from 'gulp.spritesmith';
 import clean from 'rimraf';
 import sizeOf from 'image-size';
 import mergeStream from 'merge-stream';
-import { sync } from 'glob';
-import { each } from 'lodash';
+import {sync} from 'glob';
+import {each} from 'lodash';
 import vinylBuffer from 'vinyl-buffer';
 
 // https://github.com/Ensighten/grunt-spritesmith/issues/67#issuecomment-34786248
@@ -117,7 +117,7 @@ function createSpritesStream (name, src) {
 }
 
 gulp.task('sprites:main', () => {
-  const mainSrc = sync('habitica-images/**/*.png');
+  const mainSrc = sync('slay-images/**/*.png');
   return createSpritesStream('main', mainSrc);
 });
 

@@ -1,9 +1,9 @@
 import get from 'lodash/get';
 import setWith from 'lodash/setWith';
 import i18n from '../i18n';
-import { NotAuthorized, BadRequest } from '../libs/errors';
+import {BadRequest, NotAuthorized} from '../libs/errors';
 
-import { removeItemByPath } from './pinnedGearUtils';
+import {removeItemByPath} from './pinnedGearUtils';
 import getItemInfo from '../libs/getItemInfo';
 import content from '../content/index';
 

@@ -1,7 +1,5 @@
-import logger, { _loggerConfig } from '../../../../website/server/libs/logger';
-import {
-  NotFound,
-} from '../../../../website/server/libs/errors';
+import logger, {_loggerConfig} from '../../../../website/server/libs/logger';
+import {NotFound,} from '../../../../website/server/libs/errors';
 
 describe('logger', () => {
   let infoSpy;

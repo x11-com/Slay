@@ -1,13 +1,7 @@
 import nconf from 'nconf';
 import redis from 'redis';
-import {
-  RateLimiterRedis,
-  RateLimiterMemory,
-  RateLimiterRes,
-} from 'rate-limiter-flexible';
-import {
-  TooManyRequests,
-} from '../libs/errors';
+import {RateLimiterMemory, RateLimiterRedis, RateLimiterRes,} from 'rate-limiter-flexible';
+import {TooManyRequests,} from '../libs/errors';
 import logger from '../libs/logger';
 import apiError from '../libs/apiError';
 

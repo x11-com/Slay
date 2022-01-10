@@ -1,10 +1,6 @@
-import {
-  BadRequest,
-} from '../../../libs/errors';
+import {BadRequest,} from '../../../libs/errors';
 import amzLib from '../../../libs/payments/amazon';
-import {
-  authWithHeaders,
-} from '../../../middlewares/auth';
+import {authWithHeaders,} from '../../../middlewares/auth';
 import shared from '../../../../common';
 
 const api = {};

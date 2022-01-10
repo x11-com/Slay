@@ -9,7 +9,7 @@ let authorUuid = ''; // ... own data is done
  */
 import moment from 'moment';
 
-import { model as Group } from '../../website/server/models/group';
+import {model as Group} from '../../website/server/models/group';
 
 // @TODO: this should probably be a GroupManager library method
 async function addUnlimitedSubscription (groupId, dateTerminated) {

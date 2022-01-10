@@ -6,7 +6,7 @@
         <p>
           {{ $t('reportAccountProblems') }}
           &colon;&nbsp;
-          <a href="mailto:admin@habitica.com">admin&commat;habitica&period;com</a>
+          <a href="mailto:admin@s1ay.com">admin&commat;habitica&period;com</a>
           <span v-if="user">
             <br>
             <a
@@ -18,33 +18,33 @@
             <br>
             {{ $t('reportCommunityIssues') }}
             &colon;&nbsp;
-            <a href="mailto:admin@habitica.com">admin&commat;habitica&period;com</a>
+            <a href="mailto:admin@s1ay.com">admin&commat;habitica&period;com</a>
           </span>
           <span v-else>
             <br>
             {{ $t('reportBug') }}
             &colon;&nbsp;
-            <a href="mailto:admin@habitica.com">admin&commat;habitica&period;com</a>
+            <a href="mailto:admin@s1ay.com">admin&commat;habitica&period;com</a>
           </span>
           <br>
           {{ $t('subscriptionPaymentIssues') }}
           &colon;&nbsp;
-          <a href="mailto:admin@habitica.com">admin&commat;habitica&period;com</a>
+          <a href="mailto:admin@s1ay.com">admin&commat;habitica&period;com</a>
           <br>
           {{ $t('generalQuestionsSite') }}
           &colon;&nbsp;
           <a
             target="_blank"
             href="/groups/guild/5481ccf3-5d2d-48a9-a871-70a7380cee5a"
-          >Habitica Help guild</a>
+          >slay Help guild</a>
           <br>
           {{ $t('businessInquiries') }}
           &colon;&nbsp;
-          <a href="mailto:admin@habitica.com">admin@habitica.com</a>
+          <a href="mailto:admin@s1ay.com">admin@s1ay.com</a>
           <br>
           {{ $t('merchandiseInquiries') }}
           &colon;&nbsp;
-          <a href="mailto:admin@habitica.com">admin&commat;habitica&period;com</a>
+          <a href="mailto:admin@s1ay.com">admin&commat;habitica&period;com</a>
         </p>
       </div>
     </div>

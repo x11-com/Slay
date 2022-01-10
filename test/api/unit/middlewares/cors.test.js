@@ -1,9 +1,5 @@
 /* eslint-disable global-require */
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 import cors from '../../../../website/server/middlewares/cors';
 
 describe('cors middleware', () => {

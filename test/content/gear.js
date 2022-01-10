@@ -1,8 +1,6 @@
 /* eslint-disable camelcase */
-import { each, camelCase } from 'lodash';
-import {
-  expectValidTranslationString,
-} from '../helpers/content.helper';
+import {camelCase, each} from 'lodash';
+import {expectValidTranslationString,} from '../helpers/content.helper';
 
 import gearData from '../../website/common/script/content/gear';
 import * as backerGear from '../../website/common/script/content/gear/sets/special/special-backer';

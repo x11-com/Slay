@@ -2,12 +2,9 @@ import get from 'lodash/get';
 import pick from 'lodash/pick';
 import i18n from '../i18n';
 import splitWhitespace from '../libs/splitWhitespace';
-import { capByLevel } from '../statHelpers';
-import {
-  NotAuthorized,
-  BadRequest,
-} from '../libs/errors';
-import { removePinnedGearByClass, removePinnedItemsByOwnedGear, addPinnedGearByClass } from './pinnedGearUtils';
+import {capByLevel} from '../statHelpers';
+import {BadRequest, NotAuthorized,} from '../libs/errors';
+import {addPinnedGearByClass, removePinnedGearByClass, removePinnedItemsByOwnedGear} from './pinnedGearUtils';
 
 function resetClass (user, req = {}) {
   removePinnedGearByClass(user);

@@ -1,10 +1,6 @@
 import moment from 'moment';
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
-import {
-  updateDocument,
-} from '../../../../helpers/mongo';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
+import {updateDocument,} from '../../../../helpers/mongo';
 
 describe('GET /export/history.csv', () => {
   // TODO disabled because it randomly causes the build to fail

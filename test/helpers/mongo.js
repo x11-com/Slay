@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { get } from 'lodash';
-import { TAVERN_ID } from '../../website/server/models/group';
+import {get} from 'lodash';
+import {TAVERN_ID} from '../../website/server/models/group';
 
 // Useful for checking things that have been deleted,
 // but you no longer have access to,

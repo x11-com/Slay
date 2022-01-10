@@ -1,5 +1,5 @@
 import hasClass from '../../../website/common/script/libs/hasClass';
-import { generateUser } from '../../helpers/common.helper';
+import {generateUser} from '../../helpers/common.helper';
 
 describe('hasClass', () => {
   it('returns false for user with level below 10', () => {

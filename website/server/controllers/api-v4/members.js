@@ -1,5 +1,5 @@
-import { authWithHeaders } from '../../middlewares/auth';
-import { chatReporterFactory } from '../../libs/chatReporting/chatReporterFactory';
+import {authWithHeaders} from '../../middlewares/auth';
+import {chatReporterFactory} from '../../libs/chatReporting/chatReporterFactory';
 
 const api = {};
 

@@ -1,11 +1,8 @@
-import { find } from 'lodash';
+import {find} from 'lodash';
 import moment from 'moment';
 import nconf from 'nconf';
-import { IncomingWebhook } from '@slack/webhook';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {IncomingWebhook} from '@slack/webhook';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 const BASE_URL = nconf.get('BASE_URL');
 

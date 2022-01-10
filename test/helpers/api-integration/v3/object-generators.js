@@ -1,12 +1,10 @@
-import {
-  times,
-} from 'lodash';
-import { v4 as generateUUID } from 'uuid';
-import { ApiUser, ApiGroup, ApiChallenge } from '../api-classes';
-import { requester } from '../requester';
+import {times,} from 'lodash';
+import {v4 as generateUUID} from 'uuid';
+import {ApiChallenge, ApiGroup, ApiUser} from '../api-classes';
+import {requester} from '../requester';
 import * as Tasks from '../../../../website/server/models/task';
 import payments from '../../../../website/server/libs/payments/payments';
-import { model as User } from '../../../../website/server/models/user';
+import {model as User} from '../../../../website/server/models/user';
 
 // Creates a new user and returns it
 // If you need the user to have specific requirements,

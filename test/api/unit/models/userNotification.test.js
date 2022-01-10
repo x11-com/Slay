@@ -1,4 +1,4 @@
-import { model as UserNotification } from '../../../../website/server/models/userNotification';
+import {model as UserNotification} from '../../../../website/server/models/userNotification';
 
 describe('UserNotification Model', () => {
   context('cleanupCorruptData', () => {

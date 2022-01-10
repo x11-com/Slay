@@ -1,10 +1,8 @@
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
 import AppComponent from './app';
-import {
-  setup as setupAnalytics,
-} from '@/libs/analytics';
-import { setUpLogging } from '@/libs/logging';
+import {setup as setupAnalytics,} from '@/libs/analytics';
+import {setUpLogging} from '@/libs/logging';
 import router from './router/index';
 import getStore from './store';
 import StoreModule from './libs/store';

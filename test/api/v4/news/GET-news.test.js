@@ -1,6 +1,4 @@
-import {
-  requester, generateUser,
-} from '../../../helpers/api-integration/v4';
+import {generateUser, requester,} from '../../../helpers/api-integration/v4';
 
 describe('GET /news', () => {
   let api;

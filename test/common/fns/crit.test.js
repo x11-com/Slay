@@ -1,7 +1,5 @@
 import crit from '../../../website/common/script/fns/crit';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('crit', () => {
   let user;

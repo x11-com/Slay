@@ -1,11 +1,8 @@
 import pick from 'lodash/pick';
 import get from 'lodash/get';
 import splitWhitespace from '../../libs/splitWhitespace';
-import {
-  BadRequest,
-  NotAuthorized,
-} from '../../libs/errors';
-import { AbstractGoldItemOperation } from './abstractBuyOperation';
+import {BadRequest, NotAuthorized,} from '../../libs/errors';
+import {AbstractGoldItemOperation} from './abstractBuyOperation';
 import planGemLimits from '../../libs/planGemLimits';
 
 export class BuyGemOperation extends AbstractGoldItemOperation { // eslint-disable-line import/prefer-default-export, max-len

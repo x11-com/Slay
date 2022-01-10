@@ -1,16 +1,11 @@
 import _ from 'lodash';
 import validator from 'validator';
-import { authWithHeaders } from '../../middlewares/auth';
-import { ensureAdmin } from '../../middlewares/ensureAccessRight';
-import { model as User } from '../../models/user';
-import {
-  NotFound,
-} from '../../libs/errors';
+import {authWithHeaders} from '../../middlewares/auth';
+import {ensureAdmin} from '../../middlewares/ensureAccessRight';
+import {model as User} from '../../models/user';
+import {NotFound,} from '../../libs/errors';
 import apiError from '../../libs/apiError';
-import {
-  validateItemPath,
-  castItemVal,
-} from '../../libs/items/utils';
+import {castItemVal, validateItemPath,} from '../../libs/items/utils';
 
 const api = {};
 

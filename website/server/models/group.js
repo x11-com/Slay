@@ -3,44 +3,26 @@ import mongoose from 'mongoose';
 import _ from 'lodash';
 import validator from 'validator';
 import nconf from 'nconf';
-import { // eslint-disable-line import/no-cycle
-  model as User,
-  nameFields,
-} from './user';
+import {model as User, nameFields,} from './user';
 import shared from '../../common';
-import { model as Challenge } from './challenge'; // eslint-disable-line import/no-cycle
-import {
-  chatModel as Chat,
-  setUserStyles,
-  messageDefaults,
-} from './message';
+import {model as Challenge} from './challenge'; // eslint-disable-line import/no-cycle
+import {chatModel as Chat, messageDefaults, setUserStyles,} from './message';
 import * as Tasks from './task';
-import { removeFromArray } from '../libs/collectionManipulators';
+import {removeFromArray} from '../libs/collectionManipulators';
 import payments from '../libs/payments/payments'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  groupChatReceivedWebhook,
-  questActivityWebhook,
-} from '../libs/webhook';
-import {
-  InternalServerError,
-  BadRequest,
-  NotAuthorized,
-} from '../libs/errors';
+import {groupChatReceivedWebhook, questActivityWebhook,} from '../libs/webhook';
+import {BadRequest, InternalServerError, NotAuthorized,} from '../libs/errors';
 import baseModel from '../libs/baseModel';
-import { sendTxn as sendTxnEmail } from '../libs/email'; // eslint-disable-line import/no-cycle
-import { sendNotification as sendPushNotification } from '../libs/pushNotifications'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  syncableAttrs,
-} from '../libs/tasks/utils';
-import {
-  schema as SubscriptionPlanSchema,
-} from './subscriptionPlan';
+import {sendTxn as sendTxnEmail} from '../libs/email'; // eslint-disable-line import/no-cycle
+import {sendNotification as sendPushNotification} from '../libs/pushNotifications'; // eslint-disable-line import/no-cycle
+import {syncableAttrs,} from '../libs/tasks/utils';
+import {schema as SubscriptionPlanSchema,} from './subscriptionPlan';
 import logger from '../libs/logger';
 import amazonPayments from '../libs/payments/amazon'; // eslint-disable-line import/no-cycle
 import stripePayments from '../libs/payments/stripe'; // eslint-disable-line import/no-cycle
-import { getGroupChat, translateMessage } from '../libs/chat/group-chat'; // eslint-disable-line import/no-cycle
-import { model as UserNotification } from './userNotification';
-import { sendChatPushNotifications } from '../libs/chat'; // eslint-disable-line import/no-cycle
+import {getGroupChat, translateMessage} from '../libs/chat/group-chat'; // eslint-disable-line import/no-cycle
+import {model as UserNotification} from './userNotification';
+import {sendChatPushNotifications} from '../libs/chat'; // eslint-disable-line import/no-cycle
 
 const questScrolls = shared.content.quests;
 const { questSeriesAchievements } = shared.content;

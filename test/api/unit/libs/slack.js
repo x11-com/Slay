@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
-import { IncomingWebhook } from '@slack/webhook';
+import {IncomingWebhook} from '@slack/webhook';
 import requireAgain from 'require-again';
 import nconf from 'nconf';
 import moment from 'moment';
 import * as slack from '../../../../website/server/libs/slack';
 import logger from '../../../../website/server/libs/logger';
-import { TAVERN_ID } from '../../../../website/server/models/group';
+import {TAVERN_ID} from '../../../../website/server/models/group';
 
 describe('slack', () => {
   describe('sendFlagNotification', () => {

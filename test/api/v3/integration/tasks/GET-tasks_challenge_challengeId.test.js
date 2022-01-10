@@ -1,11 +1,6 @@
-import { each } from 'lodash';
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {each} from 'lodash';
+import {v4 as generateUUID} from 'uuid';
+import {generateChallenge, generateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /tasks/:taskId', () => {
   let user;

@@ -1,9 +1,6 @@
 import moment from 'moment';
-import {
-  generateUser,
-  sleep,
-} from '../../../helpers/api-integration/v4';
-import { model as NewsPost } from '../../../../website/server/models/newsPost';
+import {generateUser, sleep,} from '../../../helpers/api-integration/v4';
+import {model as NewsPost} from '../../../../website/server/models/newsPost';
 
 describe('POST /news', () => {
   let user;

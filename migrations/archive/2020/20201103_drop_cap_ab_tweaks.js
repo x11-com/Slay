@@ -5,7 +5,7 @@
 
 const MIGRATION_NAME = '20201103_drop_cap_ab_tweaks';
 
-import { model as User } from '../../../website/server/models/user';
+import {model as User} from '../../../website/server/models/user';
 
 const progressCount = 1000;
 let count = 0;

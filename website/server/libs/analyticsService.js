@@ -3,11 +3,7 @@ import nconf from 'nconf';
 import Amplitude from 'amplitude';
 import googleAnalytics from 'universal-analytics';
 import useragent from 'useragent';
-import {
-  each,
-  omit,
-  toArray,
-} from 'lodash';
+import {each, omit, toArray,} from 'lodash';
 import common from '../../common';
 import logger from './logger';
 

@@ -1,11 +1,6 @@
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 import spells from '../../../website/common/script/content/spells';
-import {
-  NotAuthorized,
-  BadRequest,
-} from '../../../website/common/script/libs/errors';
+import {BadRequest, NotAuthorized,} from '../../../website/common/script/libs/errors';
 import i18n from '../../../website/common/script/i18n';
 
 // TODO complete the test suite...

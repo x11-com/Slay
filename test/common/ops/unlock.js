@@ -1,8 +1,8 @@
 import get from 'lodash/get';
 import unlock from '../../../website/common/script/ops/unlock';
 import i18n from '../../../website/common/script/i18n';
-import { generateUser } from '../../helpers/common.helper';
-import { NotAuthorized, BadRequest } from '../../../website/common/script/libs/errors';
+import {generateUser} from '../../helpers/common.helper';
+import {BadRequest, NotAuthorized} from '../../../website/common/script/libs/errors';
 
 describe('shared.ops.unlock', () => {
   let user;

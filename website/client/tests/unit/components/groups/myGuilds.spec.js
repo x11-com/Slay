@@ -1,4 +1,4 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import {createLocalVue, shallowMount} from '@vue/test-utils';
 import Store from '@/libs/store';
 import myGuilds from '@/components/groups/myGuilds';
 import PublicGuildItem from '@/components/groups/publicGuildItem';

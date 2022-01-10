@@ -1,12 +1,8 @@
 /* eslint-disable camelcase */
-import { defaultsDeep } from 'lodash';
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
+import {defaultsDeep} from 'lodash';
+import {generateUser,} from '../../../helpers/common.helper';
 import buy from '../../../../website/common/script/ops/buy/buy';
-import {
-  BadRequest,
-} from '../../../../website/common/script/libs/errors';
+import {BadRequest,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 import content from '../../../../website/common/script/content/index';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';

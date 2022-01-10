@@ -1,24 +1,17 @@
 import nconf from 'nconf';
-import { authWithHeaders } from '../../middlewares/auth';
-import { model as Group } from '../../models/group';
-import { model as User } from '../../models/user';
-import {
-  chatModel as Chat,
-  sanitizeText as sanitizeMessageText,
-} from '../../models/message';
+import {authWithHeaders} from '../../middlewares/auth';
+import {model as Group} from '../../models/group';
+import {model as User} from '../../models/user';
+import {chatModel as Chat, sanitizeText as sanitizeMessageText,} from '../../models/message';
 import common from '../../../common';
-import {
-  BadRequest,
-  NotFound,
-  NotAuthorized,
-} from '../../libs/errors';
-import { removeFromArray } from '../../libs/collectionManipulators';
-import { getUserInfo, getGroupUrl, sendTxn } from '../../libs/email';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
+import {removeFromArray} from '../../libs/collectionManipulators';
+import {getGroupUrl, getUserInfo, sendTxn} from '../../libs/email';
 import * as slack from '../../libs/slack';
-import { chatReporterFactory } from '../../libs/chatReporting/chatReporterFactory';
-import { getAuthorEmailFromMessage } from '../../libs/chat';
+import {chatReporterFactory} from '../../libs/chatReporting/chatReporterFactory';
+import {getAuthorEmailFromMessage} from '../../libs/chat';
 import bannedWords from '../../libs/bannedWords';
-import { getMatchesByWordArray } from '../../libs/stringUtils';
+import {getMatchesByWordArray} from '../../libs/stringUtils';
 import bannedSlurs from '../../libs/bannedSlurs';
 import apiError from '../../libs/apiError';
 import highlightMentions from '../../libs/highlightMentions';

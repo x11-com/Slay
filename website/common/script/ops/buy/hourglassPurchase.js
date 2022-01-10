@@ -3,13 +3,10 @@ import includes from 'lodash/includes';
 import keys from 'lodash/keys';
 import i18n from '../../i18n';
 import content from '../../content/index';
-import {
-  BadRequest,
-  NotAuthorized,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized,} from '../../libs/errors';
 import errorMessage from '../../libs/errorMessage';
 import getItemInfo from '../../libs/getItemInfo';
-import { removeItemByPath } from '../pinnedGearUtils';
+import {removeItemByPath} from '../pinnedGearUtils';
 
 export default function purchaseHourglass (user, req = {}, analytics, quantity = 1) {
   const key = get(req, 'params.key');

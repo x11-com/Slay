@@ -1,27 +1,16 @@
 import moment from 'moment';
 import _ from 'lodash';
 import validator from 'validator';
-import {
-  setNextDue,
-  validateTaskAlias,
-  requiredGroupFields,
-} from './utils';
-import { model as Challenge } from '../../models/challenge';
-import { model as Group } from '../../models/group';
-import { model as User } from '../../models/user';
+import {requiredGroupFields, setNextDue, validateTaskAlias,} from './utils';
+import {model as Challenge} from '../../models/challenge';
+import {model as Group} from '../../models/group';
+import {model as User} from '../../models/user';
 import * as Tasks from '../../models/task';
 import apiError from '../apiError';
-import {
-  BadRequest,
-  NotFound,
-  NotAuthorized,
-} from '../errors';
-import {
-  SHARED_COMPLETION,
-  handleSharedCompletion,
-} from '../groupTasks';
+import {BadRequest, NotAuthorized, NotFound,} from '../errors';
+import {handleSharedCompletion, SHARED_COMPLETION,} from '../groupTasks';
 import shared from '../../../common';
-import { taskScoredWebhook } from '../webhook';
+import {taskScoredWebhook} from '../webhook';
 
 import logger from '../logger';
 

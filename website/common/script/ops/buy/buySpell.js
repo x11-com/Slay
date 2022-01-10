@@ -2,11 +2,8 @@ import get from 'lodash/get';
 import pick from 'lodash/pick';
 import content from '../../content/index';
 import splitWhitespace from '../../libs/splitWhitespace';
-import {
-  BadRequest,
-  NotFound,
-} from '../../libs/errors';
-import { AbstractGoldItemOperation } from './abstractBuyOperation';
+import {BadRequest, NotFound,} from '../../libs/errors';
+import {AbstractGoldItemOperation} from './abstractBuyOperation';
 import errorMessage from '../../libs/errorMessage';
 
 export class BuySpellOperation extends AbstractGoldItemOperation { // eslint-disable-line import/prefer-default-export, max-len

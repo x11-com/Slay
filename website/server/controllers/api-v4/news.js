@@ -1,11 +1,9 @@
 import _ from 'lodash';
-import { authWithHeaders } from '../../middlewares/auth';
+import {authWithHeaders} from '../../middlewares/auth';
 import apiError from '../../libs/apiError';
-import { model as NewsPost } from '../../models/newsPost';
-import { ensureNewsPoster } from '../../middlewares/ensureAccessRight';
-import {
-  NotFound,
-} from '../../libs/errors';
+import {model as NewsPost} from '../../models/newsPost';
+import {ensureNewsPoster} from '../../middlewares/ensureAccessRight';
+import {NotFound,} from '../../libs/errors';
 
 const api = {};
 

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import mongoose from 'mongoose';
-import { v4 as uuid } from 'uuid';
+import {v4 as uuid} from 'uuid';
 import validator from 'validator';
 import baseModel from '../libs/baseModel';
 

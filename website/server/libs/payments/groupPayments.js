@@ -2,15 +2,9 @@ import nconf from 'nconf';
 import _ from 'lodash';
 import moment from 'moment';
 
-import { model as User } from '../../models/user'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../models/group';
-import { // eslint-disable-line import/no-cycle
-  getUserInfo,
-  sendTxn as txnEmail,
-} from '../email';
+import {model as User} from '../../models/user'; // eslint-disable-line import/no-cycle
+import {basicFields as basicGroupFields, model as Group,} from '../../models/group';
+import {getUserInfo, sendTxn as txnEmail,} from '../email';
 
 const TECH_ASSISTANCE_EMAIL = nconf.get('EMAILS_TECH_ASSISTANCE_EMAIL');
 const JOINED_GROUP_PLAN = 'joined group plan';

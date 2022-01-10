@@ -1,9 +1,4 @@
-import {
-  generateUser,
-  generateDaily,
-  generateReward,
-  translate as t,
-} from '../../../helpers/api-integration/v4';
+import {generateDaily, generateReward, generateUser, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('POST /user/rebirth', () => {
   let user;

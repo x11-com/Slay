@@ -1,9 +1,6 @@
 import superagent from 'superagent';
 import nconf from 'nconf';
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 const API_TEST_SERVER_PORT = nconf.get('PORT');
 xdescribe('GET /qr-code/user/:memberId', () => {

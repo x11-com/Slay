@@ -731,7 +731,7 @@ import member from '@/assets/svg/member-icon.svg';
 import staff from '@/assets/svg/tier-staff.svg';
 import error404 from '../404';
 // @TODO: EMAILS.COMMUNITY_MANAGER_EMAIL
-const COMMUNITY_MANAGER_EMAIL = 'admin@habitica.com';
+const COMMUNITY_MANAGER_EMAIL = 'admin@s1ay.com';
 
 export default {
   directives: {

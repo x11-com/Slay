@@ -1,8 +1,5 @@
-import {
-  generateRes,
-  generateReq,
-} from '../../../helpers/api-unit.helper';
-import { authWithHeaders as authWithHeadersFactory } from '../../../../website/server/middlewares/auth';
+import {generateReq, generateRes,} from '../../../helpers/api-unit.helper';
+import {authWithHeaders as authWithHeadersFactory} from '../../../../website/server/middlewares/auth';
 
 describe('auth middleware', () => {
   let res; let req; let

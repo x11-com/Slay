@@ -1,10 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  sleep,
-  translate as t,
-  server,
-} from '../../../helpers/api-integration/v4';
+import {v4 as generateUUID} from 'uuid';
+import {generateUser, server, sleep, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('POST /tasks/bulk-score', () => {
   let user;

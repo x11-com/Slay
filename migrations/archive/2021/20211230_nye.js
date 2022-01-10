@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const MIGRATION_NAME = '20211230_nye';
-import { model as User } from '../../../website/server/models/user';
-import { v4 as uuid } from 'uuid';
+import {model as User} from '../../../website/server/models/user';
+import {v4 as uuid} from 'uuid';
 
 const progressCount = 1000;
 let count = 0;

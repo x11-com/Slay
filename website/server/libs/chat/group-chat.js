@@ -1,10 +1,7 @@
 import _ from 'lodash';
-import { chatModel as Chat } from '../../models/message';
+import {chatModel as Chat} from '../../models/message';
 import shared from '../../../common';
-import { // eslint-disable-line import/no-cycle
-  MAX_CHAT_COUNT,
-  MAX_SUBBED_GROUP_CHAT_COUNT,
-} from '../../models/group';
+import {MAX_CHAT_COUNT, MAX_SUBBED_GROUP_CHAT_COUNT,} from '../../models/group';
 
 const questScrolls = shared.content.quests;
 

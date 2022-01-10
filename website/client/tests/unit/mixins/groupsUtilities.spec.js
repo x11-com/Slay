@@ -1,6 +1,6 @@
-import { createLocalVue } from '@vue/test-utils';
+import {createLocalVue} from '@vue/test-utils';
 import groupsUtilities from '@/mixins/groupsUtilities';
-import { TAVERN_ID } from '@/../../common/script/constants';
+import {TAVERN_ID} from '@/../../common/script/constants';
 import generateStore from '@/store';
 import Store from '@/libs/store';
 

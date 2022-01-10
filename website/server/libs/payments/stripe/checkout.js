@@ -1,18 +1,12 @@
 import nconf from 'nconf';
 
-import { getStripeApi } from './api';
-import {
-  NotAuthorized,
-  NotFound,
-} from '../../errors';
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../../models/group';
+import {getStripeApi} from './api';
+import {NotAuthorized, NotFound,} from '../../errors';
+import {basicFields as basicGroupFields, model as Group,} from '../../../models/group';
 import shared from '../../../../common';
-import { getOneTimePaymentInfo } from './oneTimePayments'; // eslint-disable-line import/no-cycle
-import { checkSubData } from './subscriptions'; // eslint-disable-line import/no-cycle
-import { validateGiftMessage } from '../gems'; // eslint-disable-line import/no-cycle
+import {getOneTimePaymentInfo} from './oneTimePayments'; // eslint-disable-line import/no-cycle
+import {checkSubData} from './subscriptions'; // eslint-disable-line import/no-cycle
+import {validateGiftMessage} from '../gems'; // eslint-disable-line import/no-cycle
 
 const BASE_URL = nconf.get('BASE_URL');
 

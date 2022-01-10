@@ -1,12 +1,7 @@
 import mongoose from 'mongoose';
 
-import { model as User } from '../../website/server/models/user';
-import {
-  DailySchema,
-  HabitSchema,
-  RewardSchema,
-  TodoSchema,
-} from '../../website/server/models/task';
+import {model as User} from '../../website/server/models/user';
+import {DailySchema, HabitSchema, RewardSchema, TodoSchema,} from '../../website/server/models/task';
 
 export { translate } from './translate';
 

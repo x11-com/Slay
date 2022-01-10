@@ -1,9 +1,6 @@
-import { TAVERN_ID } from '../../../../../website/server/models/group';
-import { updateDocument } from '../../../../helpers/mongo';
-import {
-  requester,
-  resetHabiticaDB,
-} from '../../../../helpers/api-integration/v3';
+import {TAVERN_ID} from '../../../../../website/server/models/group';
+import {updateDocument} from '../../../../helpers/mongo';
+import {requester, resetHabiticaDB,} from '../../../../helpers/api-integration/v3';
 import * as worldState from '../../../../../website/server/libs/worldState';
 import common from '../../../../../website/common';
 

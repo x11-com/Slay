@@ -2,8 +2,8 @@
 import moment from 'moment';
 import nconf from 'nconf';
 import requireAgain from 'require-again';
-import { recoverCron, cron } from '../../../../website/server/libs/cron';
-import { model as User } from '../../../../website/server/models/user';
+import {cron, recoverCron} from '../../../../website/server/libs/cron';
+import {model as User} from '../../../../website/server/models/user';
 import * as Tasks from '../../../../website/server/models/task';
 import common from '../../../../website/common';
 import * as analytics from '../../../../website/server/libs/analyticsService';

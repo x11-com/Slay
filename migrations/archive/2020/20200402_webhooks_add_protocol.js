@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const MIGRATION_NAME = '20200402_webhooks_add_protocol';
-import { model as User } from '../../../website/server/models/user';
+import {model as User} from '../../../website/server/models/user';
 
 const progressCount = 1000;
 let count = 0;

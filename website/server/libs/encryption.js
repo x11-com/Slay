@@ -1,7 +1,4 @@
-import {
-  createCipheriv,
-  createDecipheriv,
-} from 'crypto';
+import {createCipheriv, createDecipheriv,} from 'crypto';
 import nconf from 'nconf';
 
 const algorithm = 'aes-256-ctr';

@@ -1,10 +1,5 @@
-import { v4 as generateUUID } from 'uuid';
-import {
-  generateUser,
-  generateGroup,
-  generateChallenge,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {v4 as generateUUID} from 'uuid';
+import {generateChallenge, generateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/unlink-one/:taskId', () => {
   let user;

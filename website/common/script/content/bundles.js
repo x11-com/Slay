@@ -1,6 +1,6 @@
 import moment from 'moment';
 import t from './translation';
-import { EVENTS } from './constants';
+import {EVENTS} from './constants';
 
 /*
  ---------------------------------------------------------------

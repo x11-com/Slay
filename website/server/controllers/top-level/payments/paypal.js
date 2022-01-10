@@ -2,13 +2,8 @@
 import paypalPayments from '../../../libs/payments/paypal';
 import logger from '../../../libs/logger';
 import shared from '../../../../common';
-import {
-  authWithSession,
-  authWithHeaders,
-} from '../../../middlewares/auth';
-import {
-  BadRequest,
-} from '../../../libs/errors';
+import {authWithHeaders, authWithSession,} from '../../../middlewares/auth';
+import {BadRequest,} from '../../../libs/errors';
 import apiError from '../../../libs/apiError';
 
 const api = {};
@@ -161,7 +156,7 @@ api.subscribeCancel = {
   },
 };
 
-// General IPN handler. We catch cancelled Habitica subscriptions
+// General IPN handler. We catch cancelled slay subscriptions
 // for users who manually cancel their recurring paypal payments in their paypal dashboard.
 // TODO ? Remove this when we can move to webhooks or some other solution
 

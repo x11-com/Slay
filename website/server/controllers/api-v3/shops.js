@@ -1,4 +1,4 @@
-import { authWithHeaders } from '../../middlewares/auth';
+import {authWithHeaders} from '../../middlewares/auth';
 import common from '../../../common';
 
 const { shops } = common;

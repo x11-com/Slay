@@ -1,6 +1,4 @@
-import {
-  getAnalyticsServiceByEnvironment,
-} from '../libs/analyticsService';
+import {getAnalyticsServiceByEnvironment,} from '../libs/analyticsService';
 
 const service = getAnalyticsServiceByEnvironment();
 

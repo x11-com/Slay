@@ -1,8 +1,5 @@
-import { find } from 'lodash';
-import {
-  createAndPopulateGroup,
-  translate as t,
-} from '../../../../helpers/api-integration/v3';
+import {find} from 'lodash';
+import {createAndPopulateGroup, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /chat/:chatId/like', () => {
   let user;

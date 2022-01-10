@@ -1,11 +1,9 @@
 // Logger utility
 import winston from 'winston';
-import { Loggly } from 'winston-loggly-bulk';
+import {Loggly} from 'winston-loggly-bulk';
 import nconf from 'nconf';
 import _ from 'lodash';
-import {
-  CustomError,
-} from './errors';
+import {CustomError,} from './errors';
 
 const IS_PROD = nconf.get('IS_PROD');
 const IS_TEST = nconf.get('IS_TEST');

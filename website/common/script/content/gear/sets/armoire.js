@@ -2,8 +2,8 @@ import defaults from 'lodash/defaults';
 import find from 'lodash/find';
 import forEach from 'lodash/forEach';
 import upperFirst from 'lodash/upperFirst';
-import { ownsItem } from '../gear-helper';
-import { ATTRIBUTES } from '../../../constants';
+import {ownsItem} from '../gear-helper';
+import {ATTRIBUTES} from '../../../constants';
 import t from '../../translation';
 
 const armor = {

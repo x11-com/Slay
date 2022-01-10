@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+import {mount} from '@vue/test-utils';
 import Vue from 'vue';
 
 import CategoryTags from '@/components/categories/categoryTags.vue';
@@ -34,7 +34,7 @@ describe('Category Tags', () => {
     });
   });
 
-  it('displays a habitica official in purple', () => {
+  it('displays a slay official in purple', () => {
     wrapper.setProps({
       categories: [
         {

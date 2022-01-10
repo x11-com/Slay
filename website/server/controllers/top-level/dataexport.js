@@ -5,12 +5,12 @@ import moment from 'moment';
 // import got from 'got';
 import md from 'habitica-markdown';
 import csvStringify from '../../libs/csvStringify';
-import { marshallUserData } from '../../libs/xmlMarshaller';
-import { NotFound } from '../../libs/errors';
+import {marshallUserData} from '../../libs/xmlMarshaller';
+import {NotFound} from '../../libs/errors';
 import * as Tasks from '../../models/task';
 import * as inboxLib from '../../libs/inbox';
 // import { model as User } from '../../models/user';
-import { authWithSession } from '../../middlewares/auth';
+import {authWithSession} from '../../middlewares/auth';
 /* import {
   S3,
 } from '../../libs/aws'; */
@@ -31,7 +31,7 @@ const api = {};
 
 /**
  * @api {get} /export/history.csv Export user tasks history in CSV format
- * @apiDescription History is only available for habits and dailies so todos and rewards won't be included. Can only be used on [https://habitica.com](https://habitica.com).
+ * @apiDescription History is only available for habits and dailies so todos and rewards won't be included. Can only be used on [https://s1ay.com](https://s1ay.com).
  * @apiName ExportUserHistory
  * @apiGroup DataExport
  *

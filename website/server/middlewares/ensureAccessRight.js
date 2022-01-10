@@ -1,6 +1,4 @@
-import {
-  NotAuthorized,
-} from '../libs/errors';
+import {NotAuthorized,} from '../libs/errors';
 import apiError from '../libs/apiError';
 
 export function ensureAdmin (req, res, next) {

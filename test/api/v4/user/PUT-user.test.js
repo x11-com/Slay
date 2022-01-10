@@ -1,8 +1,5 @@
-import { each, get } from 'lodash';
-import {
-  generateUser,
-  translate as t,
-} from '../../../helpers/api-integration/v4';
+import {each, get} from 'lodash';
+import {generateUser, translate as t,} from '../../../helpers/api-integration/v4';
 
 describe('PUT /user', () => {
   let user;

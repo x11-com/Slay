@@ -203,14 +203,14 @@ describe('highlightMentions', () => {
   });
 
   describe('base url', () => {
-    it('should prefix habitica.com if it is production', async () => {
+    it('should prefix s1ay.com if it is production', async () => {
       const OLD_NODE_ENV = process.env.NODE_ENV;
       process.env.NODE_ENV = 'production';
       const text = '@user';
 
       const result = await highlightMentions(text);
 
-      expect(result[0]).to.equal('[@user](https://habitica.com/profile/111)');
+      expect(result[0]).to.equal('[@user](https://s1ay.com/profile/111)');
       process.env.NODE_ENV = OLD_NODE_ENV;
     });
   });

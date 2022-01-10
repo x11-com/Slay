@@ -1,7 +1,4 @@
-import {
-  generateUser,
-  translate as t,
-} from '../../../../helpers/api-integration/v4';
+import {generateUser, translate as t,} from '../../../../helpers/api-integration/v4';
 
 const ENDPOINT = '/user/auth/verify-display-name';
 

@@ -1,7 +1,7 @@
 import moment from 'moment';
 import sinon from 'sinon'; // eslint-disable-line no-shadow
-import { preenHistory } from '../../../../website/server/libs/preening';
-import { generateHistory } from '../../../helpers/api-unit.helper';
+import {preenHistory} from '../../../../website/server/libs/preening';
+import {generateHistory} from '../../../helpers/api-unit.helper';
 
 describe('preenHistory', () => {
   let clock;

@@ -1,13 +1,10 @@
 import mongoose from 'mongoose';
-import { exec } from 'child_process';
+import {exec} from 'child_process';
 import gulp from 'gulp';
 import os from 'os';
 import nconf from 'nconf';
-import { pipe } from './taskHelper';
-import {
-  getDevelopmentConnectionUrl,
-  getDefaultConnectionOptions,
-} from '../website/server/libs/mongodb';
+import {pipe} from './taskHelper';
+import {getDefaultConnectionOptions, getDevelopmentConnectionUrl,} from '../website/server/libs/mongodb';
 
 // TODO rewrite
 

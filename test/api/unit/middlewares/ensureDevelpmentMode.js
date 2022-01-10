@@ -1,12 +1,8 @@
 /* eslint-disable global-require */
 import nconf from 'nconf';
-import {
-  generateRes,
-  generateReq,
-  generateNext,
-} from '../../../helpers/api-unit.helper';
+import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 import ensureDevelpmentMode from '../../../../website/server/middlewares/ensureDevelpmentMode';
-import { NotFound } from '../../../../website/server/libs/errors';
+import {NotFound} from '../../../../website/server/libs/errors';
 
 describe('developmentMode middleware', () => {
   let res; let req; let

@@ -1,4 +1,4 @@
-import { TRANSFORMATION_DEBUFFS_LIST } from '../constants';
+import {TRANSFORMATION_DEBUFFS_LIST} from '../constants';
 
 export default function getDebuffPotionItems (user) {
   const items = [];

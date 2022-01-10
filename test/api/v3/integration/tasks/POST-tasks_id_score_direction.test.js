@@ -1,11 +1,6 @@
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 import apiError from '../../../../../website/server/libs/apiError';
-import {
-  generateUser,
-  sleep,
-  translate as t,
-  server,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, server, sleep, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/:id/score/:direction', () => {
   let user;

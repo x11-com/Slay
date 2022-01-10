@@ -1,4 +1,4 @@
-import { getMatchesByWordArray } from '../../../../website/server/libs/stringUtils';
+import {getMatchesByWordArray} from '../../../../website/server/libs/stringUtils';
 import bannedWords from '../../../../website/server/libs/bannedWords';
 
 describe('stringUtils', () => {

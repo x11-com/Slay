@@ -2,9 +2,9 @@ import axios from 'axios';
 import Vue from 'vue';
 import compact from 'lodash/compact';
 import omit from 'lodash/omit';
-import { loadAsyncResource } from '@/libs/asyncResource';
+import {loadAsyncResource} from '@/libs/asyncResource';
 import * as Analytics from '@/libs/analytics';
-import { CONSTANTS, getLocalSetting, setLocalSetting } from '@/libs/userlocalManager';
+import {CONSTANTS, getLocalSetting, setLocalSetting} from '@/libs/userlocalManager';
 
 export function fetchUserTasks (store, options = {}) {
   return loadAsyncResource({

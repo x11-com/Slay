@@ -9,7 +9,7 @@ let authorUuid = ''; // ... own data is done
  * a subscription and resync the free subscription to all members
  */
 
-import { model as Group } from '../../website/server/models/group';
+import {model as Group} from '../../website/server/models/group';
 import payments from '../../website/server/libs/payments/payments';
 
 async function updateGroupsWithGroupPlans () {

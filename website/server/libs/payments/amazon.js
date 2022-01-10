@@ -5,19 +5,12 @@ import cc from 'coupon-code';
 import util from 'util';
 
 import common from '../../../common';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../errors';
 import payments from './payments'; // eslint-disable-line import/no-cycle
-import { model as User } from '../../models/user'; // eslint-disable-line import/no-cycle
-import { // eslint-disable-line import/no-cycle
-  model as Group,
-  basicFields as basicGroupFields,
-} from '../../models/group';
-import { model as Coupon } from '../../models/coupon';
-import { getGemsBlock, validateGiftMessage } from './gems'; // eslint-disable-line import/no-cycle
+import {model as User} from '../../models/user'; // eslint-disable-line import/no-cycle
+import {basicFields as basicGroupFields, model as Group,} from '../../models/group';
+import {model as Coupon} from '../../models/coupon';
+import {getGemsBlock, validateGiftMessage} from './gems'; // eslint-disable-line import/no-cycle
 
 // TODO better handling of errors
 
@@ -36,10 +29,10 @@ const api = {};
 
 api.constants = {
   CURRENCY_CODE: 'USD',
-  SELLER_NOTE: 'Habitica Payment',
-  SELLER_NOTE_SUBSCRIPTION: 'Habitica Subscription',
-  SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'Habitica Subscription Payment',
-  SELLER_NOTE_GROUP_NEW_MEMBER: 'Habitica Group Plan New Member',
+  SELLER_NOTE: 'slay Payment',
+  SELLER_NOTE_SUBSCRIPTION: 'slay Subscription',
+  SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'slay Subscription Payment',
+  SELLER_NOTE_GROUP_NEW_MEMBER: 'slay Group Plan New Member',
   STORE_NAME: 'Habitica',
 
   GIFT_TYPE_GEMS: 'gems',

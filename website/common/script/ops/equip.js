@@ -2,10 +2,7 @@ import get from 'lodash/get';
 import content from '../content/index';
 import i18n from '../i18n';
 import handleTwoHanded from '../fns/handleTwoHanded';
-import {
-  NotFound,
-  BadRequest,
-} from '../libs/errors';
+import {BadRequest, NotFound,} from '../libs/errors';
 import errorMessage from '../libs/errorMessage';
 
 export default function equip (user, req = {}) {

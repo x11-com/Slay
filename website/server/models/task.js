@@ -4,8 +4,8 @@ import moment from 'moment';
 import _ from 'lodash';
 import shared from '../../common';
 import baseModel from '../libs/baseModel';
-import { preenHistory } from '../libs/preening';
-import { SHARED_COMPLETION } from '../libs/groupTasks'; // eslint-disable-line import/no-cycle
+import {preenHistory} from '../libs/preening';
+import {SHARED_COMPLETION} from '../libs/groupTasks'; // eslint-disable-line import/no-cycle
 
 const { Schema } = mongoose;
 

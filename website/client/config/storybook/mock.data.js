@@ -1,4 +1,4 @@
-import { v4 as generateUUID } from 'uuid';
+import {v4 as generateUUID} from 'uuid';
 
 export const userStyles = {
   contributor: {

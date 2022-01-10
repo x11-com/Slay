@@ -1,7 +1,5 @@
 import autoAllocate from '../../../website/common/script/fns/autoAllocate';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 describe('shared.fns.autoAllocate', () => {
   let user;

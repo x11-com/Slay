@@ -1,9 +1,5 @@
-import {
-  each,
-} from 'lodash';
-import {
-  expectValidTranslationString,
-} from '../helpers/content.helper';
+import {each,} from 'lodash';
+import {expectValidTranslationString,} from '../helpers/content.helper';
 
 import * as eggs from '../../website/common/script/content/eggs';
 

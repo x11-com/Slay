@@ -1,12 +1,8 @@
 import releasePets from '../../../website/common/script/ops/releasePets';
 import content from '../../../website/common/script/content/index';
 import i18n from '../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
-import {
-  NotAuthorized,
-} from '../../../website/common/script/libs/errors';
+import {generateUser,} from '../../helpers/common.helper';
+import {NotAuthorized,} from '../../../website/common/script/libs/errors';
 
 describe('shared.ops.releasePets', () => {
   let user;

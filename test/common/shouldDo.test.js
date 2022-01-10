@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { shouldDo, DAY_MAPPING } from '../../website/common/script/cron';
+import {DAY_MAPPING, shouldDo} from '../../website/common/script/cron';
 import 'moment-recur';
 
 describe('shouldDo', () => {

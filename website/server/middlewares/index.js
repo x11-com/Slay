@@ -18,18 +18,13 @@ import domainMiddleware from './domain';
 // import favicon from 'serve-favicon';
 // import path from 'path';
 import maintenanceMode from './maintenanceMode';
-import {
-  forceSSL,
-  forceHabitica,
-} from './redirects';
+import {forceHabitica, forceSSL,} from './redirects';
 import ipBlocker from './ipBlocker';
 import v1 from './v1';
 import v2 from './v2';
 import appRoutes from './appRoutes';
 import responseHandler from './response';
-import {
-  attachTranslateFunction,
-} from './language';
+import {attachTranslateFunction,} from './language';
 
 const IS_PROD = nconf.get('IS_PROD');
 const DISABLE_LOGGING = nconf.get('DISABLE_REQUEST_LOGGING') === 'true';

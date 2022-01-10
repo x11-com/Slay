@@ -6,8 +6,8 @@
  * This migration moves chat off of groups and into their own model
  */
 
-import { model as Group } from '../../website/server/models/group';
-import { chatModel as Chat } from '../../website/server/models/message';
+import {model as Group} from '../../website/server/models/group';
+import {chatModel as Chat} from '../../website/server/models/message';
 
 async function moveGroupChatToModel (skip = 0) {
   const groups = await Group.find({})

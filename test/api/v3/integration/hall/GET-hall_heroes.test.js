@@ -1,7 +1,4 @@
-import {
-  generateUser,
-  resetHabiticaDB,
-} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetHabiticaDB,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /hall/heroes', () => {
   it('returns all heroes sorted by -contributor.level and with correct fields', async () => {

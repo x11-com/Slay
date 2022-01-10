@@ -1,12 +1,7 @@
 import allocate from '../../../../website/common/script/ops/stats/allocate';
-import {
-  BadRequest,
-  NotAuthorized,
-} from '../../../../website/common/script/libs/errors';
+import {BadRequest, NotAuthorized,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
+import {generateUser,} from '../../../helpers/common.helper';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
 
 describe('shared.ops.allocate', () => {

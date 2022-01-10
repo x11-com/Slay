@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import moment from 'moment';
 import nconf from 'nconf';
-import { sendTxn } from '../../website/server/libs/email';
-import { model as User } from '../../website/server/models/user';
+import {sendTxn} from '../../website/server/libs/email';
+import {model as User} from '../../website/server/models/user';
 
 const BASE_URL = nconf.get('BASE_URL');
 const EMAIL_SLUG = 'mandrill-email-slug'; // Set email template to send

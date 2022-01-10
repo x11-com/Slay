@@ -1,14 +1,11 @@
 import _ from 'lodash';
 import couponCode from 'coupon-code';
 import csvStringify from '../../libs/csvStringify';
-import {
-  authWithHeaders,
-  authWithSession,
-} from '../../middlewares/auth';
-import { ensureSudo } from '../../middlewares/ensureAccessRight';
+import {authWithHeaders, authWithSession,} from '../../middlewares/auth';
+import {ensureSudo} from '../../middlewares/ensureAccessRight';
 import * as couponsLib from '../../libs/coupons';
 import apiError from '../../libs/apiError';
-import { model as Coupon } from '../../models/coupon';
+import {model as Coupon} from '../../models/coupon';
 
 const api = {};
 

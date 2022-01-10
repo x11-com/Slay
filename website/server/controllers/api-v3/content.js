@@ -1,6 +1,6 @@
 import nconf from 'nconf';
-import { langCodes } from '../../libs/i18n';
-import { CONTENT_CACHE_PATH, getLocalizedContentResponse } from '../../libs/content';
+import {langCodes} from '../../libs/i18n';
+import {CONTENT_CACHE_PATH, getLocalizedContentResponse} from '../../libs/content';
 
 const IS_PROD = nconf.get('IS_PROD');
 

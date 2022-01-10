@@ -1,4 +1,4 @@
-import { model as Coupon } from '../../models/coupon';
+import {model as Coupon} from '../../models/coupon';
 
 export async function enterCode (req, res, user) { // eslint-disable-line import/prefer-default-export, max-len
   req.checkParams('code', res.t('couponCodeRequired')).notEmpty();

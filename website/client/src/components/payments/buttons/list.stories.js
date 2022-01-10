@@ -1,9 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
+import {storiesOf} from '@storybook/vue';
 
 import PaymentsButtonsList from './list.vue';
 import getStore from '@/store';
-import { setup as setupPayments } from '@/libs/payments';
+import {setup as setupPayments} from '@/libs/payments';
 
 setupPayments();
 

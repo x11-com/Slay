@@ -6,13 +6,9 @@ import upperFirst from 'lodash/upperFirst';
 import moment from 'moment';
 import i18n from '../i18n';
 import content from '../content/index';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../libs/errors';
 import errorMessage from '../libs/errorMessage';
-import { checkOnboardingStatus } from '../libs/onboarding';
+import {checkOnboardingStatus} from '../libs/onboarding';
 
 export default function hatch (user, req = {}, analytics) {
   const egg = get(req, 'params.egg');

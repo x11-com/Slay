@@ -2,11 +2,7 @@ import get from 'lodash/get';
 import each from 'lodash/each';
 import i18n from '../../i18n';
 import content from '../../content/index';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
 import errorMessage from '../../libs/errorMessage';
 
 export default function buyMysterySet (user, req = {}, analytics) {

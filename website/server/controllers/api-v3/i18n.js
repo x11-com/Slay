@@ -1,8 +1,5 @@
 import nconf from 'nconf';
-import {
-  BROWSER_SCRIPT_CACHE_PATH,
-  geti18nBrowserScript,
-} from '../../libs/i18n';
+import {BROWSER_SCRIPT_CACHE_PATH, geti18nBrowserScript,} from '../../libs/i18n';
 
 const IS_PROD = nconf.get('IS_PROD');
 

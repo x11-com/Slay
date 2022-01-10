@@ -1,18 +1,12 @@
 import moment from 'moment';
+import {encrypt,} from '../../../../../../website/server/libs/encryption';
 import {
-  encrypt,
-} from '../../../../../../website/server/libs/encryption';
-import {
-  compare,
   bcryptCompare,
-  sha1MakeSalt,
+  compare,
   sha1Encrypt as sha1EncryptPassword,
+  sha1MakeSalt,
 } from '../../../../../../website/server/libs/password';
-import {
-  generateUser,
-  requester,
-  translate as t,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser, requester, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST /user/auth/reset-password-set-new-one', () => {
   const endpoint = '/user/auth/reset-password-set-new-one';

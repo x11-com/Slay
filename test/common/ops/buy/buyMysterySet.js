@@ -1,14 +1,8 @@
 /* eslint-disable camelcase */
 
-import {
-  generateUser,
-} from '../../../helpers/common.helper';
+import {generateUser,} from '../../../helpers/common.helper';
 import buyMysterySet from '../../../../website/common/script/ops/buy/buyMysterySet';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../../../website/common/script/libs/errors';
+import {BadRequest, NotAuthorized, NotFound,} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
 

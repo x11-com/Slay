@@ -1,9 +1,7 @@
 import get from 'lodash/get';
 import content from '../content/index';
 import i18n from '../i18n';
-import {
-  BadRequest,
-} from '../libs/errors';
+import {BadRequest,} from '../libs/errors';
 import errorMessage from '../libs/errorMessage';
 
 export const UNEQUIP_PET_MOUNT = 'pet';

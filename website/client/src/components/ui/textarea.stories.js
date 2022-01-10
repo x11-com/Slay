@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { text, withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {text, withKnobs} from '@storybook/addon-knobs';
 
 const stories = storiesOf('Textarea', module);
 

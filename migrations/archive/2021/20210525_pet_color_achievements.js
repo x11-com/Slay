@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const MIGRATION_NAME = '20210525_pet_color_achievements';
-import { model as User } from '../../../website/server/models/user';
+import {model as User} from '../../../website/server/models/user';
 
 const progressCount = 1000;
 let count = 0;

@@ -1,5 +1,5 @@
-import { model as Challenges } from '../../website/server/models/challenge';
-import { model as User } from '../../website/server/models/user';
+import {model as Challenges} from '../../website/server/models/challenge';
+import {model as User} from '../../website/server/models/user';
 
 async function syncChallengeToMembers (challenges) {
   const challengSyncPromises = challenges.map(async challenge => {

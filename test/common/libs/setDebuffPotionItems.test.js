@@ -1,6 +1,4 @@
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 
 import setDebuffPotionItems from '../../../website/common/script/libs/setDebuffPotionItems';
 

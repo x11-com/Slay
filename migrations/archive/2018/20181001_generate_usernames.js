@@ -7,7 +7,8 @@ let authorUuid = '7f14ed62-5408-4e1b-be83-ada62d504931'; // ... own data is done
 
 import monk from 'monk';
 import nconf from 'nconf';
-import { generateUsername } from '../../website/server/libs/auth/utils';
+import {generateUsername} from '../../website/server/libs/auth/utils';
+
 const CONNECTION_STRING = nconf.get('MIGRATION_CONNECT_STRING'); // FOR TEST DATABASE
 let dbUsers = monk(CONNECTION_STRING).get('users', { castIds: false });
 

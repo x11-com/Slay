@@ -1,7 +1,5 @@
-import { each } from 'lodash';
-import {
-  expectValidTranslationString,
-} from '../helpers/content.helper';
+import {each} from 'lodash';
+import {expectValidTranslationString,} from '../helpers/content.helper';
 
 import mysterySets from '../../website/common/script/content/mystery-sets';
 

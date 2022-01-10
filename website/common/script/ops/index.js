@@ -31,7 +31,7 @@ import openMysteryItem from './openMysteryItem';
 import scoreTask from './scoreTask';
 import markPmsRead from './markPMSRead';
 import * as pinnedGearUtils from './pinnedGearUtils';
-import { unEquipByType } from './unequip';
+import {unEquipByType} from './unequip';
 
 export default {
   sleep,

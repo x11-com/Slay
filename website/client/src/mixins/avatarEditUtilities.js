@@ -7,7 +7,7 @@ import buy from '@/../../common/script/ops/buy/buy';
 
 import appearanceSets from '@/../../common/script/content/appearance/sets';
 
-import { userStateMixin } from './userState';
+import {userStateMixin} from './userState';
 
 export const avatarEditorUtilies = { // eslint-disable-line import/prefer-default-export
   mixins: [userStateMixin],

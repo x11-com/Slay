@@ -1,5 +1,5 @@
-import { getGroupUrl, getUserInfo } from '../email';
-import { getAuthorEmailFromMessage } from '../chat';
+import {getGroupUrl, getUserInfo} from '../email';
+import {getAuthorEmailFromMessage} from '../chat';
 
 export default class ChatReporter {
   constructor (req, res) {

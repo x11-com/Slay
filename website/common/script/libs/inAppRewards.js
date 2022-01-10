@@ -4,7 +4,7 @@ import shops from './shops';
 import getOfficialPinnedItems from './getOfficialPinnedItems';
 
 import getItemByPathAndType from './getItemByPathAndType';
-import { checkPinnedAreasForNullEntries } from '../ops/pinnedGearUtils';
+import {checkPinnedAreasForNullEntries} from '../ops/pinnedGearUtils';
 
 /**
  * Orders the pinned items so we always get our inAppRewards in the order

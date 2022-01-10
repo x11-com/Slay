@@ -1,18 +1,16 @@
 import cc from 'coupon-code';
 import stripeModule from 'stripe';
 
-import { model as Coupon } from '../../../../../../website/server/models/coupon';
+import {model as Coupon} from '../../../../../../website/server/models/coupon';
 import common from '../../../../../../website/common';
 import {
-  checkSubData,
   applySubscription,
   chargeForAdditionalGroupMember,
+  checkSubData,
   handlePaymentMethodChange,
 } from '../../../../../../website/server/libs/payments/stripe/subscriptions';
-import {
-  generateGroup,
-} from '../../../../../helpers/api-unit.helper';
-import { model as User } from '../../../../../../website/server/models/user';
+import {generateGroup,} from '../../../../../helpers/api-unit.helper';
+import {model as User} from '../../../../../../website/server/models/user';
 import payments from '../../../../../../website/server/libs/payments/payments';
 import stripePayments from '../../../../../../website/server/libs/payments/stripe';
 

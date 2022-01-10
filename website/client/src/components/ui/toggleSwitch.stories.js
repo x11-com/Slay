@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { storiesOf } from '@storybook/vue';
-import { text, withKnobs } from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {text, withKnobs} from '@storybook/addon-knobs';
 import toggleSwitch from './toggleSwitch';
 
 const stories = storiesOf('Toggle Switch', module);

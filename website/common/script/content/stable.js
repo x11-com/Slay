@@ -1,13 +1,6 @@
 import each from 'lodash/each';
-import {
-  drops as dropEggs,
-  quests as questEggs,
-} from './eggs';
-import {
-  drops as dropPotions,
-  premium as premiumPotions,
-  wacky as wackyPotions,
-} from './hatching-potions';
+import {drops as dropEggs, quests as questEggs,} from './eggs';
+import {drops as dropPotions, premium as premiumPotions, wacky as wackyPotions,} from './hatching-potions';
 import t from './translation';
 
 const petInfo = {};

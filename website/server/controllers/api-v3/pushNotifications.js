@@ -1,8 +1,6 @@
-import { authWithHeaders } from '../../middlewares/auth';
-import {
-  NotFound,
-} from '../../libs/errors';
-import { model as PushDevice } from '../../models/pushDevice';
+import {authWithHeaders} from '../../middlewares/auth';
+import {NotFound,} from '../../libs/errors';
+import {model as PushDevice} from '../../models/pushDevice';
 
 const api = {};
 

@@ -1,9 +1,5 @@
-import {
-  NotAuthorized,
-} from '../../libs/errors';
-import {
-  authWithHeaders,
-} from '../../middlewares/auth';
+import {NotAuthorized,} from '../../libs/errors';
+import {authWithHeaders,} from '../../middlewares/auth';
 
 const api = {};
 
@@ -23,7 +19,7 @@ api.trackEvent = {
   async handler (req, res) {
     // As of now only web can track events using this route
     if (req.headers['x-client'] !== 'habitica-web') {
-      throw new NotAuthorized('Only habitica.com is allowed to track analytics events.');
+      throw new NotAuthorized('Only s1ay.com is allowed to track analytics events.');
     }
 
     const { user } = res.locals;

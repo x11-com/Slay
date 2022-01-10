@@ -1,6 +1,6 @@
-import { mapInboxMessage, inboxModel as Inbox } from '../../models/message';
-import { getUserInfo, sendTxn as sendTxnEmail } from '../email'; // eslint-disable-line import/no-cycle
-import { sendNotification as sendPushNotification } from '../pushNotifications'; // eslint-disable-line import/no-cycle
+import {inboxModel as Inbox, mapInboxMessage} from '../../models/message';
+import {getUserInfo, sendTxn as sendTxnEmail} from '../email'; // eslint-disable-line import/no-cycle
+import {sendNotification as sendPushNotification} from '../pushNotifications'; // eslint-disable-line import/no-cycle
 
 export async function sentMessage (sender, receiver, message, translate) {
   const messageSent = await sender.sendMessage(receiver, { receiverMsg: message });

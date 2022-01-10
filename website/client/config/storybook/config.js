@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { configure } from '@storybook/vue';
+import {configure} from '@storybook/vue';
 import './margin.css';
 import '../../src/assets/scss/index.scss';
 

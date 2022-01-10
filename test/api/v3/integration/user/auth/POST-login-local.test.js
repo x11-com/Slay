@@ -1,13 +1,9 @@
 import nconf from 'nconf';
-import {
-  generateUser,
-  requester,
-  translate as t,
-} from '../../../../../helpers/api-integration/v3';
+import {generateUser, requester, translate as t,} from '../../../../../helpers/api-integration/v3';
 import {
   bcryptCompare,
-  sha1MakeSalt,
   sha1Encrypt as sha1EncryptPassword,
+  sha1MakeSalt,
 } from '../../../../../../website/server/libs/password';
 
 describe('POST /user/auth/local/login', () => {

@@ -16,7 +16,7 @@ import seasonalShopConfig from './shops-seasonal.config';
 import featuredItems from '../content/shop-featuredItems';
 
 import getOfficialPinnedItems from './getOfficialPinnedItems';
-import { getClassName } from './getClassName';
+import {getClassName} from './getClassName';
 
 const shops = {};
 

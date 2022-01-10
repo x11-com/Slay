@@ -1,7 +1,5 @@
-import {
-  generateUser,
-} from '../../../../helpers/api-integration/v3';
-import { model as NewsPost } from '../../../../../website/server/models/newsPost';
+import {generateUser,} from '../../../../helpers/api-integration/v3';
+import {model as NewsPost} from '../../../../../website/server/models/newsPost';
 
 describe('POST /news/tell-me-later', () => {
   let user;

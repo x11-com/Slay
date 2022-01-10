@@ -2,18 +2,14 @@ import get from 'lodash/get';
 import pick from 'lodash/pick';
 import content from '../../content/index';
 import splitWhitespace from '../../libs/splitWhitespace';
-import { checkOnboardingStatus } from '../../libs/onboarding';
-import {
-  BadRequest,
-  NotAuthorized,
-  NotFound,
-} from '../../libs/errors';
+import {checkOnboardingStatus} from '../../libs/onboarding';
+import {BadRequest, NotAuthorized, NotFound,} from '../../libs/errors';
 import handleTwoHanded from '../../fns/handleTwoHanded';
 import ultimateGear from '../../fns/ultimateGear';
 
-import { removePinnedGearAddPossibleNewOnes } from '../pinnedGearUtils';
+import {removePinnedGearAddPossibleNewOnes} from '../pinnedGearUtils';
 
-import { AbstractGoldItemOperation } from './abstractBuyOperation';
+import {AbstractGoldItemOperation} from './abstractBuyOperation';
 import errorMessage from '../../libs/errorMessage';
 
 export class BuyMarketGearOperation extends AbstractGoldItemOperation { // eslint-disable-line import/prefer-default-export, max-len

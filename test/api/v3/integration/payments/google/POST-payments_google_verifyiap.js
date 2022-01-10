@@ -1,4 +1,4 @@
-import { generateUser, translate as t } from '../../../../../helpers/api-integration/v3';
+import {generateUser, translate as t} from '../../../../../helpers/api-integration/v3';
 import googlePayments from '../../../../../../website/server/libs/payments/google';
 
 describe('payments : google #verify', () => {

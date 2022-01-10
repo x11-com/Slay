@@ -1,6 +1,6 @@
-import { last } from 'lodash';
+import {last} from 'lodash';
 import shared from '../../../common';
-import { model as User } from '../../models/user'; // eslint-disable-line import/no-cycle
+import {model as User} from '../../models/user'; // eslint-disable-line import/no-cycle
 
 // Build a list of gear items owned by default
 const defaultOwnedGear = {};

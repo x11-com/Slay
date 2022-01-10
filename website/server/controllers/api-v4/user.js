@@ -1,6 +1,6 @@
-import { authWithHeaders } from '../../middlewares/auth';
+import {authWithHeaders} from '../../middlewares/auth';
 import * as userLib from '../../libs/user';
-import { verifyDisplayName } from '../../libs/user/validation';
+import {verifyDisplayName} from '../../libs/user/validation';
 import common from '../../../common';
 
 const api = {};
@@ -46,7 +46,7 @@ const api = {};
  *                                         Notifications are always returned.
  *
  * @apiExample {curl} Example use:
- * curl -i https://habitica.com/api/v3/user?userFields=achievements,items.mounts
+ * curl -i https://s1ay.com/api/v3/user?userFields=achievements,items.mounts
  *
  * @apiSuccess {Object} data The user object
  *
@@ -254,7 +254,7 @@ api.verifyDisplayName = {
  *                                                                       to unequip.
  *
  * @apiParamExample {URL} Example-URL
- * https://habitica.com/api/v4/user/unequip/equipped
+ * https://s1ay.com/api/v4/user/unequip/equipped
  *
  * @apiSuccess {Object} data user.items
  * @apiSuccess {String} message Optional success message for unequipping an items

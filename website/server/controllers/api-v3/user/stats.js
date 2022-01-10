@@ -1,6 +1,6 @@
 // @TODO: Can we import only the functions we need instead of the large object?
 import common from '../../../../common';
-import { authWithHeaders } from '../../../middlewares/auth';
+import {authWithHeaders} from '../../../middlewares/auth';
 
 const api = {};
 
@@ -14,7 +14,7 @@ const api = {};
  * @apiParam (Query) {String="str","con","int","per"} stat The Stat to increase. Default is 'str'
  *
  * @apiParamExample {curl} Example call:
- * curl -X POST -d "" https://habitica.com/api/v3/user/allocate?stat=int
+ * curl -X POST -d "" https://s1ay.com/api/v3/user/allocate?stat=int
  *
  * @apiSuccess {Object} data Returns stats and notifications from the user profile
  *

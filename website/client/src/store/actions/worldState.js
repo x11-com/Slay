@@ -1,4 +1,4 @@
-import { loadAsyncResource } from '@/libs/asyncResource';
+import {loadAsyncResource} from '@/libs/asyncResource';
 
 export async function getWorldState (store, options = {}) {
   return loadAsyncResource({

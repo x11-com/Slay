@@ -1,7 +1,5 @@
 import blockUser from '../../../website/common/script/ops/blockUser';
-import {
-  generateUser,
-} from '../../helpers/common.helper';
+import {generateUser,} from '../../helpers/common.helper';
 import i18n from '../../../website/common/script/i18n';
 
 describe('shared.ops.blockUser', () => {

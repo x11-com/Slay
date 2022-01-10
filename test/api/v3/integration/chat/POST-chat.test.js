@@ -219,7 +219,7 @@ describe('POST /chat', () => {
 
   context('banned word', () => {
     it('returns an error when chat message contains a banned word in tavern', async () => {
-      await expect(user.post('/groups/habitrpg/chat', { message: testBannedWordMessage }))
+      await expect(user.post('/groups/donPabloNow/chat', { message: testBannedWordMessage }))
         .to.eventually.be.rejected.and.eql({
           code: 400,
           error: 'BadRequest',
@@ -247,7 +247,7 @@ describe('POST /chat', () => {
 
     it('errors when word is part of a phrase', async () => {
       const wordInPhrase = `phrase ${testBannedWordMessage} end`;
-      await expect(user.post('/groups/habitrpg/chat', { message: wordInPhrase }))
+      await expect(user.post('/groups/donPabloNow/chat', { message: wordInPhrase }))
         .to.eventually.be.rejected.and.eql({
           code: 400,
           error: 'BadRequest',
@@ -257,7 +257,7 @@ describe('POST /chat', () => {
 
     it('errors when word is surrounded by non alphabet characters', async () => {
       const wordInPhrase = `_!${testBannedWordMessage}@_`;
-      await expect(user.post('/groups/habitrpg/chat', { message: wordInPhrase }))
+      await expect(user.post('/groups/donPabloNow/chat', { message: wordInPhrase }))
         .to.eventually.be.rejected.and.eql({
           code: 400,
           error: 'BadRequest',
@@ -269,7 +269,7 @@ describe('POST /chat', () => {
       const substrLength = Math.floor(testBannedWordMessage.length / 2);
       const chatMessage = testBannedWordMessage.substring(0, substrLength).toLowerCase()
         + testBannedWordMessage.substring(substrLength).toUpperCase();
-      await expect(user.post('/groups/habitrpg/chat', { message: chatMessage }))
+      await expect(user.post('/groups/donPabloNow/chat', { message: chatMessage }))
         .to.eventually.be.rejected.and.eql({
           code: 400,
           error: 'BadRequest',
@@ -283,7 +283,7 @@ describe('POST /chat', () => {
         testBannedWordMessage1.toLowerCase(),
       ];
       const chatMessage = `Mixing ${testBannedWords[0]} and ${testBannedWords[1]} is bad for you.`;
-      await expect(user.post('/groups/habitrpg/chat', { message: chatMessage }))
+      await expect(user.post('/groups/donPabloNow/chat', { message: chatMessage }))
         .to.eventually.be.rejected
         .and.have.property('message')
         .that.includes(testBannedWords.join(', '));
@@ -291,14 +291,14 @@ describe('POST /chat', () => {
 
     it('does not error when bad word is suffix of a word', async () => {
       const wordAsSuffix = `prefix${testBannedWordMessage}`;
-      const message = await user.post('/groups/habitrpg/chat', { message: wordAsSuffix });
+      const message = await user.post('/groups/donPabloNow/chat', { message: wordAsSuffix });
 
       expect(message.message.id).to.exist;
     });
 
     it('does not error when bad word is prefix of a word', async () => {
       const wordAsPrefix = `${testBannedWordMessage}suffix`;
-      const message = await user.post('/groups/habitrpg/chat', { message: wordAsPrefix });
+      const message = await user.post('/groups/donPabloNow/chat', { message: wordAsPrefix });
 
       expect(message.message.id).to.exist;
     });
@@ -454,7 +454,7 @@ describe('POST /chat', () => {
       const substrLength = Math.floor(testSlurMessage1.length / 2);
       const chatMessage = testSlurMessage1.substring(0, substrLength).toLowerCase()
         + testSlurMessage1.substring(substrLength).toUpperCase();
-      await expect(user.post('/groups/habitrpg/chat', { message: chatMessage }))
+      await expect(user.post('/groups/donPabloNow/chat', { message: chatMessage }))
         .to.eventually.be.rejected.and.eql({
           code: 400,
           error: 'BadRequest',

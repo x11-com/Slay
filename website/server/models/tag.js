@@ -35,7 +35,7 @@ schema.statics.sanitizeUpdate = function sanitizeUpdate (updateObj) {
 
 /**
  * Remove invalid data from an array of tags.
- * Fix for https://github.com/HabitRPG/slay/issues/10688
+ * Fix for https://github.com/donPabloNow/slay/issues/10688
  * Called by user's post init hook (models/user/hooks.js)
  */
 schema.statics.cleanupCorruptData = function cleanupCorruptTagsData (tags) {

@@ -40,7 +40,7 @@
           <li>
             <a
               target="_blank"
-              :href="`https://oldgods.net/slay/habitrpg_user_data_display.html?uuid=` + user._id"
+              :href="`https://oldgods.net/slay/donPabloNow_user_data_display.html?uuid=` + user._id"
             >{{ $t('dataDisplayTool') }}</a>
             <br>
             {{ $t('dataToolDesc') }}

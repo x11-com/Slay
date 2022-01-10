@@ -15,10 +15,10 @@ spec:
     spec:
       containers:
       - name: slay
-        image: ksonney/habitrpg:latest
+        image: ksonney/donPabloNow:latest
         env:
           - name: NODE_DB_URI
-            value: mongodb://mongosvc/habitrpg
+            value: mongodb://mongosvc/donPabloNow
         ports:
           - containerPort: 3000
             hostPort: 3000

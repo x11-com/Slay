@@ -20,7 +20,7 @@ services:
     networks:
       - slay
     environment:
-      - NODE_DB_URI=mongodb://mongo/habitrpg
+      - NODE_DB_URI=mongodb://mongo/donPabloNow
     depends_on:
       - mongo
 

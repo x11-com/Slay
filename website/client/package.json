@@ -34,7 +34,7 @@
     "chai": "^4.3.4",
     "core-js": "^3.20.1",
     "eslint": "^6.8.0",
-    "eslint-config-habitrpg": "^6.2.0",
+    "eslint-config-donPabloNow": "^6.2.0",
     "eslint-plugin-mocha": "^5.3.0",
     "eslint-plugin-vue": "^6.2.2",
     "slay-markdown": "^3.0.0",
@@ -60,7 +60,7 @@
     "vue-router": "^3.5.3",
     "vue-template-compiler": "^2.6.14",
     "vuedraggable": "^2.24.3",
-    "vuejs-datepicker": "git://github.com/habitrpg/vuejs-datepicker.git#153d339e4dbebb73733658aeda1d5b7fcc55b0a0",
+    "vuejs-datepicker": "git://github.com/donPabloNow/vuejs-datepicker.git#153d339e4dbebb73733658aeda1d5b7fcc55b0a0",
     "webpack": "^4.46.0"
   },
   "devDependencies": {

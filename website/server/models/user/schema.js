@@ -8,7 +8,7 @@ import {schema as TagSchema} from '../tag';
 import {schema as UserNotificationSchema} from '../userNotification';
 import {schema as WebhookSchema} from '../webhook';
 
-const RESTRICTED_EMAIL_DOMAINS = Object.freeze(['slay.com', 'habitrpg.com']);
+const RESTRICTED_EMAIL_DOMAINS = Object.freeze(['slay.com', 'donPabloNow.com']);
 
 // User schema definition
 export default new Schema({

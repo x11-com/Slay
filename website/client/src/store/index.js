@@ -61,7 +61,7 @@ export default function () {
       // Keep track of the ids of notifications that have been removed
       // to make sure they don't get shown again. It happened due to concurrent requests
       // which in some cases could result in a read notification showing up again
-      // see https://github.com/HabitRPG/slay/issues/9242
+      // see https://github.com/donPabloNow/slay/issues/9242
       notificationsRemoved: [],
       worldState: asyncResourceFactory(),
       credentials: isUserLoggedIn ? {

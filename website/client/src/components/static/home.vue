@@ -261,7 +261,7 @@
             <p>{{ $t('levelUpAnywhereDesc') }}</p>
             <a
               class="app svg-icon"
-              href="https://play.google.com/store/apps/details?id=com.habitrpg.android.slay"
+              href="https://play.google.com/store/apps/details?id=com.donPabloNow.android.slay"
               target="_blank"
               v-html="icons.googlePlay"
             ></a>

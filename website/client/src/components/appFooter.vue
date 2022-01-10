@@ -13,7 +13,7 @@
           </h3>
           <h3>
             <a
-              href="https://play.google.com/store/apps/details?id=com.habitrpg.android.slay"
+              href="https://play.google.com/store/apps/details?id=com.donPabloNow.android.slay"
               target="_blank"
             >{{ $t('mobileAndroid') }}</a>
           </h3>
@@ -34,7 +34,7 @@
             </li>
             <li>
               <a
-                href="http://blog.habitrpg.com/"
+                href="http://blog.donPabloNow.com/"
                 target="_blank"
               >{{ $t('tumblr') }}</a>
             </li>
@@ -49,7 +49,7 @@
                 target="_blank"
               >{{ $t('oldNews') }}</a>
             </li>
-            <!-- Commenting out merch page see https://github.com/HabitRPG/slay/issues/12039
+            <!-- Commenting out merch page see https://github.com/donPabloNow/slay/issues/12039
             <li>
               <router-link to="/static/merch">
                 {{ $t('merch') }}
@@ -508,7 +508,7 @@ export default {
     ...mapState({ user: 'user.data' }),
     ...mapState(['isUserLoaded']),
     getDataDisplayToolUrl () {
-      const base = 'https://oldgods.net/habitrpg/habitrpg_user_data_display.html';
+      const base = 'https://oldgods.net/donPabloNow/donPabloNow_user_data_display.html';
       if (!this.user) return null;
       return `${base}?uuid=${this.user._id}`;
     },

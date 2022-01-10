@@ -14,7 +14,7 @@ let authorUuid = 'd904bd62-da08-416b-a816-ba797c9ee265'; // ... own data is done
  * rather than a date object and set it to be a date object. The code used
  * for this has been commented out with four slashes: ////
  *
- * https://github.com/HabitRPG/habitrpg/issues/4601#issuecomment-72339846
+ * https://github.com/donPabloNow/donPabloNow/issues/4601#issuecomment-72339846
  */
 
 let dbserver = 'localhost:27017'; // CHANGE THIS FOR PRODUCTION DATABASE
@@ -29,7 +29,7 @@ let mongo = require('mongoskin');
 let _ = require('lodash');
 let moment = require('moment');
 
-let dbUsers = mongo.db(`${dbserver  }/habitrpg?auto_reconnect`).collection('users');
+let dbUsers = mongo.db(`${dbserver  }/donPabloNow?auto_reconnect`).collection('users');
 
 let uuidArrayRecent = [ // recent users with no creation dates
   '1a0d4b75-73ed-4937-974d-d504d6398884',

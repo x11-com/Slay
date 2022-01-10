@@ -176,10 +176,10 @@ function _setProfileName (user) {
 schema.post('init', function postInitUser () {
   // Cleanup any corrupt data that could have ended up inside the user schema.
   // In particular:
-  // - tags https://github.com/HabitRPG/slay/issues/10688
-  // - notifications https://github.com/HabitRPG/slay/issues/9923
-  // - push devices https://github.com/HabitRPG/slay/issues/11805
-  //            and https://github.com/HabitRPG/slay/issues/11868
+  // - tags https://github.com/donPabloNow/slay/issues/10688
+  // - notifications https://github.com/donPabloNow/slay/issues/9923
+  // - push devices https://github.com/donPabloNow/slay/issues/11805
+  //            and https://github.com/donPabloNow/slay/issues/11868
 
   // Make sure notifications are loaded
   if (this.isDirectSelected('notifications')) {

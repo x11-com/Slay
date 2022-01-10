@@ -9,7 +9,7 @@ db.users.update(
     $set: {
       'purchased.plan': {
         planId: 'basic',
-        customerId: 'habitrpg',
+        customerId: 'donPabloNow',
         dateCreated: new Date(),
         dateUpdated: new Date(),
         gemsBought: 0,

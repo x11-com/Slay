@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    "habitrpg/lib/node",
+    "donPabloNow/lib/node",
   ]
 }

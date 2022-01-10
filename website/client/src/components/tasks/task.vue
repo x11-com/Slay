@@ -484,7 +484,7 @@
 
     /**
     * Fix flex-wrapping for IE 11
-    * https://github.com/HabitRPG/slay/issues/9754
+    * https://github.com/donPabloNow/slay/issues/9754
     */
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       flex: 1;

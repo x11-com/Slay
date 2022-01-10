@@ -848,7 +848,7 @@ api.moveTask = {
 
     // Update the user version field manually,
     // it cannot be updated in the pre update hook
-    // See https://github.com/HabitRPG/slay/pull/9321#issuecomment-354187666 for more info
+    // See https://github.com/donPabloNow/slay/pull/9321#issuecomment-354187666 for more info
     // Only users have a version.
     if (!group && !challenge) {
       owner._v += 1;
@@ -1435,7 +1435,7 @@ api.deleteTask = {
 
       // Update the user version field manually,
       // it cannot be updated in the pre update hook
-      // See https://github.com/HabitRPG/slay/pull/9321#issuecomment-354187666 for more info
+      // See https://github.com/donPabloNow/slay/pull/9321#issuecomment-354187666 for more info
       if (!challenge) user._v += 1;
 
       await Promise.all([taskOrderUpdate, task.remove()]);

@@ -3,7 +3,7 @@ var authorUuid = 'd904bd62-da08-416b-a816-ba797c9ee265'; //... own data is done
 
 /**
  * database_reports/count_users_who_own_specified_gear.js
- * https://github.com/HabitRPG/slay/pull/3884
+ * https://github.com/donPabloNow/slay/pull/3884
  */
 
 var thingsOfInterest = {
@@ -37,7 +37,7 @@ var thingsOfInterest = {
 var mongo = require('mongoskin');
 var _ = require('lodash');
 
-var dbUsers = mongo.db('localhost:27017/habitrpg?auto_reconnect').collection('users');
+var dbUsers = mongo.db('localhost:27017/donPabloNow?auto_reconnect').collection('users');
 
 var thingsFound = {};  // each key is one "thing" from thingsOfInterest,
         // and the value for that key is the number of users who own it

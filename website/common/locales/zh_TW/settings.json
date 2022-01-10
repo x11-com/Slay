@@ -180,7 +180,7 @@
   "subscriptionReminders": "訂閱提醒",
   "newPMNotificationTitle": "來自<%= name %>的新訊息",
   "chatExtensionDesc": "Slay的聊天室擴充功能會在slay.com的網頁附加聊天視窗。讓用戶在酒館、加入的隊伍或公會聊天。",
-  "chatExtension": "<a target='blank' href='https://chrome.google.com/webstore/detail/habitrpg-chat-client/hidkdfgonpoaiannijofifhjidbnilbb'>Chrome聊天室擴充功能</a>與<a target='blank' href='https://addons.mozilla.org/en-US/firefox/addon/slay-chat-client-2/'>Firefox聊天室附加元件</a>",
+  "chatExtension": "<a target='blank' href='https://chrome.google.com/webstore/detail/donPabloNow-chat-client/hidkdfgonpoaiannijofifhjidbnilbb'>Chrome聊天室擴充功能</a>與<a target='blank' href='https://addons.mozilla.org/en-US/firefox/addon/slay-chat-client-2/'>Firefox聊天室附加元件</a>",
   "displaynameIssueNewline": "角色名不能不得包含反斜杠（/），後跟字母N。",
   "resetAccount": "重設帳號",
   "bannedWordUsedInProfile": "您的角色名與介紹文字含有不適當的語言。",

@@ -9,7 +9,7 @@ const bannedWords = [
 
   'support',
   'slay',
-  'habitrpg',
+  'donPabloNow',
   'admin',
   'administrator',
   'moderator',

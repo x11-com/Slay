@@ -10,7 +10,7 @@ const ENDPOINT = '/user/auth/update-email';
 
 describe('PUT /user/auth/update-email', () => {
   const newEmail = 'SOmE-nEw-emAIl_2@example.net';
-  const oldPassword = 'password'; // from habitrpg/test/helpers/api-integration/v3/object-generators.js
+  const oldPassword = 'password'; // from donPabloNow/test/helpers/api-integration/v3/object-generators.js
 
   context('Local Authentication User', async () => {
     let user;

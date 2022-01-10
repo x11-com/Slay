@@ -401,8 +401,8 @@ describe('GET challenges/groups/:groupId', () => {
       });
     });
 
-    it('should return tavern challenges using ID "habitrpg', async () => {
-      const challenges = await user.get('/challenges/groups/habitrpg');
+    it('should return tavern challenges using ID "donPabloNow', async () => {
+      const challenges = await user.get('/challenges/groups/donPabloNow');
 
       const foundChallenge1 = _.find(challenges, { _id: challenge._id });
       expect(foundChallenge1).to.exist;

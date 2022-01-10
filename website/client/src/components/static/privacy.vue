@@ -6,7 +6,7 @@
       Last Updated: December 10, 2021
     </p>
     <p>
-      HabitRPG, Inc. (“HabitRPG,” “we,” “us,” or “our”) welcomes you. This privacy notice (the “Privacy
+      donPabloNow, Inc. (“donPabloNow,” “we,” “us,” or “our”) welcomes you. This privacy notice (the “Privacy
       Notice”) describes how we process the information we collect about or from you through our Website
       located at <a href='https://slay.com/static/home'>https://slay.com/static/home</a> and/or our Apps
       (our “Digital Platforms”), from our users, subscribers, visitors and other users of our technology and
@@ -22,7 +22,7 @@
     </p>
     <h2>THE INFORMATION WE COLLECT AND HOW WE USE IT</h2>
     <p>
-      In the course of operating the Service, HabitRPG collects or receives the following types of information
+      In the course of operating the Service, donPabloNow collects or receives the following types of information
       from visitors to the Website; users, subscribers or other users of its Platforms; and from third-party
       integration partners, which may include personal information.
     </p>
@@ -44,7 +44,7 @@
     </p>
     <h3>User Content</h3>
     <p>
-      As explained in more detail in the Terms of Service, HabitRPG allows you to upload and receive content,
+      As explained in more detail in the Terms of Service, donPabloNow allows you to upload and receive content,
       including text, photos, images, task lists, graphics, artwork, links to outside content, and or other material.
       It is your decision what kind of personal information (if any) you submit. We do not use personal
       information posted in your content in any way except as needed to enforce the community guidelines and
@@ -195,7 +195,7 @@
       substantially all of our assets, we expect that the information that we have collected, including personal
       information, would be transferred to the surviving entity in a merger or the acquiring entity. All such
       transfers shall be subject to our commitments with respect to the privacy and confidentiality of such
-      personal information as set forth in this Privacy Notice. This Notice shall be binding upon HabitRPG and
+      personal information as set forth in this Privacy Notice. This Notice shall be binding upon donPabloNow and
       its legal successors in interest.
     </p>
     <h3>Disclosure to Public Authorities</h3>
@@ -230,13 +230,13 @@
     <p>
       You may opt out at any time from the use of your personal information for direct marketing purposes by
       emailing the instructions to <a href='mailto:admin@slay.com'>admin@slay.com</a> or by clicking
-      on the “Unsubscribe” link located on the bottom of any HabitRPG marketing email and following the
+      on the “Unsubscribe” link located on the bottom of any donPabloNow marketing email and following the
       instructions found on the page to which the link takes you. Please allow us a reasonable time to process
       your request. You cannot opt out of receiving transactional e-mails related to the Service.
     </p>
     <h2>HOW WE PROTECT YOUR INFORMATION</h2>
     <p>
-      HabitRPG takes very seriously the security and privacy of the personal information that it collects
+      donPabloNow takes very seriously the security and privacy of the personal information that it collects
       pursuant to this Privacy Notice. Accordingly, we implement reasonable security measures designed to
       protect your personal information from loss, misuse and unauthorized access, disclosure, alteration and
       destruction, taking into account the risks involved in processing and the nature of such data, and to
@@ -273,7 +273,7 @@
       established business relationship (and that are not otherwise exempt) have shared with third parties for
       direct marketing purposes during the preceding calendar year, including the names and addresses of those
       third parties, and examples of the types of Service or products marketed by those third parties. If you wish
-      to submit a request pursuant to Section 1798.83, please contact HabitRPG via email at
+      to submit a request pursuant to Section 1798.83, please contact donPabloNow via email at
       <a href='mailto:admin@slay.com'>admin@slay.com</a>.
     </p>
     <h2>NEVADA PRIVACY RIGHTS</h2>
@@ -285,13 +285,13 @@
     </p>
     <h2>DO NOT TRACK</h2>
     <p>
-      HabitRPG does not respond to “Do Not Track” settings or other related mechanisms on our Website at
+      donPabloNow does not respond to “Do Not Track” settings or other related mechanisms on our Website at
       this time.
     </p>
     <h2>LINKS TO EXTERNAL WEBSITES</h2>
     <p>
       The Service may contain links to third-party websites (“<span style="text-decoration: underline;">External
-      Sites</span>”). HabitRPG has no control over the privacy practices or the content of any such External Sites.
+      Sites</span>”). donPabloNow has no control over the privacy practices or the content of any such External Sites.
       As such, we are not responsible for the content or the privacy policies of such External Sites. You should
       check the applicable privacy notice or privacy policy and terms of use when visiting any such External Sites.
     </p>
@@ -310,7 +310,7 @@
       admin@slay.com</a> with “Privacy Notice” in the subject line.
     </p>
     <address>
-      <strong>HabitRPG, Inc.</strong>
+      <strong>donPabloNow, Inc.</strong>
       <br>202 Bicknell Ave., Ground Floor
       <br>Santa Monica, CA 90405
       <br>Email&colon;&nbsp;

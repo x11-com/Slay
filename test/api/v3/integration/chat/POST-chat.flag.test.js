@@ -73,7 +73,7 @@ describe('POST /chat/:chatId/flag', () => {
         title: 'Flag in Test Guild',
         title_link: `${BASE_URL}/groups/guild/${group._id}`,
         text: TEST_MESSAGE,
-        footer: `<https://habitrpg.github.io/flag-o-rama/?groupId=${group._id}&chatId=${message.id}|Flag this message.>`,
+        footer: `<https://donPabloNow.github.io/flag-o-rama/?groupId=${group._id}&chatId=${message.id}|Flag this message.>`,
         mrkdwn_in: [
           'text',
         ],
@@ -108,7 +108,7 @@ describe('POST /chat/:chatId/flag', () => {
         title: 'Flag in Test Guild',
         title_link: `${BASE_URL}/groups/guild/${group._id}`,
         text: TEST_MESSAGE,
-        footer: `<https://habitrpg.github.io/flag-o-rama/?groupId=${group._id}&chatId=${message.id}|Flag this message.> ${automatedComment}`,
+        footer: `<https://donPabloNow.github.io/flag-o-rama/?groupId=${group._id}&chatId=${message.id}|Flag this message.> ${automatedComment}`,
         mrkdwn_in: [
           'text',
         ],

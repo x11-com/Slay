@@ -54,7 +54,7 @@ api.getNews = {
  * @apiName CreateNewsPost
  * @apiGroup News
  *
- * @apiSuccess {Object} data The created news post (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/newsPost.js" target="_blank">/website/server/models/newsPost.js</a>)
+ * @apiSuccess {Object} data The created news post (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/newsPost.js" target="_blank">/website/server/models/newsPost.js</a>)
  *
  * @apiSuccessExample {json} Post:
  *     HTTP/1.1 200 OK
@@ -87,7 +87,7 @@ api.createNews = {
  *
  * @apiParam (Path) {String} postId The posts _id
  *
- * @apiSuccess {Object} data The news post (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/newsPost.js" target="_blank">/website/server/models/newsPost.js</a>)
+ * @apiSuccess {Object} data The news post (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/newsPost.js" target="_blank">/website/server/models/newsPost.js</a>)
  *
  * @apiSuccessExample {json} Post:
  *     HTTP/1.1 200 OK
@@ -127,7 +127,7 @@ api.getPost = {
  *
  * @apiParam (Path) {String} postId The posts _id
  *
- * @apiSuccess {Object} data The updated news post (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/newsPost.js" target="_blank">/website/server/models/newsPost.js</a>)
+ * @apiSuccess {Object} data The updated news post (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/newsPost.js" target="_blank">/website/server/models/newsPost.js</a>)
  *
  * @apiSuccessExample {json} Post:
  *     HTTP/1.1 200 OK

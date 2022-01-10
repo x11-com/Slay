@@ -1,4 +1,4 @@
-// mongo habitrpg ./node_modules/moment/moment.js ./migrations/cancelSubscription.js
+// mongo donPabloNow ./node_modules/moment/moment.js ./migrations/cancelSubscription.js
 
 // For some reason people often to contact me to cancel their sub,
 // rather than do it online. Even when I point them to

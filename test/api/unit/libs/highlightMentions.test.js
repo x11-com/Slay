@@ -109,14 +109,14 @@ describe('highlightMentions', () => {
       expect(result[0]).to.equal(text);
     });
 
-    // https://github.com/HabitRPG/slay/issues/12217
+    // https://github.com/donPabloNow/slay/issues/12217
     it('doesn\'t highlight user in link with url-escapable characters', async () => {
       const text = '[test](https://slay.fandom.com/ru/@wiki/Снаряжение)';
       const result = await highlightMentions(text);
       expect(result[0]).to.equal(text);
     });
 
-    // https://github.com/HabitRPG/slay/issues/12223
+    // https://github.com/donPabloNow/slay/issues/12223
     it('matches a link in between two the same links', async () => {
       const text = '[here](http://slay.wikia.com/wiki/The_Keep:Pirate_Cove/FAQ)\n@user\n[hier](http://slay.wikia.com/wiki/The_Keep:Pirate_Cove/FAQ)';
 

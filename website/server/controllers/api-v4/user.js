@@ -55,7 +55,7 @@ const api = {};
  *   "success": true,
  *   "data": {
  *   --  User data included here, for details of the user model see:
- *   --  https://github.com/HabitRPG/slay/tree/develop/website/server/models/user
+ *   --  https://github.com/donPabloNow/slay/tree/develop/website/server/models/user
  *   }
  * }
  *

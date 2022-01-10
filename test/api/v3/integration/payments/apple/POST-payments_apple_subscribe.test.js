@@ -37,7 +37,7 @@ describe('payments : apple #subscribe', () => {
         balance: 2,
       });
 
-      const sku = 'com.habitrpg.ios.slay.subscription.3month';
+      const sku = 'com.donPabloNow.ios.slay.subscription.3month';
 
       await user.post(endpoint, {
         sku,

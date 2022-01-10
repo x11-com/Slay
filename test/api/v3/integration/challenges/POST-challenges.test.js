@@ -28,7 +28,7 @@ describe('POST /challenges', () => {
     const user = await generateUser();
 
     await expect(user.post('/challenges', {
-      group: 'habitrpg',
+      group: 'donPabloNow',
       prize: 0,
     })).to.eventually.be.rejected.and.eql({
       code: 401,

@@ -17,7 +17,7 @@ let dbserver = 'localhost:27017'; // CHANGE THIS FOR PRODUCTION DATABASE
 let mongo = require('mongoskin');
 let _ = require('lodash');
 
-let dbUsers = mongo.db(`${dbserver  }/habitrpg?auto_reconnect`).collection('users');
+let dbUsers = mongo.db(`${dbserver  }/donPabloNow?auto_reconnect`).collection('users');
 
 // 'auth.timestamps.created':{$gt:new Date('2014-02-01')},
 let query = {

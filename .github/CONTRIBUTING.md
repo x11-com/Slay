@@ -1,6 +1,6 @@
 # Reporting Bugs
 
-[Please see these instructions for reporting bugs](https://github.com/HabitRPG/slay/issues/2760)
+[Please see these instructions for reporting bugs](https://github.com/donPabloNow/slay/issues/2760)
 
 # Pull Request
 

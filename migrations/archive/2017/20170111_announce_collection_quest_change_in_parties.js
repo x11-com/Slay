@@ -5,7 +5,7 @@
  *
  * Reason: Collection quests are being changed
  * to require fewer items collected:
- * https://github.com/HabitRPG/habitrpg/pull/7987
+ * https://github.com/donPabloNow/donPabloNow/pull/7987
  * This will cause existing quests to end sooner
  * than the party is expecting.
  * This script inserts an explanatory `system`
@@ -25,7 +25,7 @@ const timer = new Timer();
 
 // PROD: Enable prod db
 // const DB_URI = 'mongodb://username:password@dsXXXXXX-a0.mlab.com:XXXXX,dsXXXXXX-a1.mlab.com:XXXXX/slay?replicaSet=rs-dsXXXXXX';
-const DB_URI = 'mongodb://localhost/habitrpg';
+const DB_URI = 'mongodb://localhost/donPabloNow';
 
 const COLLECTION_QUESTS = [
   'vice2',

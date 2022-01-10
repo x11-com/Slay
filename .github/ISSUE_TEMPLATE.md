@@ -4,7 +4,7 @@
 
 [//]: # (If you have a feature request, use "Help > Request a Feature", not GitHub.)
 
-[//]: # (For more guidelines see https://github.com/HabitRPG/slay/issues/2760)
+[//]: # (For more guidelines see https://github.com/donPabloNow/slay/issues/2760)
 
 [//]: # (Fill out relevant information - UUID is found from the Slay website at User Icon > Settings > API)
 ### General Info

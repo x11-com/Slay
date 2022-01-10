@@ -107,7 +107,7 @@ export const schema = new Schema({
 
 /**
  * Remove invalid data from an array of notifications.
- * Fix for https://github.com/HabitRPG/slay/issues/9923
+ * Fix for https://github.com/donPabloNow/slay/issues/9923
  * Called by user's post init hook (models/user/hooks.js)
  */
 schema.statics.cleanupCorruptData = function cleanupCorruptNotificationsData (notifications) {

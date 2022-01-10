@@ -219,7 +219,7 @@ schema.statics.getGroup = async function getGroup (options = {}) {
 
   const isUserParty = groupId === 'party' || user.party._id === groupId;
   const isUserGuild = user.guilds.indexOf(groupId) !== -1;
-  const isTavern = ['habitrpg', TAVERN_ID].indexOf(groupId) !== -1;
+  const isTavern = ['donPabloNow', TAVERN_ID].indexOf(groupId) !== -1;
 
   // When requireMembership is true check that user is member even in public guild
   if (requireMembership && !isUserParty && !isUserGuild && !isTavern) {
@@ -641,7 +641,7 @@ schema.methods.handleQuestInvitation = async function handleQuestInvitation (use
 
   // Handle quest invitation atomically (update only current member when still undecided)
   // to prevent multiple concurrent requests overriding updates
-  // see https://github.com/HabitRPG/slay/issues/11398
+  // see https://github.com/donPabloNow/slay/issues/11398
   const Group = this.constructor;
   const result = await Group.update(
     {

@@ -3,7 +3,7 @@
 ## Babel Paths for Production Environment
 
 In development,
-we [transpile at server start](https://github.com/HabitRPG/slay/blob/1ed7e21542519abe7a3c601f396e1a07f9b050ae/website/server/index.js#L6-L8)
+we [transpile at server start](https://github.com/donPabloNow/slay/blob/1ed7e21542519abe7a3c601f396e1a07f9b050ae/website/server/index.js#L6-L8)
 . This allows us to work quickly while developing, but is not suitable for production. So, in production we transpile
 the server code before the app starts.
 

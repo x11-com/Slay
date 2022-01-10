@@ -459,7 +459,7 @@ api.getUserChallenges = {
  * @apiName GetGroupChallenges
  * @apiGroup Challenge
  *
- * @apiParam (Path) {UUID} groupId The group id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {UUID} groupId The group id ('party' for the user party and 'donPabloNow'
  *                                 for tavern are accepted)
  *
  * @apiSuccess {Array} data An array of challenges sorted with official challenges first,
@@ -487,7 +487,7 @@ api.getGroupChallenges = {
     if (validationErrors) throw validationErrors;
 
     if (groupId === 'party') groupId = user.party._id;
-    if (groupId === 'habitrpg') groupId = TAVERN_ID;
+    if (groupId === 'donPabloNow') groupId = TAVERN_ID;
 
     const group = await Group.getGroup({ user, groupId });
     if (!group) throw new NotFound(res.t('groupNotFound'));
@@ -624,7 +624,7 @@ api.exportChallengeCsv = {
        * after the user leaves that challenge, which previously caused a failure when exporting
        * to a CSV. The following if statement makes sure that the task's attached user still
        * belongs to the challenge.
-       * See more at https://github.com/HabitRPG/slay/issues/8350
+       * See more at https://github.com/donPabloNow/slay/issues/8350
        */
       if (!resArray.map(line => line[0]).includes(task.userId)) {
         return;

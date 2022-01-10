@@ -424,9 +424,9 @@ describe('POST /user/auth/local/register', () => {
       });
     });
 
-    it('fails on a habitrpg.com email', async () => {
+    it('fails on a donPabloNow.com email', async () => {
       const username = generateRandomUserName();
-      const email = `${username}@habitrpg.com`;
+      const email = `${username}@donPabloNow.com`;
       const password = 'password';
 
       await expect(api.post('/user/auth/local/register', {

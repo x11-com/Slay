@@ -10,7 +10,7 @@
  * be applied to them. We only ran the `updateTasks` promise task.
  *
  * IMPORTANT - Setting challenge.broken to null caused issues
- * see https://github.com/HabitRPG/habitrpg/issues/7546
+ * see https://github.com/donPabloNow/donPabloNow/issues/7546
  ***************************************/
 
 const authorName = 'Blade';

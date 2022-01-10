@@ -168,7 +168,7 @@ export default {
           // $rootScope.openModal('questDrop', {controller:'PartyCtrl', size:'sm'});
           // NOTE if a modal is shown again for quest drops
           // this code will likely need changes, see the NOTE
-          // https://github.com/HabitRPG/slay/blob/develop/website/client/src/components/notifications.vue#L640-L646
+          // https://github.com/donPabloNow/slay/blob/develop/website/client/src/components/notifications.vue#L640-L646
         } else {
           // Keep support for another type of drops that might be added
           this.drop(drop.dialog);

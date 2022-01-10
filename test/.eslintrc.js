@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'habitrpg/lib/mocha',
+    'donPabloNow/lib/mocha',
   ],
   globals: {
     _: true,

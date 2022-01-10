@@ -9,7 +9,7 @@ const ENDPOINT = '/user/auth/update-username';
 
 describe('PUT /user/auth/update-username', async () => {
   let user;
-  const password = 'password'; // from habitrpg/test/helpers/api-integration/v4/object-generators.js
+  const password = 'password'; // from donPabloNow/test/helpers/api-integration/v4/object-generators.js
 
   beforeEach(async () => {
     user = await generateUser();

@@ -381,7 +381,7 @@ export default {
           errorsToShow.push(errorMessage);
         }
 
-        // Ignore NotificationNotFound errors, see https://github.com/HabitRPG/slay/issues/10391
+        // Ignore NotificationNotFound errors, see https://github.com/donPabloNow/slay/issues/10391
         if (errorData.error !== 'NotificationNotFound') {
           // dispatch as one snackbar notification
           this.$store.dispatch('snackbars:add', {

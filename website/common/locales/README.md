@@ -1,4 +1,4 @@
-HabitRPG's translations are managed at http://translate.slay.com/
+donPabloNow's translations are managed at http://translate.slay.com/
 
 The files in this folder are automatically pulled from there, with exception of the original American-English strings
 which are managed directly through GitHub in `locales/en`.

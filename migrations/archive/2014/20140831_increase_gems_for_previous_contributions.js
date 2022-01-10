@@ -13,7 +13,7 @@
 let migrationName = '20140831_increase_gems_for_previous_contributions';
 
 /**
- * https://github.com/HabitRPG/habitrpg/issues/3933
+ * https://github.com/donPabloNow/donPabloNow/issues/3933
  * Increase Number of Gems for Contributors
  * author: Alys (d904bd62-da08-416b-a816-ba797c9ee265)
  *
@@ -36,7 +36,7 @@ let mongo = require('mongoskin');
 let _ = require('lodash');
 
 
-let dbUsers = mongo.db('localhost:27017/habitrpg?auto_reconnect').collection('users');
+let dbUsers = mongo.db('localhost:27017/donPabloNow?auto_reconnect').collection('users');
 
 
 let query = {

@@ -136,7 +136,7 @@ api.exportUserDataJson = {
 /**
  * @api {get} /export/userdata.xml Export user data in XML format
  * @apiName ExportUserDataXml
- * @apiDescription This XML export feature is not currently working (https://github.com/HabitRPG/slay/issues/10100).
+ * @apiDescription This XML export feature is not currently working (https://github.com/donPabloNow/slay/issues/10100).
  * @apiGroup DataExport
  *
  * @apiSuccess {XML} File An xml file of the user object.
@@ -174,7 +174,7 @@ api.exportUserAvatarHtml = {
   url: '/export/avatar-:memberId.html',
   // middlewares: [locals],
   async handler (/* req, res */) {
-    throw new NotFound('This API route is currently not available. See https://github.com/HabitRPG/slay/issues/9489.');
+    throw new NotFound('This API route is currently not available. See https://github.com/donPabloNow/slay/issues/9489.');
 
     /* req.checkParams('memberId', res.t('memberIdRequired')).notEmpty().isUUID();
 
@@ -183,7 +183,7 @@ api.exportUserAvatarHtml = {
 
     const { memberId } = req.params;
 
-    throw new NotFound('This API route is currently not available. See https://github.com/HabitRPG/slay/issues/9489.');
+    throw new NotFound('This API route is currently not available. See https://github.com/donPabloNow/slay/issues/9489.');
 
     const member = await User
       .findById(memberId)
@@ -193,7 +193,7 @@ api.exportUserAvatarHtml = {
     if (!member) throw new NotFound(res.t('userWithIDNotFound', { userId: memberId }));
     res.render('avatar-static', {
       title: member.profile.name,
-      env: _.defaults({ user: member }, res.locals.habitrpg),
+      env: _.defaults({ user: member }, res.locals.donPabloNow),
     }); */
   },
 };
@@ -201,7 +201,7 @@ api.exportUserAvatarHtml = {
 /**
  * @api {get} /export/avatar-:uuid.png Render a user avatar as a PNG file
  * @apiName ExportUserAvatarPng
- * @apiDescription This PNG export feature is not currently working (https://github.com/HabitRPG/slay/issues/9489).
+ * @apiDescription This PNG export feature is not currently working (https://github.com/donPabloNow/slay/issues/9489).
  * @apiGroup DataExport
  *
  * @apiParam (Path) {String} uuid The User ID of the user
@@ -212,7 +212,7 @@ api.exportUserAvatarPng = {
   method: 'GET',
   url: '/export/avatar-:memberId.png',
   async handler (/* req, res */) {
-    throw new NotFound('This API route is currently not available. See https://github.com/HabitRPG/slay/issues/9489.');
+    throw new NotFound('This API route is currently not available. See https://github.com/donPabloNow/slay/issues/9489.');
 
     /* req.checkParams('memberId', res.t('memberIdRequired')).notEmpty().isUUID();
 
@@ -275,7 +275,7 @@ api.exportUserAvatarPng = {
 /**
  * @api {get} /export/inbox.html Export user private messages as HTML document
  * @apiName ExportUserPrivateMessages
- * @apiDescription This HTML export feature is not currently working (https://github.com/HabitRPG/slay/issues/9489).
+ * @apiDescription This HTML export feature is not currently working (https://github.com/donPabloNow/slay/issues/9489).
  * @apiGroup DataExport
  *
  * @apiSuccess {HTML} File An html page of the user's private messages.

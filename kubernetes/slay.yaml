@@ -11,11 +11,11 @@ spec:
 #      ports:
 #        - containerPort: 27017
 #          name: mongo
-    - image: ksonney/habitrpg:latest
+    - image: ksonney/donPabloNow:latest
       name: slay
       env:
         - name: NODE_DB_URI
-          value: mongodb://mongosvc/habitrpg
+          value: mongodb://mongosvc/donPabloNow
       ports:
         - containerPort: 3000
           hostPort: 3000

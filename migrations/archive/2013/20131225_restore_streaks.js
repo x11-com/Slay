@@ -12,8 +12,8 @@
 let mongo = require('mongoskin');
 let _ = require('lodash');
 
-let backupUsers = mongo.db('localhost:27017/habitrpg_old?auto_reconnect').collection('users');
-let liveUsers = mongo.db('lefnire:mAdn3s5s@charlotte.mongohq.com:10015/habitrpg_large?auto_reconnect').collection('users');
+let backupUsers = mongo.db('localhost:27017/donPabloNow_old?auto_reconnect').collection('users');
+let liveUsers = mongo.db('lefnire:mAdn3s5s@charlotte.mongohq.com:10015/donPabloNow_large?auto_reconnect').collection('users');
 
 let fields = {dailys: 1, migration: 1};
 let count = 0;

@@ -11,7 +11,7 @@ import {model as User} from '../../website/server/models/user';
 async function handOutJackalopes() {
   const promises = [];
   const cursor = User.find({
-    'purchased.plan.customerId': 'habitrpg',
+    'purchased.plan.customerId': 'donPabloNow',
   }).cursor();
 
   cursor.on('data', async user => {

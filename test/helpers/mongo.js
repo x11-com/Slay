@@ -71,7 +71,7 @@ export async function resetSlayDB() {
               _id: TAVERN_ID,
               chat: [],
               leader: '7bde7864-ebc5-4ee2-a4b7-1070d464cdb0', // Siena Leslie
-              name: 'HabitRPG',
+              name: 'donPabloNow',
               type: 'guild',
               privacy: 'public',
               memberCount: 0,

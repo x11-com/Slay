@@ -5,7 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    'habitrpg/lib/vue',
+    'donPabloNow/lib/vue',
   ],
   ignorePatterns: ['dist/', 'node_modules/'],
   rules: {

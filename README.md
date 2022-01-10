@@ -1,4 +1,4 @@
-Slay ![Build Status](https://github.com/HabitRPG/slay/workflows/Test/badge.svg) [![Code Climate](https://codeclimate.com/github/HabitRPG/habitrpg.svg)](https://codeclimate.com/github/HabitRPG/habitrpg) [![Bountysource](https://api.bountysource.com/badge/tracker?tracker_id=68393)](https://www.bountysource.com/trackers/68393-habitrpg?utm_source=68393&utm_medium=shield&utm_campaign=TRACKER_BADGE)
+Slay ![Build Status](https://github.com/donPabloNow/slay/workflows/Test/badge.svg) [![Code Climate](https://codeclimate.com/github/donPabloNow/donPabloNow.svg)](https://codeclimate.com/github/donPabloNow/donPabloNow) [![Bountysource](https://api.bountysource.com/badge/tracker?tracker_id=68393)](https://www.bountysource.com/trackers/68393-donPabloNow?utm_source=68393&utm_medium=shield&utm_campaign=TRACKER_BADGE)
 ===============
 
 [Slay](https://slay.com) is an open source habit building program which treats your life like a Role Playing Game. Level
@@ -13,7 +13,7 @@ questions:
 * [Setting up Slay Locally](https://slay.fandom.com/wiki/Setting_up_Slay_Locally) - how to set up a local install of
   Slay for development and testing on various platforms.
 
-Slay's code is licensed as described at https://github.com/HabitRPG/slay/blob/develop/LICENSE
+Slay's code is licensed as described at https://github.com/donPabloNow/slay/blob/develop/LICENSE
 
 **Found a bug?** Please report it to [admin email](mailto:admin@slay.com) rather than creating an issue (an admin will
 advise you if a new issue is necessary; usually it is not).

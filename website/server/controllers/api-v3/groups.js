@@ -72,7 +72,7 @@ const api = {};
  * @apiError (401) {NotAuthorized} chatPrivilegesRevoked You cannot do this because your chat
  privileges have been removed...
  *
- * @apiSuccess (201) {Object} data The created group (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
+ * @apiSuccess (201) {Object} data The created group (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
  *
  * @apiSuccessExample {json} Private Guild:
  *     HTTP/1.1 200 OK
@@ -270,7 +270,7 @@ api.createGroupPlan = {
  * @apiError (400) {BadRequest} queryPageInteger Page query parameter must be a positive integer
  * @apiError (400) {BadRequest} guildsOnlyPaginate Only public guilds support pagination
  *
- * @apiSuccess {Object[]} data An array of the requested groups (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
+ * @apiSuccess {Object[]} data An array of the requested groups (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
  *
  * @apiSuccessExample {json} Private Guilds, Tavern:
  *     HTTP/1.1 200 OK
@@ -356,12 +356,12 @@ api.getGroups = {
  * @apiGroup Group
  *
  * @apiParam (Path) {String} groupId The group _id ('party' for the user party
- *                                   and 'habitrpg' for tavern are accepted)
+ *                                   and 'donPabloNow' for tavern are accepted)
  *
  * @apiParamExample {String} Tavern:
- *     /api/v3/groups/habitrpg
+ *     /api/v3/groups/donPabloNow
  *
- * @apiSuccess {Object} data The group object (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
+ * @apiSuccess {Object} data The group object (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
  *
  * @apiSuccessExample {json} Tavern:
  *     HTTP/1.1 200 OK
@@ -413,16 +413,16 @@ api.getGroup = {
  * @apiName UpdateGroup
  * @apiGroup Group
  *
- * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                   for tavern are accepted).
  *
  * @apiParamExample {String} Tavern:
- *     /api/v3/groups/habitrpg
+ *     /api/v3/groups/donPabloNow
  *
  * @apiError (400) {NotAuthorized} messageGroupOnlyLeaderCanUpdate Only the group's leader
  *                                                                 can update the party.
  *
- * @apiSuccess {Object} data The updated group (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
+ * @apiSuccess {Object} data The updated group (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
  *
  * @apiSuccessExample {json} Tavern:
  *     HTTP/1.1 200 OK
@@ -489,13 +489,13 @@ api.updateGroup = {
  * @apiName JoinGroup
  * @apiGroup Group
  *
- * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                 for tavern are accepted).
  *
  * @apiParamExample {String} Tavern:
- *     /api/v3/groups/habitrpg/join
+ *     /api/v3/groups/donPabloNow/join
  *
- * @apiSuccess {Object} data The joined group (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
+ * @apiSuccess {Object} data The joined group (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
  *
  * @apiSuccessExample {json} Tavern:
  *     HTTP/1.1 200 OK
@@ -516,7 +516,7 @@ api.joinGroup = {
     const { user } = res.locals;
     let inviter;
 
-    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'habitrpg' or 'party'
+    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'donPabloNow' or 'party'
 
     const validationErrors = req.validationErrors();
     if (validationErrors) throw validationErrors;
@@ -720,7 +720,7 @@ api.joinGroup = {
  * @apiName RejectGroupInvite
  * @apiGroup Group
  *
- * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                 for tavern are accepted).
  *
  * @apiParamExample {String} party:
@@ -738,7 +738,7 @@ api.rejectGroupInvite = {
   async handler (req, res) {
     const { user } = res.locals;
 
-    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'habitrpg' or 'party'
+    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'donPabloNow' or 'party'
 
     const validationErrors = req.validationErrors();
     if (validationErrors) throw validationErrors;
@@ -789,7 +789,7 @@ function _removeMessagesFromMember (member, groupId) {
  * @apiName LeaveGroup
  * @apiGroup Group
  *
- * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                    for tavern are accepted).
  * @apiParam (Query) {String="remove-all","keep-all"} keep=keep-all Whether or not to keep
  *                                                                  challenge tasks belonging to
@@ -881,7 +881,7 @@ function _sendMessageToRemoved (group, removedUser, message, isInGroup) {
  * @apiName RemoveGroupMember
  * @apiGroup Group
  *
- * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                   for tavern are accepted).
  * @apiParam (Path) {UUID} memberId The _id of the member to remove
  * @apiParam (Query) {String} message Query parameter - The message to send to the removed members
@@ -1019,7 +1019,7 @@ api.removeGroupMember = {
  * @apiDescription You can provide both `emails` and `uuids`, or just one.
  * You must provide at least one.
  *
- * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {String} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                   for tavern are accepted)
  *
  * @apiParam (Body) {Object[]} [emails] An array of objects, each representing one
@@ -1183,7 +1183,7 @@ api.inviteToGroup = {
  * @apiName AddGroupManager
  * @apiGroup Group
  *
- * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                 for tavern are accepted).
  *
  * @apiParamExample {String} party:
@@ -1204,7 +1204,7 @@ api.addGroupManager = {
     const { user } = res.locals;
     const { managerId } = req.body;
 
-    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'habitrpg' or 'party'
+    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'donPabloNow' or 'party'
     req.checkBody('managerId', apiError('managerIdRequired')).notEmpty();
 
     const validationErrors = req.validationErrors();
@@ -1233,7 +1233,7 @@ api.addGroupManager = {
  * @apiName RemoveGroupManager
  * @apiGroup Group
  *
- * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'habitrpg'
+ * @apiParam (Path) {UUID} groupId The group _id ('party' for the user party and 'donPabloNow'
  *                                 for tavern are accepted).
  *
  * @apiParamExample {String} party:
@@ -1254,7 +1254,7 @@ api.removeGroupManager = {
     const { user } = res.locals;
     const { managerId } = req.body;
 
-    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'habitrpg' or 'party'
+    req.checkParams('groupId', apiError('groupIdRequired')).notEmpty(); // .isUUID(); can't be used because it would block 'donPabloNow' or 'party'
     req.checkBody('managerId', apiError('managerIdRequired')).notEmpty();
 
     const validationErrors = req.validationErrors();
@@ -1291,7 +1291,7 @@ api.removeGroupManager = {
  * @apiName GetGroupPlans
  * @apiGroup Group
  *
- * @apiSuccess {Object[]} data An array of the requested groups with a group plan (See <a href="https://github.com/HabitRPG/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
+ * @apiSuccess {Object[]} data An array of the requested groups with a group plan (See <a href="https://github.com/donPabloNow/slay/blob/develop/website/server/models/group.js" target="_blank">/website/server/models/group.js</a>)
  *
  * @apiSuccessExample {json} Groups the user is in with a group plan:
  *     HTTP/1.1 200 OK

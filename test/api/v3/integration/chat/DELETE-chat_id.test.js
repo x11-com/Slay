@@ -2,11 +2,15 @@ import {v4 as generateUUID} from 'uuid';
 import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('DELETE /groups/:groupId/chat/:chatId', () => {
-  let groupWithChat; let message; let user; let userThatDidNotCreateChat; let
+  let groupWithChat;
+  let message;
+  let user;
+  let userThatDidNotCreateChat;
+  let
     admin;
 
   before(async () => {
-    const { group, groupLeader } = await createAndPopulateGroup({
+    const {group, groupLeader} = await createAndPopulateGroup({
       groupDetails: {
         type: 'guild',
         privacy: 'public',

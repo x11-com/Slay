@@ -6,7 +6,10 @@ import * as Tasks from '../../../../website/server/models/task';
 import {generateHistory} from '../../../helpers/api-unit.helper';
 
 describe('Task Model', () => {
-  let guild; let leader; let challenge; let
+  let guild;
+  let leader;
+  let challenge;
+  let
     task;
   const tasksToTest = {
     habit: {

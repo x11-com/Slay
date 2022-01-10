@@ -9,7 +9,7 @@ describe('POST /groups/:groupId/quests/force-start', () => {
   let partyMembers;
 
   beforeEach(async () => {
-    const { group, groupLeader, members } = await createAndPopulateGroup({
+    const {group, groupLeader, members} = await createAndPopulateGroup({
       groupDetails: { type: 'party', privacy: 'private' },
       members: 3,
     });

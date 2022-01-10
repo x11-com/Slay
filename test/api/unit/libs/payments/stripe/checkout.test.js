@@ -12,7 +12,7 @@ import {model as User} from '../../../../../../website/server/models/user';
 import {model as Group} from '../../../../../../website/server/models/group';
 import * as gems from '../../../../../../website/server/libs/payments/gems';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('Stripe - Checkout', () => {
   const stripe = stripeModule('test');

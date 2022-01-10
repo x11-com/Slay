@@ -14,7 +14,7 @@ const MAX_SPRITESHEET_SIZE = 1024 * 1024 * 3;
 const IMG_DIST_PATH = 'website/client/src/assets/images/sprites/';
 const CSS_DIST_PATH = 'website/client/src/assets/css/sprites/';
 
-function checkForSpecialTreatment (name) {
+function checkForSpecialTreatment(name) {
   const regex = /^hair|skin|beard|mustach|shirt|flower|^headAccessory_special_\w+Ears|^eyewear_special_\w+TopFrame|^eyewear_special_\w+HalfMoon/;
   return name.match(regex) || name === 'head_0';
 }

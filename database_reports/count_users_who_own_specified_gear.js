@@ -3,7 +3,7 @@ var authorUuid = 'd904bd62-da08-416b-a816-ba797c9ee265'; //... own data is done
 
 /**
  * database_reports/count_users_who_own_specified_gear.js
- * https://github.com/HabitRPG/habitica/pull/3884
+ * https://github.com/HabitRPG/slay/pull/3884
  */
 
 var thingsOfInterest = {
@@ -151,7 +151,7 @@ function exiting(code, msg) {
 
 
 /*  SAMPLE OUTPUT (STDOUT and STDERR):
-$ node database_reports/count_users_who_own_specified_gear.js 
+$ node database_reports/count_users_who_own_specified_gear.js
 
 Finding data...
 Alys processed

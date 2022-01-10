@@ -112,7 +112,7 @@
           <!-- eslint-disable vue/no-use-v-if-with-v-for -->
           <div
             v-for="group in categoryOptions"
-            v-if="group.key !== 'habitica_official' || user.contributor.admin"
+            v-if="group.key !== 'slay_official' || user.contributor.admin"
             :key="group.key"
             class="form-check"
           >
@@ -169,7 +169,7 @@
             You do not have enough gems to create a Tavern challenge
           </div>
           <!-- @TODO if buy gems button is added, add analytics tracking to it-->
-          <!-- see https://github.com/HabitRPG/habitica/blob/develop/website/views/options/social/challenges.jade#L134-->
+          <!-- see https://github.com/HabitRPG/slay/blob/develop/website/views/options/social/challenges.jade#L134-->
           <button
             v-if="creating && !cloning"
             class="btn btn-primary"
@@ -289,8 +289,8 @@ export default {
   data () {
     const categoryOptions = [
       {
-        label: 'habitica_official',
-        key: 'habitica_official',
+        label: 'slay_official',
+        key: 'slay_official',
       },
       {
         label: 'academics',
@@ -441,7 +441,7 @@ export default {
     },
   },
   mounted () {
-    this.$root.$on('habitica:clone-challenge', data => {
+    this.$root.$on('slay:clone-challenge', data => {
       if (!data.challenge) return;
       this.cloning = true;
       this.cloningChallengeId = data.challenge._id;
@@ -451,7 +451,7 @@ export default {
       };
       this.$root.$emit('bv::show::modal', 'challenge-modal');
     });
-    this.$root.$on('habitica:update-challenge', data => {
+    this.$root.$on('slay:update-challenge', data => {
       if (!data.challenge) return;
       this.cloning = false;
       this.$store.state.challengeOptions.workingChallenge = {
@@ -460,16 +460,16 @@ export default {
       };
       this.$root.$emit('bv::show::modal', 'challenge-modal');
     });
-    this.$root.$on('habitica:create-challenge', () => {
+    this.$root.$on('slay:create-challenge', () => {
       this.cloning = false;
       this.$store.state.challengeOptions.workingChallenge = {};
       this.$root.$emit('bv::show::modal', 'challenge-modal');
     });
   },
   beforeDestroy () {
-    this.$root.$off('habitica:clone-challenge');
-    this.$root.$off('habitica:update-challenge');
-    this.$root.$off('habitica:create-challenge');
+    this.$root.$off('slay:clone-challenge');
+    this.$root.$off('slay:update-challenge');
+    this.$root.$off('slay:create-challenge');
   },
   methods: {
     async shown () {

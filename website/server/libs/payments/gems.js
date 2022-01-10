@@ -8,7 +8,7 @@ import apiError from '../apiError';
 
 const analytics = getAnalyticsServiceByEnvironment();
 
-function getGiftMessage (data, byUsername, gemAmount, language) {
+function getGiftMessage(data, byUsername, gemAmount, language) {
   const senderMsg = shared.i18n.t('giftedGemsFull', {
     username: data.gift.member.profile.name,
     sender: byUsername,

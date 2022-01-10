@@ -9,15 +9,15 @@ services:
       - server
     environment:
       - BASE_URL=http://server:3000
-    image: habitica
+    image: slay
     networks:
-      - habitica
+      - slay
     ports:
       - "8080:8080"
     volumes:
-      - .:/usr/src/habitica
-      - /usr/src/habitica/node_modules
-      - /usr/src/habitica/website/client/node_modules
+      - .:/usr/src/slay
+      - /usr/src/slay/node_modules
+      - /usr/src/slay/website/client/node_modules
   server:
     build:
       context: .
@@ -27,20 +27,20 @@ services:
       - mongo
     environment:
       - NODE_DB_URI=mongodb://mongo/habitrpg
-    image: habitica
+    image: slay
     networks:
-      - habitica
+      - slay
     ports:
       - "3000:3000"
     volumes:
-      - .:/usr/src/habitica
-      - /usr/src/habitica/node_modules
+      - .:/usr/src/slay
+      - /usr/src/slay/node_modules
   mongo:
     image: mongo:3.6
     networks:
-      - habitica
+      - slay
     ports:
       - "27017:27017"
 networks:
-  habitica:
+  slay:
     driver: bridge

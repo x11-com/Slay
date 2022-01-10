@@ -3,7 +3,7 @@ import {expectValidTranslationString,} from '../helpers/content.helper';
 
 import faq from '../../website/common/script/content/faq';
 
-const { questions, stillNeedHelp } = faq;
+const {questions, stillNeedHelp} = faq;
 
 describe('FAQ Locales', () => {
   describe('Questions', () => {

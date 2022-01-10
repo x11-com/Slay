@@ -7,11 +7,11 @@ import {AbstractGoldItemOperation} from './abstractBuyOperation';
 import errorMessage from '../../libs/errorMessage';
 
 export class BuySpellOperation extends AbstractGoldItemOperation { // eslint-disable-line import/prefer-default-export, max-len
-  getItemKey () {
+  getItemKey() {
     return this.key;
   }
 
-  getItemType () { // eslint-disable-line class-methods-use-this
+  getItemType() { // eslint-disable-line class-methods-use-this
     return 'spell';
   }
 

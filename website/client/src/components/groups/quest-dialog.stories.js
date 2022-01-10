@@ -13,8 +13,8 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('selectQuestDialog', () => ({
-    components: { questDetailModal },
-    data () {
+    components: {questDetailModal},
+    data() {
       return {
         quest: quests.goldenknight2,
         questWithDrop: quests.moon1,
@@ -25,7 +25,7 @@ stories
         <quest-detail-modal :group="{}"></quest-detail-modal>
       </div>
     `,
-    mounted () {
+    mounted() {
       this.$root.$emit('bv::show::modal', 'quest-detail-modal');
     },
   }))

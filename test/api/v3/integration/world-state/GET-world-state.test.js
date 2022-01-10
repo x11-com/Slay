@@ -1,12 +1,12 @@
 import {TAVERN_ID} from '../../../../../website/server/models/group';
 import {updateDocument} from '../../../../helpers/mongo';
-import {requester, resetHabiticaDB,} from '../../../../helpers/api-integration/v3';
+import {requester, resetSlayDB,} from '../../../../helpers/api-integration/v3';
 import * as worldState from '../../../../../website/server/libs/worldState';
 import common from '../../../../../website/common';
 
 describe('GET /world-state', () => {
   before(async () => {
-    await resetHabiticaDB();
+    await resetSlayDB();
   });
 
   it('returns empty worldBoss object when world boss is not active (and does not require authentication)', async () => {

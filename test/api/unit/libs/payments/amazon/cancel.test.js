@@ -7,7 +7,7 @@ import payments from '../../../../../../website/server/libs/payments/payments';
 import common from '../../../../../../website/common';
 import {createNonLeaderGroupMember} from '../paymentHelpers';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('Amazon Payments - Cancel Subscription', () => {
   const subKey = 'basic_3mo';

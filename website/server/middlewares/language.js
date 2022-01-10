@@ -3,10 +3,10 @@ import common from '../../common';
 import {translations,} from '../libs/i18n';
 import {getLanguageFromBrowser, getLanguageFromUser,} from '../libs/language';
 
-const { i18n } = common;
+const {i18n} = common;
 
-export function attachTranslateFunction (req, res, next) {
-  res.t = function reqTranslation (...args) {
+export function attachTranslateFunction(req, res, next) {
+  res.t = function reqTranslation(...args) {
     return i18n.t(...args, req.language);
   };
 

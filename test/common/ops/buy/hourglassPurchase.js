@@ -1,10 +1,15 @@
 import hourglassPurchase from '../../../../website/common/script/ops/buy/hourglassPurchase';
-import {BadRequest, NotAuthorized,} from '../../../../website/common/script/libs/errors';
+import {
+  BadRequest,
+  NotAuthorized,
+} from '../../../../website/common/script/libs/errors';
 import i18n from '../../../../website/common/script/i18n';
 import content from '../../../../website/common/script/content/index';
-import {generateUser,} from '../../../helpers/common.helper';
+import {
+  generateUser,
+} from '../../../helpers/common.helper';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
-import {BuyHourglassMountOperation} from '../../../../website/common/script/ops/buy/buyMount';
+import { BuyHourglassMountOperation } from '../../../../website/common/script/ops/buy/buyMount';
 
 describe('common.ops.hourglassPurchase', () => {
   let user;

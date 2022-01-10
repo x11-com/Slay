@@ -31,7 +31,7 @@ export default {
         linkEnd: '</a>',
       },
       localStorageTryNext: {
-        linkStart: '<a href="https://github.com/HabitRPG/habitica/issues/2760" target="_blank">',
+        linkStart: '<a href="https://github.com/HabitRPG/slay/issues/2760" target="_blank">',
         linkEnd: '</a>',
       },
     };

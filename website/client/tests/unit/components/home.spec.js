@@ -58,7 +58,7 @@ describe('Home', () => {
   describe('signup form', () => {
     it('registers a user from the form', async () => {
       const username = 'newUser';
-      const email = 'rookie@s1ay.com';
+      const email = 'rookie@slay.com';
       const password = 'ImmaG3tProductive!';
       await fillOutUserForm(username, email, password);
 
@@ -77,7 +77,7 @@ describe('Home', () => {
     it('registers a user with group invite if groupInvite in the query', async () => {
       const groupInvite = 'TheBestGroup';
       wrapper = mountWrapper({groupInvite});
-      await fillOutUserForm('invitedUser', 'invited@s1ay.com', '1veGotFri3ndsHooray!');
+      await fillOutUserForm('invitedUser', 'invited@slay.com', '1veGotFri3ndsHooray!');
 
       await wrapper.find('form').trigger('submit');
 
@@ -88,7 +88,7 @@ describe('Home', () => {
     it('registers a user with group invite if p in the query', async () => {
       const p = 'ThePiGroup';
       wrapper = mountWrapper({p});
-      await fillOutUserForm('alsoInvitedUser', 'invited2@s1ay.com', '1veGotFri3nds2!');
+      await fillOutUserForm('alsoInvitedUser', 'invited2@slay.com', '1veGotFri3nds2!');
 
       await wrapper.find('form').trigger('submit');
 
@@ -99,7 +99,7 @@ describe('Home', () => {
     it('registers a user with group invite invite if both p and groupInvite are in the query', async () => {
       const groupInvite = 'StillTheBestGroup';
       wrapper = mountWrapper({p: 'LesserGroup', groupInvite});
-      await fillOutUserForm('doublyInvitedUser', 'invited3@s1ay.com', '1veGotSm4rtFri3nds!');
+      await fillOutUserForm('doublyInvitedUser', 'invited3@slay.com', '1veGotSm4rtFri3nds!');
 
       await wrapper.find('form').trigger('submit');
 

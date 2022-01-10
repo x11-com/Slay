@@ -46,7 +46,7 @@ const api = {};
  *                                         Notifications are always returned.
  *
  * @apiExample {curl} Example use:
- * curl -i https://s1ay.com/api/v3/user?userFields=achievements,items.mounts
+ * curl -i https://slay.com/api/v3/user?userFields=achievements,items.mounts
  *
  * @apiSuccess {Object} data The user object
  *
@@ -55,11 +55,11 @@ const api = {};
  *   "success": true,
  *   "data": {
  *   --  User data included here, for details of the user model see:
- *   --  https://github.com/HabitRPG/habitica/tree/develop/website/server/models/user
+ *   --  https://github.com/HabitRPG/slay/tree/develop/website/server/models/user
  *   }
  * }
  *
-*/
+ */
 api.getUser = {
   method: 'GET',
   middlewares: [authWithHeaders()],
@@ -254,7 +254,7 @@ api.verifyDisplayName = {
  *                                                                       to unequip.
  *
  * @apiParamExample {URL} Example-URL
- * https://s1ay.com/api/v4/user/unequip/equipped
+ * https://slay.com/api/v4/user/unequip/equipped
  *
  * @apiSuccess {Object} data user.items
  * @apiSuccess {String} message Optional success message for unequipping an items

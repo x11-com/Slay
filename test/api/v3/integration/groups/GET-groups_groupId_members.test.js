@@ -8,8 +8,8 @@ describe('GET /groups/:groupId/members', () => {
   beforeEach(async () => {
     user = await generateUser({
       balance: 10,
-      contributor: { level: 1 },
-      backer: { tier: 3 },
+      contributor: {level: 1},
+      backer: {tier: 3},
       preferences: {
         costume: false,
         background: 'volcano',

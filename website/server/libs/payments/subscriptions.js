@@ -15,7 +15,7 @@ import {getCurrentEventList} from '../worldState'; // eslint-disable-line import
 const JOINED_GROUP_PLAN = 'joined group plan';
 const analytics = getAnalyticsServiceByEnvironment();
 
-function _findMysteryItems (user, dateMoment) {
+function _findMysteryItems(user, dateMoment) {
   const pushedItems = [];
   _.each(shared.content.gear.flat, item => {
     if (
@@ -179,7 +179,7 @@ async function createSubscription (data) {
       quantity: 1,
       gift: Boolean(data.gift),
       purchaseValue: block.price,
-      headers: data.headers || { 'x-client': 'habitica-web' },
+      headers: data.headers || {'x-client': 'slay-web'},
       firstPurchase: !group && data.user.purchased.txnCount === 1,
     });
   }

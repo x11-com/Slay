@@ -526,7 +526,7 @@ export default {
     showMemberModal () {
       this.initialMembersLoad();
 
-      this.$root.$emit('habitica:show-member-modal', {
+      this.$root.$emit('slay:show-member-modal', {
         challengeId: this.challenge._id,
         groupId: 'challenge', // @TODO: change these terrible settings
         group: this.challenge.group,
@@ -559,7 +559,7 @@ export default {
       this.$root.$emit('bv::show::modal', 'close-challenge-modal');
     },
     edit () {
-      this.$root.$emit('habitica:update-challenge', {
+      this.$root.$emit('slay:update-challenge', {
         challenge: this.challenge,
       });
     },
@@ -568,7 +568,7 @@ export default {
       Object.assign(this.challenge, eventData.challenge);
     },
     openMemberProgressModal (member) {
-      this.$root.$emit('habitica:challenge:member-progress', {
+      this.$root.$emit('slay:challenge:member-progress', {
         progressMemberId: member._id,
         isLeader: this.isLeader,
         isAdmin: this.isAdmin,
@@ -581,7 +581,7 @@ export default {
       window.location = `/api/v4/challenges/${this.searchId}/export/csv`;
     },
     cloneChallenge () {
-      this.$root.$emit('habitica:clone-challenge', {
+      this.$root.$emit('slay:clone-challenge', {
         challenge: this.challenge,
       });
     },

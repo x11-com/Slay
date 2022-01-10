@@ -14,7 +14,7 @@ import {model as User} from '../../../../../../website/server/models/user';
 import payments from '../../../../../../website/server/libs/payments/payments';
 import stripePayments from '../../../../../../website/server/libs/payments/stripe';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('Stripe - Subscriptions', () => {
   describe('checkSubData', () => {

@@ -5,11 +5,11 @@ import {TAVERN_ID} from '../../website/server/models/group';
 // Useful for checking things that have been deleted,
 // but you no longer have access to,
 // like private parties or users
-export async function checkExistence (collectionName, id) {
+export async function checkExistence(collectionName, id) {
   return new Promise((resolve, reject) => {
     const collection = mongoose.connection.db.collection(collectionName);
 
-    collection.find({ _id: id }, { _id: 1 }).limit(1).toArray((findError, docs) => {
+    collection.find({_id: id}, {_id: 1}).limit(1).toArray((findError, docs) => {
       if (findError) return reject(findError);
 
       const exists = docs.length > 0;
@@ -35,14 +35,14 @@ export async function getProperty (collectionName, id, path) {
 
 // Specifically helpful for the GET /groups tests,
 // resets the db to an empty state and creates a tavern document
-export async function resetHabiticaDB () {
+export async function resetSlayDB() {
   return new Promise((resolve, reject) => {
     mongoose.connection.dropDatabase(dbErr => {
       if (dbErr) return reject(dbErr);
       const groups = mongoose.connection.db.collection('groups');
       const users = mongoose.connection.db.collection('users');
 
-      return users.count({ _id: '7bde7864-ebc5-4ee2-a4b7-1070d464cdb0' }, (err, count) => {
+      return users.count({_id: '7bde7864-ebc5-4ee2-a4b7-1070d464cdb0'}, (err, count) => {
         if (err) return reject(err);
         if (count > 0) return resolve();
 
@@ -125,7 +125,7 @@ export async function getDocument (collectionName, doc) {
 before(done => {
   mongoose.connection.on('open', err => {
     if (err) return done(err);
-    return resetHabiticaDB()
+    return resetSlayDB()
       .then(() => done())
       .catch(done);
   });

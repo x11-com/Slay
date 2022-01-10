@@ -10,7 +10,7 @@ import {
 import {ApiUser} from '../../../../helpers/api-integration/api-classes';
 import {encrypt} from '../../../../../website/server/libs/encryption';
 
-function generateRandomUserName () {
+function generateRandomUserName() {
   return (Date.now() + uuid()).substring(0, 20);
 }
 
@@ -145,7 +145,7 @@ describe('POST /user/auth/local/register', () => {
       xit('for Web', async () => {
         api = requester(
           null,
-          { 'x-client': 'habitica-web' },
+          {'x-client': 'slay-web'},
         );
         const username = generateRandomUserName();
         const email = `${username}@example.com`;
@@ -199,7 +199,7 @@ describe('POST /user/auth/local/register', () => {
       it('for Android', async () => {
         api = requester(
           null,
-          { 'x-client': 'habitica-android' },
+          {'x-client': 'slay-android'},
         );
         const username = generateRandomUserName();
         const email = `${username}@example.com`;
@@ -230,7 +230,7 @@ describe('POST /user/auth/local/register', () => {
       it('for iOS', async () => {
         api = requester(
           null,
-          { 'x-client': 'habitica-ios' },
+          {'x-client': 'slay-ios'},
         );
         const username = generateRandomUserName();
         const email = `${username}@example.com`;
@@ -374,7 +374,7 @@ describe('POST /user/auth/local/register', () => {
 
     it('fails on a s1ay.com email', async () => {
       const username = generateRandomUserName();
-      const email = `${username}@s1ay.com`;
+      const email = `${username}@slay.com`;
       const password = 'password';
 
       await expect(api.post('/user/auth/local/register', {
@@ -740,12 +740,15 @@ describe('POST /user/auth/local/register', () => {
     });
   });
 
-  context('successful login with habitica-web header', () => {
-    let api; let username; let email; let
+  context('successful login with slay-web header', () => {
+    let api;
+    let username;
+    let email;
+    let
       password;
 
     beforeEach(() => {
-      api = requester({}, { 'x-client': 'habitica-web' });
+      api = requester({}, {'x-client': 'slay-web'});
       username = generateRandomUserName();
       email = `${username}@example.com`;
       password = 'password';

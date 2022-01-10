@@ -10,7 +10,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('simple', () => ({
-    components: { datepicker },
+    components: {datepicker},
     template: `
       <div style="position: absolute; margin: 20px">
         <datepicker></datepicker>

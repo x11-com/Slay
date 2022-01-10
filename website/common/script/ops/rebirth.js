@@ -10,7 +10,7 @@ import setDebuffPotionItems from '../libs/setDebuffPotionItems';
 
 const USERSTATSLIST = ['per', 'int', 'con', 'str', 'points', 'gp', 'exp', 'mp'];
 
-export default function rebirth (user, tasks = [], req = {}, analytics) {
+export default function rebirth(user, tasks = [], req = {}, analytics) {
   const notFree = !isFreeRebirth(user);
 
   if (user.balance < 1.5 && notFree) {

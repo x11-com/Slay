@@ -7,7 +7,7 @@ import baseModel from '../libs/baseModel';
 import {preenHistory} from '../libs/preening';
 import {SHARED_COMPLETION} from '../libs/groupTasks'; // eslint-disable-line import/no-cycle
 
-const { Schema } = mongoose;
+const {Schema} = mongoose;
 
 const discriminatorOptions = {
   discriminatorKey: 'type', // the key that distinguishes task types
@@ -146,12 +146,12 @@ export const TaskSchema = new Schema({
       enum: _.values(SHARED_COMPLETION),
       default: SHARED_COMPLETION.single,
     },
-    managerNotes: { $type: String },
+    managerNotes: {$type: String},
   },
 
   reminders: [reminderSchema],
 
-  byHabitica: { $type: Boolean, default: false }, // Flag of Tasks that were created by Habitica
+  bySlay: {$type: Boolean, default: false}, // Flag of Tasks that were created by Slay
 }, _.defaults({
   minimize: false, // So empty objects are returned
   strict: true,
@@ -174,7 +174,7 @@ TaskSchema.plugin(baseModel, {
     }
 
     // Fix issue where iOS was sending null as the value of the attribute field
-    // See https://github.com/HabitRPG/habitica-ios/commit/4cd05f80363502eb7652e057aa564c85546f7806
+    // See https://github.com/HabitRPG/slay-ios/commit/4cd05f80363502eb7652e057aa564c85546f7806
     if (taskObj.attribute === null) {
       taskObj.attribute = 'str';
     }
@@ -240,7 +240,7 @@ TaskSchema.statics.findMultipleByIdOrAlias = async function findByIdOrAlias (
 };
 
 // Sanitize user tasks linked to a challenge
-// See https://habitica.fandom.com/wiki/Challenges#Challenge_Participant.27s_Permissions for more info
+// See https://slay.fandom.com/wiki/Challenges#Challenge_Participant.27s_Permissions for more info
 TaskSchema.statics.sanitizeUserChallengeTask = function sanitizeUserChallengeTask (taskObj) {
   const initialSanitization = this.sanitize(taskObj);
 

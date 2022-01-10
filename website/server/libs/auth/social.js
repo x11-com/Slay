@@ -8,7 +8,7 @@ import {model as User} from '../../models/user';
 import {model as EmailUnsubscription} from '../../models/emailUnsubscription';
 import {sendTxn as sendTxnEmail} from '../email';
 
-function _passportProfile (network, accessToken) {
+function _passportProfile(network, accessToken) {
   return new Promise((resolve, reject) => {
     passport._strategies[network].userProfile(accessToken, (err, profile) => {
       if (err) {

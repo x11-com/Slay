@@ -22,7 +22,7 @@
           >
             <img
               v-if="eventName === 'fall_extra_gems'"
-              :alt="$t('supportHabitica')"
+              :alt="$t('supportSlay')"
               srcset="
           ~@/assets/images/gems/fall-header.png,
           ~@/assets/images/gems/fall-header@2x.png 2x,
@@ -31,7 +31,7 @@
             >
             <img
               v-else-if="eventName === 'spooky_extra_gems'"
-              :alt="$t('supportHabitica')"
+              :alt="$t('supportSlay')"
               srcset="
           ~@/assets/images/gems/spooky-header.png,
           ~@/assets/images/gems/spooky-header@2x.png 2x,
@@ -40,12 +40,12 @@
             >
             <img
               v-else
-              :alt="$t('supportHabitica')"
+              :alt="$t('supportSlay')"
               srcset="
-          ~@/assets/images/gems/support-habitica.png,
-          ~@/assets/images/gems/support-habitica@2x.png 2x,
-          ~@/assets/images/gems/support-habitica@3x.png 3x"
-              src="~@/assets/images/gems/support-habitica.png"
+          ~@/assets/images/gems/support-slay.png,
+          ~@/assets/images/gems/support-slay@2x.png 2x,
+          ~@/assets/images/gems/support-slay@3x.png 3x"
+              src="~@/assets/images/gems/support-slay.png"
             >
           </div>
         </div>

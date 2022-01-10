@@ -213,7 +213,7 @@ label.custom-control-label(v-once) {{ $t('allowGuildInvitationsFromNonMembers') 
           <!-- eslint-disable vue/no-use-v-if-with-v-for -->
           <div
             v-for="group in categoryOptions"
-            v-if="group.key !== 'habitica_official' || user.contributor.admin"
+            v-if="group.key !== 'slay_official' || user.contributor.admin"
             :key="group.key"
             class="form-check"
           >
@@ -411,8 +411,8 @@ export default {
       },
       categoryOptions: [
         {
-          label: 'habitica_official',
-          key: 'habitica_official',
+          label: 'slay_official',
+          key: 'slay_official',
         },
         {
           label: 'academics',

@@ -7,7 +7,7 @@ import {cron, recoverCron} from '../libs/cron';
 // Wait this length of time in ms before attempting another cron
 const CRON_TIMEOUT_WAIT = new Date(60 * 60 * 1000).getTime();
 
-async function checkForActiveCron (user, now) {
+async function checkForActiveCron(user, now) {
   // set _cronSignature to current time in ms since epoch time
   // so we can make sure to wait at least CRONT_TIMEOUT_WAIT before attempting another cron
   const _cronSignature = now.getTime();

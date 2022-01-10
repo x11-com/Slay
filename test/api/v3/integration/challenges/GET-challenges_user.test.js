@@ -232,8 +232,8 @@ describe('GET challenges/user', () => {
 
       officialChallenge = await generateChallenge(user, group, {
         categories: [{
-          name: 'habitica_official',
-          slug: 'habitica_official',
+          name: 'slay_official',
+          slug: 'slay_official',
         }],
       });
       await user.post(`/challenges/${officialChallenge._id}/join`);

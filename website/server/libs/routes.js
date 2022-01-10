@@ -8,7 +8,7 @@ import {disableCache,} from '../middlewares/cache';
 const _wrapAsyncFn = fn => (...args) => fn(...args).catch(args[2]);
 const noop = (req, res, next) => next();
 
-export function readController (router, controller, overrides = []) {
+export function readController(router, controller, overrides = []) {
   _.each(controller, action => {
     let {
       method,

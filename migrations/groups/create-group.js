@@ -2,8 +2,8 @@ import {model as Group} from '../../website/server/models/group';
 import {model as User} from '../../website/server/models/user';
 
 // @TODO: this should probably be a GroupManager library method
-async function createGroup (name, privacy, type, leaderId) {
-  const user = await User.findOne({ _id: leaderId });
+async function createGroup(name, privacy, type, leaderId) {
+  const user = await User.findOne({_id: leaderId});
 
   const group = new Group({
     name,

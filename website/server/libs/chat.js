@@ -2,14 +2,14 @@ import {model as User} from '../models/user'; // eslint-disable-line import/no-c
 import {getUserInfo} from './email'; // eslint-disable-line import/no-cycle
 import {sendNotification as sendPushNotification} from './pushNotifications'; // eslint-disable-line import/no-cycle
 
-export async function getAuthorEmailFromMessage (message) {
+export async function getAuthorEmailFromMessage(message) {
   const authorId = message.uuid;
 
   if (authorId === 'system') {
     return 'system';
   }
 
-  const author = await User.findOne({ _id: authorId }, { auth: 1 }).exec();
+  const author = await User.findOne({_id: authorId}, {auth: 1}).exec();
 
   if (author) {
     return getUserInfo(author, ['email']).email;

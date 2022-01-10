@@ -12,32 +12,30 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('bugReportModal', () => ({
-    components: { bugReportModal },
-    data () {
-      return {
-      };
+    components: {bugReportModal},
+    data() {
+      return {};
     },
     template: `
       <div>
         <bug-report-modal></bug-report-modal>
       </div>
     `,
-    mounted () {
+    mounted() {
       this.$root.$emit('bv::show::modal', 'bug-report-modal');
     },
   }))
   .add('bugReportSuccessModal', () => ({
-    components: { bugReportSuccessModal },
-    data () {
-      return {
-      };
+    components: {bugReportSuccessModal},
+    data() {
+      return {};
     },
     template: `
       <div>
         <bug-report-success-modal></bug-report-success-modal>
       </div>
     `,
-    mounted () {
+    mounted() {
       this.$root.$emit('bv::show::modal', 'bug-report-success-modal');
     },
   }));

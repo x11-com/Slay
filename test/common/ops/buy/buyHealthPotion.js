@@ -6,9 +6,12 @@ import i18n from '../../../../website/common/script/i18n';
 
 describe('shared.ops.buyHealthPotion', () => {
   let user;
-  const analytics = { track () {} };
+  const analytics = {
+    track() {
+    }
+  };
 
-  function buyHealthPotion (_user, _req, _analytics) {
+  function buyHealthPotion(_user, _req, _analytics) {
     const buyOp = new BuyHealthPotionOperation(_user, _req, _analytics);
 
     return buyOp.purchase();

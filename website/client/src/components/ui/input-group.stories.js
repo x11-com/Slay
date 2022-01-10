@@ -10,7 +10,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('states', () => ({
-    components: { },
+    components: {},
     template: `
       <div style="position: absolute; margin: 20px">
         <div class="input-group">

@@ -54,7 +54,7 @@ const api = {};
  * @apiSuccess {Array} challenge.tasksOrder.dailys Array of `daily` task IDs.
  * @apiSuccess {Array} challenge.tasksOrder.habits Array of `habit` task IDs.
  * @apiSuccess {Boolean} challenge.official Boolean indicating if
- *                                          this is an official slay challenge.
+ *                                          this is an official Slay challenge.
  *
  */
 
@@ -175,7 +175,7 @@ const api = {};
  * @apiError (401) {NotAuthorized} CantAffordPrize User does not have enough
  gems to offer this prize.
  * @apiError (400) {BadRequest} ChallengeValidationFailed Invalid or missing parameter
-                                                          in challenge body.
+ in challenge body.
  *
  * @apiUse GroupNotFound
  * @apiUse UserNotFound
@@ -624,7 +624,7 @@ api.exportChallengeCsv = {
        * after the user leaves that challenge, which previously caused a failure when exporting
        * to a CSV. The following if statement makes sure that the task's attached user still
        * belongs to the challenge.
-       * See more at https://github.com/HabitRPG/habitica/issues/8350
+       * See more at https://github.com/HabitRPG/slay/issues/8350
        */
       if (!resArray.map(line => line[0]).includes(task.userId)) {
         return;

@@ -2,9 +2,9 @@
   "defaultHabit1Text": "Produktiewe Werk (Druk die potlood om te redigeer)",
   "defaultHabit2Text": "Eet Gemorskos (Druk die potlood om te redigeer)",
   "defaultHabit3Text": "Neem die Trappe/Hysbak (Druk die potlood om te redigeer)",
-  "defaultHabit4Text": "Add a task to Habitica",
+  "defaultHabit4Text": "Add a task to Slay",
   "defaultHabit4Notes": "Either a Habit, a Daily, or a To-Do",
-  "defaultTodo1Text": "Aansuit slay (Merk my af!)",
+  "defaultTodo1Text": "Aansuit Slay (Merk my af!)",
   "defaultTodoNotes": "Jy kan voltooi hierde Om-Te-Doen, óf redigeer dit, óf verwyder dit.",
   "defaultReward1Text": "15 minuut pouse",
   "defaultReward2Text": "Reward yourself",
@@ -15,5 +15,5 @@
   "defaultTag4": "Skool",
   "defaultTag5": "Spanne",
   "defaultTag6": "Chores",
-    "defaultTag7": "Kreatiwiteit"
+  "defaultTag7": "Kreatiwiteit"
 }

@@ -4,14 +4,14 @@ import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit
 import {Forbidden} from '../../../../website/server/libs/errors';
 import apiError from '../../../../website/server/libs/apiError';
 
-function checkErrorThrown (next) {
+function checkErrorThrown(next) {
   expect(next).to.have.been.calledOnce;
   const calledWith = next.getCall(0).args;
   expect(calledWith[0].message).to.equal(apiError('ipAddressBlocked'));
   expect(calledWith[0] instanceof Forbidden).to.equal(true);
 }
 
-function checkErrorNotThrown (next) {
+function checkErrorNotThrown(next) {
   expect(next).to.have.been.calledOnce;
   const calledWith = next.getCall(0).args;
   expect(typeof calledWith[0] === 'undefined').to.equal(true);

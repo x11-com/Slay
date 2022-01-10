@@ -2,7 +2,9 @@ import {v4 as generateUUID} from 'uuid';
 import {createAndPopulateGroup, generateUser, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/group/:groupid', () => {
-  let user; let guild; let
+  let user;
+  let guild;
+  let
     manager;
   let tzoffset;
   const groupName = 'Test Public Guild';

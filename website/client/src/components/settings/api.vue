@@ -27,7 +27,7 @@
           <li>
             <a
               target="_blank"
-              href="https://www.beeminder.com/habitica"
+              href="https://www.beeminder.com/slay"
             >{{ $t('beeminder') }}</a>
             <br>
             {{ $t('beeminderDesc') }}
@@ -40,7 +40,7 @@
           <li>
             <a
               target="_blank"
-              :href="`https://oldgods.net/habitica/habitrpg_user_data_display.html?uuid=` + user._id"
+              :href="`https://oldgods.net/slay/habitrpg_user_data_display.html?uuid=` + user._id"
             >{{ $t('dataDisplayTool') }}</a>
             <br>
             {{ $t('dataToolDesc') }}
@@ -144,7 +144,7 @@
 import { mapState } from '@/libs/store';
 import uuid from '@/../../common/script/libs/uuid';
 // @TODO: env.EMAILS.TECH_ASSISTANCE_EMAIL
-const TECH_ASSISTANCE_EMAIL = 'admin@s1ay.com';
+const TECH_ASSISTANCE_EMAIL = 'admin@slay.com';
 
 export default {
   data () {

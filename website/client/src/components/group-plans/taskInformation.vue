@@ -216,7 +216,7 @@ export default {
       this.$root.$emit('bv::show::modal', 'group-plan-overview');
     }
 
-    this.$root.$on('habitica:team-sync', () => {
+    this.$root.$on('slay:team-sync', () => {
       this.loadTasks();
     });
   },

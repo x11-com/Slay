@@ -9,7 +9,7 @@ describe('PUT /tasks/:id', () => {
   let habit;
   let todo;
 
-  function findAssignedTask (memberTask) {
+  function findAssignedTask(memberTask) {
     return memberTask.group.id === guild._id;
   }
 

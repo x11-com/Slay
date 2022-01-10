@@ -2,13 +2,15 @@ import {find} from 'lodash';
 import {createAndPopulateGroup, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /group/:groupId/remove-manager', () => {
-  let leader; let nonLeader; let
+  let leader;
+  let nonLeader;
+  let
     groupToUpdate;
   const groupName = 'Test Public Guild';
   const groupType = 'guild';
   let nonManager;
 
-  function findAssignedTask (memberTask) {
+  function findAssignedTask(memberTask) {
     return memberTask.group.id === groupToUpdate._id;
   }
 

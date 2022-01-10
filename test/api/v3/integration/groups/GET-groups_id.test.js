@@ -5,13 +5,15 @@ import {createAndPopulateGroup, generateUser, translate as t,} from '../../../..
 
 describe('GET /groups/:id', () => {
   const typesOfGroups = {};
-  typesOfGroups['public guild'] = { type: 'guild', privacy: 'public' };
-  typesOfGroups['private guild'] = { type: 'guild', privacy: 'private' };
-  typesOfGroups.party = { type: 'party', privacy: 'private' };
+  typesOfGroups['public guild'] = {type: 'guild', privacy: 'public'};
+  typesOfGroups['private guild'] = {type: 'guild', privacy: 'private'};
+  typesOfGroups.party = {type: 'party', privacy: 'private'};
 
   each(typesOfGroups, (groupDetails, groupType) => {
     context(`Member of a ${groupType}`, () => {
-      let leader; let member; let
+      let leader;
+      let member;
+      let
         createdGroup;
 
       before(async () => {

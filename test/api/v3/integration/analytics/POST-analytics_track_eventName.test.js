@@ -6,10 +6,10 @@ describe('POST /analytics/track/:eventName', () => {
     const user = await generateUser();
     sandbox.spy(analytics, 'track');
 
-    const requestWithHeaders = requester(user, { 'x-client': 'habitica-web' });
-    await requestWithHeaders.post('/analytics/track/eventName', { data: 'example' }, { 'x-client': 'habitica-web' });
+    const requestWithHeaders = requester(user, {'x-client': 'slay-web'});
+    await requestWithHeaders.post('/analytics/track/eventName', {data: 'example'}, {'x-client': 'slay-web'});
     expect(analytics.track).to.be.calledOnce;
-    expect(analytics.track).to.be.calledWith('eventName', sandbox.match({ data: 'example' }));
+    expect(analytics.track).to.be.calledWith('eventName', sandbox.match({data: 'example'}));
 
     sandbox.restore();
   });

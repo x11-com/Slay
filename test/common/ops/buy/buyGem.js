@@ -7,7 +7,7 @@ import i18n from '../../../../website/common/script/i18n';
 import {BuyGemOperation} from '../../../../website/common/script/ops/buy/buyGem';
 import planGemLimits from '../../../../website/common/script/libs/planGemLimits';
 
-function buyGem (user, req, analytics) {
+function buyGem(user, req, analytics) {
   const buyOp = new BuyGemOperation(user, req, analytics);
 
   return buyOp.purchase();

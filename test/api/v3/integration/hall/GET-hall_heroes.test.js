@@ -1,8 +1,8 @@
-import {generateUser, resetHabiticaDB,} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetSlayDB,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /hall/heroes', () => {
   it('returns all heroes sorted by -contributor.level and with correct fields', async () => {
-    await resetHabiticaDB();
+    await resetSlayDB();
 
     const nonHero = await generateUser();
     const hero1 = await generateUser({

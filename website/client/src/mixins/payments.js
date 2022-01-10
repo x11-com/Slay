@@ -9,7 +9,7 @@ import {CONSTANTS, setLocalSetting} from '@/libs/userlocalManager';
 
 const { STRIPE_PUB_KEY } = process.env;
 
-// const habiticaUrl = `${window.location.protocol}//${window.location.host}`;
+// const slayUrl = `${window.location.protocol}//${window.location.host}`;
 let stripeInstance = null;
 
 export default {
@@ -304,7 +304,7 @@ export default {
     },
     cancelSubscriptionConfirm (config) {
       if (config.canCancel === false) return;
-      this.$root.$emit('habitica:cancel-subscription-confirm', config);
+      this.$root.$emit('slay:cancel-subscription-confirm', config);
     },
     async cancelSubscription (config) {
       this.loading = true;
@@ -333,7 +333,7 @@ export default {
 
         if (!config || !config.group) {
           await this.$store.dispatch('user:fetch', { forceLoad: true });
-          this.$root.$emit('habitica:subscription-canceled', {
+          this.$root.$emit('slay:subscription-canceled', {
             dateTerminated: this.dateTerminated,
             isGroup: false,
           });

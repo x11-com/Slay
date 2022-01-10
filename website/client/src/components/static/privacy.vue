@@ -8,9 +8,9 @@
     <p>
       HabitRPG, Inc. (“HabitRPG,” “we,” “us,” or “our”) welcomes you. This privacy notice (the “Privacy
       Notice”) describes how we process the information we collect about or from you through our Website
-      located at <a href='https://s1ay.com/static/home'>https://s1ay.com/static/home</a> and/or our Apps
+      located at <a href='https://slay.com/static/home'>https://slay.com/static/home</a> and/or our Apps
       (our “Digital Platforms”), from our users, subscribers, visitors and other users of our technology and
-      platforms (together with our Digital Platforms, the “slay Service” or the “Service”), and when you
+      platforms (together with our Digital Platforms, the “Slay Service” or the “Service”), and when you
       otherwise interact with us. This Privacy Notice may be updated by us from time to time without notice to
       you. By accepting this Privacy Notice, accessing or using the Service, or otherwise manifesting your
       assent to this Privacy Notice, you agree to be bound by this Privacy Notice. If you do not agree to (or
@@ -229,7 +229,7 @@
     </p>
     <p>
       You may opt out at any time from the use of your personal information for direct marketing purposes by
-      emailing the instructions to <a href='mailto:admin@s1ay.com'>admin@s1ay.com</a> or by clicking
+      emailing the instructions to <a href='mailto:admin@slay.com'>admin@slay.com</a> or by clicking
       on the “Unsubscribe” link located on the bottom of any HabitRPG marketing email and following the
       instructions found on the page to which the link takes you. Please allow us a reasonable time to process
       your request. You cannot opt out of receiving transactional e-mails related to the Service.
@@ -255,7 +255,7 @@
       encourage parents and legal guardians to monitor their children’s Internet usage and to help enforce our
       Privacy Notice by instructing their children to never provide personal information without their
       permission. If you have reason to believe that a child under the age of 13 has provided personal
-      information to us, please contact us at admin@s1ay.com, and we will endeavor to delete that
+      information to us, please contact us at admin@slay.com, and we will endeavor to delete that
       information from our databases.
     </p>
     <h2>IMPORTANT NOTICE TO ALL NON-US RESIDENTS</h2>
@@ -274,12 +274,12 @@
       direct marketing purposes during the preceding calendar year, including the names and addresses of those
       third parties, and examples of the types of Service or products marketed by those third parties. If you wish
       to submit a request pursuant to Section 1798.83, please contact HabitRPG via email at
-      <a href='mailto:admin@s1ay.com'>admin@s1ay.com</a>.
+      <a href='mailto:admin@slay.com'>admin@slay.com</a>.
     </p>
     <h2>NEVADA PRIVACY RIGHTS</h2>
     <p>
       If you are a resident of Nevada, you have the right to opt-out of the sale of certain personal information to
-      third parties. You can exercise this right by contacting us at admin@s1ay.com with the subject line
+      third parties. You can exercise this right by contacting us at admin@slay.com with the subject line
       “Nevada Do Not Sell Request” and providing us with your name and the email address associated with
       your account.
     </p>
@@ -306,15 +306,15 @@
     </p>
     <h2>HOW TO CONTACT US</h2>
     <p>
-      If you have questions about this Privacy Notice, please e-mail us at <a href='mailto:admin@s1ay.com'>
-      admin@s1ay.com</a> with “Privacy Notice” in the subject line.
+      If you have questions about this Privacy Notice, please e-mail us at <a href='mailto:admin@slay.com'>
+      admin@slay.com</a> with “Privacy Notice” in the subject line.
     </p>
     <address>
       <strong>HabitRPG, Inc.</strong>
       <br>202 Bicknell Ave., Ground Floor
       <br>Santa Monica, CA 90405
       <br>Email&colon;&nbsp;
-      <a href="mailto:admin@s1ay.com">admin@s1ay.com</a>
+      <a href="mailto:admin@slay.com">admin@slay.com</a>
     </address>
   </div>
   <!-- eslint-enable max-len -->

@@ -1,5 +1,5 @@
 {
-  "name": "habitica-client",
+  "name": "slay-client",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -32,12 +32,12 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "chai": "^4.3.4",
-    "core-js": "^3.20.2",
+    "core-js": "^3.20.1",
     "eslint": "^6.8.0",
     "eslint-config-habitrpg": "^6.2.0",
     "eslint-plugin-mocha": "^5.3.0",
     "eslint-plugin-vue": "^6.2.2",
-    "habitica-markdown": "^3.0.0",
+    "slay-markdown": "^3.0.0",
     "hellojs": "^1.19.5",
     "inspectpack": "^4.7.1",
     "intro.js": "^4.3.0",
@@ -64,6 +64,6 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.16.7"
+    "@babel/plugin-proposal-optional-chaining": "^7.16.5"
   }
 }

@@ -12,7 +12,7 @@ import {getAuthorEmailFromMessage} from '../chat';
 
 const FLAG_REPORT_EMAILS = nconf.get('FLAG_REPORT_EMAIL')
   .split(',')
-  .map(email => ({ email, canSend: true }));
+  .map(email => ({email, canSend: true}));
 
 export default class InboxChatReporter extends ChatReporter {
   constructor (req, res) {

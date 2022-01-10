@@ -2,11 +2,11 @@ import moment from 'moment';
 import _ from 'lodash';
 import cloneDeep from 'lodash/cloneDeep';
 import nconf from 'nconf';
-import {model as User} from '../models/user';
+import { model as User } from '../models/user';
 import common from '../../common';
-import {preenUserHistory} from './preening';
+import { preenUserHistory } from './preening';
 import sleep from './sleep';
-import {revealMysteryItems} from './payments/subscriptions';
+import { revealMysteryItems } from './payments/subscriptions';
 
 const CRON_SAFE_MODE = nconf.get('CRON_SAFE_MODE') === 'true';
 const CRON_SEMI_SAFE_MODE = nconf.get('CRON_SEMI_SAFE_MODE') === 'true';
@@ -489,7 +489,7 @@ export function cron (options = {}) {
       tasksByType.todos,
       taskType => taskType._id === taskOrderId && taskType.completed === false,
     ));
-  // TODO also adjust tasksOrder arrays to remove deleted tasks of any kind (including rewards), ensure that all existing tasks are in the arrays, no tasks IDs are duplicated -- https://github.com/HabitRPG/habitica/issues/7645
+  // TODO also adjust tasksOrder arrays to remove deleted tasks of any kind (including rewards), ensure that all existing tasks are in the arrays, no tasks IDs are duplicated -- https://github.com/HabitRPG/slay/issues/7645
 
   // preen user history so that it doesn't become a performance problem
   // also for subscribed users but differently

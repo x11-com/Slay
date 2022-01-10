@@ -98,7 +98,7 @@ const api = {};
  *
  * @apiParamExample {json} Request-Example:
  *     {
- *       "text":"Update slay API Documentation - Tasks",
+ *       "text":"Update Slay API Documentation - Tasks",
  *       "type":"todo",
  *       "alias":"hab-api-tasks",
  *       "notes":"Update the tasks api on GitHub",
@@ -115,7 +115,7 @@ const api = {};
  *       "data": {
  *         "userId": "b0413351-405f-416f-8787-947ec1c85199",
  *         "alias": "hab-api-tasks",
- *         "text": "Update slay API Documentation - Tasks",
+ *         "text": "Update Slay API Documentation - Tasks",
  *         "type": "todo",
  *         "notes": "Update the tasks api on GitHub",
  *         "tags": [
@@ -403,7 +403,7 @@ api.getUserTasks = {
  *                                                                       just a type of tasks.
  *
  * @apiExample {curl} Example use:
- * curl -i https://s1ay.com/api/v3/tasks/challenge/f23c12f2-5830-4f15-9c36-e17fd729a812
+ * curl -i https://slay.com/api/v3/tasks/challenge/f23c12f2-5830-4f15-9c36-e17fd729a812
  *
  * @apiSuccess {Array} data An array of tasks
  *
@@ -469,7 +469,7 @@ api.getChallengeTasks = {
  * @apiParam (Path) {String} taskId The task _id or alias
  *
  * @apiExample {curl} Example use:
- * curl -i https://s1ay.com/api/v3/tasks/54a81d23-529c-4daa-a6f7-c5c6e7e84936
+ * curl -i https://slay.com/api/v3/tasks/54a81d23-529c-4daa-a6f7-c5c6e7e84936
  *
  * @apiSuccess {Object} data The task object
  *
@@ -719,7 +719,7 @@ api.updateTask = {
  * @apiParam (Path) {String="up","down"} direction The direction for scoring the task
  *
  * @apiExample {json} Example call:
- * curl -X "POST" https://s1ay.com/api/v3/tasks/test-api-params/score/up
+ * curl -X "POST" https://slay.com/api/v3/tasks/test-api-params/score/up
  *
  * @apiSuccess {Object} data The user stats
  * @apiSuccess {Object} data._tmp If an item was dropped it'll be returned in te _tmp object
@@ -848,7 +848,7 @@ api.moveTask = {
 
     // Update the user version field manually,
     // it cannot be updated in the pre update hook
-    // See https://github.com/HabitRPG/habitica/pull/9321#issuecomment-354187666 for more info
+    // See https://github.com/HabitRPG/slay/pull/9321#issuecomment-354187666 for more info
     // Only users have a version.
     if (!group && !challenge) {
       owner._v += 1;
@@ -1162,7 +1162,7 @@ api.addTagToTask = {
  * @apiParam (Path) {UUID} tagId The tag id
  *
  * @apiExample {curl} Example use:
- * curl -X "DELETE" https://s1ay.com/api/v3/tasks/test-api-params/tags/3d5d324d-a042-4d5f-872e-0553e228553e
+ * curl -X "DELETE" https://slay.com/api/v3/tasks/test-api-params/tags/3d5d324d-a042-4d5f-872e-0553e228553e
  *
  * @apiSuccess {Object} data The updated task
  *
@@ -1217,7 +1217,7 @@ api.removeTagFromTask = {
  *                                                         removed(remove-all) after the unlink.
  *
  * @apiExample {curl} Example call:
- * curl -X "POST" https://s1ay.com/api/v3/tasks/unlink-all/f23c12f2-5830-4f15-9c36-e17fd729a812?keep=remove-all
+ * curl -X "POST" https://slay.com/api/v3/tasks/unlink-all/f23c12f2-5830-4f15-9c36-e17fd729a812?keep=remove-all
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1286,7 +1286,7 @@ api.unlinkAllTasks = {
  *                                                  be kept(keep) or removed(remove).
  *
  * @apiExample {curl} Example call:
- * curl -X "POST" https://s1ay.com/api/v3/tasks/unlink-one/ee882e1d-ebd1-4716-88f2-4f9e47d947a8?keep=keep
+ * curl -X "POST" https://slay.com/api/v3/tasks/unlink-one/ee882e1d-ebd1-4716-88f2-4f9e47d947a8?keep=keep
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1338,7 +1338,7 @@ api.unlinkOneTask = {
  * @apiGroup Task
  *
  * @apiExample {curl} Example call:
- * curl -X "POST" https://s1ay.com/api/v3/tasks/ClearCompletedTodos
+ * curl -X "POST" https://slay.com/api/v3/tasks/ClearCompletedTodos
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1386,7 +1386,7 @@ api.clearCompletedTodos = {
  * @apiParam (Path) {String} taskId The task _id or alias
  *
  * @apiExample {json} Example call:
- * curl -X "DELETE" https://s1ay.com/api/v3/tasks/3d5d324d-a042-4d5f-872e-0553e228553e
+ * curl -X "DELETE" https://slay.com/api/v3/tasks/3d5d324d-a042-4d5f-872e-0553e228553e
  *
  * @apiSuccess {Object} data An empty object
  *
@@ -1435,7 +1435,7 @@ api.deleteTask = {
 
       // Update the user version field manually,
       // it cannot be updated in the pre update hook
-      // See https://github.com/HabitRPG/habitica/pull/9321#issuecomment-354187666 for more info
+      // See https://github.com/HabitRPG/slay/pull/9321#issuecomment-354187666 for more info
       if (!challenge) user._v += 1;
 
       await Promise.all([taskOrderUpdate, task.remove()]);

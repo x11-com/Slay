@@ -79,7 +79,7 @@
 
 <script>
 // @TODO: EMAILS.PRESS_ENQUIRY_EMAIL
-const PRESS_ENQUIRY_EMAIL = 'admin@s1ay.com';
+const PRESS_ENQUIRY_EMAIL = 'admin@slay.com';
 
 export default {
   data () {
@@ -94,7 +94,7 @@ export default {
           'Icon with Text.png',
           'Icon.png',
           'Text.png',
-          'slay Gryphon.png',
+          'Slay Gryphon.png',
           'iOS.png',
           'Android.png',
         ],

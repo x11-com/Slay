@@ -226,12 +226,14 @@
   width: 48px;
   height: 52px;
 }
-.achievement-habiticaDay2x {
+
+.achievement-slayDay2x {
   background-image: url('~@/assets/images/sprites/spritesmith-main-0.png');
   background-position: -49px -1628px;
   width: 48px;
   height: 52px;
 }
+
 .achievement-hatchedPet2x {
   background-image: url('~@/assets/images/sprites/spritesmith-main-0.png');
   background-position: -191px -1549px;

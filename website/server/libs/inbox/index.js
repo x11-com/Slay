@@ -2,13 +2,13 @@ import {inboxModel as Inbox, mapInboxMessage} from '../../models/message';
 import {getUserInfo, sendTxn as sendTxnEmail} from '../email'; // eslint-disable-line import/no-cycle
 import {sendNotification as sendPushNotification} from '../pushNotifications'; // eslint-disable-line import/no-cycle
 
-export async function sentMessage (sender, receiver, message, translate) {
-  const messageSent = await sender.sendMessage(receiver, { receiverMsg: message });
+export async function sentMessage(sender, receiver, message, translate) {
+  const messageSent = await sender.sendMessage(receiver, {receiverMsg: message});
   const senderName = getUserInfo(sender, ['name']).name;
 
   if (receiver.preferences.emailNotifications.newPM !== false) {
     sendTxnEmail(receiver, 'new-pm', [
-      { name: 'SENDER', content: senderName },
+      {name: 'SENDER', content: senderName},
     ]);
   }
 

@@ -1,7 +1,10 @@
 import get from 'lodash/get';
 import keys from 'lodash/keys';
 import i18n from '../i18n';
-import {BadRequest, NotAuthorized,} from '../libs/errors';
+import {
+  BadRequest,
+  NotAuthorized,
+} from '../libs/errors';
 import content from '../content/index';
 
 // @TODO move in the servercontroller or keep here?

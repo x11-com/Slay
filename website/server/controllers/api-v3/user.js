@@ -56,7 +56,7 @@ const api = {};
  *                                         Notifications are always returned.
  *
  * @apiExample {curl} Example use:
- * curl -i https://s1ay.com/api/v3/user?userFields=achievements,items.mounts
+ * curl -i https://slay.com/api/v3/user?userFields=achievements,items.mounts
  *
  * @apiSuccess {Object} data The user object
  *
@@ -65,11 +65,11 @@ const api = {};
  *   "success": true,
  *   "data": {
  *   --  User data included here, for details of the user model see:
- *   --  https://github.com/HabitRPG/habitica/tree/develop/website/server/models/user
+ *   --  https://github.com/HabitRPG/slay/tree/develop/website/server/models/user
  *   }
  * }
  *
-*/
+ */
 api.getUser = {
   method: 'GET',
   middlewares: [authWithHeaders()],
@@ -753,7 +753,7 @@ api.buySpecialSpell = {
  * @apiParam (Path) {String} egg The egg to use
  * @apiParam (Path) {String} hatchingPotion The hatching potion to use
  * @apiParamExample {URL} Example-URL
- * https://s1ay.com/api/v3/user/hatch/Dragon/CottonCandyPink
+ * https://slay.com/api/v3/user/hatch/Dragon/CottonCandyPink
  *
  * @apiSuccess {Object} data user.items
  * @apiSuccess {String} message
@@ -811,7 +811,7 @@ api.hatch = {
  * @apiParam (Path) {String} key The item to equip or unequip
  *
  * @apiParamExample {URL} Example-URL
- * https://s1ay.com/api/v3/user/equip/equipped/weapon_warrior_2
+ * https://slay.com/api/v3/user/equip/equipped/weapon_warrior_2
  *
  * @apiSuccess {Object} data user.items
  * @apiSuccess {String} message Optional success message for unequipping an items
@@ -857,8 +857,8 @@ api.equip = {
  *                                     other food 2 units.
  *
  * @apiParamExample {url} Example-URL
- * https://s1ay.com/api/v3/user/feed/Armadillo-Shade/Chocolate
- * https://s1ay.com/api/v3/user/feed/Armadillo-Shade/Chocolate?amount=9
+ * https://slay.com/api/v3/user/feed/Armadillo-Shade/Chocolate
+ * https://slay.com/api/v3/user/feed/Armadillo-Shade/Chocolate?amount=9
  *
  * @apiSuccess {Number} data The pet value
  * @apiSuccess {String} message Success message
@@ -1306,8 +1306,8 @@ api.userSell = {
  * @apiParam (Query) {String} path Full path to unlock. See "content" API call for list of items.
  *
  * @apiParamExample {curl} Example call:
- * curl -X POST http://s1ay.com/api/v3/user/unlock?path=background.midnight_clouds
- * curl -X POST http://s1ay.com/api/v3/user/unlock?path=hair.color.midnight
+ * curl -X POST http://slay.com/api/v3/user/unlock?path=background.midnight_clouds
+ * curl -X POST http://slay.com/api/v3/user/unlock?path=hair.color.midnight
  *
  * @apiSuccess {Object} data.purchased
  * @apiSuccess {Object} data.items

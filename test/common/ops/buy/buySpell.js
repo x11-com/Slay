@@ -7,7 +7,10 @@ import errorMessage from '../../../../website/common/script/libs/errorMessage';
 
 describe('shared.ops.buySpecialSpell', () => {
   let user;
-  const analytics = { track () {} };
+  const analytics = {
+    track() {
+    }
+  };
 
   function buySpecialSpell (_user, _req, _analytics) {
     const buyOp = new BuySpellOperation(_user, _req, _analytics);

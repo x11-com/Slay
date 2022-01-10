@@ -274,8 +274,8 @@ function _getOnboardingAchievements (user, language) {
 function _getSeasonalAchievements (user, language) {
   const result = {};
 
-  _addPlural(result, user, { path: 'habiticaDays', language });
-  _addPlural(result, user, { path: 'habitBirthdays', language });
+  _addPlural(result, user, {path: 'slayDays', language});
+  _addPlural(result, user, {path: 'habitBirthdays', language});
 
   const spellAchievements = ['snowball', 'spookySparkles', 'shinySeed', 'seafoam'];
   spellAchievements.forEach(path => {

@@ -5,7 +5,7 @@ import requireAgain from 'require-again';
 import {TAVERN_ID} from '../../../../website/server/models/group';
 import {defer} from '../../../helpers/api-unit.helper';
 
-function getUser () {
+function getUser() {
   return {
     _id: 'random _id',
     auth: {

@@ -8,7 +8,7 @@
 import {model as Group} from '../../website/server/models/group';
 import {model as User} from '../../website/server/models/user';
 
-async function handOutJackalopes () {
+async function handOutJackalopes() {
   const promises = [];
   const cursor = User.find({
     'purchased.plan.customerId': 'habitrpg',

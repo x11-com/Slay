@@ -10,7 +10,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('simple', () => ({
-    components: { CountBadge },
+    components: {CountBadge},
     template: `
       <div style="position: absolute; margin: 20px">
         <count-badge :count="2" :show="true"></count-badge>

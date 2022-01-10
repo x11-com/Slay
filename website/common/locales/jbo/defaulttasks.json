@@ -2,9 +2,9 @@
   "defaultHabit1Text": "nu gunka ja'e su'o xamgu (to stika se pi'o lo pinsi .itkona toi)",
   "defaultHabit2Text": "nu citka su'o jai kanryjdikyri'a (to stika se pi'o lo pinsi .itkona toi)",
   "defaultHabit3Text": "Take the Stairs/Elevator (Click the pencil to edit)",
-  "defaultHabit4Text": "Add a task to Habitica",
+  "defaultHabit4Text": "Add a task to Slay",
   "defaultHabit4Notes": "Either a Habit, a Daily, or a To-Do",
-  "defaultTodo1Text": "Join slay (Check me off!)",
+  "defaultTodo1Text": "Join Slay (Check me off!)",
   "defaultTodoNotes": "You can either complete this To-Do, edit it, or remove it.",
   "defaultReward1Text": "15 minute break",
   "defaultReward2Text": "Reward yourself",
@@ -15,5 +15,5 @@
   "defaultTag4": "School",
   "defaultTag5": "Teams",
   "defaultTag6": "Chores",
-    "defaultTag7": "Creativity"
+  "defaultTag7": "Creativity"
 }

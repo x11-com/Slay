@@ -1,5 +1,5 @@
-import {inboxModel as Inbox, setUserStyles} from '../../models/message';
-import {model as User} from '../../models/user';
+import { inboxModel as Inbox, setUserStyles } from '../../models/message';
+import { model as User } from '../../models/user';
 
 /**
  * Get the current user (avatar/setting etc) for conversations

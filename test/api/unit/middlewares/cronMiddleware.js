@@ -12,7 +12,8 @@ const CRON_TIMEOUT_WAIT = new Date(60 * 60 * 1000).getTime();
 const CRON_TIMEOUT_UNIT = new Date(60 * 1000).getTime();
 
 describe('cron middleware', () => {
-  let res; let
+  let res;
+  let
     req;
   let user;
 

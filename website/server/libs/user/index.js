@@ -6,8 +6,8 @@ import {model as User, schema as UserSchema} from '../../models/user';
 import {model as NewsPost} from '../../models/newsPost';
 import {nameContainsNewline, stringContainsProfanity} from './validation';
 
-export async function get (req, res, { isV3 = false }) {
-  const { user } = res.locals;
+export async function get(req, res, {isV3 = false}) {
+  const {user} = res.locals;
   let userToJSON;
 
   if (isV3) {

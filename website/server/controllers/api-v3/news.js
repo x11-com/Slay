@@ -1,4 +1,4 @@
-import md from 'habitica-markdown';
+import md from 'slay-markdown';
 import {authWithHeaders} from '../../middlewares/auth';
 import {model as NewsPost} from '../../models/newsPost';
 

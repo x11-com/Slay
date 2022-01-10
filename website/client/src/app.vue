@@ -381,11 +381,11 @@ export default {
           errorsToShow.push(errorMessage);
         }
 
-        // Ignore NotificationNotFound errors, see https://github.com/HabitRPG/habitica/issues/10391
+        // Ignore NotificationNotFound errors, see https://github.com/HabitRPG/slay/issues/10391
         if (errorData.error !== 'NotificationNotFound') {
           // dispatch as one snackbar notification
           this.$store.dispatch('snackbars:add', {
-            title: 'Habitica',
+            title: 'Slay',
             text: errorsToShow.join(' '),
             type: 'error',
             timeout: snackbarTimeout,
@@ -416,7 +416,7 @@ export default {
         Analytics.updateUser();
         return axios.get('/api/v4/i18n/browser-script', { language: this.user.preferences.language });
       }).then(() => {
-        const i18nData = window && window['habitica-i18n'];
+        const i18nData = window && window['slay-i18n'];
         this.$loadLocale(i18nData);
         this.hideLoadingScreen();
 
@@ -433,7 +433,7 @@ export default {
           appState = JSON.parse(appState);
           if (appState.paymentCompleted) {
             removeLocalSetting(CONSTANTS.savedAppStateValues.SAVED_APP_STATE);
-            this.$root.$emit('habitica:payment-success', appState);
+            this.$root.$emit('slay:payment-success', appState);
           }
         }
         this.$nextTick(() => {

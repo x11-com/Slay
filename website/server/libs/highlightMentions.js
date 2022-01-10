@@ -1,5 +1,5 @@
 import escapeRegExp from 'lodash/escapeRegExp';
-import habiticaMarkdown from 'habitica-markdown';
+import slayMarkdown from 'slay-markdown';
 
 import {model as User} from '../models/user';
 import logger from './logger';
@@ -105,14 +105,14 @@ function toSourceMapRegex (token) {
 }
 
 /**
- * Uses habiticaMarkdown to determine which text blocks should be ignored (links and code blocks)
+ * Uses slayMarkdown to determine which text blocks should be ignored (links and code blocks)
  * according to the specification here: https://spec.commonmark.org/0.29/
  */
 function findTextBlocks (text) {
   // For token description see https://markdown-it.github.io/markdown-it/#Token
   // The second parameter is mandatory even if not used, see
   // https://markdown-it.github.io/markdown-it/#MarkdownIt.parse
-  const tokens = habiticaMarkdown.parse(text, {});
+  const tokens = slayMarkdown.parse(text, {});
   const ignoreBlockRegexes = findIgnoreBlocks(tokens).map(toSourceMapRegex);
 
   const blocks = [];
@@ -146,7 +146,7 @@ function findTextBlocks (text) {
 
 function determineBaseUrl () {
   // eslint-disable-next-line no-process-env
-  return process.env.NODE_ENV === 'production' ? 'https://s1ay.com' : '';
+  return process.env.NODE_ENV === 'production' ? 'https://slay.com' : '';
 }
 
 /**

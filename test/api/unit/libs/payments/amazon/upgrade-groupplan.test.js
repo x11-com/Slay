@@ -6,7 +6,11 @@ import payments from '../../../../../../website/server/libs/payments/payments';
 import common from '../../../../../../website/common';
 
 describe('#upgradeGroupPlan', () => {
-  let spy; let data; let user; let group; let
+  let spy;
+  let data;
+  let user;
+  let group;
+  let
     uuidString;
 
   beforeEach(async () => {
@@ -21,7 +25,7 @@ describe('#upgradeGroupPlan', () => {
       customerId: 'customer-id',
       paymentMethod: 'Payment Method',
       headers: {
-        'x-client': 'habitica-web',
+        'x-client': 'slay-web',
         'user-agent': '',
       },
     };

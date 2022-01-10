@@ -7,13 +7,13 @@
         <div class="col-12 col-md-2">
           <h3>
             <a
-              href="https://itunes.apple.com/us/app/habitica/id994882113?ls=1&mt=8"
+              href="https://itunes.apple.com/us/app/slay/id994882113?ls=1&mt=8"
               target="_blank"
             >{{ $t('mobileIOS') }}</a>
           </h3>
           <h3>
             <a
-              href="https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica"
+              href="https://play.google.com/store/apps/details?id=com.habitrpg.android.slay"
               target="_blank"
             >{{ $t('mobileAndroid') }}</a>
           </h3>
@@ -28,7 +28,7 @@
             </li>
             <li>
               <a
-                href="https://habitica.wordpress.com/"
+                href="https://slay.wordpress.com/"
                 target="_blank"
               >{{ $t('companyBlog') }}</a>
             </li>
@@ -45,11 +45,11 @@
             </li>
             <li>
               <a
-                href="https://habitica.fandom.com/wiki/Whats_New"
+                href="https://slay.fandom.com/wiki/Whats_New"
                 target="_blank"
               >{{ $t('oldNews') }}</a>
             </li>
-            <!-- Commenting out merch page see https://github.com/HabitRPG/habitica/issues/12039
+            <!-- Commenting out merch page see https://github.com/HabitRPG/slay/issues/12039
             <li>
               <router-link to="/static/merch">
                 {{ $t('merch') }}
@@ -92,7 +92,7 @@
             </li>
             <li v-else>
               <a
-                href="mailto:admin@s1ay.com?subject=slay Web Bug Report"
+                href="mailto:admin@slay.com?subject=Slay Web Bug Report"
                 target="_blank"
               >
                 {{ $t('reportBug') }}
@@ -107,13 +107,13 @@
             <li v-html="$t('communityExtensions')"></li>
             <li>
               <a
-                href="https://www.facebook.com/Habitica"
+                href="https://www.facebook.com/Slay"
                 target="_blank"
               >{{ $t('communityFacebook') }}</a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/habitica"
+                href="https://www.instagram.com/slay"
                 target="_blank"
               >{{ $t('communityInstagram') }}</a>
             </li>
@@ -138,7 +138,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://habitica.fandom.com/wiki/Guidance_for_Blacksmiths"
+                    href="https://slay.fandom.com/wiki/Guidance_for_Blacksmiths"
                     target="_blank"
                   >{{ $t('guidanceForBlacksmiths') }}</a>
                 </li>
@@ -149,7 +149,7 @@
               <div class="icons">
                 <a
                   class="social-circle"
-                  href="https://twitter.com/habitica"
+                  href="https://twitter.com/slay"
                   target="_blank"
                 >
                   <div
@@ -159,7 +159,7 @@
                 </a>
                 <a
                   class="social-circle"
-                  href="https://www.instagram.com/habitica/"
+                  href="https://www.instagram.com/slay/"
                   target="_blank"
                 >
                   <div
@@ -169,7 +169,7 @@
                 </a>
                 <a
                   class="social-circle"
-                  href="https://www.facebook.com/Habitica"
+                  href="https://www.facebook.com/Slay"
                   target="_blank"
                 >
                   <div
@@ -203,7 +203,7 @@
                 class="btn btn-contribute btn-front btn-flat"
               >
                 <a
-                  href="https://habitica.fandom.com/wiki/Contributing_to_Habitica"
+                  href="https://slay.fandom.com/wiki/Contributing_to_Slay"
                   target="_blank"
                 >
                   <div
@@ -224,7 +224,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-5 text-center text-md-left">
-          © 2021 Habitica. All rights reserved.
+          © 2021 Slay. All rights reserved.
           <div
             v-if="!IS_PRODUCTION && isUserLoaded"
             class="debug float-left"

@@ -1,4 +1,4 @@
-# slay Client
+# Slay Client
 
 ## Project setup
 ```

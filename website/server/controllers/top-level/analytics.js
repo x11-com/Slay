@@ -18,7 +18,7 @@ api.trackEvent = {
   middlewares: [authWithHeaders({ optional: true })],
   async handler (req, res) {
     // As of now only web can track events using this route
-    if (req.headers['x-client'] !== 'habitica-web') {
+    if (req.headers['x-client'] !== 'slay-web') {
       throw new NotAuthorized('Only s1ay.com is allowed to track analytics events.');
     }
 

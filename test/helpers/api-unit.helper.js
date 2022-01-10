@@ -8,7 +8,7 @@ import {model as Challenge} from '../../website/server/models/challenge';
 import i18n from '../../website/common/script/i18n';
 import * as Tasks from '../../website/server/models/task';
 
-export { translationCheck } from './translate';
+export {translationCheck} from './translate';
 
 afterEach(done => {
   sandbox.restore();

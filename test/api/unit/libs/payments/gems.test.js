@@ -2,7 +2,7 @@ import common from '../../../../../website/common';
 import {getGemsBlock, validateGiftMessage,} from '../../../../../website/server/libs/payments/gems';
 import {model as User} from '../../../../../website/server/models/user';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('payments/gems', () => {
   describe('#getGemsBlock', () => {

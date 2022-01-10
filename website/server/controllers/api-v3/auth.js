@@ -1,15 +1,25 @@
 import validator from 'validator';
 import moment from 'moment';
 import nconf from 'nconf';
-import {authWithHeaders,} from '../../middlewares/auth';
-import {model as User} from '../../models/user';
+import {
+  authWithHeaders,
+} from '../../middlewares/auth';
+import { model as User } from '../../models/user';
 import common from '../../../common';
-import {BadRequest, NotAuthorized,} from '../../libs/errors';
+import {
+  NotAuthorized,
+  BadRequest,
+} from '../../libs/errors';
 import * as passwordUtils from '../../libs/password';
-import {sendTxn as sendTxnEmail} from '../../libs/email';
-import {encrypt} from '../../libs/encryption';
-import {hasBackupAuth, loginRes, loginSocial, registerLocal,} from '../../libs/auth';
-import {verifyUsername} from '../../libs/user/validation';
+import { sendTxn as sendTxnEmail } from '../../libs/email';
+import { encrypt } from '../../libs/encryption';
+import {
+  loginRes,
+  hasBackupAuth,
+  loginSocial,
+  registerLocal,
+} from '../../libs/auth';
+import { verifyUsername } from '../../libs/user/validation';
 
 const BASE_URL = nconf.get('BASE_URL');
 const TECH_ASSISTANCE_EMAIL = nconf.get('EMAILS_TECH_ASSISTANCE_EMAIL');

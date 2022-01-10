@@ -2,7 +2,9 @@ import {generateNext, generateReq, generateRes,} from '../../../helpers/api-unit
 import {disableCache,} from '../../../../website/server/middlewares/cache';
 
 describe('cache middlewares', () => {
-  let res; let req; let
+  let res;
+  let req;
+  let
     next;
 
   beforeEach(() => {

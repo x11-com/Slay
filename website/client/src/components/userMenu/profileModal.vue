@@ -39,7 +39,7 @@ export default {
     };
   },
   mounted () {
-    this.$root.$on('habitica:show-profile', data => {
+    this.$root.$on('slay:show-profile', data => {
       this.userId = data.userId;
       this.startingPage = data.startingPage || 'profile';
       this.path = data.path;
@@ -47,7 +47,7 @@ export default {
     });
   },
   beforeDestroy () {
-    this.$root.$off('habitica:show-profile');
+    this.$root.$off('slay:show-profile');
   },
   methods: {
     onShown () {
@@ -55,7 +55,7 @@ export default {
     },
     beforeHide () {
       if (this.$route.path !== window.location.pathname) {
-        this.$root.$emit('habitica:restoreTitle');
+        this.$root.$emit('slay:restoreTitle');
       }
     },
     onHidden () {

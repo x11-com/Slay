@@ -8,12 +8,12 @@ import {model as User} from '../models/user';
 const BCRYPT_SALT_ROUNDS = 10;
 
 // Hash a plain text password
-export function bcryptHash (passwordToHash) {
+export function bcryptHash(passwordToHash) {
   return bcrypt.hash(passwordToHash, BCRYPT_SALT_ROUNDS); // returns a promise
 }
 
 // Check if a plain text password matches a hash
-export function bcryptCompare (passwordToCheck, hashedPassword) {
+export function bcryptCompare(passwordToCheck, hashedPassword) {
   return bcrypt.compare(passwordToCheck, hashedPassword); // returns a promise
 }
 

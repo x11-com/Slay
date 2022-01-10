@@ -11,7 +11,7 @@ describe('POST /groups/:groupId/quests/invite/:questKey', () => {
   const PET_QUEST = 'whale';
 
   beforeEach(async () => {
-    const { group, groupLeader, members } = await createAndPopulateGroup({
+    const {group, groupLeader, members} = await createAndPopulateGroup({
       groupDetails: { type: 'party', privacy: 'private' },
       members: 1,
     });

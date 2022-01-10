@@ -1,7 +1,6 @@
 # Indexes
 
-This file contains a list of indexes that are on Habitica's production Mongo server.
-If we ever have an issue, use this list to reindex.
+This file contains a list of indexes that are on Slay's production Mongo server. If we ever have an issue, use this list to reindex.
 
 ## Challenges
  - `{ "group": 1, "official": -1, "timestamp": -1 }`

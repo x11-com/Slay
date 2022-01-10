@@ -7,10 +7,8 @@ const bannedWords = [
   'TESTPLACEHOLDERSWEARWORDHERE1',
 
 
-
-
   'support',
-  'habitica',
+  'slay',
   'habitrpg',
   'admin',
   'administrator',

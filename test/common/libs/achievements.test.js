@@ -143,12 +143,12 @@ describe('achievements', () => {
     const userAchievements = shared.achievements.getAchievementsForProfile(user);
     const seasonalAchievs = userAchievements.seasonal.achievements;
 
-    it('habiticaDays and habitBirthdays achievements exist with counts', () => {
-      const { habiticaDays } = seasonalAchievs;
-      const { habitBirthdays } = seasonalAchievs;
+    it('slayDays and habitBirthdays achievements exist with counts', () => {
+      const {slayDays} = seasonalAchievs;
+      const {habitBirthdays} = seasonalAchievs;
 
-      expect(habiticaDays).to.exist;
-      expect(habiticaDays).to.have.property('optionalCount')
+      expect(slayDays).to.exist;
+      expect(slayDays).to.have.property('optionalCount')
         .that.is.a('number');
       expect(habitBirthdays).to.exist;
       expect(habitBirthdays).to.have.property('optionalCount')

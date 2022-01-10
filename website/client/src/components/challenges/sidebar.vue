@@ -97,8 +97,8 @@ export default {
       categoryFilters: [],
       categoryOptions: [
         {
-          label: 'habitica_official',
-          key: 'habitica_official',
+          label: 'slay_official',
+          key: 'slay_official',
         },
         {
           label: 'academics',

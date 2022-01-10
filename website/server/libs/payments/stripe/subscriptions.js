@@ -11,7 +11,7 @@ import {getStripeApi} from './api';
 import {basicFields as basicGroupFields, model as Group,} from '../../../models/group';
 import {BadRequest, NotAuthorized, NotFound,} from '../../errors';
 
-export async function checkSubData (sub, isGroup = false, coupon) {
+export async function checkSubData(sub, isGroup = false, coupon) {
   if (!sub || !sub.canSubscribe) throw new BadRequest(shared.i18n.t('missingSubscriptionCode'));
   if (
     (sub.target === 'group' && !isGroup)

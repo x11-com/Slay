@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="canShow"
-    class="habitica-top-banner d-flex justify-content-between align-items-center"
+    class="slay-top-banner d-flex justify-content-between align-items-center"
     :class="bannerClass"
     :style="{height}"
   >
@@ -17,7 +17,7 @@
 </template>
 
 <style lang="scss">
-body.modal-open .habitica-top-banner {
+body.modal-open .slay-top-banner {
   z-index: 1035;
 }
 </style>
@@ -25,7 +25,7 @@ body.modal-open .habitica-top-banner {
 <style lang="scss" scoped>
 @import '~@/assets/scss/colors.scss';
 
-.habitica-top-banner {
+.slay-top-banner {
   width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.625rem;

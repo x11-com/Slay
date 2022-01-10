@@ -33,7 +33,7 @@ export function goToModForm (user) { // eslint-disable-line import/prefer-defaul
     apiKey,
   };
 
-  document.cookie = `habiticauserdata=${JSON.stringify(userData)};${expires};domain=.s1ay.com;path=/`;
+  document.cookie = `slayuserdata=${JSON.stringify(userData)};${expires};domain=.slay.com;path=/`;
 
-  window.location.href = 'https://contact.s1ay.com';
+  window.location.href = 'https://contact.slay.com';
 }

@@ -7,7 +7,11 @@ import {generateUser, translate as t,} from '../../../../helpers/api-integration
 const BASE_URL = nconf.get('BASE_URL');
 
 describe('POST /chat/:chatId/flag', () => {
-  let user; let admin; let anotherUser; let newUser; let
+  let user;
+  let admin;
+  let anotherUser;
+  let newUser;
+  let
     group;
   const TEST_MESSAGE = 'Test Message';
   const USER_AGE_FOR_FLAGGING = 3;

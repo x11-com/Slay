@@ -6,9 +6,12 @@ import errorMessage from '../../../../website/common/script/libs/errorMessage';
 
 describe('shared.ops.buyQuest', () => {
   let user;
-  const analytics = { track () {} };
+  const analytics = {
+    track() {
+    }
+  };
 
-  function buyQuest (_user, _req, _analytics) {
+  function buyQuest(_user, _req, _analytics) {
     const buyOp = new BuyQuestWithGoldOperation(_user, _req, _analytics);
 
     return buyOp.purchase();

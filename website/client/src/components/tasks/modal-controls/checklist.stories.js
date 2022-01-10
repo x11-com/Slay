@@ -9,7 +9,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('simple', () => ({
-    components: { CheckList },
+    components: {CheckList},
     template: `
       <div style="position: absolute; margin: 20px; background: white">
         <check-list :items.sync="checklist">

@@ -182,15 +182,15 @@ export default {
   },
   methods: {
     report () {
-      this.$root.$on('habitica:report-result', data => {
+      this.$root.$on('slay:report-result', data => {
         if (data.ok) {
           this.reported = true;
         }
 
-        this.$root.$off('habitica:report-result');
+        this.$root.$off('slay:report-result');
       });
 
-      this.$root.$emit('habitica::report-chat', {
+      this.$root.$emit('slay::report-chat', {
         message: this.msg,
         groupId: 'privateMessage',
       });

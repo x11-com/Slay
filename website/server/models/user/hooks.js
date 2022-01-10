@@ -15,7 +15,7 @@ schema.plugin(baseModel, {
   // specific params (password, email, username, ...)
   noSet: [],
   private: ['auth.local.hashed_password', 'auth.local.passwordHashMethod', 'auth.local.salt', '_cronSignature', '_ABtests', 'secret'],
-  toJSONTransform: function userToJSON (plainObj, originalDoc) {
+  toJSONTransform: function userToJSON(plainObj, originalDoc) {
     plainObj._tmp = originalDoc._tmp; // be sure to send down drop notifs
 
     if (plainObj._tmp && plainObj._tmp.leveledUp) {
@@ -39,7 +39,7 @@ function findTag (user, tagName) {
 
 function _populateDefaultTasks (user, taskTypes) {
   let defaultsData;
-  if (user.registeredThrough === 'habitica-android' || user.registeredThrough === 'habitica-ios') {
+  if (user.registeredThrough === 'slay-android' || user.registeredThrough === 'slay-ios') {
     defaultsData = common.content.userDefaultsMobile;
   } else {
     defaultsData = common.content.userDefaults;
@@ -65,7 +65,7 @@ function _populateDefaultTasks (user, taskTypes) {
   // TODO why isn't this using createTasks from libs/tasksManager?
 
   const tasksToCreate = [];
-  if (user.registeredThrough === 'habitica-web') return Promise.all(tasksToCreate);
+  if (user.registeredThrough === 'slay-web') return Promise.all(tasksToCreate);
 
   if (tagsI !== -1) {
     taskTypes = _.clone(taskTypes); // eslint-disable-line no-param-reassign
@@ -142,7 +142,7 @@ function _setUpNewUser (user) {
 
   user.markModified('items achievements');
 
-  if (user.registeredThrough === 'habitica-web') {
+  if (user.registeredThrough === 'slay-web') {
     taskTypes = ['habit', 'daily', 'todo', 'reward', 'tag'];
 
     _.each(iterableFlags.tutorial.common, (val, section) => {
@@ -155,7 +155,7 @@ function _setUpNewUser (user) {
       user.flags.tour[section] = -2;
     });
 
-    if (user.registeredThrough === 'habitica-android' || user.registeredThrough === 'habitica-ios') {
+    if (user.registeredThrough === 'slay-android' || user.registeredThrough === 'slay-ios') {
       taskTypes = ['habit', 'daily', 'todo', 'reward', 'tag'];
     } else {
       taskTypes = ['todo', 'tag'];
@@ -176,10 +176,10 @@ function _setProfileName (user) {
 schema.post('init', function postInitUser () {
   // Cleanup any corrupt data that could have ended up inside the user schema.
   // In particular:
-  // - tags https://github.com/HabitRPG/habitica/issues/10688
-  // - notifications https://github.com/HabitRPG/habitica/issues/9923
-  // - push devices https://github.com/HabitRPG/habitica/issues/11805
-  //            and https://github.com/HabitRPG/habitica/issues/11868
+  // - tags https://github.com/HabitRPG/slay/issues/10688
+  // - notifications https://github.com/HabitRPG/slay/issues/9923
+  // - push devices https://github.com/HabitRPG/slay/issues/11805
+  //            and https://github.com/HabitRPG/slay/issues/11868
 
   // Make sure notifications are loaded
   if (this.isDirectSelected('notifications')) {

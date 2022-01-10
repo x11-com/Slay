@@ -14,7 +14,7 @@ import {sanitizeText as sanitizeMessageText,} from '../../models/message';
 import highlightMentions from '../../libs/highlightMentions';
 import {handleGetMembersForChallenge} from '../../libs/challenges/handleGetMembersForChallenge';
 
-const { achievements } = common;
+const {achievements} = common;
 
 const api = {};
 
@@ -201,10 +201,10 @@ api.getMemberByUsername = {
  *   seasonal: {
  *     label: "Seasonal",
  *     achievements: {
- *       habiticaDays: {
- *         title: "slay Naming Day",
+ *       slayDays: {
+ *         title: "Slay Naming Day",
  *         text: "Celebrated 0 Naming Days! Thanks for being a fantastic user.",
- *         icon: "achievement-habiticaDay",
+ *         icon: "achievement-slayDay",
  *         earned: false,
  *         value: 0,
  *         index: 72,
@@ -216,8 +216,8 @@ api.getMemberByUsername = {
  *     label: "Special",
  *     achievements: {
  *       habitSurveys: {
- *         title: "Helped slay Grow",
- *         text: "Helped slay grow on 0 occasions, either by filling out
+ *         title: "Helped Slay Grow",
+ *         text: "Helped Slay grow on 0 occasions, either by filling out
  *               a survey or helping with a major testing effort. Thank you!",
  *         icon: "achievement-tree",
  *         earned: false,

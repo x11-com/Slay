@@ -547,7 +547,7 @@ import giftBox from '@/assets/svg/gift-purple.svg';
 import googlePayLogo from '@/assets/svg/google-pay-logo.svg';
 import heartIcon from '@/assets/svg/health.svg';
 import hourglassIcon from '@/assets/svg/hourglass.svg';
-import logo from '@/assets/svg/habitica-logo-purple.svg';
+import logo from '@/assets/svg/slay-logo-purple.svg';
 import paypalLogo from '@/assets/svg/paypal-logo.svg';
 import subscriberGems from '@/assets/svg/subscriber-gems.svg';
 import subscriberHourglasses from '@/assets/svg/subscriber-hourglasses.svg';

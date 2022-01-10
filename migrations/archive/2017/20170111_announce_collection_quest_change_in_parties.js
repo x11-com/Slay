@@ -19,12 +19,12 @@ const Timer = require('./utils/timer');
 const connectToDb = require('./utils/connect').connectToDb;
 const closeDb = require('./utils/connect').closeDb;
 
-const message = '`This party\'s collection quest has been made easier! For details, refer to http://habitica.fandom.com/wiki/User_blog:LadyAlys/Collection_Quests_are_Now_Easier`';
+const message = '`This party\'s collection quest has been made easier! For details, refer to http://slay.fandom.com/wiki/User_blog:LadyAlys/Collection_Quests_are_Now_Easier`';
 
 const timer = new Timer();
 
 // PROD: Enable prod db
-// const DB_URI = 'mongodb://username:password@dsXXXXXX-a0.mlab.com:XXXXX,dsXXXXXX-a1.mlab.com:XXXXX/habitica?replicaSet=rs-dsXXXXXX';
+// const DB_URI = 'mongodb://username:password@dsXXXXXX-a0.mlab.com:XXXXX,dsXXXXXX-a1.mlab.com:XXXXX/slay?replicaSet=rs-dsXXXXXX';
 const DB_URI = 'mongodb://localhost/habitrpg';
 
 const COLLECTION_QUESTS = [

@@ -14,7 +14,7 @@ import {getGemsBlock, validateGiftMessage} from './gems'; // eslint-disable-line
 
 // TODO better handling of errors
 
-const { i18n } = common;
+const {i18n} = common;
 const IS_SANDBOX = nconf.get('AMAZON_PAYMENTS_MODE') === 'sandbox';
 
 const amzPayment = amazonPayments.connect({
@@ -29,11 +29,11 @@ const api = {};
 
 api.constants = {
   CURRENCY_CODE: 'USD',
-  SELLER_NOTE: 'slay Payment',
-  SELLER_NOTE_SUBSCRIPTION: 'slay Subscription',
-  SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'slay Subscription Payment',
-  SELLER_NOTE_GROUP_NEW_MEMBER: 'slay Group Plan New Member',
-  STORE_NAME: 'Habitica',
+  SELLER_NOTE: 'Slay Payment',
+  SELLER_NOTE_SUBSCRIPTION: 'Slay Subscription',
+  SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'Slay Subscription Payment',
+  SELLER_NOTE_GROUP_NEW_MEMBER: 'Slay Group Plan New Member',
+  STORE_NAME: 'Slay',
 
   GIFT_TYPE_GEMS: 'gems',
   GIFT_TYPE_SUBSCRIPTION: 'subscription',

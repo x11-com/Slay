@@ -15,7 +15,7 @@
 //
 // If you think this file needs to be changed please do NOT create a
 // pull request or issue in GitHub!
-// Email admin@s1ay.com to discuss the change you want made.
+// Email admin@slay.com to discuss the change you want made.
 //
 // All updates to this file must be done through a direct commit to limit
 // the words visibility in GitHub to protect our coders, socialites, and
@@ -176,14 +176,10 @@ const bannedWords = [
   'cocksucking',
   'fap',
   'nofap',
-  'no fap',
-  'no-fap',
   'fapping',
   'no nut',
   'no-nut',
   'no-nut-november',
-  'nutting',
-  'nuttin',
   'masturbate',
   'masturbates',
   'masturbating',

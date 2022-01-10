@@ -6,7 +6,7 @@ import {model as User} from '../../../website/server/models/user';
 const progressCount = 1000;
 let count = 0;
 
-async function updateUser (user) {
+async function updateUser(user) {
   count++;
 
   const set = {};

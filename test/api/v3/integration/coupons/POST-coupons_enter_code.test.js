@@ -1,11 +1,11 @@
-import {generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetSlayDB, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('POST /coupons/enter/:code', () => {
   let user;
   let sudoUser;
 
   before(async () => {
-    await resetHabiticaDB();
+    await resetSlayDB();
   });
 
   beforeEach(async () => {

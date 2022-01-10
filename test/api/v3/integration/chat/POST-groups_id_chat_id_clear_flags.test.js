@@ -5,11 +5,15 @@ import config from '../../../../../config.json';
 
 describe('POST /groups/:id/chat/:id/clearflags', () => {
   const USER_AGE_FOR_FLAGGING = 3;
-  let groupWithChat; let message; let author; let nonAdmin; let
+  let groupWithChat;
+  let message;
+  let author;
+  let nonAdmin;
+  let
     admin;
 
   before(async () => {
-    const { group, groupLeader } = await createAndPopulateGroup({
+    const {group, groupLeader} = await createAndPopulateGroup({
       groupDetails: {
         type: 'guild',
         privacy: 'public',

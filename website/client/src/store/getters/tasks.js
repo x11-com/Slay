@@ -5,14 +5,14 @@ import {orderSingleTypeTasks} from '@/libs/store/helpers/orderTasks';
 import {getActiveFilter, sortAndFilterTasks} from '@/libs/store/helpers/filterTasks';
 
 // Return all the tags belonging to an user task
-export function getTagsFor (store) {
+export function getTagsFor(store) {
   return task => store.state.user.data.tags
     .filter(tag => task.tags && task.tags.indexOf(tag.id) !== -1)
     .map(tag => tag.name);
 }
 
-export function getTagsByIdList (store) {
-  return function tagsByIdListFunc (taskIdArray) {
+export function getTagsByIdList(store) {
+  return function tagsByIdListFunc(taskIdArray) {
     return (taskIdArray || []).length > 0
       ? store.state.user.data.tags
         .filter(tag => taskIdArray.indexOf(tag.id) !== -1)
@@ -21,7 +21,7 @@ export function getTagsByIdList (store) {
 }
 
 function getTaskColor (task) {
-  if (task.type === 'reward' || task.byHabitica) return 'purple';
+  if (task.type === 'reward' || task.bySlay) return 'purple';
 
   const { value } = task;
 

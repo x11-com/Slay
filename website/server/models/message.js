@@ -10,7 +10,7 @@ const defaultSchema = () => ({
   timestamp: Date,
   text: String,
   unformattedText: String,
-  info: { $type: mongoose.Schema.Types.Mixed },
+  info: {$type: mongoose.Schema.Types.Mixed},
 
   // sender properties
   user: String, // profile name (unfortunately)

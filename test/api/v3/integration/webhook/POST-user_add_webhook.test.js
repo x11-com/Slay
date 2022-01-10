@@ -3,7 +3,8 @@ import {generateUser, translate as t,} from '../../../../helpers/api-integration
 import apiError from '../../../../../website/server/libs/apiError';
 
 describe('POST /user/webhook', () => {
-  let user; let
+  let user;
+  let
     body;
 
   beforeEach(async () => {

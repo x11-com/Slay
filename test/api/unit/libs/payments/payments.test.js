@@ -11,7 +11,10 @@ import {generateGroup,} from '../../../../helpers/api-unit.helper';
 import * as worldState from '../../../../../website/server/libs/worldState';
 
 describe('payments/index', () => {
-  let user; let group; let data; let
+  let user;
+  let group;
+  let data;
+  let
     plan;
 
   beforeEach(async () => {
@@ -42,7 +45,7 @@ describe('payments/index', () => {
       customerId: 'customer-id',
       paymentMethod: 'Payment Method',
       headers: {
-        'x-client': 'habitica-web',
+        'x-client': 'slay-web',
         'user-agent': '',
       },
     };
@@ -237,7 +240,7 @@ describe('payments/index', () => {
           purchaseValue: 15,
           firstPurchase: true,
           headers: {
-            'x-client': 'habitica-web',
+            'x-client': 'slay-web',
             'user-agent': '',
           },
         });
@@ -438,7 +441,7 @@ describe('payments/index', () => {
           purchaseValue: 15,
           firstPurchase: true,
           headers: {
-            'x-client': 'habitica-web',
+            'x-client': 'slay-web',
             'user-agent': '',
           },
         });
@@ -652,7 +655,7 @@ describe('payments/index', () => {
         gemsBlock: common.content.gems['21gems'],
         paymentMethod: 'payment',
         headers: {
-          'x-client': 'habitica-web',
+          'x-client': 'slay-web',
           'user-agent': '',
         },
       };

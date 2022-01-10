@@ -11,10 +11,10 @@ const progressCount = 1000;
 let count = 0;
 let backupUsers;
 
-async function updateUser (user) {
+async function updateUser(user) {
   count++;
 
-  let set = { migration: MIGRATION_NAME };
+  let set = {migration: MIGRATION_NAME};
   let addToSet;
 
   const monkPromise = new Promise((resolve, reject) => {

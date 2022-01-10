@@ -13,8 +13,8 @@ import {applySubscription, handlePaymentMethodChange} from './subscriptions'; //
 
 const endpointSecret = nconf.get('STRIPE_WEBHOOKS_ENDPOINT_SECRET');
 
-export async function handleWebhooks (options, stripeInc) {
-  const { body, headers } = options;
+export async function handleWebhooks(options, stripeInc) {
+  const {body, headers} = options;
 
   // @TODO: We need to mock this, but curently we don't have correct
   // Dependency Injection. And the Stripe Api doesn't seem to be a singleton?

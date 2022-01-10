@@ -1,6 +1,6 @@
-# slay in Kubernetes
+# Slay in Kubernetes
 
-This is a set of sample Kubernetes configuration files to launch slay under AWS, both as a single-node web frontend as
+This is a set of sample Kubernetes configuration files to launch Slay under AWS, both as a single-node web frontend as
 well as a multi-node web frontend.
 
 ## Prerequisites
@@ -9,9 +9,9 @@ well as a multi-node web frontend.
 * A working Kubernetes installation.
 * A basic understanding of how to use Kubernetes. https://kubernetes.io/
 * A persistent volume for MongoDB data.
-* Docker images of Habitica.
+* Docker images of Slay.
   + You can use your own, or use the one included in the YAML files.
-  + If you use your own, you'll need a fork of the slay GitHub repo and your own Docker Hub repo, both of which are
+  + If you use your own, you'll need a fork of the Slay GitHub repo and your own Docker Hub repo, both of which are
     free.
 
 ## Before you begin
@@ -32,8 +32,8 @@ well as a multi-node web frontend.
 
 1. Run the following commands:
 
-+ `kubectl.sh create -f habitica.yaml`
-+ `kubectl.sh create -f habitica-service.yaml`
++ `kubectl.sh create -f slay.yaml`
++ `kubectl.sh create -f slay-service.yaml`
 
 2. Wait for the frontend to start up.
 
@@ -41,22 +41,22 @@ well as a multi-node web frontend.
 
 1. Run the following commands :
 
-+ `kubectl.sh create -f habitica-rc.yaml`
-+ `kubectl.sh create -f habitica-service.yaml`
++ `kubectl.sh create -f slay-rc.yaml`
++ `kubectl.sh create -f slay-service.yaml`
 
 2. Wait for the frontend to start up.
 
-## Accessing Your slay web interface
+## Accessing Your Slay web interface
 
-Using `kubectl describe svc habiticaweb` get the hostname generated for the slay service. Open a browser and go
+Using `kubectl describe svc slayweb` get the hostname generated for the Slay service. Open a browser and go
 to http://hostname:3000 to access the web front-end for the installations above.
 
 ## Shutting down
 
 Shutting down is basically done by reversing the steps above:
 
-+ `kubectl.sh delete -f habitica-service.yaml`
-+ `kubectl.sh delete -f habitica.yaml (or habitica-rc.yaml)`
++ `kubectl.sh delete -f slay-service.yaml`
++ `kubectl.sh delete -f slay.yaml (or slay-rc.yaml)`
 + `kubectl.sh delete -f mongo-service.yaml`
 + `kubectl.sh delete -f mongo.yaml`
 
@@ -67,7 +67,7 @@ You can also just shut down all of Kubernetes as well.
 + MongoDB data will be persistent! If you need to start with a fresh database, you'll need to remove the volume and
   re-create it.
 + On AWS, you probably want to use at least t2.medium minion nodes for Kubernetes. The default t2.small is too small for
-  more than two slay nodes.
+  more than two Slay nodes.
 
 ## Future Plans
 + Multi-node MongoDB.

@@ -11,7 +11,7 @@ api.verifyUsername = {
   middlewares: [authWithHeaders({
     optional: true,
   })],
-  async handler (req, res) {
+  async handler(req, res) {
     req.checkBody({
       username: {
         notEmpty: { errorMessage: res.t('missingUsername') },

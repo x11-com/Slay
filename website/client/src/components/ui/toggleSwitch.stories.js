@@ -9,7 +9,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('label only', () => ({
-    components: { toggleSwitch },
+    components: {toggleSwitch},
     template: `
       <div style="position: absolute; margin: 20px">
         <toggle-switch :label="label"></toggle-switch>

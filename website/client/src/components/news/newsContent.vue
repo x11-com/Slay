@@ -66,7 +66,7 @@ h1 {
 
 <script>
 import moment from 'moment';
-import habiticaMarkdown from 'habitica-markdown';
+import slayMarkdown from 'slay-markdown';
 import { mapState } from '@/libs/store';
 import seasonalNPC from '@/mixins/seasonalNPC';
 
@@ -103,7 +103,7 @@ export default {
       }
     },
     renderMarkdown (text) {
-      return habiticaMarkdown.unsafeHTMLRender(text);
+      return slayMarkdown.unsafeHTMLRender(text);
     },
     getPostDate (post) {
       const format = this.user ? this.user.preferences.dateFormat.toUpperCase() : 'MM/DD/yyyy';

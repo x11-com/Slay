@@ -61,7 +61,7 @@ describe('DELETE /user', () => {
       })).to.eventually.be.rejected.and.eql({
         code: 400,
         error: 'BadRequest',
-        message: 'Account deletion feedback is limited to 10,000 characters. For lengthy feedback, email admin@s1ay.com.',
+        message: 'Account deletion feedback is limited to 10,000 characters. For lengthy feedback, email admin@slay.com.',
       });
     });
 

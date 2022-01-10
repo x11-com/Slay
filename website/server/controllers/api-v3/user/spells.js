@@ -20,10 +20,10 @@ const api = {};
  *                                   is casted on the user or the user's current party.
  * @apiParamExample {json} Query example:
  * Cast "Pickpocket" on a task:
- *  https://s1ay.com/api/v3/user/class/cast/pickPocket?targetId=fd427623...
+ *  https://slay.com/api/v3/user/class/cast/pickPocket?targetId=fd427623...
  *
  * Cast "Tools of the Trade" on the party:
- *  https://s1ay.com/api/v3/user/class/cast/toolsOfTrade
+ *  https://slay.com/api/v3/user/class/cast/toolsOfTrade
  *
  * @apiSuccess data Will return the modified targets. For party members only
  *                  the necessary fields will be populated. The user is always returned.

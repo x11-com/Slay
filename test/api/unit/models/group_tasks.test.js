@@ -5,7 +5,10 @@ import {model as User} from '../../../../website/server/models/user';
 import * as Tasks from '../../../../website/server/models/task';
 
 describe('Group Task Methods', () => {
-  let guild; let leader; let challenge; let
+  let guild;
+  let leader;
+  let challenge;
+  let
     task;
   const tasksToTest = {
     habit: {

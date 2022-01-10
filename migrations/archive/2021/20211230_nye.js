@@ -6,10 +6,10 @@ import {v4 as uuid} from 'uuid';
 const progressCount = 1000;
 let count = 0;
 
-async function updateUser (user) {
+async function updateUser(user) {
   count++;
 
-  const set = { migration: MIGRATION_NAME };
+  const set = {migration: MIGRATION_NAME};
   let push;
 
   if (typeof user.items.gear.owned.head_special_nye2020 !== 'undefined') {

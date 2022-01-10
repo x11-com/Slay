@@ -14,7 +14,7 @@ const questScrolls = shared.content.quests;
 const progressCount = 1000;
 let count = 0;
 
-async function updateGroup (group) {
+async function updateGroup(group) {
   count++;
 
   if (group && group.quest && group.quest.key && group.quest.leader) {

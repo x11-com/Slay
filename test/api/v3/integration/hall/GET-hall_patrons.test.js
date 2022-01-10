@@ -1,11 +1,11 @@
 import {times} from 'lodash';
-import {generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetSlayDB, translate as t,} from '../../../../helpers/api-integration/v3';
 
 describe('GET /hall/patrons', () => {
   let user;
 
   beforeEach(async () => {
-    await resetHabiticaDB();
+    await resetSlayDB();
     user = await generateUser();
   });
 

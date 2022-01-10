@@ -1,7 +1,7 @@
 import {v4 as generateUUID} from 'uuid';
 import {generateUser, translate as t,} from '../../../../helpers/api-integration/v3';
 
-function findMessage (messages, receiverId) {
+function findMessage(messages, receiverId) {
   const message = _.find(messages, inboxMessage => inboxMessage.uuid === receiverId);
 
   return message;

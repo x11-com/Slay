@@ -3,7 +3,7 @@ import {attachTranslateFunction, getUserLanguage,} from '../../../../website/ser
 import common from '../../../../website/common';
 import {model as User} from '../../../../website/server/models/user';
 
-const { i18n } = common;
+const {i18n} = common;
 
 // TODO some of the checks here can be simplified to simply check
 // that the right parameters are passed to the functions in libs/language

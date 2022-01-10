@@ -115,10 +115,10 @@ export default {
     ...mapState({ user: 'user.data' }),
   },
   mounted () {
-    this.$root.$on('habitica::report-chat', this.handleReport);
+    this.$root.$on('slay::report-chat', this.handleReport);
   },
   beforeDestroy () {
-    this.$root.$off('habitica::report-chat', this.handleReport);
+    this.$root.$off('slay::report-chat', this.handleReport);
   },
   methods: {
     close () {
@@ -133,7 +133,7 @@ export default {
         comment: this.reportComment,
       });
 
-      this.$root.$emit('habitica:report-result', result);
+      this.$root.$emit('slay:report-result', result);
 
       this.close();
     },

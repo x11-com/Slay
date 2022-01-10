@@ -1,5 +1,7 @@
-import {find} from 'lodash';
-import {createAndPopulateGroup,} from '../../../../../helpers/api-integration/v3';
+import { find } from 'lodash';
+import {
+  createAndPopulateGroup,
+} from '../../../../../helpers/api-integration/v3';
 
 describe('GET /approvals/group/:groupId', () => {
   let user; let guild; let member; let addlMember; let task; let syncedTask; let

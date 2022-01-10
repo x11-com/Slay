@@ -17,8 +17,12 @@ import {TAVERN_ID} from '../../../../website/common/script/constants';
 import shared from '../../../../website/common';
 
 describe('Group Model', () => {
-  let party; let questLeader; let participatingMember;
-  let sleepingParticipatingMember; let nonParticipatingMember; let
+  let party;
+  let questLeader;
+  let participatingMember;
+  let sleepingParticipatingMember;
+  let nonParticipatingMember;
+  let
     undecidedMember;
 
   beforeEach(async () => {
@@ -309,7 +313,7 @@ describe('Group Model', () => {
         });
 
         it('applies damage only to participating members of party even under buggy conditions', async () => {
-          // stops unfair damage from mbugs like https://github.com/HabitRPG/habitica/issues/7653
+          // stops unfair damage from mbugs like https://github.com/HabitRPG/slay/issues/7653
           party.quest.members = {
             [questLeader._id]: true,
             [participatingMember._id]: true,

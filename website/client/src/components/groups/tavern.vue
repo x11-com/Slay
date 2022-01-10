@@ -312,7 +312,7 @@
         <sidebar-section :title="$t('helpfulLinks')">
           <ul>
             <li>
-              <a href="mailto:admin@s1ay.com">
+              <a href="mailto:admin@slay.com">
                 {{ $t('reportCommunityIssues') }}
               </a>
             </li>
@@ -348,7 +348,7 @@
             <li>
               <a
                 v-once
-                href="https://habitica.fandom.com/wiki/Habitica_Wiki"
+                href="https://slay.fandom.com/wiki/Slay_Wiki"
                 target="_blank"
               >{{ $t('wiki') }}</a>
             </li>

@@ -6,14 +6,14 @@
     <send-gems-modal />
     <select-user-modal />
     <b-navbar
-      id="habitica-menu"
+      id="slay-menu"
       class="topbar navbar-inverse static-top"
       toggleable="lg"
       type="dark"
     >
       <b-navbar-brand
         class="brand"
-        aria-label="Habitica"
+        aria-label="Slay"
       >
         <div
           class="logo svg-icon d-none d-xl-block"
@@ -329,12 +329,12 @@
               >{{ $t('requestFeature') }}</a>
               <a
                 class="topbar-dropdown-item dropdown-item"
-                href="https://habitica.fandom.com/wiki/Contributing_to_Habitica"
+                href="https://slay.fandom.com/wiki/Contributing_to_Slay"
                 target="_blank"
               >{{ $t('contributing') }}</a>
               <a
                 class="topbar-dropdown-item dropdown-item"
-                href="https://habitica.fandom.com/wiki/Habitica_Wiki"
+                href="https://slay.fandom.com/wiki/Slay_Wiki"
                 target="_blank"
               >{{ $t('wiki') }}</a>
             </div>
@@ -397,7 +397,7 @@
 </template>
 
 <style lang="scss">
-body.modal-open #habitica-menu {
+body.modal-open #slay-menu {
   z-index: 1035;
 }
 </style>

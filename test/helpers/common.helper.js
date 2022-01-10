@@ -3,15 +3,15 @@ import mongoose from 'mongoose';
 import {model as User} from '../../website/server/models/user';
 import {DailySchema, HabitSchema, RewardSchema, TodoSchema,} from '../../website/server/models/task';
 
-export { translate } from './translate';
+export {translate} from './translate';
 
-export function generateUser (options = {}) {
+export function generateUser(options = {}) {
   const user = new User(options).toObject();
 
   return user;
 }
 
-export function generateDaily (options = {}) {
+export function generateDaily(options = {}) {
   const Daily = mongoose.model('Daily', DailySchema);
 
   return new Daily(options).toObject();

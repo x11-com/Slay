@@ -18,7 +18,10 @@ describe('Purchasing a group plan for group', () => {
   const EMAIL_TEMPLATE_SUBSCRIPTION_TYPE_NORMAL = 'normal_subscription';
   const EMAIL_TEMPLATE_SUBSCRIPTION_TYPE_NONE = 'no_subscription';
 
-  let plan; let group; let user; let
+  let plan;
+  let group;
+  let user;
+  let
     data;
   const stripe = stripeModule('test');
   const groupLeaderName = 'sender';
@@ -48,7 +51,7 @@ describe('Purchasing a group plan for group', () => {
       customerId: 'customer-id',
       paymentMethod: 'Payment Method',
       headers: {
-        'x-client': 'habitica-web',
+        'x-client': 'slay-web',
         'user-agent': '',
       },
     };

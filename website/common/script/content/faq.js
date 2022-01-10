@@ -17,8 +17,8 @@ for (let i = 0; i <= NUMBER_OF_QUESTIONS; i += 1) {
     android: t(`androidFaqAnswer${i}`),
     web: t(`webFaqAnswer${i}`, {
       //  TODO: Need to pull these values from nconf
-      techAssistanceEmail: 'admin@s1ay.com',
-      wikiTechAssistanceEmail: 'mailto:admin@s1ay.com',
+      techAssistanceEmail: 'admin@slay.com',
+      wikiTechAssistanceEmail: 'mailto:admin@slay.com',
     }),
   };
 

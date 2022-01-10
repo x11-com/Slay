@@ -6,7 +6,7 @@ import {capByLevel} from '../statHelpers';
 import {BadRequest, NotAuthorized,} from '../libs/errors';
 import {addPinnedGearByClass, removePinnedGearByClass, removePinnedItemsByOwnedGear} from './pinnedGearUtils';
 
-function resetClass (user, req = {}) {
+function resetClass(user, req = {}) {
   removePinnedGearByClass(user);
 
   let balanceRemoved = 0;

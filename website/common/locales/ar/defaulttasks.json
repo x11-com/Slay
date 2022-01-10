@@ -2,9 +2,9 @@
   "defaultHabit1Text": "عمل منتج (اضغط على القلم للتحرير)",
   "defaultHabit2Text": "أكل طعام غير صحى (أنقر على القلم للتعديل)",
   "defaultHabit3Text": "صعود السلم/استخدام المصعد (اضغط على قلم الرصاص للتعديل)",
-  "defaultHabit4Text": "Add a task to Habitica",
+  "defaultHabit4Text": "Add a task to Slay",
   "defaultHabit4Notes": "Either a Habit, a Daily, or a To-Do",
-  "defaultTodo1Text": "الانضمام إلى slay (عَلِّم عليَّ)",
+  "defaultTodo1Text": "الانضمام إلى Slay (عَلِّم عليَّ)",
   "defaultTodoNotes": "بإمكانك أن تكمل هذه المهمة، تعدلها، أو تحذفها.",
   "defaultReward1Text": "15 دقيقة استراحة",
   "defaultReward2Text": "كافئ نفسك",
@@ -15,5 +15,5 @@
   "defaultTag4": "مدرسة",
   "defaultTag5": "فرق",
   "defaultTag6": "Chores",
-    "defaultTag7": "الإبداع"
+  "defaultTag7": "الإبداع"
 }

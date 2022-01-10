@@ -8,7 +8,7 @@ import {schema as TagSchema} from '../tag';
 import {schema as UserNotificationSchema} from '../userNotification';
 import {schema as WebhookSchema} from '../webhook';
 
-const RESTRICTED_EMAIL_DOMAINS = Object.freeze(['s1ay.com', 'habitrpg.com']);
+const RESTRICTED_EMAIL_DOMAINS = Object.freeze(['slay.com', 'habitrpg.com']);
 
 // User schema definition
 export default new Schema({
@@ -97,11 +97,11 @@ export default new Schema({
     },
     rebirths: Number,
     rebirthLevel: Number,
-    perfect: { $type: Number, default: 0 },
+    perfect: {$type: Number, default: 0},
     habitBirthdays: Number,
     valentine: Number,
     nye: Number,
-    habiticaDays: Number,
+    slayDays: Number,
     greeting: Number,
     thankyou: Number,
     costumeContests: Number,
@@ -160,7 +160,7 @@ export default new Schema({
   },
 
   contributor: {
-    // 1-9, see https://habitica.fandom.com/wiki/Contributor_Rewards
+    // 1-9, see https://slay.fandom.com/wiki/Contributor_Rewards
     level: {
       $type: Number,
       min: 0,
@@ -669,7 +669,7 @@ export default new Schema({
   // Ordered array of shown pinned items,
   // necessary for sorting because seasonal items are not stored in pinnedItems
   pinnedItemsOrder: [{ $type: String }],
-  // Items the user manually unpinned from the ones suggested by Habitica
+  // Items the user manually unpinned from the ones suggested by Slay
   unpinnedItems: [{
     _id: false,
     path: { $type: String },

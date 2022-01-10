@@ -7,10 +7,10 @@ describe('GET /export/history.csv', () => {
   xit('should return a valid CSV file with tasks history data', async () => {
     const user = await generateUser();
     let tasks = await user.post('/tasks/user', [
-      { type: 'daily', text: 'daily 1' },
-      { type: 'habit', text: 'habit 1' },
-      { type: 'habit', text: 'habit 2' },
-      { type: 'todo', text: 'todo 1' },
+      {type: 'daily', text: 'daily 1'},
+      {type: 'habit', text: 'habit 1'},
+      {type: 'habit', text: 'habit 2'},
+      {type: 'todo', text: 'todo 1'},
     ]);
 
     // to handle occasional inconsistency in task creation order

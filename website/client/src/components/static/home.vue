@@ -152,7 +152,7 @@
           <div class="col-12 col-sm-6 col-md-6 col-lg-6 offset-sm-3 text-center">
             <h2>{{ $t('gamifyYourLife') }}</h2>
             <p class="section-main">
-              {{ $t('aboutHabitica') }}
+              {{ $t('aboutSlay') }}
             </p>
           </div>
         </div>
@@ -261,13 +261,13 @@
             <p>{{ $t('levelUpAnywhereDesc') }}</p>
             <a
               class="app svg-icon"
-              href="https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica"
+              href="https://play.google.com/store/apps/details?id=com.habitrpg.android.slay"
               target="_blank"
               v-html="icons.googlePlay"
             ></a>
             <a
               class="app svg-icon"
-              href="https://itunes.apple.com/us/app/habitica-gamified-task-manager/id994882113?mt=8"
+              href="https://itunes.apple.com/us/app/slay-gamified-task-manager/id994882113?mt=8"
               target="_blank"
               v-html="icons.iosAppStore"
             ></a>
@@ -891,7 +891,7 @@ export default {
       google: process.env.GOOGLE_CLIENT_ID, // eslint-disable-line
     });
     this.$store.dispatch('common:setTitle', {
-      fullTitle: 'slay - Gamify Your Life',
+      fullTitle: 'Slay - Gamify Your Life',
     });
   },
   methods: {

@@ -17,7 +17,7 @@ const USERNAME_LENGTH_MAX = 20;
 
 // When the user signed up after having been invited to a group,
 // invite them automatically to the group
-async function _handleGroupInvitation (user, invite) {
+async function _handleGroupInvitation(user, invite) {
   // wrapping the code in a try because we don't want it to prevent the user from signing up
   // that's why errors are not translated
   try {
@@ -194,7 +194,7 @@ async function registerLocal (req, res, { isV3 = false }) {
     .remove({ email: savedUser.auth.local.email })
     .then(() => {
       if (existingUser) return;
-      if (newUser.registeredThrough === 'habitica-web') {
+      if (newUser.registeredThrough === 'slay-web') {
         sendTxnEmail(savedUser, 'welcome-v2b');
       } else {
         sendTxnEmail(savedUser, 'welcome');

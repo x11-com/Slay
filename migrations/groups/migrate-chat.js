@@ -9,11 +9,11 @@
 import {model as Group} from '../../website/server/models/group';
 import {chatModel as Chat} from '../../website/server/models/message';
 
-async function moveGroupChatToModel (skip = 0) {
+async function moveGroupChatToModel(skip = 0) {
   const groups = await Group.find({})
     .limit(50)
     .skip(skip)
-    .sort({ _id: -1 })
+    .sort({_id: -1})
     .exec();
 
   if (groups.length === 0) {

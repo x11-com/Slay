@@ -6,7 +6,7 @@ import {v4 as uuid} from 'uuid';
 const progressCount = 1000;
 let count = 0;
 
-async function updateUser (user) {
+async function updateUser(user) {
   count++;
 
   const set = {'flags.newStuff': true};

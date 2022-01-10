@@ -10,7 +10,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('all', () => ({
-    components: { },
+    components: {},
     data () {
       return {
         icon: positiveIcon,

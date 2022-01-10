@@ -229,7 +229,7 @@ export default {
     },
   },
   mounted () {
-    this.$root.$on('habitica:payment-success', data => {
+    this.$root.$on('slay:payment-success', data => {
       if (['subscription', 'groupPlan', 'gift-subscription'].indexOf(data.paymentType) !== -1) {
         data.subscription = subscriptionBlocks[data.subscriptionKey || data.gift.subscription.key];
       }
@@ -239,7 +239,7 @@ export default {
   },
   beforeDestroy () {
     this.paymentData = {};
-    this.$root.$off('habitica:payments-success');
+    this.$root.$off('slay:payments-success');
   },
   methods: {
     close () {

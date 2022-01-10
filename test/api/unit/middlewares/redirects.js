@@ -16,7 +16,7 @@ describe('redirects middleware', () => {
   context('forceSSL', () => {
     it('sends http requests to https', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IS_PROD').returns(true);
       req.protocol = 'http';
       req.originalUrl = '/static/front';
@@ -26,12 +26,12 @@ describe('redirects middleware', () => {
       attachRedirects.forceSSL(req, res, next);
 
       expect(res.redirect).to.be.calledOnce;
-      expect(res.redirect).to.be.calledWith('https://s1ay.com/static/front');
+      expect(res.redirect).to.be.calledWith('https://slay.com/static/front');
     });
 
     it('does not redirect https forwarded requests', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IS_PROD').returns(true);
       req.protocol = 'https';
       req.originalUrl = '/static/front';
@@ -45,7 +45,7 @@ describe('redirects middleware', () => {
 
     it('does not redirect outside of production environments', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IS_PROD').returns(false);
       req.protocol = 'http';
       req.originalUrl = '/static/front';
@@ -59,7 +59,7 @@ describe('redirects middleware', () => {
 
     it('does not redirect if base URL is not https', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('http://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('http://slay.com');
       nconfStub.withArgs('IS_PROD').returns(true);
       req.protocol = 'http';
       req.originalUrl = '/static/front';
@@ -73,7 +73,7 @@ describe('redirects middleware', () => {
 
     it('does not redirect if passed skip ssl request param is passed with corrrect key', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IS_PROD').returns(true);
       nconfStub.withArgs('SKIP_SSL_CHECK_KEY').returns('test-key');
 
@@ -89,7 +89,7 @@ describe('redirects middleware', () => {
 
     it('does redirect if skip ssl request param is passed with incorrrect key', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IS_PROD').returns(true);
       nconfStub.withArgs('SKIP_SSL_CHECK_KEY').returns('test-key');
 
@@ -101,12 +101,12 @@ describe('redirects middleware', () => {
       attachRedirects.forceSSL(req, res, next);
 
       expect(res.redirect).to.be.calledOnce;
-      expect(res.redirect).to.be.calledWith('https://s1ay.com/static/front?skipSSLCheck=INVALID');
+      expect(res.redirect).to.be.calledWith('https://slay.com/static/front?skipSSLCheck=INVALID');
     });
 
     it('does redirect if skip ssl check key is not set', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IS_PROD').returns(true);
       nconfStub.withArgs('SKIP_SSL_CHECK_KEY').returns(null);
 
@@ -118,110 +118,110 @@ describe('redirects middleware', () => {
       attachRedirects.forceSSL(req, res, next);
 
       expect(res.redirect).to.be.calledOnce;
-      expect(res.redirect).to.be.calledWith('https://s1ay.com/static/front');
+      expect(res.redirect).to.be.calledWith('https://slay.com/static/front');
     });
   });
 
-  context('forceHabitica', () => {
+  context('forceSlay', () => {
     it('sends requests with differing hostname to base URL host', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IGNORE_REDIRECT').returns('false');
       nconfStub.withArgs('IS_PROD').returns(true);
-      req.hostname = 'www.s1ay.com';
+      req.hostname = 'www.slay.com';
       req.method = 'GET';
       req.originalUrl = '/static/front';
       req.url = '/static/front';
 
       const attachRedirects = requireAgain(pathToRedirectsMiddleware);
 
-      attachRedirects.forceHabitica(req, res, next);
+      attachRedirects.forceSlay(req, res, next);
 
       expect(res.redirect).to.be.calledOnce;
-      expect(res.redirect).to.be.calledWith(301, 'https://s1ay.com/static/front');
+      expect(res.redirect).to.be.calledWith(301, 'https://slay.com/static/front');
     });
 
     it('does not redirect outside of production environments', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IGNORE_REDIRECT').returns('false');
       nconfStub.withArgs('IS_PROD').returns(false);
-      req.hostname = 'www.s1ay.com';
+      req.hostname = 'www.slay.com';
       req.method = 'GET';
       req.originalUrl = '/static/front';
       req.url = '/static/front';
 
       const attachRedirects = requireAgain(pathToRedirectsMiddleware);
 
-      attachRedirects.forceHabitica(req, res, next);
+      attachRedirects.forceSlay(req, res, next);
 
       expect(res.redirect).to.have.not.been.called;
     });
 
     it('does not redirect if env is set to ignore redirection', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IGNORE_REDIRECT').returns('true');
       nconfStub.withArgs('IS_PROD').returns(true);
-      req.hostname = 'www.s1ay.com';
+      req.hostname = 'www.slay.com';
       req.method = 'GET';
       req.originalUrl = '/static/front';
       req.url = '/static/front';
 
       const attachRedirects = requireAgain(pathToRedirectsMiddleware);
 
-      attachRedirects.forceHabitica(req, res, next);
+      attachRedirects.forceSlay(req, res, next);
 
       expect(res.redirect).to.have.not.been.called;
     });
 
     it('does not redirect if request hostname matches base URL host', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IGNORE_REDIRECT').returns('false');
       nconfStub.withArgs('IS_PROD').returns(true);
-      req.hostname = 's1ay.com';
+      req.hostname = 'slay.com';
       req.method = 'GET';
       req.originalUrl = '/static/front';
       req.url = '/static/front';
 
       const attachRedirects = requireAgain(pathToRedirectsMiddleware);
 
-      attachRedirects.forceHabitica(req, res, next);
+      attachRedirects.forceSlay(req, res, next);
 
       expect(res.redirect).to.have.not.been.called;
     });
 
     it('does not redirect if request is an API URL', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IGNORE_REDIRECT').returns('false');
       nconfStub.withArgs('IS_PROD').returns(true);
-      req.hostname = 'www.s1ay.com';
+      req.hostname = 'www.slay.com';
       req.method = 'GET';
       req.originalUrl = '/api/v3/challenges';
       req.url = '/api/v3/challenges';
 
       const attachRedirects = requireAgain(pathToRedirectsMiddleware);
 
-      attachRedirects.forceHabitica(req, res, next);
+      attachRedirects.forceSlay(req, res, next);
 
       expect(res.redirect).to.have.not.been.called;
     });
 
     it('does not redirect if request method is not GET', () => {
       const nconfStub = sandbox.stub(nconf, 'get');
-      nconfStub.withArgs('BASE_URL').returns('https://s1ay.com');
+      nconfStub.withArgs('BASE_URL').returns('https://slay.com');
       nconfStub.withArgs('IGNORE_REDIRECT').returns('false');
       nconfStub.withArgs('IS_PROD').returns(true);
-      req.hostname = 'www.s1ay.com';
+      req.hostname = 'www.slay.com';
       req.method = 'POST';
       req.originalUrl = '/static/front';
       req.url = '/static/front';
 
       const attachRedirects = requireAgain(pathToRedirectsMiddleware);
 
-      attachRedirects.forceHabitica(req, res, next);
+      attachRedirects.forceSlay(req, res, next);
 
       expect(res.redirect).to.have.not.been.called;
     });

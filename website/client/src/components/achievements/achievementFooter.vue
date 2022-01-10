@@ -2,7 +2,7 @@
   <div
     class="modal-footer"
   >
-    <!-- TODO disabled for now, see https://github.com/HabitRPG/habitica/issues/11283 -->
+    <!-- TODO disabled for now, see https://github.com/HabitRPG/slay/issues/11283 -->
   </div>
 </template>
 

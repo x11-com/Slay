@@ -3,7 +3,10 @@ import {each} from 'lodash';
 import {generateGroup, generateUser, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('GET /tasks/group/:groupId', () => {
-  let user; let group; let task; let
+  let user;
+  let group;
+  let task;
+  let
     groupWithTask;
   const tasks = [];
   const tasksToTest = {

@@ -9,7 +9,7 @@ import {BadRequest, NotAuthorized, NotFound,} from '../../../../website/common/s
 import i18n from '../../../../website/common/script/i18n';
 import errorMessage from '../../../../website/common/script/libs/errorMessage';
 
-function buyGear (user, req, analytics) {
+function buyGear(user, req, analytics) {
   const buyOp = new BuyMarketGearOperation(user, req, analytics);
 
   return buyOp.purchase();

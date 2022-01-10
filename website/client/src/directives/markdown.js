@@ -1,10 +1,10 @@
-import habiticaMarkdown from 'habitica-markdown';
+import slayMarkdown from 'slay-markdown';
 
 export default function markdown (el, { value, oldValue }) {
   if (value === oldValue) return;
 
   if (value) {
-    el.innerHTML = habiticaMarkdown.render(String(value));
+    el.innerHTML = slayMarkdown.render(String(value));
   } else {
     el.innerHTML = '';
   }

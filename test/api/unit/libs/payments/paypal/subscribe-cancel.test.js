@@ -6,13 +6,20 @@ import {model as User} from '../../../../../../website/server/models/user';
 import common from '../../../../../../website/common';
 import {createNonLeaderGroupMember} from '../paymentHelpers';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('paypal - subscribeCancel', () => {
   const subKey = 'basic_3mo';
-  let user; let group; let groupId; let customerId; let groupCustomerId; let
+  let user;
+  let group;
+  let groupId;
+  let customerId;
+  let groupCustomerId;
+  let
     nextBillingDate;
-  let paymentCancelSubscriptionSpy; let paypalBillingAgreementCancelStub; let
+  let paymentCancelSubscriptionSpy;
+  let paypalBillingAgreementCancelStub;
+  let
     paypalBillingAgreementGetStub;
 
   beforeEach(async () => {

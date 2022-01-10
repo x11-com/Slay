@@ -2,9 +2,9 @@
   "defaultHabit1Text": "Productive Work (Click the pencil to edit)",
   "defaultHabit2Text": "Eat Junk Food (Click the pencil to edit)",
   "defaultHabit3Text": "Take the Stairs/Elevator (Click the pencil to edit)",
-  "defaultHabit4Text": "Add a task to Habitica",
+  "defaultHabit4Text": "Add a task to Slay",
   "defaultHabit4Notes": "Either a Habit, a Daily, or a To-Do",
-  "defaultTodo1Text": "Liitu slay (Märgi mind ära!)",
+  "defaultTodo1Text": "Liitu Slay (Märgi mind ära!)",
   "defaultTodoNotes": "Sa saad kas ära täita selle Igapäevase Ülesande, muuta või ta eemaldada.",
   "defaultReward1Text": "15 minute break",
   "defaultReward2Text": "Reward yourself",
@@ -15,5 +15,5 @@
   "defaultTag4": "School",
   "defaultTag5": "Teams",
   "defaultTag6": "Chores",
-    "defaultTag7": "Creativity"
+  "defaultTag7": "Creativity"
 }

@@ -5,7 +5,9 @@ import shared from '../../../../website/common/script';
 import {generateChallenge, generateGroup, generateUser,} from '../../../helpers/api-unit.helper';
 
 describe('taskManager', () => {
-  let user; let group; let
+  let user;
+  let group;
+  let
     challenge;
   const testHabit = {
     text: 'test habit',

@@ -25,14 +25,14 @@ import {model as UserNotification} from './userNotification';
 import {sendChatPushNotifications} from '../libs/chat'; // eslint-disable-line import/no-cycle
 
 const questScrolls = shared.content.quests;
-const { questSeriesAchievements } = shared.content;
-const { Schema } = mongoose;
+const {questSeriesAchievements} = shared.content;
+const {Schema} = mongoose;
 
 export const INVITES_LIMIT = 100; // must not be greater than MAX_EMAIL_INVITES_BY_USER
-export const { TAVERN_ID } = shared;
+export const {TAVERN_ID} = shared;
 
 const NO_CHAT_NOTIFICATIONS = [TAVERN_ID];
-const { LARGE_GROUP_COUNT_MESSAGE_CUTOFF } = shared.constants;
+const {LARGE_GROUP_COUNT_MESSAGE_CUTOFF} = shared.constants;
 const { MAX_SUMMARY_SIZE_FOR_GUILDS } = shared.constants;
 const { GUILDS_PER_PAGE } = shared.constants;
 
@@ -641,7 +641,7 @@ schema.methods.handleQuestInvitation = async function handleQuestInvitation (use
 
   // Handle quest invitation atomically (update only current member when still undecided)
   // to prevent multiple concurrent requests overriding updates
-  // see https://github.com/HabitRPG/habitica/issues/11398
+  // see https://github.com/HabitRPG/slay/issues/11398
   const Group = this.constructor;
   const result = await Group.update(
     {

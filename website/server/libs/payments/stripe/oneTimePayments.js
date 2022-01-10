@@ -6,7 +6,7 @@ import {getGemsBlock} from '../gems'; // eslint-disable-line import/no-cycle
 import {checkSubData} from './subscriptions'; // eslint-disable-line import/no-cycle
 import {model as User} from '../../../models/user'; // eslint-disable-line import/no-cycle
 
-function getGiftAmount (gift) {
+function getGiftAmount(gift) {
   if (gift.type === 'subscription') {
     return `${shared.content.subscriptionBlocks[gift.subscription.key].price * 100}`;
   }

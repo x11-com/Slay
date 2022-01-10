@@ -731,7 +731,7 @@ import member from '@/assets/svg/member-icon.svg';
 import staff from '@/assets/svg/tier-staff.svg';
 import error404 from '../404';
 // @TODO: EMAILS.COMMUNITY_MANAGER_EMAIL
-const COMMUNITY_MANAGER_EMAIL = 'admin@s1ay.com';
+const COMMUNITY_MANAGER_EMAIL = 'admin@slay.com';
 
 export default {
   directives: {
@@ -833,7 +833,7 @@ export default {
     this.loadUser();
     this.oldTitle = this.$store.state.title;
     this.selectPage(this.startingPage);
-    this.$root.$on('habitica:restoreTitle', () => {
+    this.$root.$on('slay:restoreTitle', () => {
       if (this.oldTitle) {
         this.$store.dispatch('common:setTitle', {
           fullTitle: this.oldTitle,
@@ -842,7 +842,7 @@ export default {
     });
   },
   beforeDestroy () {
-    this.$root.$off('habitica:restoreTitle');
+    this.$root.$off('slay:restoreTitle');
   },
   methods: {
     async loadUser () {
@@ -864,7 +864,7 @@ export default {
         if (response.response && response.response.status === 404) {
           user = null;
           this.$store.dispatch('snackbars:add', {
-            title: 'Habitica',
+            title: 'Slay',
             text: this.$t('messageDeletedUser'),
             type: 'error',
             timeout: false,
@@ -962,7 +962,7 @@ export default {
       axios.post(`/api/v4/user/block/${this.user._id}`);
     },
     openSendGemsModal () {
-      this.$root.$emit('habitica::send-gems', this.user);
+      this.$root.$emit('slay::send-gems', this.user);
     },
     adminTurnOnShadowMuting () {
       if (!this.hero.flags) {

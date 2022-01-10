@@ -11,7 +11,7 @@ const TASK_KEYS_TO_REMOVE = [
   'id', 'streak', 'createdAt', 'challenge',
 ];
 
-export function addUserJoinChallengeNotification (user) {
+export function addUserJoinChallengeNotification(user) {
   if (user.achievements.joinedChallenge) return;
   user.achievements.joinedChallenge = true;
   user.addNotification('CHALLENGE_JOINED_ACHIEVEMENT');
@@ -121,7 +121,7 @@ export function createChallengeQuery (query) {
                     input: '$categories',
                     as: 'cat',
                     cond: {
-                      $eq: ['$$cat.slug', 'habitica_official'],
+                      $eq: ['$$cat.slug', 'slay_official'],
                     },
                   },
                 },

@@ -14,7 +14,7 @@ const analytics = getAnalyticsServiceByEnvironment();
 
 const questScrolls = common.content.quests;
 
-function canStartQuestAutomatically (group) {
+function canStartQuestAutomatically(group) {
   // If all members are either true (accepted) or false (rejected) return true
   // If any member is null/undefined (undecided) return false
   return _.every(group.quest.members, _.isBoolean);

@@ -2,10 +2,14 @@ import {find} from 'lodash';
 import {createAndPopulateGroup, translate as t,} from '../../../../../helpers/api-integration/v3';
 
 describe('POST /tasks/:id/needs-work/:userId', () => {
-  let user; let guild; let member; let member2; let
+  let user;
+  let guild;
+  let member;
+  let member2;
+  let
     task;
 
-  function findAssignedTask (memberTask) {
+  function findAssignedTask(memberTask) {
     return memberTask.group.id === guild._id;
   }
 

@@ -74,13 +74,13 @@ export default {
     };
   },
   mounted () {
-    this.$root.$on('habitica:cancel-subscription-confirm', config => {
+    this.$root.$on('slay:cancel-subscription-confirm', config => {
       this.config = config;
       this.$root.$emit('bv::show::modal', 'subscription-cancel-modal');
     });
   },
   beforeDestroy () {
-    this.$root.$off('habitica:cancel-subscription-confirm');
+    this.$root.$off('slay:cancel-subscription-confirm');
   },
   methods: {
     close () {

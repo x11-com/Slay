@@ -340,7 +340,7 @@ schema.methods.cancelSubscription = async function cancelSubscription (options =
   } if (plan.paymentMethod === paypalPayments.constants.PAYMENT_METHOD) {
     return paypalPayments.subscribeCancel(options);
   }
-  // Android and iOS subscriptions cannot be cancelled by Habitica.
+  // Android and iOS subscriptions cannot be cancelled by Slay.
 
   return payments.cancelSubscription(options);
 };
@@ -366,7 +366,7 @@ schema.methods.daysUserHasMissed = function daysUserHasMissed (now, req = {}) {
   // NB: All timezone offsets can be 0, so can't use `... || ...` to apply non-zero defaults
 
   if (timezoneUtcOffsetFromBrowser !== timezoneUtcOffsetFromUserPrefs) {
-    // The user's browser has just told slay that the user's timezone has
+    // The user's browser has just told Slay that the user's timezone has
     // changed so store and use the new zone.
     this.preferences.timezoneOffset = -timezoneUtcOffsetFromBrowser;
     timezoneUtcOffsetFromUserPrefs = timezoneUtcOffsetFromBrowser;

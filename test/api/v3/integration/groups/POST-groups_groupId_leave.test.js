@@ -300,7 +300,7 @@ describe('POST /groups/:groupId/leave', () => {
           customerId: 'customer-id',
           paymentMethod: 'Payment Method',
           headers: {
-            'x-client': 'habitica-web',
+            'x-client': 'slay-web',
             'user-agent': '',
           },
         };

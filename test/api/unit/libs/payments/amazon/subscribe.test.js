@@ -7,11 +7,18 @@ import amzLib from '../../../../../../website/server/libs/payments/amazon';
 import payments from '../../../../../../website/server/libs/payments/payments';
 import common from '../../../../../../website/common';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('Amazon Payments - Subscribe', () => {
   const subKey = 'basic_3mo';
-  let user; let group; let amount; let billingAgreementId; let sub; let coupon; let groupId; let
+  let user;
+  let group;
+  let amount;
+  let billingAgreementId;
+  let sub;
+  let coupon;
+  let groupId;
+  let
     headers;
   let amazonSetBillingAgreementDetailsSpy;
   let amazonConfirmBillingAgreementSpy;

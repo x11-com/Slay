@@ -8,7 +8,7 @@ stories.addDecorator(withKnobs);
 
 stories
   .add('states', () => ({
-    components: { },
+    components: {},
     template: `
       <div style="position: absolute; margin: 20px">
         <textarea autofocus ref="area">Normal {{text}}</textarea>

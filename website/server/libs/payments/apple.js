@@ -61,17 +61,17 @@ api.verifyGemPurchase = async function verifyGemPurchase (options) {
 
       let gemsBlockKey;
       switch (purchaseData.productId) { // eslint-disable-line default-case
-        case 'com.habitrpg.ios.Habitica.4gems':
+        case 'com.habitrpg.ios.Slay.4gems':
           gemsBlockKey = '4gems';
           break;
-        case 'com.habitrpg.ios.Habitica.20gems':
-        case 'com.habitrpg.ios.Habitica.21gems':
+        case 'com.habitrpg.ios.Slay.20gems':
+        case 'com.habitrpg.ios.Slay.21gems':
           gemsBlockKey = '21gems';
           break;
-        case 'com.habitrpg.ios.Habitica.42gems':
+        case 'com.habitrpg.ios.Slay.42gems':
           gemsBlockKey = '42gems';
           break;
-        case 'com.habitrpg.ios.Habitica.84gems':
+        case 'com.habitrpg.ios.Slay.84gems':
           gemsBlockKey = '84gems';
           break;
       }
@@ -114,13 +114,13 @@ api.subscribe = async function subscribe (sku, user, receipt, headers, nextPayme
     case 'subscription1month':
       subCode = 'basic_earned';
       break;
-    case 'com.habitrpg.ios.habitica.subscription.3month':
+    case 'com.habitrpg.ios.slay.subscription.3month':
       subCode = 'basic_3mo';
       break;
-    case 'com.habitrpg.ios.habitica.subscription.6month':
+    case 'com.habitrpg.ios.slay.subscription.6month':
       subCode = 'basic_6mo';
       break;
-    case 'com.habitrpg.ios.habitica.subscription.12month':
+    case 'com.habitrpg.ios.slay.subscription.12month':
       subCode = 'basic_12mo';
       break;
   }
@@ -178,16 +178,16 @@ api.noRenewSubscribe = async function noRenewSubscribe (options) {
 
   let subCode;
   switch (sku) { // eslint-disable-line default-case
-    case 'com.habitrpg.ios.habitica.norenew_subscription.1month':
+    case 'com.habitrpg.ios.slay.norenew_subscription.1month':
       subCode = 'basic_earned';
       break;
-    case 'com.habitrpg.ios.habitica.norenew_subscription.3month':
+    case 'com.habitrpg.ios.slay.norenew_subscription.3month':
       subCode = 'basic_3mo';
       break;
-    case 'com.habitrpg.ios.habitica.norenew_subscription.6month':
+    case 'com.habitrpg.ios.slay.norenew_subscription.6month':
       subCode = 'basic_6mo';
       break;
-    case 'com.habitrpg.ios.habitica.norenew_subscription.12month':
+    case 'com.habitrpg.ios.slay.norenew_subscription.12month':
       subCode = 'basic_12mo';
       break;
   }

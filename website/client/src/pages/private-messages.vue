@@ -553,7 +553,7 @@ import Vue from 'vue';
 import moment from 'moment';
 import groupBy from 'lodash/groupBy';
 import orderBy from 'lodash/orderBy';
-import habiticaMarkdown from 'habitica-markdown';
+import slayMarkdown from 'slay-markdown';
 import axios from 'axios';
 import { MAX_MESSAGE_LENGTH } from '@/../../common/script/constants';
 import { mapState } from '@/libs/store';
@@ -946,7 +946,7 @@ export default {
     },
     parseMarkdown (text) {
       if (!text) return null;
-      return habiticaMarkdown.render(String(text));
+      return slayMarkdown.render(String(text));
     },
     infiniteScrollTrigger () {
       // show loading and wait until the loadMore debounced

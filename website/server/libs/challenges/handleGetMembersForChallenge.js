@@ -5,9 +5,9 @@ import {model as Group} from '../../models/group';
 import * as Tasks from '../../models/task';
 import {NotFound} from '../errors';
 
-async function getMembersTasksForChallenge (members, challenge) {
+async function getMembersTasksForChallenge(members, challenge) {
   const challengeTasks = await Tasks.Task.find({
-    userId: { $in: members.map(m => m._id) },
+    userId: {$in: members.map(m => m._id)},
     'challenge.id': challenge._id,
   })
     .select('-tags -checklist') // We don't want to return tags and checklists publicly

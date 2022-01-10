@@ -958,12 +958,14 @@
   width: 114px;
   height: 87px;
 }
-.weapon_armoire_habiticanDiploma {
+
+.weapon_armoire_slaynDiploma {
   background-image: url('~@/assets/images/sprites/spritesmith-main-8.png');
   background-position: -1247px -728px;
   width: 90px;
   height: 90px;
 }
+
 .weapon_armoire_handyHook {
   background-image: url('~@/assets/images/sprites/spritesmith-main-8.png');
   background-position: -811px -546px;

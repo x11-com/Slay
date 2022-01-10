@@ -20,7 +20,7 @@ describe('Apple Payments', () => {
 
     beforeEach(() => {
       token = 'testToken';
-      sku = 'com.habitrpg.ios.habitica.iap.21gems';
+      sku = 'com.habitrpg.ios.slay.iap.21gems';
       user = new User();
       receipt = `{"token": "${token}", "productId": "${sku}"}`;
       headers = {};
@@ -33,7 +33,7 @@ describe('Apple Payments', () => {
         .returns(true);
       iapGetPurchaseDataStub = sinon.stub(iap, 'getPurchaseData')
         .returns([{
-          productId: 'com.habitrpg.ios.Habitica.21gems',
+          productId: 'com.habitrpg.ios.Slay.21gems',
           transactionId: token,
         }]);
       paymentBuyGemsStub = sinon.stub(payments, 'buyGems').resolves({});
@@ -107,23 +107,23 @@ describe('Apple Payments', () => {
 
     const gemsCanPurchase = [
       {
-        productId: 'com.habitrpg.ios.Habitica.4gems',
+        productId: 'com.habitrpg.ios.Slay.4gems',
         gemsBlock: '4gems',
       },
       {
-        productId: 'com.habitrpg.ios.Habitica.20gems',
+        productId: 'com.habitrpg.ios.Slay.20gems',
         gemsBlock: '21gems',
       },
       {
-        productId: 'com.habitrpg.ios.Habitica.21gems',
+        productId: 'com.habitrpg.ios.Slay.21gems',
         gemsBlock: '21gems',
       },
       {
-        productId: 'com.habitrpg.ios.Habitica.42gems',
+        productId: 'com.habitrpg.ios.Slay.42gems',
         gemsBlock: '42gems',
       },
       {
-        productId: 'com.habitrpg.ios.Habitica.84gems',
+        productId: 'com.habitrpg.ios.Slay.84gems',
         gemsBlock: '84gems',
       },
     ];
@@ -212,7 +212,7 @@ describe('Apple Payments', () => {
 
     beforeEach(() => {
       sub = common.content.subscriptionBlocks[subKey];
-      sku = 'com.habitrpg.ios.habitica.subscription.3month';
+      sku = 'com.habitrpg.ios.slay.subscription.3month';
 
       token = 'test-token';
       headers = {};
@@ -278,15 +278,15 @@ describe('Apple Payments', () => {
         subKey: 'basic_earned',
       },
       {
-        sku: 'com.habitrpg.ios.habitica.subscription.3month',
+        sku: 'com.habitrpg.ios.slay.subscription.3month',
         subKey: 'basic_3mo',
       },
       {
-        sku: 'com.habitrpg.ios.habitica.subscription.6month',
+        sku: 'com.habitrpg.ios.slay.subscription.6month',
         subKey: 'basic_6mo',
       },
       {
-        sku: 'com.habitrpg.ios.habitica.subscription.12month',
+        sku: 'com.habitrpg.ios.slay.subscription.12month',
         subKey: 'basic_12mo',
       },
     ];

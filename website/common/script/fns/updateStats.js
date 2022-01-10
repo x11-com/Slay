@@ -3,7 +3,7 @@ import {MAX_HEALTH, MAX_LEVEL_HARD_CAP, MAX_STAT_POINTS,} from '../constants';
 import {toNextLevel} from '../statHelpers';
 import autoAllocate from './autoAllocate';
 
-export default function updateStats (user, stats) {
+export default function updateStats(user, stats) {
   let allocatedStatPoints;
   let totalStatPoints;
   let experienceToNextLevel;

@@ -1,4 +1,4 @@
-import {generateGroup, generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
+import {generateGroup, generateUser, resetSlayDB, translate as t,} from '../../../../helpers/api-integration/v3';
 import {TAVERN_ID,} from '../../../../../website/server/models/group';
 import apiError from '../../../../../website/server/libs/apiError';
 
@@ -19,7 +19,7 @@ describe('GET /groups', () => {
   let privateGuildUserIsMemberOf;
 
   before(async () => {
-    await resetHabiticaDB();
+    await resetSlayDB();
 
     const leader = await generateUser({ balance: 10 });
     user = await generateUser({ balance: 4 });

@@ -8,7 +8,7 @@ describe('POST /chat/:chatId/like', () => {
   let anotherUser;
 
   before(async () => {
-    const { group, groupLeader, members } = await createAndPopulateGroup({
+    const {group, groupLeader, members} = await createAndPopulateGroup({
       groupDetails: {
         name: 'Test Guild',
         type: 'guild',

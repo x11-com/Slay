@@ -10,7 +10,7 @@ import {
 } from '../mongo';
 
 class ApiObject {
-  constructor (options) {
+  constructor(options) {
     assign(this, options);
   }
 

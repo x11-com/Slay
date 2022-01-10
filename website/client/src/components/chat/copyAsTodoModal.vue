@@ -52,7 +52,7 @@ import Task from '@/components/tasks/task';
 import taskDefaults from '@/../../common/script/libs/taskDefaults';
 import { TAVERN_ID } from '@/../../common/script/constants';
 
-const baseUrl = 'https://s1ay.com';
+const baseUrl = 'https://slay.com';
 
 export default {
   directives: {
@@ -70,7 +70,7 @@ export default {
     };
   },
   mounted () {
-    this.$root.$on('habitica::copy-as-todo', message => {
+    this.$root.$on('slay::copy-as-todo', message => {
       const notes = `${message.user || 'system message'}${message.user ? ' wrote' : ''} in [${this.groupName}](${this.groupPath()})`;
       const newTask = {
         text: message.text,
@@ -82,7 +82,7 @@ export default {
     });
   },
   beforeDestroy () {
-    this.$root.$off('habitica::copy-as-todo');
+    this.$root.$off('slay::copy-as-todo');
   },
   methods: {
     ...mapActions({

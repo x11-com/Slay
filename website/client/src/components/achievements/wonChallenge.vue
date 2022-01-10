@@ -144,7 +144,7 @@
 </style>
 
 <script>
-import habiticaMarkdown from 'habitica-markdown';
+import slayMarkdown from 'slay-markdown';
 import closeIcon from '@/components/shared/closeIcon';
 import sparkles from '@/assets/svg/star-group.svg';
 import gem from '@/assets/svg/gem.svg';
@@ -171,17 +171,17 @@ export default {
     ...mapState({ user: 'user.data' }),
     challengeName () {
       if (!this.notification) return null;
-      return habiticaMarkdown.render(String(this.notification.data.name));
+      return slayMarkdown.render(String(this.notification.data.name));
     },
   },
   mounted () {
-    this.$root.$on('habitica:won-challenge', notification => {
+    this.$root.$on('slay:won-challenge', notification => {
       this.notification = notification;
       this.$root.$emit('bv::show::modal', 'won-challenge');
     });
   },
   beforeDestroy () {
-    this.$root.$off('habitica:won-challenge');
+    this.$root.$off('slay:won-challenge');
   },
   methods: {
     close () {

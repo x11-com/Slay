@@ -117,7 +117,7 @@ export function sendNotification (user, details = {}) {
             },
             sound: 'default',
             category: details.category,
-            topic: 'com.habitrpg.ios.Habitica',
+            topic: 'com.habitrpg.ios.Slay',
             payload,
           });
           apnProvider.send(notification, pushDevice.regId)

@@ -33,7 +33,7 @@ async function deleteAmplitudeData (userId, email) {
   }
 }
 
-async function deleteHabiticaData (user, email) {
+async function deleteSlayData(user, email) {
   const set = {
     'auth.blocked': false,
     'auth.local.hashed_password': '$2a$10$QDnNh1j1yMPnTXDEOV38xOePEWFd4X8DSYwAM8XTmqmacG5X0DKjW',
@@ -41,8 +41,8 @@ async function deleteHabiticaData (user, email) {
   };
   if (!user.auth.local.email) set['auth.local.email'] = `${user._id}@example.com`;
   await User.update(
-    { _id: user._id },
-    { $set: set },
+    {_id: user._id},
+    {$set: set},
   );
   await new Promise(resolve => setTimeout(resolve, 1000));
   const response = await axios.delete(
@@ -62,9 +62,9 @@ async function deleteHabiticaData (user, email) {
 
   if (response) {
     if (response.status === 200) {
-      console.log(`${user._id} (${email}) removed from Habitica. Last login: ${user.auth.timestamps.loggedin}`);
+      console.log(`${user._id} (${email}) removed from Slay. Last login: ${user.auth.timestamps.loggedin}`);
     } else {
-      console.log(`${user._id} (${email}) slay response: ${response.status} ${response.statusText}`);
+      console.log(`${user._id} (${email}) Slay response: ${response.status} ${response.statusText}`);
     }
   }
 }
@@ -99,7 +99,7 @@ async function processEmailAddress (email) {
   await new Promise(resolve => setTimeout(resolve, 1000));
   return Promise.all(users.map(user => (async () => {
     await deleteAmplitudeData(user._id, email); // eslint-disable-line no-await-in-loop
-    await deleteHabiticaData(user, email); // eslint-disable-line no-await-in-loop
+    await deleteSlayData(user, email); // eslint-disable-line no-await-in-loop
   })()));
 }
 

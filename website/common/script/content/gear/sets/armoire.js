@@ -8,7 +8,7 @@ import t from '../../translation';
 
 const armor = {
   lunarArmor: {
-    notes: t('armorArmoireLunarArmorNotes', { str: 7, int: 7 }),
+    notes: t('armorArmoireLunarArmorNotes', {str: 7, int: 7}),
     str: 7,
     int: 7,
     set: 'soothing',
@@ -1137,7 +1137,7 @@ const weapon = {
     twoHanded: true,
     set: 'basicArcher',
   },
-  habiticanDiploma: {
+  slaynDiploma: {
     int: 11,
     set: 'graduate',
   },

@@ -13,7 +13,8 @@ import {defer, generateUser, sleep,} from '../../../helpers/api-unit.helper';
 import logger from '../../../../website/server/libs/logger';
 
 describe('webhooks', () => {
-  let webhooks; let
+  let webhooks;
+  let
     user;
 
   beforeEach(() => {

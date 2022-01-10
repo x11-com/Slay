@@ -12,15 +12,15 @@ import {sendTxn as txnEmail} from '../libs/email'; // eslint-disable-line import
 import {sendNotification as sendPushNotification} from '../libs/pushNotifications'; // eslint-disable-line import/no-cycle
 import {setNextDue, syncableAttrs} from '../libs/tasks/utils';
 
-const { Schema } = mongoose;
+const {Schema} = mongoose;
 
-const { MIN_SHORTNAME_SIZE_FOR_CHALLENGES } = shared.constants;
-const { MAX_SUMMARY_SIZE_FOR_CHALLENGES } = shared.constants;
+const {MIN_SHORTNAME_SIZE_FOR_CHALLENGES} = shared.constants;
+const {MAX_SUMMARY_SIZE_FOR_CHALLENGES} = shared.constants;
 
 const schema = new Schema({
-  name: { $type: String, required: true },
-  shortName: { $type: String, required: true, minlength: MIN_SHORTNAME_SIZE_FOR_CHALLENGES },
-  summary: { $type: String, maxlength: MAX_SUMMARY_SIZE_FOR_CHALLENGES },
+  name: {$type: String, required: true},
+  shortName: {$type: String, required: true, minlength: MIN_SHORTNAME_SIZE_FOR_CHALLENGES},
+  summary: {$type: String, maxlength: MAX_SUMMARY_SIZE_FOR_CHALLENGES},
   description: String,
   official: { $type: Boolean, default: false },
   tasksOrder: {
@@ -99,7 +99,7 @@ schema.methods.canJoin = function canJoinChallenge (user, group) {
 schema.methods.addToUser = async function addChallengeToUser (user) {
   // Add challenge to users challenges atomically (with a condition that checks that it
   // is not there already) to prevent multiple concurrent requests from passing through
-  // see https://github.com/HabitRPG/habitica/issues/11295
+  // see https://github.com/HabitRPG/slay/issues/11295
   const result = await User.update(
     {
       _id: user._id,

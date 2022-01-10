@@ -2,12 +2,12 @@ import {getGroupUrl, getUserInfo} from '../email';
 import {getAuthorEmailFromMessage} from '../chat';
 
 export default class ChatReporter {
-  constructor (req, res) {
+  constructor(req, res) {
     this.req = req;
     this.res = res;
   }
 
-  async validate () { // eslint-disable-line class-methods-use-this
+  async validate() { // eslint-disable-line class-methods-use-this
     throw new Error('Not implemented');
   }
 

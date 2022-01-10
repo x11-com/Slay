@@ -4,7 +4,7 @@
   "defaultHabit3Text": "Šel po stopnicah/z dvigalom (za urejanje kliknite na svinčnik)",
   "defaultHabit4Text": "Dodaj nalogo",
   "defaultHabit4Notes": "Navado, dnevno nalogo ali opravek.",
-  "defaultTodo1Text": "Pridruži se skupnosti slay (obkljukajte me!)",
+  "defaultTodo1Text": "Pridruži se skupnosti Slay (obkljukajte me!)",
   "defaultTodoNotes": "Ta opravek lahko zaključite, uredite ali izbrišete.",
   "defaultReward1Text": "15 minutna pavza",
   "defaultReward2Text": "Nagradite se",
@@ -15,5 +15,5 @@
   "defaultTag4": "Šola",
   "defaultTag5": "Ekipe",
   "defaultTag6": "Hišna opravila",
-    "defaultTag7": "Kreativnost"
+  "defaultTag7": "Kreativnost"
 }

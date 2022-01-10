@@ -2,7 +2,9 @@ import {generateReq, generateRes,} from '../../../helpers/api-unit.helper';
 import {authWithHeaders as authWithHeadersFactory} from '../../../../website/server/middlewares/auth';
 
 describe('auth middleware', () => {
-  let res; let req; let
+  let res;
+  let req;
+  let
     user;
 
   beforeEach(async () => {

@@ -3,7 +3,7 @@ import {disableCache,} from '../../middlewares/cache';
 const api = {};
 
 /**
- * @api {get} /api/v3/status Get Habitica's API status
+ * @api {get} /api/v3/status Get Slay's API status
  * @apiName GetStatus
  * @apiGroup Status
  *

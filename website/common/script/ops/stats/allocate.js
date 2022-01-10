@@ -5,11 +5,11 @@ import i18n from '../../i18n';
 import errorMessage from '../../libs/errorMessage';
 import hasClass from '../../libs/hasClass';
 
-export default function allocate (user, req = {}) {
+export default function allocate(user, req = {}) {
   const stat = get(req, 'query.stat', 'str');
 
   if (ATTRIBUTES.indexOf(stat) === -1) {
-    throw new BadRequest(errorMessage('invalidAttribute', { attr: stat }));
+    throw new BadRequest(errorMessage('invalidAttribute', {attr: stat}));
   }
 
   if (!hasClass(user)) {

@@ -10,7 +10,7 @@ import {resolve} from 'path';
 /*
  * Get access to configruable values
  */
-nconf.argv().env().file({ file: 'config.json' });
+nconf.argv().env().file({file: 'config.json'});
 export const conf = nconf;
 
 /*

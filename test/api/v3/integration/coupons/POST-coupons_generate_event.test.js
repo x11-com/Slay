@@ -1,11 +1,11 @@
 import couponCode from 'coupon-code';
-import {generateUser, resetHabiticaDB, translate as t,} from '../../../../helpers/api-integration/v3';
+import {generateUser, resetSlayDB, translate as t,} from '../../../../helpers/api-integration/v3';
 import apiError from '../../../../../website/server/libs/apiError';
 
 describe('POST /coupons/generate/:event', () => {
   let user;
   before(async () => {
-    await resetHabiticaDB();
+    await resetSlayDB();
   });
 
   beforeEach(async () => {

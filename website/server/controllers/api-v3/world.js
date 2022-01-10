@@ -1,4 +1,8 @@
-import {getCurrentEvent, getCurrentEventList, getWorldBoss,} from '../../libs/worldState';
+import {
+  getCurrentEvent,
+  getCurrentEventList,
+  getWorldBoss,
+} from '../../libs/worldState';
 
 const api = {};
 

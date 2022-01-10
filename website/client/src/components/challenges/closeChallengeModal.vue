@@ -18,7 +18,7 @@
       </div>
       <div class="row text-center">
         <div class="col-12">
-          <div class="support-habitica">
+          <div class="support-slay">
             <!-- @TODO: Add challenge achievement badge here-->
           </div>
         </div>
@@ -87,7 +87,7 @@
     }
 
     .support-slay {
-      background-image: url('~@/assets/svg/for-css/support-habitica-gems.svg');
+      background-image: url('~@/assets/svg/for-css/support-slay-gems.svg');
       width: 325px;
       height: 89px;
       margin: 0 auto;

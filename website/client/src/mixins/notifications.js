@@ -1,16 +1,16 @@
-import habiticaMarkdown from 'habitica-markdown';
+import slayMarkdown from 'slay-markdown';
 import {mapState} from '@/libs/store';
 import {getDropClass, getSign, getXPMessage, round,} from '@/libs/notifications';
 
 // See https://stackoverflow.com/questions/4187146/truncate-number-to-two-decimal-places-without-rounding
-function toFixedWithoutRounding (num, fixed) {
+function toFixedWithoutRounding(num, fixed) {
   const re = new RegExp(`^-?\\d+(?:\.\\d{0,${(fixed || -1)}})?`); // eslint-disable-line no-useless-escape
   return num.toString().match(re)[0];
 }
 
 export default {
   computed: {
-    ...mapState({ notifications: 'notificationStore' }),
+    ...mapState({notifications: 'notificationStore'}),
   },
   methods: {
     coins (money) {
@@ -49,7 +49,7 @@ export default {
     },
     markdown (val) {
       if (!val) return;
-      const parsedMarkdown = habiticaMarkdown.render(String(val));
+      const parsedMarkdown = slayMarkdown.render(String(val));
       this.notify(parsedMarkdown, 'info');
     },
     mp (val) {

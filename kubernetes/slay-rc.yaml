@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: habitica
+  name: slay
   labels:
-    name: habitica
+    name: slay
 spec:
   replicas: 4
   selector:
-    name: habitica
+    name: slay
   template:
     metadata:
       labels:
-        name: habitica
+        name: slay
     spec:
       containers:
-      - name: habitica
+      - name: slay
         image: ksonney/habitrpg:latest
         env:
           - name: NODE_DB_URI
@@ -22,4 +22,4 @@ spec:
         ports:
           - containerPort: 3000
             hostPort: 3000
-            name: habitica
+            name: slay

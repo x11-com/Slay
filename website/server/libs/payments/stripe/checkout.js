@@ -10,7 +10,7 @@ import {validateGiftMessage} from '../gems'; // eslint-disable-line import/no-cy
 
 const BASE_URL = nconf.get('BASE_URL');
 
-export async function createCheckoutSession (options, stripeInc) {
+export async function createCheckoutSession(options, stripeInc) {
   const {
     user,
     gift,

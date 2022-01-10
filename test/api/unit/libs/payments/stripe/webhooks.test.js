@@ -11,7 +11,7 @@ import logger from '../../../../../../website/server/libs/logger';
 import * as oneTimePayments from '../../../../../../website/server/libs/payments/stripe/oneTimePayments';
 import * as subscriptions from '../../../../../../website/server/libs/payments/stripe/subscriptions';
 
-const { i18n } = common;
+const {i18n} = common;
 
 describe('Stripe - Webhooks', () => {
   const stripe = stripeModule('test');

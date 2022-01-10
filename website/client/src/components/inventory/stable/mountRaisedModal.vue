@@ -98,10 +98,10 @@ export default {
     };
   },
   mounted () {
-    this.$root.$on('habitica::mount-raised', this.openDialog);
+    this.$root.$on('slay::mount-raised', this.openDialog);
   },
   beforeDestroy () {
-    this.$root.$off('habitica::mount-raised', this.openDialog);
+    this.$root.$off('slay::mount-raised', this.openDialog);
   },
   methods: {
     openDialog (mountKey) {

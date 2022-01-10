@@ -6,7 +6,9 @@ import {NotAuthorized} from '../../../../website/server/libs/errors';
 import apiError from '../../../../website/server/libs/apiError';
 
 describe('ensure access middlewares', () => {
-  let res; let req; let
+  let res;
+  let req;
+  let
     next;
 
   beforeEach(() => {

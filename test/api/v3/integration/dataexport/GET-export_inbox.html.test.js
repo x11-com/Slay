@@ -36,7 +36,7 @@ describe('GET /export/inbox.html', () => {
   it('renders the markdown messages as html', async () => {
     const res = await user.get('/export/inbox.html');
 
-    expect(res).to.include('img class="habitica-emoji"');
+    expect(res).to.include('img class="slay-emoji"');
     expect(res).to.include('<h1>Hello!</h1>');
     expect(res).to.include('<li>list 1</li>');
   });
@@ -44,7 +44,7 @@ describe('GET /export/inbox.html', () => {
   it('sorts messages from newest to oldest', async () => {
     const res = await user.get('/export/inbox.html');
 
-    const emojiPosition = res.indexOf('img class="habitica-emoji"');
+    const emojiPosition = res.indexOf('img class="slay-emoji"');
     const headingPosition = res.indexOf('<h1>Hello!</h1>');
     const listPosition = res.indexOf('<li>list 1</li>');
 

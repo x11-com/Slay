@@ -6,7 +6,10 @@ import * as Tasks from '../../../../website/server/models/task';
 import common from '../../../../website/common';
 
 describe('Challenge Model', () => {
-  let guild; let leader; let challenge; let
+  let guild;
+  let leader;
+  let challenge;
+  let
     task;
   const tasksToTest = {
     habit: {

@@ -38,12 +38,12 @@ describe('Category Tags', () => {
     wrapper.setProps({
       categories: [
         {
-          name: 'habitica_official',
+          name: 'slay_official',
         },
       ],
     });
     expect(wrapper.contains('.category-label-purple')).to.eq(true);
-    expect(wrapper.find('.category-label').text()).to.eq('habitica_official');
+    expect(wrapper.find('.category-label').text()).to.eq('slay_official');
   });
 
   it('displays owner label', () => {

@@ -2,9 +2,9 @@
   "defaultHabit1Text": "Kerja Produktif (Tekan pensel untuk edit)",
   "defaultHabit2Text": "Makan Makanan Ringan (Tekan pensel until edit)",
   "defaultHabit3Text": "Gunakan Tangga/Lif (Tekan pensel untuk edit)",
-  "defaultHabit4Text": "Tambah tugasan ke Habitica",
+  "defaultHabit4Text": "Tambah tugasan ke Slay",
   "defaultHabit4Notes": "Sama ada habit, tugasan harian atau To-Do",
-  "defaultTodo1Text": "Sertailah slay (Sila potongkan saya!)",
+  "defaultTodo1Text": "Sertailah Slay (Sila potongkan saya!)",
   "defaultTodoNotes": "Anda boleh selesaikan, editkan, atau buangkan sesuatu kotak semak misi yang perlu anda buat.",
   "defaultReward1Text": "Rehat selama 15 minit",
   "defaultReward2Text": "Ganjarkan Diri Anda",
@@ -15,5 +15,5 @@
   "defaultTag4": "Sekolah",
   "defaultTag5": "Pasukan",
   "defaultTag6": "Pekerjaan Rumah",
-    "defaultTag7": "Kreativiti"
+  "defaultTag7": "Kreativiti"
 }

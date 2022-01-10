@@ -16,7 +16,7 @@ import {BadRequest, NotAuthorized, NotFound,} from '../errors';
 
 const BASE_URL = nconf.get('BASE_URL');
 const PAYPAL_MODE = nconf.get('PAYPAL_MODE');
-const { i18n } = shared;
+const {i18n} = shared;
 
 // This is the plan.id for paypal subscriptions.
 // You have to set up billing plans via their REST sdk (they don't have
@@ -42,10 +42,10 @@ const api = {};
 
 api.constants = {
   // CURRENCY_CODE: 'USD',
-  // SELLER_NOTE: 'slay Payment',
-  // SELLER_NOTE_SUBSCRIPTION: 'slay Subscription',
-  // SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'slay Subscription Payment',
-  // STORE_NAME: 'Habitica',
+  // SELLER_NOTE: 'Slay Payment',
+  // SELLER_NOTE_SUBSCRIPTION: 'Slay Subscription',
+  // SELLER_NOTE_ATHORIZATION_SUBSCRIPTION: 'Slay Subscription Payment',
+  // STORE_NAME: 'Slay',
   //
   // GIFT_TYPE_GEMS: 'gems',
   // GIFT_TYPE_SUBSCRIPTION: 'subscription',
@@ -74,7 +74,7 @@ api.checkout = async function checkout (options = {}) {
 
   let amount;
   let gemsBlock;
-  let description = 'slay Gems';
+  let description = 'Slay Gems';
 
   if (gift) {
     const member = await User.findById(gift.uuid).exec();
@@ -90,7 +90,7 @@ api.checkout = async function checkout (options = {}) {
       description = `${description} (Gift)`;
     } else {
       amount = Number(shared.content.subscriptionBlocks[gift.subscription.key].price).toFixed(2);
-      description = 'mo. slay Subscription (Gift)';
+      description = 'mo. Slay Subscription (Gift)';
     }
   } else {
     gemsBlock = getGemsBlock(gemsBlockKey);
@@ -174,7 +174,7 @@ api.subscribe = async function subscribe (options = {}) {
     if (!couponResult) throw new NotAuthorized(i18n.t('invalidCoupon'));
   }
 
-  const billingPlanTitle = `slay Subscription ($${sub.price} every ${sub.months} months, recurring)`;
+  const billingPlanTitle = `Slay Subscription ($${sub.price} every ${sub.months} months, recurring)`;
   const billingAgreementAttributes = {
     name: billingPlanTitle,
     description: billingPlanTitle,

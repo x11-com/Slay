@@ -8,7 +8,10 @@ import {generateGroup,} from '../../../../../helpers/api-unit.helper';
 import i18n from '../../../../../../website/common/script/i18n';
 
 describe('Canceling a subscription for group', () => {
-  let plan; let group; let user; let
+  let plan;
+  let group;
+  let user;
+  let
     data;
 
   beforeEach(async () => {
@@ -35,7 +38,7 @@ describe('Canceling a subscription for group', () => {
       customerId: 'customer-id',
       paymentMethod: 'Payment Method',
       headers: {
-        'x-client': 'habitica-web',
+        'x-client': 'slay-web',
         'user-agent': '',
       },
     };
@@ -186,7 +189,7 @@ describe('Canceling a subscription for group', () => {
       customerId: 'customer-id',
       paymentMethod: 'Payment Method',
       headers: {
-        'x-client': 'habitica-web',
+        'x-client': 'slay-web',
         'user-agent': '',
       },
     };

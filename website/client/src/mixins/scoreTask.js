@@ -2,9 +2,9 @@ import Vue from 'vue';
 
 import notifications from './notifications';
 import scoreTask from '@/../../common/script/ops/scoreTask';
-import {mapState} from '@/libs/store';
+import { mapState } from '@/libs/store';
 import * as Analytics from '@/libs/analytics';
-import {CONSTANTS, getLocalSetting, setLocalSetting} from '@/libs/userlocalManager';
+import { CONSTANTS, getLocalSetting, setLocalSetting } from '@/libs/userlocalManager';
 
 export default {
   mixins: [notifications],
@@ -168,7 +168,7 @@ export default {
           // $rootScope.openModal('questDrop', {controller:'PartyCtrl', size:'sm'});
           // NOTE if a modal is shown again for quest drops
           // this code will likely need changes, see the NOTE
-          // https://github.com/HabitRPG/habitica/blob/develop/website/client/src/components/notifications.vue#L640-L646
+          // https://github.com/HabitRPG/slay/blob/develop/website/client/src/components/notifications.vue#L640-L646
         } else {
           // Keep support for another type of drops that might be added
           this.drop(drop.dialog);

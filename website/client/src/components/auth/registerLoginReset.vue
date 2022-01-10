@@ -14,8 +14,8 @@
         </div>
         <div>
           <div
-            class="svg-icon habitica-logo"
-            v-html="icons.habiticaIcon"
+            class="svg-icon slay-logo"
+            v-html="icons.slayIcon"
           ></div>
         </div>
       </div>
@@ -204,7 +204,7 @@
           class="btn btn-info"
           :disabled="signupFormInvalid"
         >
-          {{ $t('joinHabitica') }}
+          {{ $t('joinSlay') }}
         </button>
         <button
           v-if="!registering"
@@ -252,8 +252,8 @@
         </div>
         <div>
           <div
-            class="svg-icon habitica-logo"
-            v-html="icons.habiticaIcon"
+            class="svg-icon slay-logo"
+            v-html="icons.slayIcon"
           ></div>
         </div>
         <div class="header">
@@ -300,8 +300,8 @@
         </div>
         <div>
           <div
-            class="svg-icon habitica-logo"
-            v-html="icons.habiticaIcon"
+            class="svg-icon slay-logo"
+            v-html="icons.slayIcon"
           ></div>
         </div>
         <div class="header">
@@ -461,7 +461,7 @@
       margin: 0 auto;
     }
 
-    .habitica-logo {
+    .slay-logo {
       width: 144px;
       height: 31px;
       margin: 2em auto;
@@ -640,7 +640,7 @@ import { buildAppleAuthUrl } from '../../libs/auth';
 import { MINIMUM_PASSWORD_LENGTH } from '@/../../common/script/constants';
 import exclamation from '@/assets/svg/exclamation.svg';
 import gryphon from '@/assets/svg/gryphon.svg';
-import habiticaIcon from '@/assets/svg/habitica-logo.svg';
+import slayIcon from '@/assets/svg/slay-logo.svg';
 import facebookSquareIcon from '@/assets/svg/facebook-square.svg';
 import googleIcon from '@/assets/svg/google.svg';
 import appleIcon from '@/assets/svg/apple_black.svg';
@@ -663,7 +663,7 @@ export default {
     data.icons = Object.freeze({
       exclamation,
       gryphon,
-      habiticaIcon,
+      slayIcon,
       facebookIcon: facebookSquareIcon,
       googleIcon,
       appleIcon,

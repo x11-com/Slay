@@ -30,8 +30,8 @@ export default {
   postIdRequired: '"postId" must be a valid UUID.',
   noNewsPosterAccess: 'You don\'t have news poster access.',
 
-  ipAddressBlocked: 'Your access to slay has been blocked. This may be due to a breach of our Terms of Service or for other reasons. For details or to ask to be unblocked, please email admin@s1ay.com or ask your parent or guardian to email them. Include your slay @Username or User Id in the email if you know it.',
-  clientRateLimited: 'This User ID or IP address has been rate limited due to an excess amount of requests to the slay API v3. More info can be found in the response headers and at https://habitica.fandom.com/wiki/Guidance_for_Comrades#Rules_for_Third-Party_Tools under the section Rate Limiting.',
+  ipAddressBlocked: 'Your access to Slay has been blocked. This may be due to a breach of our Terms of Service or for other reasons. For details or to ask to be unblocked, please email admin@slay.com or ask your parent or guardian to email them. Include your Slay @Username or User Id in the email if you know it.',
+  clientRateLimited: 'This User ID or IP address has been rate limited due to an excess amount of requests to the Slay API v3. More info can be found in the response headers and at https://slay.fandom.com/wiki/Guidance_for_Comrades#Rules_for_Third-Party_Tools under the section Rate Limiting.',
 
   invalidPlatform: 'Invalid platform specified',
 

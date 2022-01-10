@@ -21,7 +21,7 @@ const TaskQueue = require('cwait').TaskQueue;
 const logger = require('./utils/logger');
 
 // PROD: Enable prod db
-// const NODE_DB_URI = 'mongodb://username:password@dsXXXXXX-a0.mlab.com:XXXXX,dsXXXXXX-a1.mlab.com:XXXXX/habitica?replicaSet=rs-dsXXXXXX';
+// const NODE_DB_URI = 'mongodb://username:password@dsXXXXXX-a0.mlab.com:XXXXX,dsXXXXXX-a1.mlab.com:XXXXX/slay?replicaSet=rs-dsXXXXXX';
 const NODE_DB_URI = 'mongodb://localhost/new-prod-copy';
 
 // Cached ids from running the findBrokenChallengeTasks query on a local copy of the db

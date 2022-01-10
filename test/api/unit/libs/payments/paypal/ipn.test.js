@@ -6,9 +6,14 @@ import {model as User} from '../../../../../../website/server/models/user';
 
 describe('paypal - ipn', () => {
   const subKey = 'basic_3mo';
-  let user; let group; let txn_type; let userPaymentId; let
+  let user;
+  let group;
+  let txn_type;
+  let userPaymentId;
+  let
     groupPaymentId;
-  let ipnVerifyAsyncStub; let
+  let ipnVerifyAsyncStub;
+  let
     paymentCancelSubscriptionSpy;
 
   beforeEach(async () => {

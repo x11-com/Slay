@@ -7,9 +7,12 @@ import {BuyQuestWithGemOperation} from '../../../../website/common/script/ops/bu
 describe('shared.ops.buyQuestGems', () => {
   let user;
   const goldPoints = 40;
-  const analytics = { track () {} };
+  const analytics = {
+    track() {
+    }
+  };
 
-  function buyQuest (_user, _req, _analytics) {
+  function buyQuest(_user, _req, _analytics) {
     const buyOp = new BuyQuestWithGemOperation(_user, _req, _analytics);
 
     return buyOp.purchase();

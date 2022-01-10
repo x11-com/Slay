@@ -23,7 +23,7 @@ async function updateUser (user) {
     'items.food.Cake_Skeleton': 1,
     'items.food.Cake_White': 1,
     'items.food.Cake_Zombie': 1,
-    'achievements.habiticaDays': 1,
+    'achievements.slayDays': 1,
   };
 
   if (user && user.items && user.items.gear && user.items.gear.owned && typeof user.items.gear.owned.body_special_namingDay2018 !== 'undefined') {

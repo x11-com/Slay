@@ -7,9 +7,16 @@ import common from '../../../../../../website/common';
 
 describe('paypal - subscribeSuccess', () => {
   const subKey = 'basic_3mo';
-  let user; let group; let block; let groupId; let token; let headers; let
+  let user;
+  let group;
+  let block;
+  let groupId;
+  let token;
+  let headers;
+  let
     customerId;
-  let paypalBillingAgreementExecuteStub; let
+  let paypalBillingAgreementExecuteStub;
+  let
     paymentsCreateSubscritionStub;
 
   beforeEach(async () => {

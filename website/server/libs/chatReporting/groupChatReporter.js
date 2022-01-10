@@ -13,7 +13,7 @@ const COMMUNITY_MANAGER_EMAIL = nconf.get('EMAILS_COMMUNITY_MANAGER_EMAIL');
 const FLAG_REPORT_EMAILS = nconf
   .get('FLAG_REPORT_EMAIL')
   .split(',')
-  .map(email => ({ email, canSend: true }));
+  .map(email => ({email, canSend: true}));
 const USER_AGE_FOR_FLAGGING = 3; // accounts less than this many days old don't increment flagCount
 
 export default class GroupChatReporter extends ChatReporter {

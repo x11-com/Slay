@@ -9,7 +9,10 @@ import logger from '../../../../website/server/libs/logger';
 describe('rateLimiter middleware', () => {
   const pathToRateLimiter = '../../../../website/server/middlewares/rateLimiter';
 
-  let res; let req; let next; let nconfGetStub;
+  let res;
+  let req;
+  let next;
+  let nconfGetStub;
 
   beforeEach(() => {
     nconfGetStub = sandbox.stub(nconf, 'get');

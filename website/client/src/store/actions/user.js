@@ -233,7 +233,7 @@ export async function unequip (store, params) {
   const response = await axios.post(`/api/v4/user/unequip/${params.type}`);
 
   store.dispatch('snackbars:add', {
-    title: 'Habitica',
+    title: 'Slay',
     text: response.data.message,
     type: 'info',
   });

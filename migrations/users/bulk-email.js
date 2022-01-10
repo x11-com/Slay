@@ -11,7 +11,7 @@ const MIGRATION_NAME = 'bulk-email';
 const progressCount = 250;
 let count = 0;
 
-async function updateUser (user) {
+async function updateUser(user) {
   count += 1;
 
   if (count % progressCount === 0) {

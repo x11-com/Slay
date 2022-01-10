@@ -45,7 +45,7 @@ const improveRepl = context => {
 
 gulp.task('console', done => {
   improveRepl(repl.start({
-    prompt: 'slay > ',
+    prompt: 'Slay > ',
   }).context);
   done();
 });

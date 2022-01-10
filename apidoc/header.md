@@ -1,6 +1,6 @@
 # Introduction
 
-This webpage includes the documentation for version 3 of the [Habitica](https://s1ay.com) API.
+This webpage includes the documentation for version 3 of the [slay](https://s1ay.com) API.
 
 If you're developing a 3rd party tool that uses the slay API you should read
 the [Guidance for Comrades](https://habitica.fandom.com/wiki/Guidance_for_Comrades) and in particular the section
